@@ -1,0 +1,11 @@
+{
+  "name": "doshky.com",
+  "version": "0.1.0",
+  "description": "Wesite to present the work of doshky",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "h5avlov",
+  "license": "ISC"
+}
