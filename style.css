@@ -76,7 +76,7 @@ body {
 
 } 
 
-.head { 
+.head, .body { 
 	display: flex; flex-direction: column; justify-content: center; 
 }
 
@@ -93,7 +93,7 @@ body {
 
 .head {  
 	position: relative;   
-	padding-bottom: var( --head-border-width ); 
+//	padding-bottom: var( --head-border-width ); 
 	color: var( --background-color ); 
 } 
 
@@ -115,11 +115,11 @@ body {
 	opacity: 0; 
 } 
 
-.logo { 
+/* .logo { 
 	width: 7rem; height: 4rem; 
 	margin-bottom: 0.25rem; 
 	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
-} 
+}  */
 
 .heading {  
 	margin-bottom: 0.2rem;
@@ -131,12 +131,11 @@ body {
 }
 
 .text { 
-//	margin-bottom: 1.4rem;
-	font-family: Arial; font-size: 1rem; 
+	font-family: Arial; font-size: 0.75rem; text-transform: uppercase; 
 } 
 
 .under-construction-message-holder { 
-	margin-top: -5rem; margin-bottom: 2.5rem; 
+	margin-top: -5rem; margin-bottom: 2.5rem;  
 	opacity: 0; 
 }
 
@@ -148,15 +147,23 @@ body {
 	font-size: 0.85rem; 
 }
 
-.body { 
+/* .body {  
+	padding-top: 4.75rem; 
 	padding-bottom: 4.75rem; 
+}  */
+
+.body .under-construction-message { 
+	border: none;  
+	font-family: Impact; font-size: 2.75rem; 
+	color: var( --foreground-color ); 
+
 }
 
-.body .content { 
+/* .body .content { 
 	margin-top: calc( -1 * var( --head-border-width ) ); 
-}
+}  */
 
-.hex, .icon, .hex:before, .icon:before { 
+/* .hex, .icon, .hex:before, .icon:before { 
 	background-position: center; background-size: contain; background-repeat: no-repeat;  
 }
 
@@ -211,9 +218,9 @@ body {
 
 .icon.skeletal-system:before {  
 	background-image: url( './icons/skeletal-green.png' ); 
-} 
+}  */
 
-.points-section-wrapper { 
+/* .points-section-wrapper { 
 	display: flex; flex-direction: column; align-items: center; justify-content: center; 	
 	width: 100%; height: 100%; 
 	padding-top: 1.85rem; 
@@ -269,7 +276,7 @@ body {
 
 .point-block .heading { 
 	font-size: 1.45rem; 
-} 
+}  */ 
 
 
 .intro, .body, .hex, 
