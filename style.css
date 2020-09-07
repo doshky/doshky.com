@@ -1,0 +1,398 @@
+.intro { 
+	--hex-holder-width: 100px; 
+	--hex-holder-height: 87px; 
+	--hex-icon-size: calc( 0.585 * var( --hex-holder-height ) ); 
+	--system-holder-width: 70px; 
+	--system-holder-height: 61px;
+	--system-icon-size: calc( 0.7 * var( --system-holder-height ) ); 
+	--background-color: #56663b; 
+	--foreground-color: #323232;  
+	
+	--head-border-width: calc( var( --hex-holder-height ) / 2 ); 
+	
+	--head-background-hex-cross-pos: 150px; 
+	--head-background-pull-up-duration: 0.4s; 
+	--head-background-pull-up-delay: 0.2s; 
+	
+	--hex-in-delay: calc( var( --head-background-pull-up-delay ) + 0.8 * var( --head-background-pull-up-duration ) ); 
+	--hex-fade-in-duration: 0.075s; 
+	--hex-slide-up-duration: 0.2s; 
+	--icon-slide-up-duration: 0.2s; 
+	--icon-fade-in-duration: 0.075s; 
+	--icon-in-start-relative-delay: 0.075s; 
+	--icon-in-relative-delay: 0.07s; 
+
+	--icon-in-start-delay: calc( var( --hex-in-delay ) + var( --icon-in-start-relative-delay ) ); 
+	--icon-immune-in-delay: calc( var( --icon-in-start-delay ) + 0 * var( --icon-in-relative-delay ) ); 
+	--icon-cardio-in-delay: calc( var( --icon-in-start-delay ) + 1 * var( --icon-in-relative-delay ) ); 
+	--icon-respiratory-in-delay: calc( var( --icon-in-start-delay ) + 2 * var( --icon-in-relative-delay ) ); 
+	--icon-neural-in-delay: calc( var( --icon-in-start-delay ) + 3 * var( --icon-in-relative-delay ) ); 
+	--icon-skeletal-in-delay: calc( var( --icon-in-start-delay ) + 4 * var( --icon-in-relative-delay ) ); 
+	
+	--block-in-relative-delay: -0.5s;  
+	--block-fade-in-duration: 0.25s; 
+	--block-slide-up-duration: 0.25s; 
+	--block-in-delay: calc( var( --icon-skeletal-in-delay ) + var( --icon-slide-up-duration ) + var( --block-in-relative-delay ) ); 
+	
+	
+	--logo-fade-in-duration: 0.075s; 
+	--logo-slide-down-duration: 0.2s; 
+	--logo-in-relative-delay: 0.0125s; 
+	--logo-in-relative-delay: 0.0125s; 
+	--logo-in-delay: calc( var( --block-in-delay ) + var( --block-slide-up-duration ) + var( --logo-in-relative-delay ) ); 
+	
+} 
+
+.points-section { 
+	--column-count: 3; 
+	--gutter-x-width: 0.25rem; 
+	--gutter-y-width: 0.75rem; 
+} 
+
+@font-face { 
+	src: url( './fonts/impact.ttf' ); 
+	font-family: Impact; 
+	
+}
+
+body { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.intro { 
+	width: 100%; height: 100%; 
+	position: fixed; 
+	background-color: var( --background-color );  
+	overflow: auto; 
+} 
+
+.intro-wrapper { 
+	width: 100%; min-height: 100%;  
+}
+
+.head, .body { 
+	min-height: 50vh; 
+
+} 
+
+.head { 
+	display: flex; flex-direction: column; justify-content: center; 
+}
+
+.content { 
+	max-width: 960px;   
+	margin-left: auto; margin-right: auto; 
+	text-align: center; 
+	
+} 
+
+.logo, .hex, .icon { 
+	margin-left: auto; margin-right: auto; 
+}
+
+.head {  
+	position: relative;   
+	padding-bottom: var( --head-border-width ); 
+	color: var( --background-color ); 
+} 
+
+.head .content { 
+	padding: 2.5rem;   
+} 
+
+.head:after { 
+	display: block; 
+	width: 100%; height: 200%; 
+	position: absolute; left: 0; top: 0; z-index: -1; 
+	background-color: var( --foreground-color );
+	transform: translateY( -100% ); 
+	content: ""; 
+} 
+
+.block { 
+	transform: translateY( 100% ); 
+	opacity: 0; 
+} 
+
+.logo { 
+	width: 7rem; height: 4rem; 
+	margin-bottom: 0.25rem; 
+	background-image: url( ./icons/ellibeetherapy-logo.png ); background-size: contain; background-repeat: no-repeat; 
+} 
+
+.heading {  
+	margin-bottom: 0.2rem;
+	font-family: Impact; font-size: 2rem; 
+} 
+
+.heading, .under-construction-message { 
+	text-transform: uppercase; 
+}
+
+.text { 
+//	margin-bottom: 1.4rem;
+	font-family: Arial; font-size: 1rem; 
+} 
+
+.under-construction-message-holder { 
+	margin-top: -5rem; margin-bottom: 2.5rem; 
+	opacity: 0; 
+}
+
+.under-construction-message { 
+	display: inline-block; 
+	padding: 0.85rem; 
+	border: 1px solid; 
+	font-family: Arial; 
+	font-size: 0.85rem; 
+}
+
+.body { 
+	padding-bottom: 4.75rem; 
+}
+
+.body .content { 
+	margin-top: calc( -1 * var( --head-border-width ) ); 
+}
+
+.hex, .icon, .hex:before, .icon:before { 
+	background-position: center; background-size: contain; background-repeat: no-repeat;  
+}
+
+.hex, .icon { 
+	display: flex; align-items: center; justify-content: center; 
+	margin-bottom: 0.475rem; 
+}
+
+.hex { 
+	width: var( --hex-holder-width ); height: var( --hex-holder-height );  
+	background-image: url( './icons/hex.png' ); 
+	transform: translateY( 150px ); 
+	opacity: 0; 
+} 
+
+.hex:before, .icon:before {  
+	display: block; 
+	content: ""; 
+} 
+
+.hex:before { 
+	width: var( --hex-icon-size ); height: var( --hex-icon-size ); 
+	background-image: url( './icons/logo.png' );
+} 
+
+.icon, .icon:before {  
+	width: var( --system-icon-size ); height: var( --system-icon-size ); 
+} 
+
+.icon {  
+	width: var( --system-holder-width ); height: var( --system-holder-height ); 
+	background-image: url( './icons/icon.png' ); 
+	transform: translateY( 150px );
+	opacity: 0; 
+} 
+
+.icon.immune-system:before {  
+	background-image: url( './icons/immune-green.png' ); 
+} 
+
+.icon.cardio-system:before {  
+	background-image: url( './icons/cardio-green.png' ); 
+}
+
+.icon.respiratory-system:before {  
+	background-image: url( './icons/respiratory-green.png' ); 
+}
+
+.icon.neural-system:before {  
+	background-image: url( './icons/neural-green.png' ); 
+}
+
+.icon.skeletal-system:before {  
+	background-image: url( './icons/skeletal-green.png' ); 
+} 
+
+.points-section-wrapper { 
+	display: flex; flex-direction: column; align-items: center; justify-content: center; 	
+	width: 100%; height: 100%; 
+	padding-top: 1.85rem; 
+	position: relative; z-index: 2; 
+	overflow: hidden; 
+} 
+
+.points-section { 
+	display: flex; flex-direction: row; flex-wrap: wrap; 
+	width: 960px;  
+	padding: 1.75rem; 
+	border: 1px solid; 	 
+	transform: translateY( 20% ); 
+	opacity: 0; 
+} 
+
+.point-block { 
+	width: calc( ( 100% - calc( var( --column-count ) - 1 ) * var( --gutter-x-width ) ) / var( --column-count ) ); 
+	margin-right: var( --gutter-x-width ); margin-bottom: var( --gutter-y-width ); 
+} 
+
+.point-block { 
+	margin-right: 0; 
+} 
+
+.point-block:before { 
+	display: block; 
+	width: 2.25rem; height: 2.25rem; 
+	background-position: center; background-size: contain; 
+	content: ""; 
+} 
+
+.point-block.immune-system:before { 
+	background-size: 140%; 
+	background-image: url( './icons/immune.png' ); 
+} 
+
+.point-block.cardio-system:before { 
+	background-image: url( './icons/cardio.png' ); 
+}
+
+.point-block.respiratory-system:before { 
+	background-image: url( './icons/respiratory.png' ); 
+}
+
+.point-block.neural-system:before { 
+	background-image: url( './icons/neural.png' ); 
+}
+
+.point-block.skeletal-system:before { 
+	background-image: url( './icons/skeletal.png' ); 
+}
+
+.point-block .heading { 
+	font-size: 1.45rem; 
+} 
+
+
+.intro, .body, .hex, 
+.head:after, .icon, .logo, .head .content, .block, .under-construction-message-holder, .under-construction-message, 
+.pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
+	animation-fill-mode: forwards;	
+} 
+
+.head:after { 
+	animation-name: pull-up; animation-duration: var( --head-background-pull-up-duration ); animation-delay: var( --head-background-pull-up-delay ); animation-timing-function: ease; 
+	
+} 
+
+.hex { 
+	animation-name: fade-in, slide-up; animation-duration: var( --hex-fade-in-duration ), var( --hex-slide-up-duration ); animation-delay: var( --hex-in-delay ); 
+	
+} 
+
+.icon { 
+	animation-name: fade-in, slide-up; animation-duration: var( --icon-fade-in-duration ), var( --icon-slide-up-duration ); 
+	
+} 
+
+.icon.immune-system { 
+	animation-delay: var( --icon-immune-in-delay ); 
+	
+} 
+
+.icon.cardio-system { 
+	animation-delay: var( --icon-cardio-in-delay ); 
+	
+} 
+
+.icon.respiratory-system { 
+	animation-delay: var( --icon-respiratory-in-delay );
+	
+} 
+
+.icon.neural-system { 
+	animation-delay: var( --icon-neural-in-delay );
+	
+} 
+
+.icon.skeletal-system { 
+	animation-delay: var( --icon-skeletal-in-delay ); 
+	
+} 
+
+.block { 
+	animation-name: fade-in, slide-up; animation-duration: var( --block-fade-in-duration ), var( --block-slide-up-duration ); animation-delay: var( --block-in-delay ); 
+	
+}
+
+.under-construction-message-holder { 
+	animation-name: fade-in, slide-down; animation-duration: var( --logo-fade-in-duration ), var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
+	
+}
+
+
+@keyframes pull-up { 
+
+	80% { 
+		transform: translateY( calc( -50% + 150px ) ); 
+	}
+
+	100% { 
+		transform: translateY( -50% ); 
+	}
+	
+} 
+
+@keyframes slide-up { 
+
+	100% { 
+		transform: translateY( 0 ); 
+	}
+	
+} 
+
+@keyframes fade-in { 
+
+	100% { 
+		opacity: 1; 
+		
+	}
+	
+} 
+
+@keyframes slide-down { 
+
+	100% { 
+		margin-top: 0; 
+		
+	}
+	
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
