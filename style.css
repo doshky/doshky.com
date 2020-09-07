@@ -79,6 +79,7 @@ body {
 
 .head, .body { 
 	min-height: 50vh; 
+	padding-bottom: var( --head-border-width ); 
 
 } 
 
