@@ -5,8 +5,8 @@
 	--system-holder-width: 70px; 
 	--system-holder-height: 61px;
 	--system-icon-size: calc( 0.7 * var( --system-holder-height ) ); 
-	--background-color:#E4BE9E; /* #F0E68C */
-	--foreground-color: #71697A; /* #323232 */ 
+	--background-color:#C18C5D; /* #F0E68C */
+	--foreground-color: #495867; /* #323232 */
 	
 	--head-border-width: calc( var( --hex-holder-height ) / 2 ); 
 	
@@ -78,6 +78,7 @@ body {
 }
 
 .head, .body { 
+	box-sizing: border-box; 
 	min-height: 50vh; 
 	padding-bottom: var( --head-border-width ); 
 
@@ -161,7 +162,7 @@ body {
 .under-construction-message {  
 	padding-top: 2rem; 
 	border: none;  
-	font-family: Impact; font-size: 3.5rem; 
+	font-family: Impact; font-size: 2.5rem; 
 	color: var( --foreground-color );  
 	transform: translateY( 100px ); 
 	opacity: 0; 
