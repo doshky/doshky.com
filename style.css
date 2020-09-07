@@ -6,7 +6,7 @@
 	--system-holder-height: 61px;
 	--system-icon-size: calc( 0.7 * var( --system-holder-height ) ); 
 	--background-color:#C18C5D; /* #F0E68C */
-	--foreground-color: #495867; /* #323232 */
+	--foreground-color: #061826; /* #323232 */
 	
 	--head-border-width: calc( var( --hex-holder-height ) / 2 ); 
 	
