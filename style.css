@@ -1,11 +1,11 @@
 .intro { 
 	--hex-holder-width: 100px; 
-	--hex-holder-height: 87px; 
+	--hex-holder-height: var( --hex-holder-width ); 
 	--hex-icon-size: calc( 0.585 * var( --hex-holder-height ) ); 
 	--system-holder-width: 70px; 
 	--system-holder-height: 61px;
 	--system-icon-size: calc( 0.7 * var( --system-holder-height ) ); 
-	--background-color: #56663b; 
+	--background-color: #decc45; 
 	--foreground-color: #323232;  
 	
 	--head-border-width: calc( var( --hex-holder-height ) / 2 ); 
@@ -53,6 +53,12 @@
 	src: url( './fonts/impact.ttf' ); 
 	font-family: Impact; 
 	
+} 
+
+@font-face { 
+	src: url( './fonts/ionicons.ttf' ); 
+	font-family: IonIcons; 
+	
 }
 
 body { 
@@ -76,7 +82,7 @@ body {
 
 } 
 
-.head, .body { 
+.head { 
 	display: flex; flex-direction: column; justify-content: center; 
 }
 
@@ -93,13 +99,13 @@ body {
 
 .head {  
 	position: relative;   
-//	padding-bottom: var( --head-border-width ); 
+	padding-bottom: var( --head-border-width ); 
 	color: var( --background-color ); 
 } 
 
-.head .content { 
+/* .head .content { 
 	padding: 2.5rem;   
-} 
+}  */
 
 .head:after { 
 	display: block; 
@@ -126,7 +132,7 @@ body {
 	font-family: Impact; font-size: 2rem; 
 } 
 
-.heading, .under-construction-message { 
+.heading, .under-construction-after-message, .under-construction-message { 
 	text-transform: uppercase; 
 }
 
@@ -134,38 +140,54 @@ body {
 	font-family: Arial; font-size: 0.75rem; text-transform: uppercase; 
 } 
 
-.under-construction-message-holder { 
+.under-construction-after-message-holder { 
 	margin-top: -5rem; margin-bottom: 2.5rem;  
 	opacity: 0; 
 }
 
-.under-construction-message { 
-	display: inline-block; 
+.under-construction-after-message {  
 	padding: 0.85rem; 
 	border: 1px solid; 
 	font-family: Arial; 
 	font-size: 0.85rem; 
-}
+} 
 
 /* .body {  
 	padding-top: 4.75rem; 
 	padding-bottom: 4.75rem; 
 }  */
 
-.body .under-construction-message { 
+.under-construction-message {  
+	padding-top: 2rem; 
 	border: none;  
-	font-family: Impact; font-size: 2.75rem; 
-	color: var( --foreground-color ); 
+	font-family: Impact; font-size: 3.5rem; 
+	color: var( --foreground-color );  
+	transform: translateY( 100px ); 
+	opacity: 0; 
 
+} 
+
+/* .hex { 
+	border-radius: 50%; 
+	background-color: #444; 
+
+} */
+
+.hex:before {
+	display: flex; align-items: center; justify-content: center; 
+	font-family: IonIcons; font-size: 8rem; 
+	content: "\f2fc"; 
+	color: var( --foreground-color ); 
+	text-shadow: 0 0 2px var( --background-color ); 
 }
 
-/* .body .content { 
+.body .content { 
 	margin-top: calc( -1 * var( --head-border-width ) ); 
-}  */
+} 
 
 /* .hex, .icon, .hex:before, .icon:before { 
 	background-position: center; background-size: contain; background-repeat: no-repeat;  
-}
+} */
 
 .hex, .icon { 
 	display: flex; align-items: center; justify-content: center; 
@@ -174,22 +196,22 @@ body {
 
 .hex { 
 	width: var( --hex-holder-width ); height: var( --hex-holder-height );  
-	background-image: url( './icons/hex.png' ); 
+	/* background-image: url( './icons/hex.png' );  */ 
 	transform: translateY( 150px ); 
 	opacity: 0; 
 } 
 
-.hex:before, .icon:before {  
+/* .hex:before, .icon:before {  
 	display: block; 
 	content: ""; 
-} 
+}  */
 
 .hex:before { 
 	width: var( --hex-icon-size ); height: var( --hex-icon-size ); 
-	background-image: url( './icons/logo.png' );
+	/* background-image: url( './icons/logo.png' ); */ 
 } 
 
-.icon, .icon:before {  
+/* .icon, .icon:before {  
 	width: var( --system-icon-size ); height: var( --system-icon-size ); 
 } 
 
@@ -280,7 +302,7 @@ body {
 
 
 .intro, .body, .hex, 
-.head:after, .icon, .logo, .head .content, .block, .under-construction-message-holder, .under-construction-message, 
+.head:after, .icon, .logo, .head .content, .block, .under-construction-after-message-holder, .under-construction-after-message, .under-construction-message, 
 .pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
 	animation-fill-mode: forwards;	
 } 
@@ -295,7 +317,7 @@ body {
 	
 } 
 
-.icon { 
+/* .icon { 
 	animation-name: fade-in, slide-up; animation-duration: var( --icon-fade-in-duration ), var( --icon-slide-up-duration ); 
 	
 } 
@@ -323,15 +345,20 @@ body {
 .icon.skeletal-system { 
 	animation-delay: var( --icon-skeletal-in-delay ); 
 	
-} 
+}  */
 
 .block { 
 	animation-name: fade-in, slide-up; animation-duration: var( --block-fade-in-duration ), var( --block-slide-up-duration ); animation-delay: var( --block-in-delay ); 
 	
 }
 
-.under-construction-message-holder { 
+.under-construction-after-message-holder { 
 	animation-name: fade-in, slide-down; animation-duration: var( --logo-fade-in-duration ), var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
+	
+} 
+
+.under-construction-message { 
+	animation-name: fade-in, slide-up; animation-duration: var( --icon-fade-in-duration ), var( --icon-slide-up-duration ); animation-delay: var( --icon-in-start-delay ); 
 	
 }
 
