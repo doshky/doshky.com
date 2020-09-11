@@ -1,7 +1,20 @@
 <html>
-<head>
-	<link href= "style.css" rel= "stylesheet" type= "text/css" /> 
+<head> 
 	<meta name= "viewport" content= "width=device-width, initial-scale=1">
+	<link href= "style.css" rel= "stylesheet" type= "text/css" /> 
+	<link rel="stylesheet" href="./plugins/time-circles/TimeCircles.css"> 
+	<style>
+		.time_circles { 
+			height: auto; 
+
+		} 
+
+		.time_circles > div > h4 { 
+			font-family: Arial; 
+
+		} 
+
+	</style> 
 </head>
 <body>
 
@@ -24,6 +37,7 @@
 				<div class= "hex"></div> 
 
 				<div class= "under-construction-message">Coming Soon</div> 
+				<div class= "countdown" data-date= "2020-09-30 00:00:00"></div> 
 
 				<!-- <div class= "icons">
 					<div class= "icon immune-system"></div> 
@@ -33,7 +47,26 @@
 	</div>
 </div> 
 
-<div class= "benefits"></div>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src= "./plugins/time-circles/TimeCircles.js"></script> 
+<script> 
+	const color = "rgba( 255, 255, 255, 0.25 )"; 
+
+	$( ".countdown" ).TimeCircles( { 
+		fg_width: 0.025, 
+		text_size: 0.04, 
+		number_size: 0.25, 
+		use_background: false, 
+		time: {
+			Days: { color: color },
+			Hours: { color: color },
+			Minutes: { color: color },
+			Seconds: { color: color } 
+		}
+
+	} ); 
+</script> --> 
+
 
 </body>
 

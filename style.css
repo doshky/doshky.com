@@ -213,6 +213,11 @@ body {
 	/* background-image: url( './icons/logo.png' ); */ 
 } 
 
+.time_circles { 
+	margin-top: 5rem; 
+
+}
+
 /* .icon, .icon:before {  
 	width: var( --system-icon-size ); height: var( --system-icon-size ); 
 } 
