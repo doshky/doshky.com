@@ -188,18 +188,21 @@ body {
 .under-construction-message { 
 	display: inline-block; 
 	padding-top: 0.85rem; padding-bottom: 1rem;  
-	margin-top: 1.8rem; 
+	margin-top: 1.5rem; 
 	position: relative; 
 	font-family: Arial; 
 	font-size: 0.8rem; 
 } 
 
-.under-construction-message:after { 
+.under-construction-message:before { 
 	display: block; 
-	height: 1px; 
+	margin-bottom: 0.2rem; 
+	/* height: 1px; 
 	position: absolute; left: 20%; right: 20%; top: 0; 
-	background-color: var( --foreground-color ); 
-	content: "";
+	background-color: var( --foreground-color );  */ 
+	content: "\f474"; 
+	font-family: IonIcons; 
+	font-size: 1rem; 
 
 }
 
