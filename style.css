@@ -159,15 +159,27 @@ body {
 	padding-bottom: 4.75rem; 
 }  */
 
-.under-construction-message {  
+.under-construction-message, 
+.countdown {  
 	padding-top: 2rem; 
 	border: none;  
 	font-family: Impact; font-size: 2.5rem; 
 	color: var( --foreground-color );  
-	transform: translateY( 100px ); 
+	transform: translateY( 50px ); 
 	opacity: 0; 
 
 } 
+
+.under-construction-message { 
+	display: inline-block; 
+	padding-top: 0.5rem; 
+//	margin-right: 3.5rem; 
+	margin-top: 2rem; 
+	font-size: 1.4rem; 
+//	font-family: Arial; 
+	border-top: 0.125em solid; 
+
+}
 
 /* .hex { 
 	border-radius: 50%; 
@@ -184,6 +196,7 @@ body {
 }
 
 .body .content { 
+	/* display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap;   */ 
 	margin-top: calc( -1 * var( --head-border-width ) ); 
 } 
 
@@ -198,6 +211,7 @@ body {
 
 .hex { 
 	width: var( --hex-holder-width ); height: var( --hex-holder-height );  
+	width: 100%; 
 	/* background-image: url( './icons/hex.png' );  */ 
 	transform: translateY( 150px ); 
 	opacity: 0; 
@@ -309,7 +323,9 @@ body {
 
 
 .intro, .body, .hex, 
-.head:after, .icon, .logo, .head .content, .block, .under-construction-after-message-holder, .under-construction-after-message, .under-construction-message, 
+.head:after, .icon, .logo, .head .content, .block, 
+.under-construction-after-message-holder, .under-construction-after-message, .under-construction-message, 
+.countdown, 
 .pieces, .point.logo, .points-section, .original-logo, .left, .right, .point, .point:before, .point .text { 
 	animation-fill-mode: forwards;	
 } 
@@ -364,10 +380,15 @@ body {
 	
 } 
 
-.under-construction-message { 
+.under-construction-message, 
+.countdown { 
 	animation-name: fade-in, slide-up; animation-duration: var( --icon-fade-in-duration ), var( --icon-slide-up-duration ); animation-delay: var( --icon-in-start-delay ); 
 	
-}
+} 
+
+.under-construction-message { 
+	animation-delay: calc( var( --icon-in-start-delay ) + 0.125s ); 
+} 
 
 
 @keyframes pull-up { 
