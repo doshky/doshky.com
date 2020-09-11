@@ -169,7 +169,7 @@ body {
 	border: none;  
 	font-family: Impact;  
 	color: var( --foreground-color );  
-	transform: translateY( 50px ); 
+	transform: translateY( 25px ); 
 	opacity: 0; 
 
 } 
@@ -202,7 +202,7 @@ body {
 	background-color: var( --foreground-color );  */ 
 	content: "\f474"; 
 	font-family: IonIcons; 
-	font-size: 1rem; 
+	font-size: 1.25rem; 
 
 }
 
