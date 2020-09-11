@@ -173,11 +173,8 @@ body {
 .under-construction-message { 
 	display: inline-block; 
 	padding-top: 0.5rem; 
-//	margin-right: 3.5rem; 
 	margin-top: 2rem; 
-	font-size: 1.4rem; 
-//	font-family: Arial; 
-//	border-top: 0.125em solid; 
+	font-size: 1.4rem;  
 
 }
 
@@ -224,102 +221,7 @@ body {
 
 .hex:before { 
 	width: var( --hex-icon-size ); height: var( --hex-icon-size ); 
-	/* background-image: url( './icons/logo.png' ); */ 
 } 
-
-.time_circles { 
-	margin-top: 5rem; 
-
-}
-
-/* .icon, .icon:before {  
-	width: var( --system-icon-size ); height: var( --system-icon-size ); 
-} 
-
-.icon {  
-	width: var( --system-holder-width ); height: var( --system-holder-height ); 
-	background-image: url( './icons/icon.png' ); 
-	transform: translateY( 150px );
-	opacity: 0; 
-} 
-
-.icon.immune-system:before {  
-	background-image: url( './icons/immune-green.png' ); 
-} 
-
-.icon.cardio-system:before {  
-	background-image: url( './icons/cardio-green.png' ); 
-}
-
-.icon.respiratory-system:before {  
-	background-image: url( './icons/respiratory-green.png' ); 
-}
-
-.icon.neural-system:before {  
-	background-image: url( './icons/neural-green.png' ); 
-}
-
-.icon.skeletal-system:before {  
-	background-image: url( './icons/skeletal-green.png' ); 
-}  */
-
-/* .points-section-wrapper { 
-	display: flex; flex-direction: column; align-items: center; justify-content: center; 	
-	width: 100%; height: 100%; 
-	padding-top: 1.85rem; 
-	position: relative; z-index: 2; 
-	overflow: hidden; 
-} 
-
-.points-section { 
-	display: flex; flex-direction: row; flex-wrap: wrap; 
-	width: 960px;  
-	padding: 1.75rem; 
-	border: 1px solid; 	 
-	transform: translateY( 20% ); 
-	opacity: 0; 
-} 
-
-.point-block { 
-	width: calc( ( 100% - calc( var( --column-count ) - 1 ) * var( --gutter-x-width ) ) / var( --column-count ) ); 
-	margin-right: var( --gutter-x-width ); margin-bottom: var( --gutter-y-width ); 
-} 
-
-.point-block { 
-	margin-right: 0; 
-} 
-
-.point-block:before { 
-	display: block; 
-	width: 2.25rem; height: 2.25rem; 
-	background-position: center; background-size: contain; 
-	content: ""; 
-} 
-
-.point-block.immune-system:before { 
-	background-size: 140%; 
-	background-image: url( './icons/immune.png' ); 
-} 
-
-.point-block.cardio-system:before { 
-	background-image: url( './icons/cardio.png' ); 
-}
-
-.point-block.respiratory-system:before { 
-	background-image: url( './icons/respiratory.png' ); 
-}
-
-.point-block.neural-system:before { 
-	background-image: url( './icons/neural.png' ); 
-}
-
-.point-block.skeletal-system:before { 
-	background-image: url( './icons/skeletal.png' ); 
-}
-
-.point-block .heading { 
-	font-size: 1.45rem; 
-}  */ 
 
 
 .intro, .body, .hex, 
@@ -339,36 +241,6 @@ body {
 	animation-name: fade-in, slide-up; animation-duration: var( --hex-fade-in-duration ), var( --hex-slide-up-duration ); animation-delay: var( --hex-in-delay ); 
 	
 } 
-
-/* .icon { 
-	animation-name: fade-in, slide-up; animation-duration: var( --icon-fade-in-duration ), var( --icon-slide-up-duration ); 
-	
-} 
-
-.icon.immune-system { 
-	animation-delay: var( --icon-immune-in-delay ); 
-	
-} 
-
-.icon.cardio-system { 
-	animation-delay: var( --icon-cardio-in-delay ); 
-	
-} 
-
-.icon.respiratory-system { 
-	animation-delay: var( --icon-respiratory-in-delay );
-	
-} 
-
-.icon.neural-system { 
-	animation-delay: var( --icon-neural-in-delay );
-	
-} 
-
-.icon.skeletal-system { 
-	animation-delay: var( --icon-skeletal-in-delay ); 
-	
-}  */
 
 .block { 
 	animation-name: fade-in, slide-up; animation-duration: var( --block-fade-in-duration ), var( --block-slide-up-duration ); animation-delay: var( --block-in-delay ); 

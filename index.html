@@ -13,25 +13,19 @@
 		.entry { 
 			display: flex; flex-direction: column-reverse; 
 			width: 4.5rem; 
-		//	margin-right: 0.45rem; 
 			padding: 0.85rem; 
 			border-right: 1px solid; 
-
 		} 
 
 		.entry:last-of-type { 
 			margin-right: 0; 
 			border-right: none; 
-
-			
-
 		}
 
 		.unit { 
 			font-family: Arial; 
 			font-size: 0.7rem; 
 			text-transform: uppercase; 
-
 		}
 
 	</style> 
@@ -43,8 +37,7 @@
 		<div class= "head"> 
 			<div class= "content"> 
 				<div class= "under-construction-after-message-holder"><span class= "under-construction-after-message">Have patience and stay healthy</span></div> 
-				<div class= "block">  
-					<!-- <div class= "logo">Doshky</div> --> 
+				<div class= "block"> 
 					<div class= "heading">Doshky</div>
 					<div class= "text">My Collection of Paintings</div>  
 				</div> 
@@ -52,16 +45,10 @@
 		</div>
 		<div class= "body">
 			<div class= "content"> 
-				<!-- <div class= "star"></div>  -->
-				
 				<div class= "hex"></div> 
 
 				<div class= "countdown" data-date= "2020-09-30 00:00:00"></div> 
 				<div class= "under-construction-message">Coming Soon</div> 
-
-				<!-- <div class= "icons">
-					<div class= "icon immune-system"></div> 
-				</div> -->
 			</div>
 		</div> 
 	</div>
@@ -86,8 +73,6 @@
 			"<span class= 'unit'>seconds</span>" + 
 		"</div>"; 
 
-		// <div>%H<span>hours</span></div><div>%M<span>minutes</span></div><div>%S<span>seconds</span></div>"; 
-
 	$( ".countdown" ).countdown( targetDate, function( e ) { 
 		$( this ).html( e.strftime( 
 			template 
@@ -95,27 +80,6 @@
 	} ); 
 
 </script>
-
-<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-<script src= "./plugins/time-circles/TimeCircles.js"></script> 
-<script> 
-	const color = "rgba( 255, 255, 255, 0.25 )"; 
-
-	$( ".countdown" ).TimeCircles( { 
-		fg_width: 0.025, 
-		text_size: 0.04, 
-		number_size: 0.25, 
-		use_background: false, 
-		time: {
-			Days: { color: color },
-			Hours: { color: color },
-			Minutes: { color: color },
-			Seconds: { color: color } 
-		}
-
-	} ); 
-</script> --> 
-
 
 </body>
 
