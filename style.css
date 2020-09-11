@@ -290,7 +290,7 @@ body {
 	
 } 
 
-.countdown { 
+.under-construction-message { 
 	animation-delay: calc( var( --icon-in-start-delay ) + 0.125s ); 
 } 
 
