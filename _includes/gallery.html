@@ -1,12 +1,18 @@
 {% assign entries = include.data %}
 
 
-<article class= "section gallery"> 
-	<ul class= "image-list"> 
-		{% for entry in entries  %}
-		<li class= "image-entry">
-			{% include cover-image.html %} 
-		</li>
-		{% endfor %} 
-	</ul>
-</article>
+<ul class= "image-list"> 
+	{% for entry in entries  %}
+	<li class= "image-entry">
+		{% include cover-image.html data = entry %} 
+	</li>
+	{% endfor %} 
+</ul> 
+
+<ul class= "random-access"> 
+	{% for entry in entries  %}
+	<li class= "random-access-entry">
+		<button class= "button" style= "background-image: url( '/assets/images/thumbs/{{ entry.src }}' )"></button>
+	</li>
+	{% endfor %} 
+</ul>
