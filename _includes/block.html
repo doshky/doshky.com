@@ -11,12 +11,5 @@
 {% endif %}
 
 {% if block.image %} 
-	{% assign image = block.image %}
-	<figure class= "cover-image">
-		<img src= "{{ image.src }}" /> 
-
-		{% if image.caption %}
-			<figcaption class= "caption">{{ image.caption }}</figcaption>
-		{% endif %}
-	</figure>
+	{% include cover-image.html data = block.image %} 
 {% endif %}

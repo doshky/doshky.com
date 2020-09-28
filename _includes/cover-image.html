@@ -1,0 +1,12 @@
+{% assign src = include.src %} 
+{% assign alt = include.alt %}
+{% assign caption = include.caption %}
+
+
+<figure class= "cover-image" style= "background-image: url( '{{ src }}' )"> 
+	<img src= "{{ src }}" alt= "{{ alt }}" /> 
+
+	{% if caption %}
+		<figcaption class= "caption">{{ caption }}</figcaption>
+	{% endif %}
+</figure>
