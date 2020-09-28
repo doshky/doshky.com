@@ -1,0 +1,22 @@
+{% assign block = include.data %}
+
+{% if block.heading %}
+	<h1 class= "heading">{{ block.heading }}</h1> 
+{% endif %} 
+
+{% if block.text %}
+	{% for paragraph in block.text %} 
+		<p class= "text-entry">{{ paragraph.text }}</p>
+	{% endfor %}
+{% endif %}
+
+{% if block.image %} 
+	{% assign image = block.image %}
+	<figure class= "cover-image">
+		<img src= "{{ image.src }}" /> 
+
+		{% if image.caption %}
+			<figcaption class= "caption">{{ image.caption }}</figcaption>
+		{% endif %}
+	</figure>
+{% endif %}
