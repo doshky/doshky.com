@@ -1,0 +1,10 @@
+{% assign field = include.data %} 
+
+
+<label for= "{{ field.name }}"> 
+	{% if field.isText %} 
+		<textarea name= "{{ field.name }}" placeholder= "{{ field.placeholder }}"></textarea>
+	{% else %} 
+		<input name= "{{ field.name }}" type= "{{ field.type }}" placeholder= "{{ field.placeholder }}" />
+	{% endif %}
+</label>

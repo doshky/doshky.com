@@ -1,0 +1,10 @@
+{% assign fields = include.data %} 
+
+
+<form class= "send-message"> 
+	{% for field in fields %} 
+		{% include field.html data = field %}
+	{% endfor %} 
+
+	<button name= "submit" type= "submit">Send</button> 
+</form>
