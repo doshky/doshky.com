@@ -1,0 +1,80 @@
+html, 
+body { 
+	min-height: 100%; 
+}
+
+body { 
+	font-family: Arial; 
+	font-size: 14px;  
+	color: var( --text-color ); 
+} 
+
+/* .page { 
+	min-height: 100%; 
+}  */
+
+.header { 
+	box-sizing: border-box; 
+	width: 20%; height: 100%; 
+	position: absolute; z-index: 3; 
+	left: 0; 
+	background-color: var( --foreground-color ); 
+	
+} 
+
+.heading { 
+	font-family: ArialBlack; 
+	margin-bottom: 0.25em; 
+
+} 
+
+.section-heading { 
+	font-size: 2.5rem; 
+	/* text-transform: uppercase; */
+
+} 
+
+.text-entry { 
+	line-height: 1.2; 
+
+}
+
+.text-entry:not( :last-of-type ) { 
+	margin-bottom: 0.5em; 
+}
+
+.main-nav { 
+	margin-bottom: 5rem; 
+	
+} 
+
+.header, 
+.section-set .section { 	
+	padding-top: 5rem; 
+	
+}
+
+.section-set { 
+	margin-left: 50%; 
+	padding-left: 4rem;  
+	position: absolute; z-index: 2; 
+	left: 0; right: 0; top: 0; bottom: 0; 
+	background-color: var( --foreground-color ); 
+}  
+
+.contact:not( .nav-button ) { 
+	display: none; 
+
+}
+
+.gallery { 
+	position: absolute; z-index: 1; 
+	left: 0; right: 0; top: 0; bottom: 0; 
+	background-color: var( --background-color ); 
+}
+
+.footer { 
+	display: none; 
+	position: absolute; left: 0; top: 0; 
+
+}
