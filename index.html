@@ -3,7 +3,9 @@ layout: page
 --- 
 
 <section class= "page-set"> 
-	<article class= "section work">
+	<button class= "open-gallery-button">Open Gallery</button> 
+
+	<article class= "section work current"> 
 		{% include section.html data = site.data.gallery.head %} 	
 	</article> 
 
@@ -22,5 +24,5 @@ layout: page
 </section>
 
 <section class= "section gallery">
-	{% include gallery.html data = site.data.gallery.body %} 	
+	{% include gallery.html data = site.data.gallery.body %} 
 </section>

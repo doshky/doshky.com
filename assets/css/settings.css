@@ -1,5 +1,6 @@
 
 :root { 
+	--header-margin-top: 5rem; 
 	--id-height: 2rem; 
 
 	--nav-button-padding-x: 0.5rem; 
@@ -8,6 +9,10 @@
 	
 	--text-font-family: Arial; 
 	--heading-font-family: "Impact"; 
+	--icon-font-family: "IonIcons"; 
+	--icon-base-font-size: 1.2rem; 
+	--icon-open-code: ""; 
+	--icon-close-code: ""; 
 
 	--base-font-size: 14px; 
 	--text-font-size: 1rem; 
