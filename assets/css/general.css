@@ -40,7 +40,7 @@ body {
 }
 
 .id { 
-	/* height: var( --header-height );  */
+	/* height: var( --id-height );  */
 	/* margin-right: 4rem;  */ 
 	text-align: center; 
 
@@ -65,7 +65,8 @@ body {
 }
 
 .main-nav { 
-	margin-bottom: 5rem;  
+	margin-bottom: 5rem; 
+	margin-left: calc( -1 * var( --nav-button-padding-x ) ); 
 	
 } 
 
@@ -80,7 +81,8 @@ body {
 }
 
 .main-nav .nav-button { 
-	height: var( --header-height ); 
+	height: var( --id-height ); 
+	padding-left: var( --nav-button-padding-x ); padding-right: var( --nav-button-padding-x ); 
 	border: none; 
 	background-color: transparent; 
 	color: inherit; 
@@ -111,7 +113,7 @@ body {
 
 .header .name, 
 .main-nav .nav-button { 	
-	height: var( --heading-height ); line-height: var( --header-height ); 	
+	height: var( --id-height ); line-height: var( --id-height ); 	
 	
 } 
 

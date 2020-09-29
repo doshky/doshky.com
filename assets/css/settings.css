@@ -1,6 +1,8 @@
 
 :root { 
-	--header-height: 2rem; 
+	--id-height: 2rem; 
+
+	--nav-button-padding-x: 0.5rem; 
 	
 	--text-font-family: Arial; 
 	--heading-font-family: "Impact"; 
