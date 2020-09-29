@@ -1,7 +1,9 @@
 
 :root { 
+	--header-height: 2rem; 
+	
 	--text-font-family: Arial; 
-	--heading-font-family: "Georgia"; 
+	--heading-font-family: "Impact"; 
 
 	--base-font-size: 14px; 
 	--text-font-size: 1rem; 
