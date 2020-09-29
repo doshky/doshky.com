@@ -23,7 +23,7 @@ body {
 } 
 
 .heading { 
-	font-family: ArialBlack; 
+	font-family: var( --heading-font-family ); 
 	margin-bottom: 0.25em; 
 
 } 
@@ -44,9 +44,42 @@ body {
 }
 
 .main-nav { 
-	margin-bottom: 5rem; 
+	margin-bottom: 5rem;  
 	
 } 
+
+.main-nav .usability-heading { 
+	display: none; 
+
+} 
+
+.main-nav .nav-entry-list { 
+	display: flex; flex-direction: row; 
+
+}
+
+.main-nav .nav-button { 
+	border: none; 
+	background-color: transparent; 
+	color: inherit; 
+	cursor: pointer;   
+
+} 
+
+.main-nav .nav-button:after { 
+	display: block; 
+	width: 75%; height: 2px; 	
+	margin-top: 0.2rem; 
+	content: ""; 
+	background-color: var( --background-color ); 
+	opacity: 0; 
+
+} 
+
+.main-nav .nav-entry:nth-child( 1 ) .nav-button:after { 
+	opacity: 1; 
+
+}
 
 .header, 
 .section-set .section { 	
