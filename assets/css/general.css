@@ -166,7 +166,7 @@ button {
 
 }
 
-.contact:not( .nav-button ) { 
+.about, .contact { 
 	display: none; 
 
 }
