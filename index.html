@@ -7,7 +7,10 @@ layout: page
 </section> 
 
 <section class= "section contact">
-	{% include block.html data = site.data.contact %} 	
+	{% assign contact = site.data.contact %}
+
+	{% include block.html data = contact.head %} 	
+	{% include send-message.html data = contact.sendMessage %} 
 </section> 
 
 <section class= "section gallery">

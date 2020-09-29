@@ -1,0 +1,16 @@
+{% assign section = include.data %}
+
+
+{% if section.heading %}
+	<h1 class= "heading">{{ section.heading }}</h1> 
+{% endif %} 
+
+{% if section.text %}
+	{% for paragraph in section.text %} 
+		<p class= "text-entry">{{ paragraph.text }}</p>
+	{% endfor %}
+{% endif %}
+
+{% if section.image %} 
+	{% include cover-image.html data = section.image %} 
+{% endif %}
