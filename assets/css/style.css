@@ -8,11 +8,14 @@ body {
 	left: 0; right: 0; top: 0; bottom: 0; 
 }  */
 
-.page { 
+/* .page { 
 	min-height: 100%; 
-} 
+}  */
 
 .header { 
+	width: 10rem; height: 100%; 
+	position: absolute; left: 0; 
+	background-color: #555; 
 	
 } 
 
@@ -20,17 +23,25 @@ body {
 	
 } 
 
-/* .page-set { 
-	position: absolute; left: -10000px; 
+.page-set { 
+	padding-left: 50%; 
+	position: absolute; z-index: 2; 
+	left: 0; right: 0; top: 0; bottom: 0; 
 	background-color: #999; 
-} */
+} 
+
+.page-set .section { 	
+	
+}
 
 .gallery { 
-	position: absolute; left: 0; right: 0; top: 0; bottom: 0; 
-	background-color: #555; 
+	position: absolute; z-index: 1; 
+	left: 0; right: 0; top: 0; bottom: 0; 
+	background-color: #CCC; 
 }
 
 .footer { 
+	display: none; 
 	position: absolute; left: 0; top: 0; 
 
 }
