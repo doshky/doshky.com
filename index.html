@@ -2,16 +2,18 @@
 layout: page 
 --- 
 
-<section class= "section about">
-	{% include block.html data = site.data.about %} 	
-</section> 
+<section class= "page-set">
+	<article class= "section about">
+		{% include block.html data = site.data.about %} 	
+	</article> 
+	
+	<article class= "section contact">
+		{% assign contact = site.data.contact %}
 
-<section class= "section contact">
-	{% assign contact = site.data.contact %}
-
-	{% include block.html data = contact.head %} 	
-	{% include send-message.html data = contact.sendMessage %} 
-</section> 
+		{% include block.html data = contact.head %} 	
+		{% include send-message.html data = contact.sendMessage %} 
+	</article> 
+</section>
 
 <section class= "section gallery">
 	{% include gallery.html data = site.data.gallery %} 	
