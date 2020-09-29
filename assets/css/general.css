@@ -136,6 +136,17 @@ body {
 	position: absolute; z-index: 1; 
 	left: 0; right: 0; top: 0; bottom: 0; 
 	background-color: var( --background-color ); 
+} 
+
+.gallery .random-access { 
+	position: absolute; z-index: 4; left: 0; top: 0; 
+
+}
+
+.gallery .random-access-entry { 
+	width: 5rem; padding-top: 5rem; 
+	background-color: brown; 
+
 }
 
 .footer { 
