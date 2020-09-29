@@ -1,5 +1,5 @@
 ( function() { 
 	$( '.main-nav' )
-		.prependTo( '.page-content .section' ); 
+		.prependTo( '.page-set .text-content' ); 
 
 }() )

@@ -1,6 +1,7 @@
 {% assign section = include.data %}
 
 
+<section class= "text-content">
 {% if section.heading %}
 	<h1 class= "heading section-heading">{{ section.heading }}</h1> 
 {% endif %} 
@@ -10,6 +11,7 @@
 		<p class= "text-entry">{{ paragraph.text }}</p>
 	{% endfor %}
 {% endif %}
+</section> 
 
 {% if section.image %} 
 	{% include cover-image.html data = section.image %} 

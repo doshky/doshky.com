@@ -11,16 +11,7 @@ body {
 
 /* .page { 
 	min-height: 100%; 
-}  */
-
-.header { 
-	box-sizing: border-box; 
-	width: 20%; height: 100%; 
-	position: absolute; z-index: 3; 
-	left: 0; 
-	background-color: var( --foreground-color ); 
-	
-} 
+}  */ 
 
 .heading { 
 	font-family: var( --heading-font-family ); 
@@ -43,16 +34,20 @@ body {
 	margin-bottom: 0.5em; 
 } 
 
+.cover-image { 
+	background-color: var( --background-color ); 
+
+}
+
 .id { 
-	height: var( --header-height ); 
+	/* height: var( --header-height );  */
 	/* margin-right: 4rem;  */ 
 	text-align: center; 
 
 }
 
 .id .name { 
-	display: inline-block; 
-	height: var( --header-height ); line-height: var( --header-height ); 
+	display: inline-block;  
 	margin-bottom: 0.5em; 
 	padding-left: 0.5em; padding-right: 0.5em; 
 	border: 1px solid; 
@@ -106,24 +101,53 @@ body {
 .main-nav .nav-entry:nth-child( 1 ) .nav-button:after { 
 	opacity: 1; 
 
-}
+} 
 
 .header, 
-.section-set .section { 	
+.page-set .section { 
 	padding-top: 5rem; 
+
+}
+
+.header .name, 
+.main-nav .nav-button { 	
+	height: var( --heading-height ); line-height: var( --header-height ); 	
+	
+} 
+
+.section-set { 
+	/* margin-left: 50%;  
+	position: absolute; z-index: 2; 
+	left: 0; right: 0; top: 0; bottom: 0; 
+	background-color: var( --foreground-color );  */
+} 
+
+.page-set .section { 
+	padding-left: 50%; 
+	/* max-width: 40rem; 
+	padding-left: 4rem; padding-right: 4rem;  */
+
+} 
+
+.header { 
+	box-sizing: border-box; 
+	width: 20%; height: 100%; 
+	position: absolute; z-index: 3;  
+	left: 0; top: 0; 
+	background-color: var( --foreground-color ); 
 	
 }
 
-.section-set {
-	margin-left: 50%;  
-	position: absolute; z-index: 2; 
-	left: 0; right: 0; top: 0; bottom: 0; 
-	background-color: var( --foreground-color ); 
-} 
-
-.section-set .section { 
+.section .text-content { 
 	max-width: 40rem; 
 	padding-left: 4rem; padding-right: 4rem; 
+
+} 
+
+.section .cover-image { 
+	width: 30%; height: 100%; 
+	position: absolute; left: 20%; right: 50%; top: 0; 
+	background-color: var( --background-color ); 
 
 }
 
@@ -133,17 +157,26 @@ body {
 }
 
 .gallery { 
+	display: none; 
 	position: absolute; z-index: 1; 
 	left: 0; right: 0; top: 0; bottom: 0; 
 	background-color: var( --background-color ); 
 } 
 
-.gallery .random-access { 
-	position: absolute; z-index: 4; left: 0; top: 0; 
+.random-access { 
+	display: none; 
 
 }
 
-.gallery .random-access-entry { 
+.gallery .random-access { 
+	display: none; 
+	width: 70rem; height: 10rem; 
+	position: absolute; z-index: 10; left: 0; top: 0; 
+	background-color: brown; 
+
+}
+
+.gallery .random-access-entry {  
 	width: 5rem; padding-top: 5rem; 
 	background-color: brown; 
 
