@@ -3,13 +3,15 @@
 	--id-height: 2rem; 
 
 	--nav-button-padding-x: 0.5rem; 
+
+	--heading-margin-bottom: 0.4em; 
 	
 	--text-font-family: Arial; 
 	--heading-font-family: "Impact"; 
 
 	--base-font-size: 14px; 
 	--text-font-size: 1rem; 
-	--heading-font-size: 2rem; 
+	--section-heading-font-size: 1.85rem; 
 
 	--text-color: rgba( 255, 0, 0, 0.85 ); 
 	--foreground-color: rgba( 255, 255, 255, 0.4 ); 
