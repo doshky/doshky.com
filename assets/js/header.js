@@ -1,5 +1,5 @@
 ( function() { 
 	$( '.header' )
-		.prependTo( '.page-set' ); 
+		.prependTo( '.page-content' ); 
 
 }() )

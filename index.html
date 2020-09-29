@@ -2,19 +2,21 @@
 layout: page 
 --- 
 
-<section class= "page-set">
-	<article class= "section about">
-		{% include section.html data = site.data.about %} 	
-	</article> 
+<section class= "page-content"> 
+	<section class= "section-set">
+		<article class= "section about">
+			{% include section.html data = site.data.about %} 	
+		</article> 
 
-	<article class= "section contact">
-		{% assign contact = site.data.contact %}
-		{% include section.html data = contact.head %} 
-		
-		<section class= "body">
-			{% include send-message.html data = contact.body.fields %} 
-		</section> 
-	</article> 
+		<article class= "section contact">
+			{% assign contact = site.data.contact %}
+			{% include section.html data = contact.head %} 
+
+			<section class= "body">
+				{% include send-message.html data = contact.body.fields %} 
+			</section> 
+		</article> 
+	</section> 
 </section>
 
 <section class= "section gallery">

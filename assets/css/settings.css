@@ -1,0 +1,12 @@
+
+:root { 
+	--text-font-family: Arial; 
+	--heading-font-family: ArialBlack; 
+
+	--base-font-size: 14px; 
+	--text-font-size: 1rem; 
+	--heading-font-size: 2rem; 
+
+	--text-color: rgba( 208, 140, 96 ); 
+	--background-color: rgba( 16, 0, 104, 0.7 ); 
+}
