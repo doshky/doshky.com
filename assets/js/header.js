@@ -1,5 +1,5 @@
-( function() { 
-	$( '.header' )
-		.prependTo( '.page-set .section' ); 
+// ( function() { 
+// 	$( '.header' )
+// 		.prependTo( '.page-set .section' ); 
 
-}() )
+// }() )

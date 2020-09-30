@@ -9,6 +9,11 @@ body {
 	color: var( --text-color ); 
 } 
 
+.page-set { 
+	display: none; 
+
+}
+
 button { 
 	border: none; 
 

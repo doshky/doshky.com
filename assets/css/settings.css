@@ -18,7 +18,7 @@
 	--text-font-size: 1rem; 
 	--section-heading-font-size: 1.85rem; 
 
-	--text-color: rgba( 255, 0, 0, 0.85 ); 
+	--text-color: rgb(82, 64, 30); 
 	--foreground-color: rgba( 255, 255, 255, 0.4 ); 
 	--background-color: rgba( 255, 0, 0, 0.85 ); 
 }
