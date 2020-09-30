@@ -166,10 +166,20 @@ button {
 
 }
 
-.about, .contact { 
+.page-set .section { 
 	display: none; 
 
 } 
+
+.page-set .current { 
+	display: block; 
+
+} 
+
+/* .page-set .current .nav-button:after { 
+	opacity: 1; 
+
+} */ 
 
 .open-gallery-button { 
 	height: var( --id-height ); 
