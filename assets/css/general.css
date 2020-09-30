@@ -61,7 +61,8 @@ button {
 	display: inline-block;  
 	margin-bottom: 0.5em; 
 	padding-left: 0.5em; padding-right: 0.5em; 
-	border: 1px solid; 
+	/* border: 1px solid;  */
+	background-color: var( --background-color ); 
 	font-family: var( --heading-font-family ); 
 	font-size: 1.2em; 
 	text-transform: uppercase; 
@@ -151,11 +152,12 @@ button {
 } 
 
 .header { 
+	/* display: flex; flex-direction: column; justify-content: center;  */
 	box-sizing: border-box; 
 	min-width: 20%; height: 100%; 
 	position: absolute; z-index: 3;  
 	left: 0; top: 0; 
-	background-color: var( --foreground-color ); 
+	/* background-color: var( --foreground-color );  */
 	
 }
 
