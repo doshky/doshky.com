@@ -93,7 +93,7 @@ button {
 }
 
 .main-nav .nav-button { 
-	height: var( --id-height ); 
+	/* height: var( --id-height );  */
 	padding-left: var( --nav-button-padding-x ); padding-right: var( --nav-button-padding-x ); 
 	border: none; 
 	background-color: transparent; 
@@ -125,6 +125,7 @@ button {
 
 .header .name, 
 .main-nav .nav-button { 	
+	display: flex; flex-direction: column; justify-content: center; 
 	height: var( --id-height ); line-height: var( --id-height ); 	
 	
 } 
