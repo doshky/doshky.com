@@ -5,7 +5,7 @@ layout: page
 <section class= "page-set"> 
 	<button class= "open-gallery-button">Open Gallery</button> 
 
-	<article class= "section work current"> 
+	<article class= "section work section-current"> 
 		{% include section.html data = site.data.gallery.head %} 	
 	</article> 
 
@@ -13,7 +13,7 @@ layout: page
 		{% include section.html data = site.data.about %} 	
 	</article> 
 
-	<article class= "section contact">
+	<article class= "section contact"> 
 		{% assign contact = site.data.contact %}
 		{% include section.html data = contact.head %} 
 
