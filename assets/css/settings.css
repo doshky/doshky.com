@@ -1,5 +1,8 @@
 
 :root { 
+	/** 
+	 * Layout 
+	 */
 	--header-margin-top: 5rem; 
 	--id-height: 2rem; 
 
@@ -7,6 +10,10 @@
 
 	--heading-margin-bottom: 0.4em; 
 	
+	/**
+	 * Font 
+	 */
+
 	--text-font-family: Arial; 
 	--heading-font-family: "Impact"; 
 	--icon-font-family: "IonIcons"; 
@@ -17,6 +24,10 @@
 	--base-font-size: 14px; 
 	--text-font-size: 1rem; 
 	--section-heading-font-size: 1.85rem; 
+
+	/** 
+	 * Color 
+	 */
 
 	--text-color: rgba( 255, 255, 255, 0.75 ); 	
 	--foreground-color: rgba( 255, 255, 255, 0.4 ); 

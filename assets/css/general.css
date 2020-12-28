@@ -13,8 +13,9 @@
 } 
 
 .nav-entry-list > * { 
-	width: var( --column-width ); 
-	margin-right: var( --column-gutter-x ); margin-top: var( --column-gutter-y ); 
+	/* width: var( --column-width );  */
+	margin-right: var( --column-gutter-x ); 
+	/* margin-top: var( --column-gutter-y );  */ 
 
 } 
 
@@ -29,14 +30,16 @@ body {
 	color: var( --text-color ); 
 } 
 
-.page-set { 
+/* .page-set { 
 	display: none; 
 
-}
+} */
 
 button { 
 	display: block; 
 	border: none; 
+	background-color: transparent; 
+	color: var( --foreground-color );  
 
 }
 
@@ -65,7 +68,7 @@ button {
 	margin-bottom: 0.5em; 
 } 
 
-.cover-image { 
+.id .cover-image { 
 	/* display: none;  */
 	/* width: 100%; height: 100%;  */
 	padding-top: 100%; 
@@ -117,21 +120,21 @@ button {
 }
 
 .main-nav .nav-entry-list { 
-	--column-count: 1;
+	/* --column-count: 1;
 	--column-gutter-x: 0rem; 
-	--column-gutter-y: 0.2rem;	
+	--column-gutter-y: 0.2rem;	 */
 
-	margin-bottom: 5rem; 
-	/* margin-left: calc( -1 * var( --nav-button-padding-x ) );  */
+	margin-bottom: 1.25rem; 
+	margin-left: calc( -1 * var( --nav-button-padding-x ) ); 
 	
 } 
 
-.nav-entry-list > :nth-child( n ) { 
+.nav-entry-list > :last-child { 
 	margin-right: 0; 
 
 } 
 
-.nav-entry-list > :nth-child( 1 - n ) { 
+.nav-entry { 
 	margin-top: 0; 
 
 }
@@ -141,16 +144,16 @@ button {
 
 } 
 
-.main-nav .nav-button {  
+/* .main-nav .nav-button {  
 	width: 100%; 
-	/* height: var( --id-height );  */
+	height: var( --id-height ); 
 	padding-left: var( --nav-button-padding-x ); padding-right: var( --nav-button-padding-x ); 
 	border: none; 
 	background-color: var( --background-color ); 
 	color: inherit; 
 	cursor: pointer;   
 
-} 
+}  */
 
 /* .main-nav .nav-button:after { 
 	display: block; 
@@ -192,13 +195,14 @@ button {
 	/* margin-left: 50%;   */ 
 	position: absolute; z-index: 2; 
 	left: 0; right: 0; top: 0; bottom: 0; 
-	background-color: var( --foreground-color ); 
+	background-color: var( --background-color ); 
 } 
 
 .page-set .section { 
 	padding-left: 50%; 
 	/* max-width: 40rem; 
 	padding-left: 4rem; padding-right: 4rem;  */
+	/* background-color: var( --background-color );  */
 
 } 
 

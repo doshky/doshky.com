@@ -1,5 +1,5 @@
-// ( function() { 
-// 	$( '.main-nav' )
-// 		.prependTo( '.page-set .text-content' ); 
+( function() { 
+	$( '.main-nav' )
+		.prependTo( '.page-set .text-content' ); 
 
-// }() )
+}() ) 
