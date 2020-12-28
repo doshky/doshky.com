@@ -1,5 +1,5 @@
-const sectionControl = ( function( work, about, contact ) { 
-	let currentSection = work; 
+const sectionControl = ( function( sections ) { 
+	let currentSection = sections.eq( 0 ); 
 
 	function openSection( section ) { 
 		closeSection( currentSection ); 
@@ -12,7 +12,7 @@ const sectionControl = ( function( work, about, contact ) {
 	} 
 
 	function closeSections() { 
-		[ work, about, contact ].forEach( function( section ) { 
+		sections.forEach( function( section ) { 
 			closeSection( section ); 
 		} ); 
 	} 
@@ -28,4 +28,4 @@ const sectionControl = ( function( work, about, contact ) {
 		closeSections
 	}; 
 
-}( $( '.work' ), $( '.about' ), $( '.contact' ) ) ); 
+}( $( '.page-set .section' ) ) ); 
