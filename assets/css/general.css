@@ -70,8 +70,8 @@ button {
 
 .id .cover-image { 
 	/* display: none;  */
-	/* width: 100%; height: 100%;  */
-	padding-top: 100%; 
+	/* width: 100%; height: 100%;  */ 
+	/* padding-top: 4rem;  */ 
 	/* position: absolute; left: 0; top: 0;  */
 	background-color: var( --background-color ); 
 	background-position: center center; background-size: cover; 
@@ -90,7 +90,7 @@ button {
 }
 
 .id { 
-	/* width: 4rem; height: 10rem;  */ 
+	width: 8rem; height: 4rem;  
 	/* width: 100%;  */
 	/* padding-left: 4rem; padding-right: 4rem;  */
 	/* position: relative; z-index: 2;  */
@@ -190,16 +190,19 @@ button {
 } */ 
 
 .page-set { 
+	box-sizing: border-box; 
 	/* display: none;  */
-	width: 100%; height: 100%; 
+	/* width: 100%;  */
+	height: 100%; 
+	/* padding-left: 50%;  */
 	/* margin-left: 50%;   */ 
 	position: absolute; z-index: 2; 
-	left: 0; right: 0; top: 0; bottom: 0; 
+	left: 50%; right: 0; top: 0; bottom: 0; 
 	background-color: var( --background-color ); 
 } 
 
 .page-set .section { 
-	padding-left: 50%; 
+	/* padding-left: 50%;  */ 
 	/* max-width: 40rem; 
 	padding-left: 4rem; padding-right: 4rem;  */
 	/* background-color: var( --background-color );  */
@@ -209,11 +212,13 @@ button {
 .header { 
 	/* display: flex; flex-direction: column; align-items: center;  */ 
 	box-sizing: border-box; 
-	width: 20%; min-width: 8rem; max-width: 10rem; height: 100%; 
+	width: 25%; min-width: 8rem; 
+	/* max-width: 10rem;  */ 
+	height: 100%; 
 	padding-left: 1.25rem; padding-right: 1.25rem; 
 	position: absolute; z-index: 3;  
 	left: 0; top: 0; 
-	/* background-color: var( --foreground-color );  */
+	background-color: var( --background-color ); 
 	
 }
 
@@ -224,8 +229,8 @@ button {
 } 
 
 .section .cover-image { 
-	width: 30%; height: 100%; 
-	position: absolute; left: 20%; right: 50%; top: 0; 
+	width: 50%; height: 100%; 
+	position: absolute; right: 100%; top: 0; 
 	background-color: var( --background-color ); 
 
 }
@@ -244,12 +249,18 @@ button {
 	opacity: 1; 
 
 } */ 
+ 
+body.ui-hidden .page-set { 
+	
 
-.open-gallery-button { 
+}
+
+.switch-gallery-button { 
 	height: var( --id-height ); 
 	margin-top: var( --header-margin-top ); 
 	position: absolute; z-index: 4; 
-	right: 50%; margin-right: 2rem; 
+	right: 100%; 
+	white-space: nowrap; 
 
 }
 

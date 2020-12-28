@@ -1,17 +1,21 @@
 ( function() { 
+	let galleryOpen = false; 
 
 	$( '.page-set' ).on( 'click', function( e ) { 
 		const target = $( e.target ); 
-		const openGalleryButton = $( '.open-gallery-button' ); 
+		const switchGalleryButton = $( '.switch-gallery-button' ); 
 
-		if ( target.is( openGalleryButton ) ) { 
-
-			
+		if ( !target.is( switchGalleryButton ) ) { 
+			return; 
 		} 
 
-		 
-	
-			 
+		if ( !galleryOpen ) { 
+			sectionControl.openGallery();  
+		} else { 
+			sectionControl.closeGallery(); 
+		} 
+
+		galleryOpen = !galleryOpen; 
 
 	} ); 
 
