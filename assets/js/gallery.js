@@ -21,6 +21,24 @@
 // }() ) 
 
 ( function() { 
+	// $( '#paintings-gallery' ).nanogallery2( { 
+	// 	thumbnailWidth: 200, 
+	// 	thumbnailHeight: 200, 
+	// 	openOnStart: "74273925_2574521065964230_343086875277262848_n.jpg" 
+
+	// } ); 
+
+	$( '.fotorama' ).fotorama( { 
+		width: '100%', 
+		height: '100%', 
+		minheight: '100%', 
+		nav: 'thumbs', 
+		thumbwidth: 200, 
+		thumbheight: 120, 
+		thumbmargin: 4, 
+		fit: 'cover', 
+		arrows: false 
+	} );
 	
 
 }() )
