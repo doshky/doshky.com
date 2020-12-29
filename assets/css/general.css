@@ -168,7 +168,19 @@ button {
 .main-nav .nav-entry:nth-child( 1 ) .nav-button:after { 
 	opacity: 1; 
 
-}  */
+}  */ 
+
+body, 
+.page { 
+	overflow: hidden; 
+
+}
+
+.header, 
+.page-set { 
+	background-color: rgba( 255, 255, 255, 0.2 ); 
+
+}
 
 .header, 
 .page-set .section { 
@@ -198,7 +210,8 @@ button {
 	/* margin-left: 50%;   */ 
 	position: absolute; z-index: 2; 
 	left: 50%; right: 0; top: 0; bottom: 0; 
-	background-color: var( --background-color ); 
+	transform: translateX( 100% ); 
+	/* background-color: var( --background-color );  */ 
 } 
 
 .page-set .section { 
@@ -218,7 +231,8 @@ button {
 	padding-left: 1.25rem; padding-right: 1.25rem; 
 	position: absolute; z-index: 3;  
 	left: 0; top: 0; 
-	background-color: var( --background-color ); 
+	transform: translateX( -100% ); 
+	/* background-color: var( --background-color );  */ 
 	
 }
 
@@ -229,6 +243,7 @@ button {
 } 
 
 .section .cover-image { 
+	display: none; 
 	width: 50%; height: 100%; 
 	position: absolute; right: 100%; top: 0; 
 	background-color: var( --background-color ); 
@@ -245,27 +260,143 @@ button {
 
 } 
 
+.header, 
+.page-set { 
+	transition-property: transform; 
+
+} 
+
+body.ui-visible .header, 
+body.ui-visible .page-set { 
+	transform: translateX( 0 ); 
+	 
+}
+
+.header { 
+	transition-duration: 0.2s; transition-delay: 0.175s; 
+
+} 
+
+.page-set { 
+	transition-duration: 0.4s; 
+	 
+
+}
+
 /* .page-set .current .nav-button:after { 
 	opacity: 1; 
 
 } */ 
- 
-body.ui-hidden .page-set { 
-	
+
+/* .header { 
+	animation-duration: 0.2s; animation-delay: 0.175s; 
+
+} 
+
+.page-set { 
+	animation-duration: 0.4s; animation-delay: 0s; 
 
 }
+
+.header, 
+.page-set { 
+	animation-fill-mode: forwards; 
+
+} 
+
+body.ui-hidden .header { 
+	animation-name: slide-out-left;  
+
+} 
+ 
+body.ui-hidden .page-set { 
+	animation-name: slide-out-right;  
+
+} 
+
+body.ui-visible .header { 
+	animation-name: slide-in-left; 
+
+} 
+
+body.ui-visible .page-set { 
+	animation-name: slide-in-right;  
+
+}  */
+
+/* @keyframes slide-out-right { 
+	0% { 
+		transform: translateX( 0 ); 
+
+	} 
+
+	100% { 
+		transform: translateX( 100% ); 
+
+	}
+
+} 
+
+@keyframes slide-out-left { 
+	0% { 
+		transform: translateX( 0 ); 
+
+	} 
+
+	100% { 
+		transform: translateX( -100% ); 
+
+	}
+
+} 
+
+@keyframes slide-in-right { 
+	0% { 
+		transform: translateX( 100% ); 
+
+	}
+
+	100% { 
+		transform: translateX( 0 ); 
+
+	}
+
+} 
+
+@keyframes slide-in-left { 
+	0% { 
+		transform: translateX( -100% ); 
+
+	}
+
+	100% { 
+		transform: translateX( 0 ); 
+
+	}
+
+} 
+
+
+
+@keyframes hide { 
+	100% { 
+		opacity: 0; 
+
+	}
+
+}  */
 
 .switch-gallery-button { 
 	height: var( --id-height ); 
 	margin-top: var( --header-margin-top ); 
 	position: absolute; z-index: 4; 
-	right: 100%; 
+	right: 100%; margin-right: 2rem; 
 	white-space: nowrap; 
 
 }
 
 .gallery { 
-	display: none; 
+	/* display: none;  */ 
 	position: absolute; z-index: 1; 
 	left: 0; right: 0; top: 0; bottom: 0; 
 	background-color: var( --background-color ); 
