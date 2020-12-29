@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/doshky/doshky.com/issues"
   },
-  "homepage": "https://github.com/doshky/doshky.com#readme"
+  "homepage": "https://github.com/doshky/doshky.com#readme",
+  "dependencies": {
+    "nanogallery2": "^3.0.4"
+  }
 }
