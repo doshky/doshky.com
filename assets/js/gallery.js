@@ -38,7 +38,7 @@
 		thumbmargin: 4, 
 		fit: 'cover', 
 		arrows: false 
-	} );
+	} ); 
 	
 
 }() )
