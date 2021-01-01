@@ -1,11 +1,11 @@
 @font-face { 
 	font-family: IonIcons; 
-	src: "../assets/fonts/ionicons.ttf"; 
+	src: "../fonts/ionicons.ttf"; 
 
 } 
 
 @font-face { 
 	font-family: Impact; 
-	src: "../assets/fonts/impact.ttf"; 
+	src: "../fonts/impact.ttf"; 
 
 }
