@@ -7,6 +7,11 @@
 	--column-width: calc( ( 100% - var( --column-gutter-count ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
 } 
 
+.send-message { 
+	--field-height: 1.8rem; 
+
+}
+
 .nav-entry-list { 
 	display: flex; flex-direction: row; flex-wrap: wrap; 
 
@@ -37,10 +42,12 @@ body {
 
 button { 
 	display: block; 
+	/* padding: 0.7rem;  */
 	border: none; 
 	background-color: transparent; 
 	/* color: var( --foreground-color );   */
 	color: inherit; 
+	cursor: pointer;
 
 }
 
@@ -236,11 +243,18 @@ body,
 	transform: translateX( -100% ); 
 	/* background-color: var( --background-color );  */ 
 	
+} 
+
+.section .text-content, 
+.send-message { 
+	padding-left: 4rem; padding-right: 4rem;
+
 }
 
 .section .text-content { 
 	max-width: 40rem; 
-	padding-left: 4rem; padding-right: 4rem; 
+	margin-bottom: 1.4rem; 
+	/* padding-left: 4rem; padding-right: 4rem;  */ 
 
 } 
 
@@ -473,6 +487,27 @@ body.ui-visible .page-set {
 .ui-hidden .gallery:after { 
 	/* opacity: 0;  */
 	transform: translateY( -100% ); 
+
+}  
+
+input, 
+textarea { 
+	display: block; 
+	width: 14rem; 
+	margin-bottom: 0.4rem; 
+	border: 1px solid var( --text-color ); 
+	color: var( --text-color ); 
+	background-color: transparent; 
+
+} 
+
+input { 
+	height: var( --field-height ); 
+
+} 
+
+textarea { 
+	height: calc( 4 * var( --field-height ) ); 
 
 }
 
