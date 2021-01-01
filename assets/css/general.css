@@ -609,7 +609,33 @@ textarea {
 .ui-hidden .fotorama__nav-wrap { 
 	transform: translateY( 0 ); 
 
+} 
+
+.fotorama__active { 
+
+
 }
+
+.fotorama__thumb-border { 
+	display: none !important; 
+
+} 
+
+.fotorama__nav__frame { 
+	position: relative; 
+
+}
+
+.fotorama__thumb:after { 
+	box-sizing: border-box; 
+	display: block; 
+	position: absolute; left: 0; top: 0; right: 0; bottom: 0; 
+	border: 8px solid var( --overlay-color ); 
+	content: ""; 
+	
+
+
+} 
 
 .random-access { 
 	/* display: none;  */
