@@ -22,18 +22,6 @@
 
 } 
 
-@font-face { 
-	font-family: IonIcons; 
-	src: "/assets/fonts/ionicons.ttf"; 
-
-} 
-
-@font-face { 
-	font-family: Impact; 
-	src: "/assets/fonts/impact.ttf"; 
-
-}
-
 .nav-entry-list { 
 	display: flex; flex-direction: row; flex-wrap: wrap; 
 
