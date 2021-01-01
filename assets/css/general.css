@@ -62,11 +62,12 @@ button {
 
 } 
 
-button:focus { 
+button:focus, 
+button:active { 
 	border: none; 
 	outline: none; 
 
-}
+} 
 
 /* .page { 
 	min-height: 100%; 
