@@ -10,6 +10,11 @@
 .send-message { 
 	--field-height: 1.8rem; 
 
+} 
+
+.page-set { 
+	--button-height: 1.8rem; 
+
 }
 
 .nav-entry-list { 
@@ -42,6 +47,7 @@ body {
 
 button { 
 	display: block; 
+	height: var( --button-height ); line-height: var( --button-height ); 
 	/* padding: 0.7rem;  */
 	border: none; 
 	background-color: transparent; 
