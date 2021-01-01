@@ -60,6 +60,12 @@ button {
 	color: inherit; 
 	cursor: pointer;
 
+} 
+
+button:focus { 
+	border: none; 
+	outline: none; 
+
 }
 
 /* .page { 
