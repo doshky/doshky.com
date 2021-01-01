@@ -269,19 +269,55 @@ body,
 .page-set .section { 
 	/* display: none;  */ 
 	position: absolute; 
-	transform: translateY( 100px ); 
+	z-index: 1; 
+	/* transform: translateY( 100px );  */
 	opacity: 0; 
 
 } 
 
 .page-set .section.section-current { 
 	/* display: block;  */ 
-	/* opacity: 1;  */ 
+	opacity: 1;  
 	/* transform: translateY( 0 );  */
 	/* transition-property: transform, opacity; transition-duration: 0.2s; transition-delay: 0.2s, 0.175s;  */
-	animation-name: slide-up, display; animation-duration: 0.2s; animation-delay: 0.2s; animation-fill-mode: forwards; 
+	/* animation-name: slide-up, display; animation-duration: 0.2s; animation-delay: 0.2s; animation-fill-mode: forwards;  */
+	z-index: 2; 
 
 } 
+
+.section-current .text-content > *, 
+.section-current .body { 
+	/* position: absolute;  */ 
+	transform: translateY( 100px ); 
+	opacity: 0; 
+	animation-name: slide-up, display; animation-duration: 0.2s; animation-fill-mode: forwards;
+
+}
+
+.section-current .main-nav { 
+	animation-delay: 0.2s;
+
+} 
+
+.section-current .section-heading { 
+	animation-delay: 0.25s;
+	
+} 
+
+.section-current .text-entry:nth-of-type( 1 ) { 
+	animation-delay: 0.3s;
+	
+} 
+
+.section-current .text-entry:nth-of-type( 2 ) { 
+	animation-delay: 0.35s; 
+	
+} 
+
+.section-current .body { 
+	animation-delay: 0.4s; 
+
+}
 
 @keyframes slide-up { 
 	100% { 
