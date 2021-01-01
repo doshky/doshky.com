@@ -1,7 +1,7 @@
 ( function() { 
 	let galleryOpen = false; 
 
-	$( '.page-set' ).on( 'click', function( e ) { 
+	$( '.page' ).on( 'click', function( e ) { 
 		const target = $( e.target ); 
 		const switchGalleryButton = $( '.switch-gallery-button' ); 
 
@@ -18,6 +18,15 @@
 		galleryOpen = !galleryOpen; 
 
 	} ); 
+
+	// $( '.page-set' ).lightSlider( { 
+	// 	// controls: false 
+	// 	// mode: 'vertical' 
+	// 	vertical: true
+
+	// } ); 
+
+	
 
 	
 	

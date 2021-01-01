@@ -212,14 +212,15 @@ body,
 	position: absolute; z-index: 2; 
 	left: 50%; right: 0; top: 0; bottom: 0; 
 	transform: translateX( 100% ); 
-	/* background-color: var( --background-color );  */ 
+	background-color: var( --background-color ) !important;  
 } 
 
 .page-set .section { 
+	/* height: 100%;  */
 	/* padding-left: 50%;  */ 
 	/* max-width: 40rem; 
 	padding-left: 4rem; padding-right: 4rem;  */
-	/* background-color: var( --background-color );  */
+	background-color: var( --background-color ); 
 
 } 
 
@@ -252,14 +253,35 @@ body,
 }
 
 .page-set .section { 
-	display: none; 
+	/* display: none;  */ 
+	position: absolute; 
+	transform: translateY( 100px ); 
+	opacity: 0; 
 
 } 
 
 .page-set .section.section-current { 
-	display: block; 
+	/* display: block;  */ 
+	/* opacity: 1;  */ 
+	/* transform: translateY( 0 );  */
+	/* transition-property: transform, opacity; transition-duration: 0.2s; transition-delay: 0.2s, 0.175s;  */
+	animation-name: slide-up, display; animation-duration: 0.2s; animation-delay: 0.2s; animation-fill-mode: forwards; 
 
 } 
+
+@keyframes slide-up { 
+	100% { 
+		transform: translateY( 0 ); 
+	}
+
+} 
+
+@keyframes display { 
+	100% { 
+		opacity: 1; 
+	}
+
+}
 
 .header, 
 .page-set { 
@@ -393,7 +415,8 @@ body.ui-visible .page-set {
 	margin-top: var( --header-margin-top ); 
 	position: absolute; z-index: 4; 
 	left: auto; 
-	right: 100%; margin-right: 2rem; 
+	right: 100%; 
+	margin-right: 2rem; 
 	/* white-space: nowrap;  */
 	color: var( --background-color ); 
 	/* border: 1px solid;  */
