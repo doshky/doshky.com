@@ -484,7 +484,7 @@ body.ui-visible .page-set {
 .switch-gallery-button { 
 	display: block; 
 	width: var( --id-height ); height: var( --id-height ); 
-	transform: translateY( var( --header-margin-top ) ); 
+	margin-top: var( --header-margin-top ); 
 	position: absolute; z-index: 4; 
 	/* left: 20%; top: 0;  */ 
 	/* top: var( --header-margin-top );  */ 
@@ -509,7 +509,7 @@ body.ui-visible .page-set {
 	font-family: var( --icon-font-family ); 
 	font-size: 1.45rem; 
 	text-indent: 0; 
-	transition: transform 0.2s 0.45s; 
+	/* transition: transform 0.2s 0.45s;  */ 
 
 } 
 
@@ -655,18 +655,18 @@ textarea {
 	}
 
 	.switch-gallery-button { 
-		/* margin-top: 0;  */ 
 		margin-right: 0; margin-bottom: 0.8rem; 
-		left: 0; bottom: 50%; right: auto; 
-		transform: translateX( var( --text-padding-x ) );   
+		left: 0; top: auto; bottom: 50%; right: auto; 
+		margin-left: var( --text-padding-x );    
+		/* border-top: 1.2rem solid transparent;  */
 		/* transform: translateY( 0 );   */
-		transition: transform 0.2s; 
+		transition: bottom 0.2s 0.4s; 
 
 	} 
 
-	.ui-hidden .switch-gallery-button { 
-		right: auto; 
-		transform: translateX( 0 ); 
+	.ui-hidden .switch-gallery-button {  
+		right: auto; bottom: 100%; transform: translateY( 100% );   
+		border-top: 1.2rem solid transparent; 
 
 	}
 
