@@ -495,14 +495,14 @@ body.ui-visible .page-set {
 	/* border: 1px solid;  */
 	/* background-color: var( --background-color );  */
 	text-indent: -10000px; 
-	transition: right 0.25s 0.4s; 
+	transition-property: right; transition-delay: 0.125s; transition-duration: 0.4s; 
 
 } 
 
 .switch-gallery-button:before { 
 	display: block; 
 	/* width: 1.5rem; height: 1.5rem;  */
-	position: absolute; 
+	position: absolute; left: 0; top: 0; 
 	/* border: 1px solid;  */
 	color: inherit; 
 	content: "\f133"; 
