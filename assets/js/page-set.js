@@ -1,7 +1,7 @@
 ( function() { 
 	let galleryOpen = false; 
 
-	$( '.page' ).on( 'click', function( e ) { 
+	$( '.gallery' ).on( 'click', function( e ) { 
 		const target = $( e.target ); 
 		const switchGalleryButton = $( '.switch-gallery-button' ); 
 
