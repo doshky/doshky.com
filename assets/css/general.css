@@ -490,11 +490,11 @@ body.ui-visible .page-set {
 	/* top: var( --header-margin-top );  */ 
 	right: 50%;  margin-right: 1.75rem; 
 	/* margin-left: 80%;  */
-	/* white-space: nowrap;  */
+	white-space: nowrap; 
 	color: var( --background-color ); 
 	/* border: 1px solid;  */
 	/* background-color: var( --background-color );  */
-	text-indent: -10000px; 
+	/* text-indent: -10000px;  */
 	transition-property: right; transition-delay: 0.125s; transition-duration: 0.4s; 
 
 } 
