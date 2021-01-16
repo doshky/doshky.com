@@ -6,7 +6,7 @@
 .page { 
 	--button-height: 1.8rem;  
 
-}
+} 
 
 .nav-entry-list { 
 	--column-count: 2; 
@@ -151,6 +151,11 @@ button:hover {
 
 } 
 
+.main-nav { 
+	display: none; 
+
+}
+
 .main-nav .nav-entry-list, 
 .switch-gallery-button { 
 	margin-left: calc( -1 * var( --nav-button-padding-x ) ); 
@@ -220,11 +225,11 @@ body,
 
 }
 
-.header, 
+/* .header, 
 .page-set .section { 
 	padding-top: var( --header-margin-top ); 
 
-}
+} */
 
 .header .name, 
 .main-nav .nav-button { 	
@@ -240,6 +245,7 @@ body,
 } */ 
 
 .page-set { 
+	display: none; 
 	box-sizing: border-box; 
 	/* display: none;  */
 	width: 50%; 
@@ -262,13 +268,13 @@ body,
 } 
 
 .header { 
-	/* display: flex; flex-direction: column; align-items: center;  */ 
+	display: flex; flex-direction: column; align-items: center; justify-content: center;   
 	box-sizing: border-box; 
-	width: 25%; min-width: 8rem; 
+	width: 10%; min-width: 12rem; 
 	/* max-width: 10rem;  */ 
 	height: 100%; 
 	/* padding-left: 1.25rem; padding-right: 1.25rem;  */ 
-	padding-left: var( --text-padding-x ); 
+	/* padding-left: var( --text-padding-x );  */ 
 	position: absolute; z-index: 3;  
 	left: 0; top: 0; 
 	transform: translateX( -100% ); 
@@ -380,7 +386,7 @@ body.ui-visible .page-set {
 }
 
 .header { 
-	transition-duration: 0.2s; transition-delay: 0.175s; 
+	/* transition-duration: 0.2s; transition-delay: 0.175s;  */
 
 } 
 
@@ -494,7 +500,7 @@ body.ui-visible .page-set {
 }  */
 
 .switch-gallery-button { 
-	display: block; 
+	display: block; display: none; 
 	width: var( --id-height ); height: var( --id-height ); 
 	margin-top: var( --header-margin-top ); 
 	position: absolute; z-index: 4; 
@@ -537,17 +543,17 @@ body.ui-visible .page-set {
 }
 
 .gallery { 
-	/* display: none;  */ 
+	/* display: none;   */ 
 	width: 100%; height: 100%; 
-	position: fixed; z-index: 1; 
-	left: 0; right: 0; top: 0; bottom: 0; 
-	background-color: var( --text-color );    
+	position: fixed !important; z-index: 1; 
+	/* left: 0; right: 0; top: 0; bottom: 0;  */
+	/* background-color: var( --text-color );     */
 } 
 
-#paintings-gallery { 
+/* #paintings-gallery { 
 	opacity: 0.075; 
 
-}
+} */
 
 /* .gallery:after { 
 	display: block; 
@@ -592,7 +598,7 @@ textarea {
 
 }
 
-.fotorama, 
+/* .fotorama, 
 .fotorama__wrap, 
 .fotorama__stage { 
 	height: 100% !important; 
@@ -614,7 +620,7 @@ textarea {
 .fotorama__active { 
 
 
-}
+} 
 
 .fotorama__thumb-border { 
 	display: none !important; 
@@ -635,14 +641,14 @@ textarea {
 	
 
 
-} 
+}  */
 
 .random-access { 
 	/* display: none;  */
 
 }
 
-.gallery .random-access { 
+/* .gallery .random-access { 
 	display: none; 
 	width: 70rem; height: 10rem; 
 	position: absolute; z-index: 10; left: 0; top: 0; 
@@ -666,7 +672,7 @@ textarea {
 	border: 1px solid var( --foreground-color ); 
 	background-color: var( --background-color ); 
 
-}
+} */
 
 .footer { 
 	display: none; 
