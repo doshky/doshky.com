@@ -19,26 +19,30 @@
 	}, 
 
 	"body": { 
-		"fields": [ 
-			{ 
-				"name": "user-name", 
-				"type": "text", 
-				"placeholder": "Your Name"
-			}, 
+		"template": "send-message.html", 
 
-			{ 
-				"name": "user-email", 
-				"type": "email", 
-				"placeholder": "Your Email"
-			}, 
+		"data": {
+			"fields": [ 
+				{ 
+					"name": "user-name", 
+					"type": "text", 
+					"placeholder": "Your Name"
+				}, 
 
-			{ 
-				"name": "user-message", 
-				"placeholder": "Your Message", 
-				"isText": true 
-			}
+				{ 
+					"name": "user-email", 
+					"type": "email", 
+					"placeholder": "Your Email"
+				}, 
 
-		]
+				{ 
+					"name": "user-message", 
+					"placeholder": "Your Message", 
+					"isText": true 
+				}
+
+			] 
+		}
 
 	}
 

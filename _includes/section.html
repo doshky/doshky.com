@@ -1,18 +1,31 @@
-{% assign section = include.data %}
+{% assign section = include.data %} 
 
+{% if section[ 1 ].head %} 
+	{% assign head = section[ 1 ].head %} 	
 
-<section class= "text-content">
-{% if section.heading %}
-	<h1 class= "heading section-heading">{{ section.heading }}</h1> 
-{% endif %} 
+	<section class= "text-content"> 
+	{% if head.heading %}
+		<h1 class= "heading section-heading">{{ head.heading }}</h1> 
+	{% endif %}
 
-{% if section.text %}
-	{% for paragraph in section.text %} 
-		<p class= "text-entry">{{ paragraph.text }}</p>
-	{% endfor %}
+	{% if head.text %}
+		{% for paragraph in head.text %} 
+			<p class= "text-entry">{{ paragraph.text }}</p>
+		{% endfor %}
+	{% endif %}
+	</section> 
+
+	{% if head.image %} 
+		{% include cover-image.html data = head.image %} 
+	{% endif %}
 {% endif %}
-</section> 
 
-{% if section.image %} 
-	{% include cover-image.html data = section.image %} 
+{% if section[ 1 ].body %} 
+
+	{% assign body = section[ 1 ].body %} 
+
+	<section class= "section-body">
+		{% include {{ body.template }} data = body.data %} 
+	</section> 
+
 {% endif %}

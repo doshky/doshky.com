@@ -4,11 +4,9 @@ layout: page
 
 <section class= "page-set">   
 	{% for page in site.data.pages %} 
-		{% assign content = page[ 1 ] %} 
 		<article class= "section"> 
 			{% include main-nav.html %} 
-			
-			{% include section.html data = content.head %} 
+			{% include section.html data = page %} 
 		</article>
 	{% endfor %} 
 
