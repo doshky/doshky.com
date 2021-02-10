@@ -1,8 +1,9 @@
 {% assign section = include.data %} 
+{% assign head = section.head %}
+{% assign body = section.body %} 
 
-{% if section[ 1 ].head %} 
-	{% assign head = section[ 1 ].head %} 	
 
+{% if head %} 
 	<section class= "text-content"> 
 	{% if head.heading %}
 		<h1 class= "heading section-heading">{{ head.heading }}</h1> 
@@ -20,11 +21,9 @@
 	{% endif %}
 {% endif %}
 
-{% if section[ 1 ].body %} 
+{% if body %} 
 
-	{% assign body = section[ 1 ].body %} 
-
-	<section class= "section-body">
+	<section class= "section-body"> 
 		{% include {{ body.template }} data = body.data %} 
 	</section> 
 

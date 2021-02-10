@@ -1,4 +1,8 @@
 { 
+	"order": 4, 
+
+	"classNames": [ "contact" ], 
+
 	"head": {
 		"heading": "Contact Me", 
 

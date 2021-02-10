@@ -2,11 +2,13 @@
 layout: page 
 --- 
 
-<section class= "page-set">   
+<section class= "page-set">  
 	{% for page in site.data.pages %} 
-		<article class= "section"> 
+		{% assign content = page[ 1 ] %} 
+
+		<article class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
 			{% include main-nav.html %} 
-			{% include section.html data = page %} 
+			{% include section.html data = content %} 
 		</article>
 	{% endfor %} 
 

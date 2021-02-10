@@ -1,4 +1,8 @@
 { 
+	"order": 1, 
+	
+	"classNames": [ "welcome", "section-current" ], 
+
 	"head": {
 		"heading": "Welcome", 
 
