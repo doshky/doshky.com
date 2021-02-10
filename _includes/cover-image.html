@@ -3,8 +3,8 @@
 {% assign caption = include.caption %}
 
 
-<figure class= "cover-image" style= "background-image: url( '{{ src }}' )"> 
-	<img src= "{{ src }}" alt= "{{ alt }}" /> 
+<figure class= "cover-image" style= "background-image: url( '/assets/images/{{ src }}' )"> 
+	<img src= "/assets/images/{{ src }}" alt= "{{ alt }}" /> 
 
 	{% if caption %}
 		<figcaption class= "caption">{{ caption }}</figcaption>
