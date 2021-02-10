@@ -3,13 +3,17 @@ layout: page
 ---  
 
 <section class= "page-set">   
-	<article class= "section work section-current"> 
+	<article class= "section welcome section-current"> 
 		{% include section.html data = site.data.gallery.head %} 	
 	</article> 
 
 	<article class= "section about">
 		{% include section.html data = site.data.about %} 	
 	</article> 
+
+	<article class= "section gallery">
+		{% include gallery.html data = site.data.gallery.body %} 
+	</article>
 
 	<article class= "section contact"> 
 		{% assign contact = site.data.contact %}
@@ -19,8 +23,4 @@ layout: page
 			{% include send-message.html data = contact.body.fields %} 
 		</section> 
 	</article> 
-</section>
-
-<section class= "section gallery">
-	{% include gallery.html data = site.data.gallery.body %} 
 </section>
