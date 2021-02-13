@@ -202,7 +202,7 @@ button:hover {
 
 .nav-button:after { 
 	display: block; 
-	width: var( --current-entry-mark-width ); height: var( --current-entry-mark-height ); 
+	height: var( --current-entry-mark-height ); 
 	position: absolute; left: 0; bottom: 0;  
 	background-color: var( --text-color ); 
 	content: "";  
@@ -211,13 +211,16 @@ button:hover {
 
 .nav-button:after, 
 .nav-entry-list:hover .nav-button:after { 
+	width: 0;  
 	opacity: 0; 
 
 }
 
 .nav-entry-list:hover .nav-button:hover:after, 
 .entry-current .nav-button:after { 
+	width: var( --current-entry-mark-width ); 
 	opacity: 1; 
+	transition: width 0.2s; 
 
 } 
 
