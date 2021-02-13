@@ -4,7 +4,7 @@
 	 * Layout 
 	 */
 	--header-margin-top: 5rem; 
-	--id-height: 2rem; 
+	--id-height: 2.5rem; 
 	--nav-button-padding-x: 0.5rem; 
 
 	--heading-margin-bottom: 0.4em; 
@@ -12,6 +12,8 @@
 	--text-padding-x: 2.5rem; 
 
 	--copyright-member-padding-x: 0.7rem; 
+	--social-net-link-size: 2.4rem; 
+	--social-net-link-margin-bottom: 0.8rem; 
 	
 	/**
 	 * Font 
@@ -26,20 +28,21 @@
 
 	--base-font-size: 14px; 
 	--text-font-size: 1rem; 
-	--section-heading-font-size: 2.4rem; 
-	--section-subheading-font-size: 1.2rem; 
+	--section-heading-font-size: 2rem; 
+	--section-subheading-font-size: 1rem; 
 	--nav-button-font-size: 1rem; 
-
+	--social-link-font-size: 1.4rem; 
 	/** 
 	 * Color 
 	 */
 
 	--text-color: rgba( 255, 255, 255, 0.75 ); 	
-	--text-color: rgba( 0, 0, 0, 0.75 ); 
-	--text-color: rgb( 217, 161, 89, 0.95 );
+	/* --text-color: rgba( 0, 0, 0, 0.75 );  */
+	/* --text-color: rgb( 217, 161, 89, 0.95 );  */ 
 	--foreground-color: rgba( 255, 255, 255, 0.4 ); 
 	--overlay-color:  rgba( 255, 255, 255, 0.4 ); 
-	--overlay-color:  rgba( 217, 161, 89, 0.5 ); 
+	/* --overlay-color:  rgba( 217, 161, 89, 0.5 ); 
+	--overlay-color:  rgba( 217, 161, 89, 0.5 );  */ 
 	--background-color: rgba( 40, 0, 48, 0.85 ); 
 	--background-color: rgb( 16, 25, 43 );   
 } 
@@ -53,29 +56,25 @@
 
 .nav-entry-list { 
 	--column-count: 2; 
-	--column-gutter-count: calc( var( --column-count ) - 1 ); 
 	--column-gutter-x: 0rem; 
-	--column-gutter-y: var( --column-gutter-x ); 
-
-	--column-width: calc( ( 100% - var( --column-gutter-count ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
 
 	--current-entry-mark-width: 50%; 
 	--current-entry-mark-height: 2px; 
-} 
+}
 
 .image-preview-list { 
 	--column-count: 5; 
-	--column-gutter-x: 0.2rem; 
+	--column-gutter-x: 0.7rem; 
 
-	--text-padding-x: 0.5rem; 
+	--text-padding-x: var( --column-gutter-x ); 
 
 } 
 
-.nav-entry-list, 
+/* .nav-entry-list, 
 .image-preview-list { 
 	--column-gutter-count: calc( var( --column-count ) - 1 ); 
 	--column-width: calc( ( 100% - var( --column-gutter-count ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
-} 
+}  */
 
 
 .send-message { 

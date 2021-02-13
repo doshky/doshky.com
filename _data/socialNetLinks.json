@@ -1,0 +1,9 @@
+[ 
+	{ 
+		"label": "Facebook", 
+		"target": "/", 
+		"iconCode": "\\f231", 
+		"className": "facebook" 
+	}
+
+]

@@ -1,0 +1,7 @@
+<ul class= "entry-list social-net-links">
+{% for link in site.data.socialNetLinks %} 
+	<li class= "entry social-net-links-entry"> 
+		<a class= "social-net-link {{ link.className }}" data-icon-code= "{{ link.iconCode }}" href= "{{ link.target }}">&#xf231;</a> 
+	</li>
+{% endfor %}
+</ul>

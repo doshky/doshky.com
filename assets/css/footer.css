@@ -1,5 +1,27 @@
 .footer { 
 	margin-bottom: var( --footer-margin-bottom ); 
+	position: relative; z-index: 2; 
+
+} 
+
+/* .image-preview-list { 
+	margin-bottom: 1rem; 
+
+}  */
+
+.social-net-links { 
+	margin-bottom: 0; 
+
+}
+
+.social-net-link { 
+	display: flex; flex-direction: row; justify-content: center; align-items: center; 
+	width: var( --social-net-link-size ); height: var( --social-net-link-size ); 
+	margin-bottom: var( --social-net-link-margin-bottom ); 
+	position: relative; 
+	border: 1px solid; border-radius: 50%; 
+	/* text-indent: -10000px;  */ 
+	font-family: "IonIcons"; font-size: var( --social-link-font-size ); 
 
 } 
 
