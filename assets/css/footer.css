@@ -13,7 +13,7 @@
 .copyright > * { 
 	height: var( --copyright-height ); line-height: var( --copyright-height ); 
 	margin-right: 0.4rem; 
-}
+} 
 
 .name { 
 	font-family: Impact; text-transform: uppercase; 

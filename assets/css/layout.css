@@ -1,0 +1,10 @@
+html, 
+body { 
+	min-height: 100%; 
+} 
+
+button { 
+	display: block; 
+	height: var( --button-height ); line-height: var( --button-height ); 
+	border: none; 
+} 

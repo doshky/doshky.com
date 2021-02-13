@@ -8,4 +8,9 @@
 	font-family: "Impact"; 
 	src: url( "/assets/fonts/impact.ttf" ); 
 
-}
+} 
+
+body { 
+	font-family: Arial; 
+	font-size: 14px;  
+} 

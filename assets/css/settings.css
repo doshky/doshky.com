@@ -5,10 +5,10 @@
 	 */
 	--header-margin-top: 5rem; 
 	--id-height: 2rem; 
-
 	--nav-button-padding-x: 0.5rem; 
 
 	--heading-margin-bottom: 0.4em; 
+	--text-padding-x: 2.5rem; 
 	
 	/**
 	 * Font 
@@ -36,4 +36,42 @@
 	--overlay-color:  rgba( 255, 255, 255, 0.4 ); 
 	--background-color: rgba( 40, 0, 48, 0.85 ); 
 	--background-color: rgb( 16, 25, 43 );   
-}
+} 
+
+.page { 
+	--section-member-margin-bottom: 4rem; 
+	--footer-margin-bottom: 0.8rem; 
+	--button-height: var( --id-height );  
+
+} 
+
+.nav-entry-list { 
+	--column-count: 2; 
+	--column-gutter-count: calc( var( --column-count ) - 1 ); 
+	--column-gutter-x: 0rem; 
+	--column-gutter-y: var( --column-gutter-x ); 
+
+	--column-width: calc( ( 100% - var( --column-gutter-count ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
+
+	--current-entry-mark-width: 50%; 
+	--current-entry-mark-height: 2px; 
+} 
+
+.image-preview-list { 
+	--column-count: 5; 
+	--column-gutter-x: 0.2rem; 
+
+	--text-padding-x: 0.5rem; 
+
+} 
+
+.nav-entry-list, 
+.image-preview-list { 
+	--column-gutter-count: calc( var( --column-count ) - 1 ); 
+	--column-width: calc( ( 100% - var( --column-gutter-count ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
+} 
+
+
+.send-message { 
+	--field-height: 1.8rem; 
+} 

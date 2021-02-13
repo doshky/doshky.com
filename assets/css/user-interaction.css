@@ -1,0 +1,11 @@
+button { 
+	cursor: pointer; 
+
+} 
+
+button:focus, 
+button:active { 
+	border: none; 
+	outline: none; 
+
+} 

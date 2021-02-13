@@ -1,5 +1,10 @@
 @import "./settings.css"; 
+@import "./layout.css"; 
 @import "./typography.css"; 
-@import "./general.css"; 
+@import "./color.css"; 
+@import "./user-interaction.css";   
 @import "./header.css";
 @import "./main-nav.css"; 
+@import "./section.css"; 
+@import "./image-preview-list.css"; 
+@import "./footer.css"; 
