@@ -86,7 +86,7 @@ body,
 
 .section .text-content { 
 	/* box-sizing: border-box;  */
-	max-width: 40rem; 
+	max-width: 40rem; max-height: 20rem; overflow: auto; 
 	/* margin-bottom: 3.5rem;  */ 
 	/* margin-left: 50%;   */ 
 	/* padding-left: 1.8rem; padding-right: 4rem;    */
