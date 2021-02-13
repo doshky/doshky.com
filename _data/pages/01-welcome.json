@@ -9,7 +9,9 @@
 	
 	"classNames": [ "welcome", "section-current" ], 
 
-	"head": {
+	"head": { 
+		"subheading": "Nulla congue, turpis non condimentum molestie", 
+		
 		"heading": "Welcome", 
 
 		"text": [ 

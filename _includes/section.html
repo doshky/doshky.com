@@ -5,6 +5,10 @@
 
 {% if head %} 
 	<section class= "text-content"> 
+	{% if head.subheading %}
+		<h5 class= "subheading section-subheading">{{ head.subheading }}</h5> 
+	{% endif %}
+
 	{% if head.heading %}
 		<h1 class= "heading section-heading">{{ head.heading }}</h1> 
 	{% endif %}

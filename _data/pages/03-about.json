@@ -9,7 +9,9 @@
 
 	"classNames": [ "about" ], 
 
-	"head": {
+	"head": { 
+		"subheading": "Nulla congue, turpis non condimentum molestie", 
+		
 		"heading": "About Me", 
 
 		"text": [ 

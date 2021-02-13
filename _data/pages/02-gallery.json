@@ -9,7 +9,9 @@
 
 	"classNames": [ "gallery" ], 
 
-	"head": {
+	"head": { 
+		"subheading": "Nulla congue, turpis non condimentum molestie", 
+		
 		"heading": "Work", 
 
 		"text": [ 
