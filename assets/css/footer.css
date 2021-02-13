@@ -12,8 +12,23 @@
 
 .copyright > * { 
 	height: var( --copyright-height ); line-height: var( --copyright-height ); 
-	margin-right: 0.4rem; 
+	padding-left: var( --copyright-member-padding-x ); padding-right: var( --copyright-member-padding-x ); 
+	position: relative; 
 } 
+
+.copyright > *:not( :last-child ):after { 
+	display: block; 
+	width: 1px; height: 100%; 
+	position: absolute; right: 0; bottom: 0; 
+	background-color: var( --text-color ); 
+	content: ""; 
+	
+} 
+
+.copyright > *:first-child { 
+	padding-left: 0; 
+
+}
 
 .name { 
 	font-family: Impact; text-transform: uppercase; 
