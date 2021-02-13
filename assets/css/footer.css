@@ -1,6 +1,4 @@
 .footer { 
-	/* display: none;  */
-	/* position: absolute; left: 0; top: 0;  */ 
 	margin-bottom: var( --footer-margin-bottom ); 
 
 } 
@@ -25,7 +23,7 @@
 	
 } 
 
-.copyright > *:first-child { 
+.copyright > :first-child { 
 	padding-left: 0; 
 
 }

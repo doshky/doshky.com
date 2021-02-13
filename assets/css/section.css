@@ -39,13 +39,17 @@
 
 .heading { 
 	font-family: var( --heading-font-family ); 
-	margin-bottom: var( --heading-margin-bottom ); 
-
 } 
 
 .section-heading { 
+	margin-bottom: var( --heading-margin-bottom );
 	font-size: var( --section-heading-font-size ); 
-	/* text-transform: uppercase; */
+} 
+
+.section-subheading { 
+	margin-bottom: var( --subheading-margin-bottom ); 
+	font-size: var( --section-subheading-font-size ); 
+	/* text-transform: uppercase; */ 
 
 } 
 

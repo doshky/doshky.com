@@ -43,6 +43,7 @@
 
 .nav-button { 
 	position: relative; 
+	font-size: var( --nav-button-font-size ); 
 
 }
 
