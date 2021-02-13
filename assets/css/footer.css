@@ -1,0 +1,21 @@
+.footer { 
+	/* display: none;  */
+	/* position: absolute; left: 0; top: 0;  */ 
+	margin-bottom: var( --footer-margin-bottom ); 
+
+} 
+
+.copyright { 
+	display: flex; flex-direction: row; 
+
+} 
+
+.copyright > * { 
+	height: var( --copyright-height ); line-height: var( --copyright-height ); 
+	margin-right: 0.4rem; 
+}
+
+.name { 
+	font-family: Impact; text-transform: uppercase; 
+
+}

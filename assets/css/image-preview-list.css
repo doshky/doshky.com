@@ -1,0 +1,12 @@
+.image-preview-list { 
+	display: flex; flex-direction: row; 
+	position: relative; z-index: 2; 
+
+}
+
+.image-preview { 
+	width: var( --column-width ); padding-top: calc( 0.5 * var( --column-width ) );  
+	margin-right: var( --column-gutter-x ); 
+	background-color: var( --text-color ); 
+
+}
