@@ -1,5 +1,11 @@
 { 
 	"order": 1, 
+
+	"navEntry": { 
+		"label": "Welcome", 
+		"targetSection": "welcome-section", 
+		"classNames": [ "welcome-button" ] 
+	}, 
 	
 	"classNames": [ "welcome", "section-current" ], 
 

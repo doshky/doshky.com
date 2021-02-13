@@ -7,7 +7,7 @@ layout: page
 		{% assign content = page[ 1 ] %} 
 
 		<article class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
-			{% include main-nav.html %} 
+			{% include main-nav.html data = content.navEntry %} 
 			{% include section.html data = content %} 
 		</article>
 	{% endfor %} 

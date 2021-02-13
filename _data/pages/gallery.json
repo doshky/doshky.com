@@ -1,6 +1,12 @@
 { 
 	"order": 3, 
 
+	"navEntry": { 
+		"label": "Gallery", 
+		"targetSection": "gallery-section", 
+		"classNames": [ "gallery-button" ] 
+	}, 
+
 	"classNames": [ "gallery" ], 
 
 	"head": {

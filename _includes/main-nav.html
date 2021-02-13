@@ -1,7 +1,13 @@
+{% assign currentSectionNavEntry = include.data %} 
+
 <nav class= "main-nav"> 
 	<h6 class= "usability-heading">Main navigation</h6> 
 
-	<ul class= "nav-entry-list"> 
+	<!-- <ul class= "nav-entry-list"> 
+		<li class= "nav-entry">
+			<button class= "nav-button welcome-button" data-target-section= "welcome">Welcome</button> 
+		</li>
+
 		<li class= "nav-entry">
 			<button class= "nav-button work-button" data-target-section= "work">Work</button> 
 		</li>
@@ -13,5 +19,16 @@
 		<li class= "nav-entry">
 			<button class= "nav-button contact-button" data-target-section= "contact">Contact</button> 
 		</li> 
+	</ul>  -->
+
+	<ul class= "nav-entry-list"> 
+	{% for page in site.data.pages %} 
+		{% assign navEntry = page[ 1 ].navEntry %} 
+		{% if navEntry %} 
+			<li class= "nav-entry{% if currentSectionNavEntry.targetSection == navEntry.targetSection %} entry-current{% endif %}">
+				<button class= "nav-button{{ navEntry.classNames | join: ' ' | prepend: ' ' }}" data-target-section= "{{ navEntry.targetSection }}">{{ navEntry.label }}</button> 
+			</li>
+		{% endif %}
+	{% endfor %}
 	</ul>
 </nav>

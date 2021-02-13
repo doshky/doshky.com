@@ -1,6 +1,12 @@
 { 
 	"order": 2, 
 
+	"navEntry": { 
+		"label": "About", 
+		"targetSection": "about-section", 
+		"classNames": [ "about-button" ] 
+	}, 
+
 	"classNames": [ "about" ], 
 
 	"head": {
