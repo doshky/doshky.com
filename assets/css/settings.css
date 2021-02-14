@@ -66,7 +66,8 @@
 
 .image-preview-list { 
 	--column-count: 5; 
-	--column-gutter-x: 0.7rem; 
+	/* --visible-column-count: 5;  */ 
+	--column-gutter-x: 0.8rem; 
 
 	--text-padding-x: var( --column-gutter-x ); 
 

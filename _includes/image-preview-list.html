@@ -1,5 +1,7 @@
-<ul class= "entry-list image-preview-list"> 
-{% for i in ( 1..5 ) %} 
-	<li class= "image-preview"></li> 
+{% assign imageList = include.data %} 
+
+<ul class= "entry-list image-preview-list" style= "--total-column-count: {{ imageList | size }};"> 
+{% for image in imageList %} 
+	<li class= "image-preview" style= "background-image: url( '/assets/images/{{ image.src }}' )"></li> 
 {% endfor %}
 </ul>

@@ -9,8 +9,7 @@ layout: page
 		<article id= "{{ content.sectionID }}" class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
 			{% include header.html data = content.navEntry %} 
 			{% include section.html data = content %} 
-			{% include footer.html %} 
-			{% include image-preview-list.html %} 
+			{% include footer.html %}  
 		</article>
 	{% endfor %} 
 </section>
