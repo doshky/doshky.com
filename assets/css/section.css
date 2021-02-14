@@ -108,7 +108,8 @@
 
 .section .text-content { 
 	/* box-sizing: border-box;  */
-	max-width: 40rem; max-height: 20rem; overflow: auto; 
+	max-width: 40rem; 
+	/* max-height: 20rem; overflow: auto;  */ 
 	padding: 2.4rem; 
 	/* margin-bottom: 3.5rem;  */ 
 	/* margin-left: 50%;   */ 
