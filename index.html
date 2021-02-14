@@ -6,7 +6,7 @@ layout: page
 	{% for page in site.data.pages %} 
 		{% assign content = page[ 1 ] %} 
 
-		<article class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
+		<article id= "{{ content.sectionID }}" class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
 			{% include header.html data = content.navEntry %} 
 			{% include section.html data = content %} 
 			{% include footer.html %} 

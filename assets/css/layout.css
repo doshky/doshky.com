@@ -15,7 +15,7 @@ body {
 
 }
 
-button { 
+.nav-button { 
 	display: block; 
 	height: var( --button-height ); line-height: var( --button-height ); 
 	border: none; 

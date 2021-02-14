@@ -6,6 +6,8 @@
 		"targetSection": "welcome-section", 
 		"classNames": [ "welcome-button" ] 
 	}, 
+
+	"sectionID": "welcome-section", 
 	
 	"classNames": [ "welcome", "section-current" ], 
 
