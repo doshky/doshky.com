@@ -1,15 +1,19 @@
 .send-message { 
 	position: relative; 
 	z-index: 2; 
+	margin-top: var( --send-message-margin-top ); 
 	color: var( --text-color ); 
 
-}
+} 
 
 input, 
 textarea { 
+	box-sizing: border-box;  
 	display: block; 
 	width: var( --field-width ); 
-	margin-bottom: 0.4rem; 
+	margin-bottom: var( --field-margin-bottom ); 
+	padding: 0; 
+	padding-left: 0.85rem;  
 	border: 1px solid var( --text-color );  
 	background-color: transparent; 
 	color: inherit; 
@@ -22,6 +26,6 @@ input {
 } 
 
 textarea { 
-	height: calc( 4 * var( --field-height ) ); 
+	height: calc( 3 * var( --field-height ) ); 
 
 } 

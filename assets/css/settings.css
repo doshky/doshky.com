@@ -78,6 +78,8 @@
 
 
 .send-message { 
-	--field-height: 2.4rem; 
+	--send-message-margin-top: 1rem; 
+	--field-height: 3.25rem; 
 	--field-width: 50%; 
+	--field-margin-bottom: 0.7rem; 
 } 

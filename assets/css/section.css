@@ -52,7 +52,8 @@
 
 .section > :first-child, 
 .cover-image, 
-.image-preview-list { 
+.image-preview-list, 
+.section-body { 
 	margin-top: 0; 
 
 }
@@ -134,7 +135,7 @@
 	background-color: var( --overlay-color ); 
 	content: ""; 
 
-}
+} 
 
 .section-current .text-content > *, 
 .section-current .body { 
