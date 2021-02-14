@@ -2,6 +2,8 @@
 
 <ul class= "entry-list image-preview-list" style= "--total-column-count: {{ imageList | size }};"> 
 {% for image in imageList %} 
-	<li class= "image-preview" style= "background-image: url( '/assets/images/{{ image.src }}' )"></li> 
+	<li class= "image-preview-entry">
+		<a class= "image-preview" href= "/assets/images/{{ image.src }}" style= "background-image: url( '/assets/images/{{ image.src }}' )"></a> 
+	</li> 
 {% endfor %}
 </ul>

@@ -41,4 +41,10 @@
 // 	} ); 
 	
 
-// }() )
+// }() ) 
+
+
+$( '.image-preview-list' ).magnificPopup( { 
+	delegate: 'a', 
+	type: 'image' 
+} ); 
