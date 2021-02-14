@@ -48,7 +48,7 @@
 } 
 
 .page { 
-	--section-member-margin-bottom: 4rem; 
+	--section-member-margin-top: 4rem; 
 	--footer-margin-bottom: 0.8rem; 
 	--button-height: var( --id-height );  
 
@@ -78,5 +78,6 @@
 
 
 .send-message { 
-	--field-height: 1.8rem; 
+	--field-height: 2.4rem; 
+	--field-width: 50%; 
 } 

@@ -36,11 +36,6 @@
 	--column-width: calc( ( 100% - var( --column-gutter-count ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
 } 
 
-.send-message { 
-	--field-height: 1.8rem; 
-
-} 
-
 html, 
 body { 
 	min-height: 100%; 

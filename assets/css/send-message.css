@@ -1,11 +1,18 @@
+.send-message { 
+	position: relative; 
+	z-index: 2; 
+	color: var( --text-color ); 
+
+}
+
 input, 
 textarea { 
 	display: block; 
-	width: 14rem; 
+	width: var( --field-width ); 
 	margin-bottom: 0.4rem; 
-	border: 1px solid var( --text-color ); 
-	color: var( --text-color ); 
+	border: 1px solid var( --text-color );  
 	background-color: transparent; 
+	color: inherit; 
 
 } 
 
@@ -17,4 +24,4 @@ input {
 textarea { 
 	height: calc( 4 * var( --field-height ) ); 
 
-}
+} 
