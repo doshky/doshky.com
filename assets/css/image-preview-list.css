@@ -8,6 +8,6 @@
 	width: var( --column-width ); padding-top: calc( 0.5 * var( --column-width ) );  
 	margin-right: var( --column-gutter-x ); 
 	/* background-color: var( --overlay-color );  */ 
-	border: 1px solid var( --overlay-color ); 
+	border: 1px solid var( --text-color ); 
 
 }

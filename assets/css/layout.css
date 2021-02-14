@@ -3,6 +3,20 @@ body {
 	min-height: 100%; 
 } 
 
+/* html:after { 
+	display: block; 
+	position: fixed; left: 0; right: 0; top: 0; bottom: 0; 
+	background: url( "/assets/images/26112282_1616173591798987_7545210317677889221_n.jpg" ) center center no-repeat fixed; 
+	background-size: cover; 
+	content: ""; 
+
+} 
+
+.cover-image { 
+	background-color: transparent !important; 
+
+} */
+
 .entry-list {  
 	--column-gutter-count: calc( var( --column-count ) - 1 );  
 	--column-gutter-y: var( --column-gutter-x ); 
