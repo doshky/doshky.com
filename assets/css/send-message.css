@@ -2,23 +2,49 @@
 	position: relative; 
 	z-index: 2; 
 	margin-top: var( --send-message-margin-top ); 
-	color: var( --text-color ); 
+	color: var( --background-color ); 
 
 } 
 
-input, 
-textarea { 
+.field-entry, 
+.field, 
+.submit-message-button { 
+	font-family: inherit; font-size: var( --field-font-size );
+	/* color: inherit;   */ 
+} 
+
+.submit-message-button { 
+	color: var( --text-color ); 
+	padding-right: var( --field-padding-x ); 
+
+} 
+
+.field, 
+.submit-message-button { 
+	padding-left: var( --field-padding-x ); 
+
+}
+
+.field { 
 	box-sizing: border-box;  
 	display: block; 
 	width: var( --field-width ); 
 	margin-bottom: var( --field-margin-bottom ); 
-	padding: 0; 
-	padding-left: 0.85rem;  
+	padding-top: 0.5rem; padding-bottom: 0.5rem;  
 	border: 1px solid var( --text-color );  
 	background-color: transparent; 
-	color: inherit; 
+	background-color: var( --text-color );  
 
 } 
+
+@media ( max-width: 1320px ) { 
+
+	.field { 
+		--field-width: 100%; 
+
+	}
+
+}
 
 input { 
 	height: var( --field-height ); 
