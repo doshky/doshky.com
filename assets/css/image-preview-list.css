@@ -7,6 +7,14 @@
 
 } 
 
+@media ( max-width: 840px ) { 
+
+	.image-preview-list { 
+		justify-content: flex-start; 
+	}
+
+}
+
 /* .image-preview-list:after { 
 	display: block; 
 	width: 0; height: 0; overflow: hidden; 
