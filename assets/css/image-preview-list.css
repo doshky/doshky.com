@@ -19,7 +19,7 @@
 	/* float: left;  */ 
 	width: var( --column-width ); padding-top: calc( 0.5 * var( --column-width ) );   
 	/* margin-right: var( --column-gutter-x );  */ 
-	background-color: var( --background-color );  
+	background-color: var( --foreground-color );  
 	margin-top: var( --column-gutter-y ); 
 	position: relative; 
 	opacity: 0.8;  
@@ -39,7 +39,7 @@
 	position: absolute; left: 0; top: 0; 
 	background-position: center; background-size: cover; 
 	background-clip: content-box;  
-	opacity: 0.2; 
+	opacity: 0.4; 
 
 } 
 
