@@ -1,0 +1,6 @@
+{% assign data = include.data %}
+
+<article class= "warning-message"> 
+	<p class= "warning-message-text">{{ data.message.text }}</p>  
+	<button class= "warning-message-button" type= "button" data-icon-code= "{{ data.button.iconCode }}">{{ data.button.text }}</button>
+</article>

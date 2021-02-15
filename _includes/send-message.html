@@ -7,4 +7,6 @@
 	{% endfor %} 
 
 	<button class= "submit-message-button" name= "submit-message" type= "submit">Send</button> 
-</form>
+
+	{% include warning-message.html data = site.data.sendMessageWarning %} 
+</form>  

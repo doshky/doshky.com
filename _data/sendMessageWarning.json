@@ -1,0 +1,12 @@
+{ 
+	"message": {
+		"text": "Sorry, still not working" 
+	}, 
+
+	"button": { 
+		"text": "OK", 
+		"iconCode": "&#xf2d7;" 
+
+	}
+
+}
