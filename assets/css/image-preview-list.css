@@ -22,7 +22,7 @@
 	background-color: var( --background-color );  
 	margin-top: var( --column-gutter-y ); 
 	position: relative; 
-	opacity: 0.95; 
+	opacity: 0.75; 
 
 } 
 

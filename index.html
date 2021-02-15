@@ -3,7 +3,8 @@ layout: page
 --- 
 
 <section class= "page-set">  
-	{% for page in site.data.pages %} 
+	{% assign pages = site.data.pages | sort %} 
+	{% for page in pages %} 
 		{% assign content = page[ 1 ] %} 
 
 		<article id= "{{ content.sectionID }}" class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
