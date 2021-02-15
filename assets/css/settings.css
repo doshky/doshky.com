@@ -40,13 +40,14 @@
 	/* --text-color: rgba( 0, 0, 0, 0.75 );  */
 	/* --text-color: rgb( 217, 161, 89, 0.95 );   */
 	/* --text-color: rgb( 40, 0, 48, 0.85 );  */
-	--foreground-color: rgba( 255, 255, 255, 0.4 ); 
+	--foreground-color: rgba( 255, 255, 255, 1 ); 
 	/* --overlay-color:  rgba( 255, 255, 255, 1 );   */
-	/* --overlay-color:  rgba( 217, 161, 89, 0.5 ); */
-	/* --overlay-color:  rgba( 217, 161, 89, 1 );   */
-	--overlay-color:  rgba( 40, 0, 48, 0.8 );  
+	/* --overlay-color:  rgba( 217, 161, 89, 1 );  */
+	--overlay-color:  rgba( 217, 161, 89, 1 );  
+	/* --overlay-color:  rgba( 40, 0, 48, 0.8 );   */
 	--background-color: rgba( 40, 0, 48, 0.85 ); 
 	--background-color: rgb( 16, 25, 43 );   
+	--background-color: rgba( 255, 255, 255, 1 ); 
 } 
 
 .page { 

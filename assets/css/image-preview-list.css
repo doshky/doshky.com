@@ -27,9 +27,10 @@
 	/* float: left;  */ 
 	width: var( --column-width ); padding-top: calc( 0.5 * var( --column-width ) );   
 	/* margin-right: var( --column-gutter-x );  */ 
-	/* background-color: var( --overlay-color );  */ 
+	background-color: var( --background-color );  
 	margin-top: var( --column-gutter-y ); 
 	position: relative; 
+	opacity: 0.85; 
 
 } 
 
@@ -54,5 +55,11 @@
 	position: absolute; left: 0; top: 0; 
 	background-position: center; background-size: cover; 
 	border: 1px solid var( --text-color ); 
+	opacity: 0.4; 
+
+} 
+
+.image-preview:hover { 
+	opacity: 1; 
 
 }
