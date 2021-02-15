@@ -1,7 +1,7 @@
 [ 
 	{ 
 		"label": "Facebook", 
-		"target": "/", 
+		"target": "https://www.facebook.com/diana.pavlova.33", 
 		"iconCode": "\\f231", 
 		"className": "facebook" 
 	}
