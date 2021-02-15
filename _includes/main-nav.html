@@ -22,7 +22,8 @@
 	</ul>  -->
 
 	<ul class= "entry-list nav-entry-list"> 
-	{% for page in site.data.pages %} 
+	{% assign pages = site.data.pages | sort %} 
+	{% for page in pages %} 
 		{% assign navEntry = page[ 1 ].navEntry %} 
 		{% if navEntry %} 
 			<li class= "nav-entry{% if currentSectionNavEntry.targetSection == navEntry.targetSection %} entry-current{% endif %}">
