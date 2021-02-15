@@ -37,7 +37,7 @@
 	position: absolute; left: 0; right: 0; top: 0; bottom: 0; 
 	background-position: center; background-size: cover; 
 	background-clip: content-box; 
-	border: 0.7rem solid transparent; 
+	border: 8px solid transparent; 
 	opacity: 0.2; 
 
 } 
