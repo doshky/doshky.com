@@ -37,15 +37,6 @@
 
 } 
 
-@media ( max-width: 1320px ) { 
-
-	.field { 
-		--field-width: 100%; 
-
-	}
-
-}
-
 input { 
 	height: var( --field-height ); 
 

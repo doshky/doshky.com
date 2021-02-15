@@ -73,7 +73,7 @@
 
 .nav-button { 
 	padding: 0; 
-	border-style: solid; border-color: transparent; border-width: 0 0.4rem;  
+	border-style: solid; border-color: transparent; border-left-width: var( --nav-button-padding-x ); border-right-width: var( --nav-button-padding-x ); 
 
 }
 
