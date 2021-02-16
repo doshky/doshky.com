@@ -8,8 +8,9 @@ button {
 
 } 
 
-button:focus, button:active, 
-:link, :visited, :active { 
+:link, 
+:visited, 
+:active { 
 	border: none; 
 	outline: none; 
 
