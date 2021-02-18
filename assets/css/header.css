@@ -44,9 +44,17 @@
 
 } */ 
 
+.index-link, .id { 
+	height: var( --id-height );  line-height: var( --id-height ); 
+
+}
+
 .index-link { 
 	/* align-self: flex-start;    */
 	display: block; 
+	/* height: var( --id-height );  line-height: var( --id-height );  */ 
+	position: absolute; left: -100%; margin-left: 4rem;  
+	z-index: 3;  
 
 }
 
@@ -56,9 +64,9 @@
 	/* width: 100%;  */ 
 	/* padding-left: 4rem; padding-right: 4rem;  */
 	/* position: relative; z-index: 2;  */ 
-	height: var( --id-height );  line-height: var( --id-height );  
-	position: absolute; left: -100%; margin-left: 4rem;  
-	z-index: 3;   
+	/* height: var( --id-height );  line-height: var( --id-height );   */
+	/* position: absolute; left: -100%; margin-left: 4rem;  
+	z-index: 3;    */
 	/* margin-right: 4rem;   */ 
 	/* text-align: center;  */
 

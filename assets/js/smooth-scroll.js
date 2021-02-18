@@ -1,18 +1,15 @@
-$( '.main-nav' ).on( 'click', smoothScrollHandler ); 
+$( document ).on( 'click', '.inner-link', smoothScrollHandler ); 
 
 function smoothScrollHandler( e ) { 
 	// Preventing default click response
 	e.preventDefault(); 
 
-	// Ensuring that a button is clicked
-	const target = $( e.target ); 
-	if ( !target.is( '.nav-button' ) ) { 
-		return; 
-	} 
+	// Referencing the button 
+	const innerLink = $( this ); 
 
 	// Scrolling to the button target section
-	const targetSection = $( '#' + target.attr( 'data-target-section' ) ); 
+	const targetSection = $( '#' + innerLink.attr( 'data-target-section' ) );  
 	const scrollDistance = targetSection.offset().top; 
-	$( 'html' ).animate( { scrollTop: scrollDistance }, 500 ); 
+	$( 'html, body' ).animate( { scrollTop: scrollDistance }, 500 ); 
 
 }
