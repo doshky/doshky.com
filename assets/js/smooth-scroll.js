@@ -4,12 +4,11 @@ function smoothScrollHandler( e ) {
 	// Preventing default click response
 	e.preventDefault(); 
 
-	// Referencing the button 
-	const innerLink = $( this ); 
+	// Getting the button target section
+	const targetSectionSelector = $( this ).attr( 'data-target-section' ); 
 
-	// Scrolling to the button target section
-	const targetSection = $( '#' + innerLink.attr( 'data-target-section' ) );  
-	const scrollDistance = targetSection.offset().top; 
+	// Scrolling to the button target section 
+	const scrollDistance = $( targetSectionSelector ).offset().top; 
 	$( 'html, body' ).animate( { scrollTop: scrollDistance }, 500 ); 
 
 }

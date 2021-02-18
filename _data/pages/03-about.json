@@ -3,7 +3,7 @@
 
 	"navEntry": { 
 		"label": "About", 
-		"targetSection": "about-section", 
+		"targetSectionSelector": "#about-section", 
 		"classNames": [ "about-button" ] 
 	}, 
 

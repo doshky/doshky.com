@@ -3,7 +3,7 @@
 
 	"navEntry": { 
 		"label": "Contact", 
-		"targetSection": "contact-section", 
+		"targetSectionSelector": "#contact-section", 
 		"classNames": [ "contact-button" ] 
 	}, 
 

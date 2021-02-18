@@ -3,7 +3,7 @@
 
 	"navEntry": { 
 		"label": "Welcome", 
-		"targetSection": "welcome-section", 
+		"targetSectionSelector": "#welcome-section", 
 		"classNames": [ "welcome-button" ] 
 	}, 
 

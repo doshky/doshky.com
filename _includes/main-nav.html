@@ -26,8 +26,8 @@
 	{% for page in pages %} 
 		{% assign navEntry = page[ 1 ].navEntry %} 
 		{% if navEntry %} 
-			<li class= "nav-entry{% if currentSectionNavEntry.targetSection == navEntry.targetSection %} entry-current{% endif %}">
-				<a href= "{{ '#' | append: navEntry.targetSection }}" class= "nav-button inner-link{{ navEntry.classNames | join: ' ' | prepend: ' ' }}" data-target-section= "{{ navEntry.targetSection }}">{{ navEntry.label }}</a> 
+			<li class= "nav-entry{% if currentSectionNavEntry.targetSectionSelector == navEntry.targetSectionSelector %} entry-current{% endif %}"> 
+				<a href= "{{ navEntry.targetSectionSelector }}" class= "nav-button inner-link{{ navEntry.classNames | join: ' ' | prepend: ' ' }}" data-target-section= "{{ navEntry.targetSectionSelector }}">{{ navEntry.label }}</a> 
 			</li>
 		{% endif %}
 	{% endfor %}
