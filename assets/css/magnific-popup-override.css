@@ -1,0 +1,9 @@
+.mfp-bg.mfp-ready { 
+	background-color: var( --gallery-open-background-color ); 
+
+} 
+
+.mfp-image-holder .mfp-figure .mfp-close { 
+	color: var( --background-color ); 
+
+}

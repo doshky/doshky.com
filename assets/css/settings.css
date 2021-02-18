@@ -45,6 +45,7 @@
 	/* --overlay-color:  rgba( 217, 161, 89, 1 );  */
 	--overlay-color:  rgba( 217, 161, 89, 1 );  
 	/* --overlay-color:  rgba( 40, 0, 48, 0.8 );   */
+	--gallery-open-background-color: rgba( 255, 255, 255, 1 ); 
 	/* --background-color: rgba( 40, 0, 48, 0.85 );  */
 	/* --background-color: rgb( 16, 25, 43 );    */
 	/* --background-color: rgba( 255, 255, 255, 1 );   */ 
