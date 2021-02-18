@@ -1,10 +1,5 @@
 @media ( max-width: 1320px ) { 
 
-	.header .index-link { 
-		position: relative; left: 0; margin-left: 0; 
-
-	}
-
 	.field { 
 		--field-width: 100%; 
 
@@ -33,6 +28,16 @@
 
 @media ( max-width: 1080px ) and ( min-width: 721px ) { 
 
+	.header .index-link { 
+		left: calc( -1 * 0.3 / 0.7 * 100%  ); 
+
+	} 
+
+	.section > * { 
+		margin-left: 30%; 
+
+	} 
+
 	.image-preview-list { 
 		--column-count: 4; 
 
@@ -52,10 +57,24 @@
 
 @media ( max-width: 840px ) { 
 
+	.page { 
+		--section-member-margin-top: 2rem; 
+	} 
+
+	/* .header { 
+		display: flex; flex-direction: column; justify-content: flex-start; 
+
+	} */
+
+	.header .index-link { 
+		position: relative; left: 0; margin-left: 0; 
+
+	} 
+
 	.section > * { 
 		margin-left: 0; 
 
-	} 
+	}
 
 	.image-preview-list { 
 		justify-content: flex-start; 
