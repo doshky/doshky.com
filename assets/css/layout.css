@@ -12,13 +12,6 @@ body {
 
 }  */ 
 
-.entry-list {  
-	--column-gutter-count: calc( var( --column-count ) - 1 );  
-	--column-gutter-y: var( --column-gutter-x ); 
-
-	--column-width: calc( ( 100% - var( --column-gutter-count ) * var( --column-gutter-x ) ) / var( --column-count ) ); 
-} 
-
 /* .entry-list > :last-child { 
 	margin-right: 0; 
 
