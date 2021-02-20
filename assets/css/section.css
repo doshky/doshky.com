@@ -46,10 +46,10 @@
 
 } 
 
-#gallery-section .section-body, 
+/* #gallery-section .section-body, 
 .image-preview-list { 
 	margin-left: 0; 
-}
+} */
 
 .section > :first-child, 
 .cover-image, 

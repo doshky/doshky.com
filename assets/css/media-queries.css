@@ -9,6 +9,11 @@
 
 @media ( min-width: 1081px ) { 
 
+	#gallery-section .section-body, 
+	.image-preview-list { 
+		margin-left: 0; 
+	}
+
 	.image-preview-list { 
 		--column-count: 5; 
 
@@ -29,12 +34,12 @@
 @media ( max-width: 1080px ) and ( min-width: 721px ) { 
 
 	.header .index-link { 
-		left: calc( -1 * 0.3 / 0.7 * 100%  ); 
+		left: calc( -1 * ( 0.25 / 0.7 * 100% )  ); 
 
 	} 
 
 	.section > * { 
-		margin-left: 30%; 
+		margin-left: 25%; 
 
 	} 
 
