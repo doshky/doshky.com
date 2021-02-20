@@ -54,7 +54,10 @@ $( function() {
 	.then( function( data ) { 
 		$( '.image-preview-list' ).magnificPopup( { 
 			delegate: 'a', 
-			type: 'image' 
+			type: 'image', 
+			gallery: {
+				enabled: true 
+			}
 		} ); 
 	} ); 
 
