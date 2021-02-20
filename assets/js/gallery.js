@@ -52,13 +52,7 @@ $( function() {
 		buildGalleryNavigation( $( data ).find( 'photo' ) ); 
 	} )
 	.then( function( data ) { 
-		$( '.image-preview-list' ).magnificPopup( { 
-			delegate: 'a', 
-			type: 'image', 
-			gallery: {
-				enabled: true 
-			}
-		} ); 
+		loadGalleryOn( '.image-preview-list' ); 
 	} ); 
 
 	function buildGalleryNavigation( photos ) {  
@@ -101,5 +95,15 @@ $( function() {
 		
 		return `https://www.flickr.com/services/rest/?${parameters}`; 
 	} 
+
+	function loadGalleryOn( galleryWrapper ) { 
+		$( galleryWrapper ).magnificPopup( { 
+			delegate: 'a', 
+			type: 'image', 
+			gallery: {
+				enabled: true 
+			} 
+		} ); 
+	}
 
 } ); 
