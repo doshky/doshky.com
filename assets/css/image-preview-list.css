@@ -24,7 +24,7 @@
 	position: relative; 
 	background-position: center; background-size: cover; 
 	/* background-clip: content-box; */ 
-	opacity: 0.8;  
+	opacity: 1;  
 
 } 
 
@@ -42,7 +42,7 @@
 	/* background-position: center; background-size: cover;  */ 
 	background-clip: content-box;   
 	background-color: var( --foreground-color ); 
-	opacity: 0.8; 
+	opacity: 0.7; 
 
 } 
 
@@ -60,13 +60,13 @@
 
 }  */ 
 
-.image-preview-entry:hover { 
+/* .image-preview-entry:hover { 
 	opacity: 1; 
 
-}
+} */
 
 .image-preview-entry:hover .image-preview { 
-	opacity: 0.2; 
+	opacity: 0.25; 
 
 }
 
