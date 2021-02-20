@@ -70,7 +70,7 @@
 .image-preview-list { 
 	--column-count: 5; 
 	/* --visible-column-count: 5;  */ 
-	--column-gutter-x: 0.8rem; 
+	--column-gutter-x: 0.7%; 
 
 	--text-padding-x: var( --column-gutter-x ); 
 
