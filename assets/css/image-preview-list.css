@@ -19,9 +19,11 @@
 	/* float: left;  */ 
 	width: var( --column-width ); padding-top: calc( 0.5 * var( --column-width ) );   
 	/* margin-right: var( --column-gutter-x );  */ 
-	background-color: var( --foreground-color );  
+	/* background-color: var( --foreground-color );   */
 	margin-top: var( --column-gutter-y ); 
 	position: relative; 
+	background-position: center; background-size: cover; 
+	/* background-clip: content-box; */ 
 	opacity: 0.8;  
 
 } 
@@ -37,9 +39,10 @@
 	width: 100%; height: 100%;  
 	padding: 2.75%; 
 	position: absolute; left: 0; top: 0; 
-	background-position: center; background-size: cover; 
-	background-clip: content-box;  
-	opacity: 0.4; 
+	/* background-position: center; background-size: cover;  */ 
+	background-clip: content-box;   
+	background-color: var( --foreground-color ); 
+	opacity: 0.8; 
 
 } 
 
@@ -55,10 +58,15 @@
 	opacity: 0.8; 
 	transition: opacity 0.2s; 
 
-}  */
+}  */ 
 
-.image-preview:hover { 
-	opacity: 0.8; 
+.image-preview-entry:hover { 
+	opacity: 1; 
+
+}
+
+.image-preview-entry:hover .image-preview { 
+	opacity: 0.2; 
 
 }
 
