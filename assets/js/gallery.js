@@ -37,10 +37,66 @@
 
 
 $( function() { 
+	// API key
+	const apiKey = '6c2c1beee55c4887b1f60727349410a5'; 
 
-	$( '.image-preview-list' ).magnificPopup( { 
-		delegate: 'a', 
-		type: 'image' 
+	// Url to use in AJAX call 
+	const photosURL = getURL( 
+		[ 'method', 'flickr.people.getPublicPhotos' ], 
+		[ 'api_key', apiKey ],  
+		[ 'user_id', '192275944@N08' ] 
+	); 
+
+	// AJAX call to get Flickr photostream entries
+	$.get( photosURL, function( data ) { 
+		buildGalleryNavigation( $( data ).find( 'photo' ) ); 
+	} )
+	.then( function( data ) { 
+		$( '.image-preview-list' ).magnificPopup( { 
+			delegate: 'a', 
+			type: 'image' 
+		} ); 
 	} ); 
+
+	function buildGalleryNavigation( photos ) {  
+		// For each photo in the photo entry collection 
+		for ( const photo of photos ) { 
+			// Building photo sizes object url 
+			const sizesURL = getURL( 
+				[ 'method', 'flickr.photos.getSizes' ], 
+				[ 'api_key', apiKey ], 
+				[ 'photo_id', $( photo ).attr( 'id' ) ] 
+			); 
+			
+			// Requesting photo sizes object, using the url 
+			$.get( sizesURL, function( data ) { 
+				// Finding "size" elements in "sizes" wrapper, 
+				// filtering those with the original size (one of them)
+				// and getting original photo url 
+				const originalURL = $( data ) 
+					.find( 'size' ) 
+					.filter( function( pos, size ) { 
+						return $( size ).attr( 'label' ) === 'Original'; 
+					} ) 
+					.attr( 'source' ); 
+
+				// Bulding a list item with a link to the original photo url, 
+				// and appending it to gallery navigation element immediately
+				$( '#gallery-nav' ).append( `<li class= "image-preview-entry"><a class= "image-preview" href="${originalURL}" style= "background-image: url( '${originalURL}' )"></a></li>` ); 
+			} ); 
+		}
+	} 
+
+	// Builds Flickr REST request url 
+	function getURL( ...parameterPairs ) { 
+		// Joining parameter name and value with '=', 
+		// and parameter pairs with '&'
+		const parameters = parameterPairs.map( function( parameterPair ) { 
+			return parameterPair.join( '=' ); 
+		} )
+		.join( '&' ); 
+		
+		return `https://www.flickr.com/services/rest/?${parameters}`; 
+	} 
 
 } ); 
