@@ -1,0 +1,40 @@
+ <script src= "/assets/js/jquery/dist/jquery.min.js"></script> 
+
+<script> 
+	const apiKey = '6c2c1beee55c4887b1f60727349410a5'; 
+	const userID = '192275944@N08'; 
+	const method = 'flickr.people.getPublicPhotos'; 
+
+	$.get( getURL( [ 'method', method ], [ 'api_key', apiKey ], [ 'user_id', userID ] ), function( data ) { 
+		buildGalleryNavigation( $( data ).find( 'photo' ) ); 
+	} ); 
+
+	function buildGalleryNavigation( photos ) {  
+		for ( const photo of photos ) { 
+			const id = $( photo ).attr( 'id' ); 
+			const url = getURL( [ 'method', 'flickr.photos.getSizes' ], [ 'api_key', apiKey ], [ 'photo_id', id ] ); 
+			
+			$.get( url, function( data ) { 
+				const originalURL = $( data )
+					.find( 'size' ) 
+					.filter( function( pos, size ) { 
+						return $( size ).attr( 'label' ) === 'Original'; 
+					} ) 
+					.attr( 'source' ); 
+				$( '#gallery-nav' ).append( `<li class= "image-preview-entry"><a class= "image-preview" href="${originalURL}" style= "background-image: url( '${originalURL}' )"></a></li>` ); 
+			} ); 
+		}
+	} 
+
+	function getURL( ...parameterPairs ) { 
+		const parameters = parameterPairs.map( function( parameterPair ) { 
+			return `${parameterPair[ 0 ]}=${parameterPair[ 1 ]}`;
+		} )
+		.join( '&' ); 
+		
+		return `https://www.flickr.com/services/rest/?${parameters}`; 
+	} 
+
+</script> 
+
+<ul id= "gallery-nav" class= "entry-list image-preview-list"></ul> 

@@ -20,14 +20,6 @@
 // 	 } ); 
 // }() ) 
 
-// ( function() { 
-// 	// $( '#paintings-gallery' ).nanogallery2( { 
-// 	// 	thumbnailWidth: 200, 
-// 	// 	thumbnailHeight: 200, 
-// 	// 	openOnStart: "74273925_2574521065964230_343086875277262848_n.jpg" 
-
-// 	// } ); 
-
 // 	$( '.fotorama' ).fotorama( { 
 // 		width: '100%', 
 // 		height: '100%', 
@@ -44,7 +36,11 @@
 // }() ) 
 
 
-$( '.image-preview-list' ).magnificPopup( { 
-	delegate: 'a', 
-	type: 'image' 
+$( function() { 
+
+	$( '.image-preview-list' ).magnificPopup( { 
+		delegate: 'a', 
+		type: 'image' 
+	} ); 
+
 } ); 

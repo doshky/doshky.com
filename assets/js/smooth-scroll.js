@@ -11,4 +11,4 @@ function smoothScrollHandler( e ) {
 	const scrollDistance = $( targetSectionSelector ).offset().top; 
 	$( 'html, body' ).animate( { scrollTop: scrollDistance }, 500 ); 
 
-}
+} 

@@ -29,7 +29,7 @@
 	}, 
 
 	"body": { 
-		"template": "image-preview-list.html", 
+		"template": "gallery-nav.html", 
 
 		"data": [ 
 			{
