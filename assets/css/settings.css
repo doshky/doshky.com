@@ -56,7 +56,7 @@
 .page {  
 	/* --section-member-margin-top: 4rem;  */ 
 	--section-main-margin-y: 5rem; 
-	--section-padding-y-to-main-margin-y-ratio: 2; 
+	--section-padding-y-to-main-margin-y-ratio: 1.8; 
 	--section-padding-y: calc( var( --section-main-margin-y ) * var( --section-padding-y-to-main-margin-y-ratio ) ); 
 	--section-body-margin-top: 2rem; 
 	--footer-margin-bottom: 0.8rem; 
