@@ -62,9 +62,9 @@
 
 @media ( max-width: 840px ) { 
 
-	.page { 
+	:root { 
 		/* --section-member-margin-top: 2rem;  */ 
-		--section-main-margin-y: 5rem; 
+		--section-main-margin-y: 4rem; 
 	} 
 
 	.header .index-link { 
