@@ -5,6 +5,7 @@
 	 */
 	--header-margin-top: 5rem; 
 	--id-height: 2.5rem; 
+	--id-margin-bottom: 0.5rem; 
 	--nav-button-padding-x: 0.5rem; 
 
 	--heading-margin-bottom: 0.4em; 
@@ -52,8 +53,12 @@
 	--background-color: rgba( 0, 0, 0, 0.75 ); 
 } 
 
-.page { 
-	--section-member-margin-top: 4rem; 
+.page {  
+	/* --section-member-margin-top: 4rem;  */ 
+	--section-main-margin-y: 5rem; 
+	--section-padding-y-to-main-margin-y-ratio: 2; 
+	--section-padding-y: calc( var( --section-main-margin-y ) * var( --section-padding-y-to-main-margin-y-ratio ) ); 
+	--section-body-margin-top: 2rem; 
 	--footer-margin-bottom: 0.8rem; 
 	--button-height: var( --id-height );  
 

@@ -63,11 +63,13 @@
 @media ( max-width: 840px ) { 
 
 	.page { 
-		--section-member-margin-top: 2rem; 
+		/* --section-member-margin-top: 2rem;  */ 
+		--section-main-margin-y: 5rem; 
 	} 
 
 	.header .index-link { 
 		position: relative; left: 0; margin-left: 0; 
+		margin-bottom: var( --id-margin-bottom ); 
 
 	} 
 
