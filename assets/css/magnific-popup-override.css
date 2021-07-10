@@ -7,3 +7,31 @@
 	color: var( --background-color ); 
 
 } 
+
+.mfp-zoom-out-cur, 
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close { 
+	cursor: no-drop !important; 
+
+} 
+
+.mfp-arrow { 
+	color: var( --background-color ); 
+
+}
+
+.mfp-arrow::before, 
+.mfp-arrow::after { 
+	border: none !important; 
+	font-family: IonIcons; font-size: var( --icon-arrow-font-size ); 
+
+} 
+
+.mfp-arrow-left.mfp-arrow::before { 
+	content: "\f124"; 
+
+} 
+
+.mfp-arrow-right.mfp-arrow::before { 
+	content: "\f125"; 
+
+} 
