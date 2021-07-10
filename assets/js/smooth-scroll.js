@@ -10,5 +10,9 @@ function smoothScrollHandler( e ) {
 	// Scrolling to the button target section 
 	const scrollDistance = $( targetSectionSelector ).offset().top; 
 	$( 'html, body' ).animate( { scrollTop: scrollDistance }, 500 ); 
+ 
+	// Updates previous and current section 
+	$( '.section-current' ).removeClass( 'section-current' ); 
+	$( targetSectionSelector ).addClass( 'section-current' ); 
 
 } 
