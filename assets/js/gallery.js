@@ -77,9 +77,16 @@ $( function() {
 					} ) 
 					.attr( 'source' ); 
 
+				const mediumURL = $( data ) 
+					.find( 'size' ) 
+					.filter( function( pos, size ) { 
+						return $( size ).attr( 'label' ) === 'Medium'; 
+					} ) 
+					.attr( 'source' ); 
+
 				// Bulding a list item with a link to the original photo url, 
 				// and appending it to gallery navigation element immediately
-				$( '#gallery-nav' ).append( `<li class= "image-preview-entry" style= "background-image: url( '${originalURL}' )"><a class= "image-preview" href="${originalURL}"></a></li>` ); 
+				$( '#gallery-nav' ).append( `<li class= "image-preview-entry"><a class= "image-preview" href="${originalURL}" style= "background-image: url( '${mediumURL}' )"></a></li>` ); 
 			} ); 
 		}
 	} 
