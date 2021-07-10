@@ -2,15 +2,15 @@
 layout: page 
 --- 
 
-<section class= "page-set">  
-	{% assign pages = site.data.pages | sort %} 
-	{% for page in pages %} 
-		{% assign content = page[ 1 ] %} 
+{% assign pages = site.data.pages | sort %} 
+{% for page in pages %} 
+	{% assign content = page[ 1 ] %} 
 
-		<article id= "{{ content.sectionID }}" class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
+	<article id= "{{ content.sectionID }}" class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"> 
+		<section class= "section-main"> 
 			{% include header.html data = content.navEntry %} 
 			{% include section.html data = content %} 
 			{% include footer.html %}  
-		</article>
-	{% endfor %} 
-</section> 
+		</section>
+	</article>
+{% endfor %} 

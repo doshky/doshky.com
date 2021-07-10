@@ -1,7 +1,29 @@
 html, 
-body { 
-	min-height: 100%;  
+body, 
+.page, 
+.section { 
+	width: 100%; height: 100%;  
 } 
+
+body { 
+	overflow: hidden; 
+
+} 
+
+.page { 
+	position: absolute; 
+	
+}
+
+.section { 
+	overflow-y: scroll; 
+
+} 
+
+.section-main { 
+	min-height: 100%;  
+
+}
 
 /* html:after { 
 	display: block; 

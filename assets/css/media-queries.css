@@ -38,7 +38,7 @@
 
 	} 
 
-	.section > * { 
+	.section-main > * { 
 		margin-left: 25%; 
 
 	} 
@@ -73,7 +73,7 @@
 
 	} 
 
-	.section > * { 
+	.section-main > * { 
 		margin-left: 0; 
 
 	}
