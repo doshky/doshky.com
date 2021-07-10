@@ -46,8 +46,23 @@ button,
 	border: none;  
 } 
 
+.section-main { 
+	overflow: hidden; 
+
+}
+
+.cover-image { 
+	width: 200%; height: 200%; 
+	position: absolute; 
+	left: -50%; top: -50%; 
+
+} 
+
 .cover-image img { 
-	width: 0; height: 0; overflow: hidden; 
-	position: absolute; left: -10000px; 
+	display: block; 
+	min-width: 50%; min-height: 50%; 
+	margin: auto; 
+	position: absolute; 
+	left: 0; right: 0; top: 0; bottom: 0; 
 	
 } 
