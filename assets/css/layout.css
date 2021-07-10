@@ -47,5 +47,7 @@ button,
 } 
 
 .cover-image img { 
-	display: none; 
+	width: 0; height: 0; overflow: hidden; 
+	position: absolute; left: -10000px; 
+	
 } 
