@@ -10,7 +10,7 @@
 
 .mfp-zoom-out-cur, 
 .mfp-zoom-out-cur .mfp-image-holder .mfp-close { 
-	cursor: no-drop !important; 
+	cursor: pointer !important; 
 
 } 
 
@@ -35,3 +35,8 @@
 	content: "\f125"; 
 
 } 
+
+.mfp-figure:after { 
+	background-color: transparent !important; 
+
+}
