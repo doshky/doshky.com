@@ -151,6 +151,11 @@
 
 } 
 
+.section-body { 
+	position: relative; z-index: 2; 
+
+}
+
 .section-current .text-content > *, 
 .section-current .body { 
 	/* position: absolute;  */ 
