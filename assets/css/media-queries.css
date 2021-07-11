@@ -84,6 +84,11 @@
 		--section-main-margin-y: 4rem; 
 	} 
 
+	.header { 
+		display: flex; flex-direction: column; align-items: flex-start; 
+
+	}
+
 	.header .index-link { 
 		position: relative; left: 0; margin-left: 0; 
 		margin-bottom: var( --id-margin-bottom ); 
