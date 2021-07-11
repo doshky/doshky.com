@@ -60,6 +60,23 @@
 
 } 
 
+@media ( max-width: 1080px ) { 
+	.image-preview-list { 
+		justify-content: flex-start; 
+	} 
+
+	.image-preview-entry { 
+		opacity: 1;  
+	
+	} 
+
+	.image-preview { 
+		opacity: 0.2; 
+	
+	} 
+
+}
+
 @media ( max-width: 840px ) { 
 
 	:root { 
@@ -76,11 +93,7 @@
 	.section-main > * { 
 		margin-left: 0; 
 
-	}
-
-	.image-preview-list { 
-		justify-content: flex-start; 
-	}
+	} 
 
 }
 
