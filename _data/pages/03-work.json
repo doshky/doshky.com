@@ -2,7 +2,7 @@
 	"order": 3, 
 
 	"navEntry": { 
-		"label": "Work", 
+		"label": "Paintings", 
 		"targetSectionSelector": "#gallery-section", 
 		"classNames": [ "gallery-button" ] 
 	}, 
@@ -12,13 +12,13 @@
 	"classNames": [ "gallery" ], 
 
 	"head": { 
-		"subheading": "A few of my very best", 
+		"subheading": "I present you a few of my", 
 		
 		"heading": "Paintings", 
 
 		"text": [ 
 			{ 
-				"text": "Accept my invitation to a journey full of colours that you can take home with you, to fulfill it with the beauty and light of my paintings." 
+				"text": "and hope you to accept my invitation to a journey full of colours that you can take home with you, to fulfill it with the beauty and light of my paintings." 
 			} 
 		], 
 
