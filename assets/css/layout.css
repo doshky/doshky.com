@@ -1,6 +1,7 @@
 html, 
 body, 
 .page, 
+.page-set, 
 .section { 
 	width: 100%; height: 100%;  
 } 
@@ -18,6 +19,11 @@ body {
 .section { 
 	overflow-y: scroll; 
 
+} 
+
+.page-set { 
+	position: absolute; left: -10000px; 
+	z-index: 1; 
 } 
 
 .section-main { 
