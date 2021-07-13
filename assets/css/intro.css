@@ -296,7 +296,7 @@
 @keyframes close-up { 
 
 	100% { 
-		margin-top: -100vh; 
+		height: 0; 
 	}
 	
 } 
