@@ -17,29 +17,28 @@
 	--hex-in-delay: calc( var( --head-background-pull-up-delay ) + 0.8 * var( --head-background-pull-up-duration ) ); 
 	--hex-fade-in-duration: 0.075s; 
 	--hex-slide-up-duration: 0.2s; 
-	--icon-slide-up-duration: 0.2s; 
+	/* --icon-slide-up-duration: 0.2s; 
 	--icon-fade-in-duration: 0.075s; 
 	--icon-in-start-relative-delay: 0.075s; 
-	--icon-in-relative-delay: 0.07s; 
+	--icon-in-relative-delay: 0.07s;  */
 
-	--icon-in-start-delay: calc( var( --hex-in-delay ) + var( --icon-in-start-relative-delay ) ); 
-	--icon-immune-in-delay: calc( var( --icon-in-start-delay ) + 0 * var( --icon-in-relative-delay ) ); 
-	--icon-cardio-in-delay: calc( var( --icon-in-start-delay ) + 1 * var( --icon-in-relative-delay ) ); 
-	--icon-respiratory-in-delay: calc( var( --icon-in-start-delay ) + 2 * var( --icon-in-relative-delay ) ); 
-	--icon-neural-in-delay: calc( var( --icon-in-start-delay ) + 3 * var( --icon-in-relative-delay ) ); 
-	--icon-skeletal-in-delay: calc( var( --icon-in-start-delay ) + 4 * var( --icon-in-relative-delay ) ); 
+	/* --icon-in-start-delay: calc( var( --hex-in-delay ) + var( --icon-in-start-relative-delay ) );  */
 	
-	--block-in-relative-delay: -0.5s;  
+	--block-in-relative-delay: -0.2s;  
 	--block-fade-in-duration: 0.25s; 
 	--block-slide-up-duration: 0.25s; 
-	--block-in-delay: calc( var( --icon-skeletal-in-delay ) + var( --icon-slide-up-duration ) + var( --block-in-relative-delay ) ); 
+	--block-in-delay: calc( var( --hex-in-delay ) + var( --hex-slide-up-duration ) + var( --block-in-relative-delay ) ); 
 	
+	--after-message-holder-fade-in-duration: 0.075s; 
+	--after-message-holder-slide-down-duration: 0.2s; 
+	--after-message-holder-in-relative-delay: 0.05s; 
+	--after-message-holder-in-delay: calc( var( --block-in-delay ) + var( --block-slide-up-duration ) + var( --after-message-holder-in-relative-delay ) );
 	
-	--logo-fade-in-duration: 0.075s; 
+	/* --logo-fade-in-duration: 0.075s; 
 	--logo-slide-down-duration: 0.2s; 
 	--logo-in-relative-delay: 0.0125s; 
 	--logo-in-relative-delay: 0.0125s; 
-	--logo-in-delay: calc( var( --block-in-delay ) + var( --block-slide-up-duration ) + var( --logo-in-relative-delay ) ); 
+	--logo-in-delay: calc( var( --block-in-delay ) + var( --block-slide-up-duration ) + var( --logo-in-relative-delay ) );  */
 	
 } 
 
@@ -57,7 +56,8 @@
 
 .intro { 
 	width: 100%; height: 100%; 
-    /* position: absolute;  */ 
+    position: absolute; left: 0; top: 0;  
+	z-index: 4; 
 	background-color: var( --background-color );  
 	overflow: auto; 
 } 
@@ -214,7 +214,7 @@
 } 
 
 
-.intro, .intro-body, .intro-body-icon, .intro + *, 
+.intro, .intro-body, .intro-body-icon, .intro + *, .page, 
 .intro-head:after, .intro-head-content, .intro-head-block, 
 .after-message-holder, .after-message, .intro-body-message { 
 	animation-fill-mode: forwards;	
@@ -236,7 +236,7 @@
 }
 
 .after-message-holder { 
-	animation-name: fade-in, slide-down; animation-duration: var( --logo-fade-in-duration ), var( --logo-slide-down-duration ); animation-delay: var( --logo-in-delay ); 
+	animation-name: fade-in, slide-down; animation-duration: var( --after-message-holder-fade-in-duration ), var( --after-message-holder-slide-down-duration ); animation-delay: var( --after-message-holder-in-delay ); 
 	
 } 
 
@@ -245,14 +245,14 @@
     animation-delay: calc( var( --icon-in-start-delay ) + 0.125s );
 } 
 
-.intro { 
-    animation-name: close-up; animation-duration: 0.4s; animation-delay: calc( var( --icon-in-start-delay ) + 4s ); 
+.page { 
+    animation-name: close-up; animation-duration: 0.4s; animation-delay: 4s; 
 
-} 
+}  
 
 .intro + * {
-    animation-name: set-into-view; animation-duration: 0.0005s; animation-delay: calc( var( --icon-in-start-delay ) + 4s + 0.4s ); 
-}
+    animation-name: set-into-view; animation-duration: 0.0005s; animation-delay: 2.5s; 
+}  
 
 
 @keyframes pull-up { 
@@ -296,15 +296,24 @@
 @keyframes close-up { 
 
 	100% { 
-		height: 0; 
+		transform: translateY( -100% ); 
 	}
 	
 } 
 
+@keyframes clear { 
+
+	100% { 
+		opacity: 0;  
+	}
+	
+}
+
 @keyframes set-into-view { 
 
 	100% { 
-		position: initial; 
+		left: 0; 
+		
 	}
 	
 } 

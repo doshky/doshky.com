@@ -22,7 +22,7 @@ body {
 } 
 
 .page-set { 
-	position: absolute; left: -10000px; 
+	position: absolute; top: 100%; left: -10000px; 
 	z-index: 1; 
 } 
 
