@@ -1,0 +1,7 @@
+.play-animation-button { 
+    padding: 0; 
+    position: absolute; margin-left: 0; left: 50%; top: 200px; 
+    z-index: 2; 
+    border: 1px solid; 
+
+}
