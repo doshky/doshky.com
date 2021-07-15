@@ -21,11 +21,6 @@ body {
 
 } 
 
-.page-set { 
-	position: absolute; top: 100%; left: -10000px; 
-	z-index: 1; 
-} 
-
 .section-main { 
 	min-height: 100%;  
 
