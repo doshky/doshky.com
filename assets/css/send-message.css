@@ -1,4 +1,5 @@
 .send-message { 
+	max-width: 40rem; 
 	position: relative; 
 	z-index: 2; 
 	margin-top: var( --send-message-margin-top ); 

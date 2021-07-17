@@ -1,3 +1,12 @@
+@media ( max-width: 1600px ) { 
+
+	.field { 
+		--field-width: 100%; 
+
+	} 
+
+}
+
 @media ( max-width: 1600px ) and ( min-width: 841px ) { 
 
 	.field { 
