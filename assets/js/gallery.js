@@ -88,7 +88,9 @@ $( function() {
 				// and appending it to gallery navigation element immediately
 				$( '#gallery-nav' ).append( `<li class= "image-preview-entry"><a class= "image-preview" href="${originalURL}" style= "background-image: url( '${mediumURL}' )"></a></li>` ); 
 			} ); 
-		}
+		} 
+
+		$( '#gallery-nav' ).attr( 'style', '--entry-count:' + photos.length ); 
 	} 
 
 	// Builds Flickr REST request url 

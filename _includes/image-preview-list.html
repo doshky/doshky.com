@@ -1,6 +1,6 @@
 {% assign imageList = include.data %} 
 
-<ul class= "entry-list image-preview-list" style= "--total-column-count: {{ imageList | size }};"> 
+<ul class= "entry-list image-preview-list" style= "--entry-count: {{ imageList | size }};"> 
 {% for image in imageList %} 
 	<li class= "image-preview-entry">
 		<a class= "image-preview" href= "/assets/images/{{ image.src }}" style= "background-image: url( '/assets/images/{{ image.src }}' )"></a> 
