@@ -2,6 +2,28 @@
 layout: page 
 --- 
 
+{% assign pages = site.data.pages | sort %} 
+{% assign pos = 0 %} 
+
+<section class= "page-set"> 
+{% for page in pages %} 
+	{% assign content = page[ 1 ] %} 
+
+	<article 
+		id= "{{ content.sectionID }}" 
+		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}{% if pos == 0 %} section-current{% endif %}" 
+	> 
+		<section class= "section-main"> 
+			{% include header.html data = content.navEntry %} 
+			{% include section.html data = content %} 
+			{% include footer.html %}  
+		</section>
+	</article> 
+
+	{% assign pos = pos | plus: 1 %} 
+{% endfor %} 
+</section> 
+
 <div class= "intro"> 
 	<div class= "intro-wrapper"> 
 		<div class= "intro-head"> 
@@ -24,25 +46,3 @@ layout: page
 		</div> 
 	</div>
 </div> 
-
-{% assign pages = site.data.pages | sort %} 
-{% assign pos = 0 %} 
-
-<section class= "page-set"> 
-{% for page in pages %} 
-	{% assign content = page[ 1 ] %} 
-
-	<article 
-		id= "{{ content.sectionID }}" 
-		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}{% if pos == 0 %} section-current{% endif %}" 
-	> 
-		<section class= "section-main"> 
-			{% include header.html data = content.navEntry %} 
-			{% include section.html data = content %} 
-			{% include footer.html %}  
-		</section>
-	</article> 
-
-	{% assign pos = pos | plus: 1 %} 
-{% endfor %} 
-</section>
