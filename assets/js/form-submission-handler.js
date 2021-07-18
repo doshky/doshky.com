@@ -115,8 +115,16 @@
   };
   document.addEventListener("DOMContentLoaded", loaded, false);
 
+  // function disableAllButtons(form) {
+  //   var buttons = form.querySelectorAll("button");
+  //   for (var i = 0; i < buttons.length; i++) {
+  //     buttons[i].disabled = true;
+  //   }
+  // } 
+
+  // Form submitting disables submit button only, 'thank you' message close button still works 
   function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
+    var buttons = form.querySelectorAll("button.submit-message-button"); 
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }

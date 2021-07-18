@@ -1,7 +1,7 @@
 {% assign fields = include.data.fields %} 
 
 
-<form class= "gform send-message" action= "https://script.google.com/macros/s/AKfycbxts52msNe9Tf6y23YScDFYWTuUl4kqfT8fU3boGDKjesfmOtc7uP1E6sF-GGYwJsBN/exec"> 
+<form class= "gform send-message" method= "POST" action= "https://script.google.com/macros/s/AKfycbyP8VvAizXQT0Mf8ewE_l40iATNhsbI1zEp5TRiGQ/exec"> 
 	{% for field in fields %} 
 		{% include field.html data = field %}
 	{% endfor %} 

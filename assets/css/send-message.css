@@ -125,7 +125,7 @@ textarea {
 .warning-message-button { 
 	/* width: 2.75em; height: 2.75em;  */ 
 	margin-left: 0.75rem; 
-	/* position: relative;  */ 
+	position: relative; z-index: 10; 
 	font-size: 1rem; 
 	font-weight: bold; 
 	text-align: center; 

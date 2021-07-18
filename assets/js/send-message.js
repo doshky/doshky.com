@@ -1,11 +1,11 @@
-const warningMessage = $( '.warning-message' ); 
+$( '.send-message' ).on( 'click', 'button', function( e ) { 
+	const button = $( this ); 
+	const warningMessage = $( '.warning-message' ); 
 
-$( '.submit-message-button' ).on( 'click', function( e ) { 
-	warningMessage.addClass( 'display' ); 
-} ); 
+	if ( button.is( '.submit-message-button' ) ) { 
+		warningMessage.addClass( 'display' );  
+	} else if ( button.is( '.warning-message-button' ) ) { 
+		warningMessage.removeClass( 'display' ); 
+	}
 
-$( '.warning-message-button' ).on( 'click', function( e ) { 
-	e.preventDefault(); 
-
-	warningMessage.removeClass( 'display' ); 
 } ); 
