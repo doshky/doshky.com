@@ -305,7 +305,7 @@
 }   */ 
 
 .intro { 
-    animation-name: fade-in; animation-duration: 0.75s; animation-delay: 0.25s; 
+    animation-name: fade-in, fade-out, close; animation-duration: 0.75s, 0.75s, 0.0005s; animation-delay: 0.25s, 5s, 5.4s; 
 
 }
 
