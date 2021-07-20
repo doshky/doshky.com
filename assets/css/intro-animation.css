@@ -1,8 +1,8 @@
 .intro { 
-	--hex-holder-width: 100px; 
+	--hex-holder-width: 5rem; 
 	--hex-holder-height: 5rem; 
 	--hex-icon-size: calc( 0.585 * var( --hex-holder-height ) ); 
-	--hex-holder-border-width: 8px; 
+	--hex-holder-border-width: 10px; 
 	--system-holder-width: 70px; 
 	--system-holder-height: 61px;
 	--system-icon-size: calc( 0.7 * var( --system-holder-height ) ); 
@@ -98,7 +98,7 @@
 .intro-head {  
     top: 0; 
 	padding-bottom: var( --head-border-width ); 
-	color: var( --background-color ); 
+	color: var( --foreground-color ); 
 } 
 
 .intro-body { 
@@ -116,7 +116,8 @@
 	display: block; 
 	width: 100%; height: 200%; 
 	position: absolute; left: 0; top: 0; z-index: 2; 
-	background-color: var( --foreground-color );
+	/* background-color: var( --foreground-color ); */ 
+	border-bottom: 10px solid; 
 	transform: translateY( -100% ); 
 	content: ""; 
 } 
@@ -195,17 +196,21 @@
 } */
 
 .intro-body-icon { 
-	position: absolute; top: calc( -1 * var( --head-border-width ) );   
+	position: absolute; top: calc( -1 * var( --head-border-width ) ); 
 
 } 
 
-/* .intro-body-icon:before {
-	display: flex; align-items: center; justify-content: center; 
-	font-family: IonIcons; font-size: 8rem; 
-	content: "\f2fc"; 
-	color: var( --foreground-color ); 
+.logo-icon:before {
+	/* display: flex; align-items: center; justify-content: center;  */ 
+	position: absolute; left: 0; top: 0; right: 0; bottom: 0; 
+	z-index: -1; 
+	/* font-family: IonIcons;  */ 
+	font-size: 3rem; 
+	/* content: "\f2fc";  */ content: "D"; 
+	/* color: var( --background-color );  */ 
 	text-shadow: 0 0 2px var( --background-color ); 
-}  */
+	transform: rotateZ( 45deg ); 
+} 
 
 .intro-body-content { 
 	height: 100%; 
@@ -227,17 +232,20 @@
 
 .logo-icon { 
 	/* box-sizing: border-box;  */ 
-	display: inline-block; 
-	/* width: var( --hex-holder-width );  */ 
+	display: block; 
+	width: var( --hex-holder-width );  
 	height: var( --hex-holder-height ); line-height: var( --hex-holder-height ); 
-	padding-left: 0.4em; padding-right: 0.4em; 
-	background-color: var( --foreground-color ); 
-	border: var( --hex-holder-border-width ) solid;  
+	/* padding-left: 0.4em; padding-right: 0.4em;  */ 
+	position: relative; 
+	background-color: var( --background-color );   
+	border: var( --hex-holder-border-width ) solid;   
 	/* border-radius: 50%;   */ 
-	color: var( --background-color ); 
-	font-size: 4em; font-family: Impact; 
+	color: var( --foreground-color ); 
+	font-size: 2.5em; font-family: Impact; 
 	text-align: center; 
 	text-transform: uppercase; 
+	transform: rotateZ( -45deg ); 
+	box-shadow: 0 0 2px var( --background-color ); 
 
 }
 
@@ -305,7 +313,7 @@
 }   */ 
 
 .intro { 
-    animation-name: fade-in, fade-out, close; animation-duration: 0.75s, 0.75s, 0.0005s; animation-delay: 0.25s, 5s, 5.4s; 
+    animation-name: fade-in; animation-duration: 0.75s, 0.75s, 0.0005s; animation-delay: 0.25s, 5s, 5.4s; 
 
 }
 
