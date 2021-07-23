@@ -9,7 +9,7 @@
 
 	"sectionID": "welcome-section", 
 	
-	"classNames": [ "welcome", "section-current" ], 
+	"classNames": [ "welcome" ], 
 
 	"head": { 
 		"subheading": "Glad to have you here and", 
