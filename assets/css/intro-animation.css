@@ -253,15 +253,13 @@
 	width: var( --hex-icon-size ); height: var( --hex-icon-size ); 
 } 
 
-.page-set {  
+/* .page-set {  
 	position: absolute; 
-	/* left: -10000px; top: -10000px;  */ 
 	clip: rect( 0 0 0 0 );
   	clip-path: inset( 50% );  
 	overflow: hidden; 
-	/* visibility: hidden;  */
 
-}
+} */
 
 
 .intro, .intro-body, .intro-body-icon, .intro + *, .page-set, .page, 
@@ -317,9 +315,9 @@
 
 }
 
-.page-set {
+/* .page-set {
     animation-name: set-into-view; animation-duration: 0.0005s; animation-delay: 3.5s; 
-}  
+}   */ 
 
 
 @keyframes pull-up { 
