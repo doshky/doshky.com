@@ -59,7 +59,8 @@
 						]
 						.forEach( function( value ) { 
 							$( '<script />' )
-								.attr( 'src', value )
+								.attr( 'src', value ) 
+								.attr( 'type', 'text/javascript' ) 
 								.appendTo( body ); 
 						} ); 
 							
@@ -70,11 +71,13 @@
 						contactScriptLoaded = true; 
 
 						[ 
-							'/assets/js/send-message.js' 
+							'/assets/js/send-message.js', 
+							'/assets/js/form-submission-handler.js' 
 						]
 						.forEach( function( value ) { 
-							$( '<script />' )
-								.attr( 'src', value )
+							$( '<script />' ) 	
+								.attr( 'src', value ) 
+								.attr( 'type', 'text/javascript' )  
 								.appendTo( body ); 
 						} ); 
 						
