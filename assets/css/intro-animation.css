@@ -65,14 +65,15 @@
 	width: 100%; height: 100%; 
     /* position: absolute; left: 0; top: 0;    */ 
 	z-index: 5; 
-	background-color: var( --background-color );   
-	overflow: hidden; 
-	opacity: 0; 
+	background-color: var( --foreground-color );   
+	overflow: hidden;  
 } 
 
 .intro-wrapper { 
 	width: 100%; min-height: 100%;  
     position: relative; 
+	background-color: var( --background-color ); 
+	opacity: 0; 
 }
 
 .intro-head, 
@@ -262,7 +263,7 @@
 } */
 
 
-.intro, .intro-body, .intro-body-icon, .intro + *, .page-set, .page, 
+.intro, .intro-wrapper, .intro-body, .intro-body-icon, .intro + *, .page-set, .page, 
 .intro:after, 
 .intro-head:after, .intro-head-content, .intro-head-block, 
 .after-message-holder, .after-message, .intro-body-message, 
@@ -310,7 +311,7 @@
 
 }   */ 
 
-.intro.section-current { 
+.section-current .intro-wrapper { 
     animation-name: fade-in; animation-duration: 0.75s, 0.75s, 0.0005s; animation-delay: 0.25s, 5s, 5.4s; 
 
 }
