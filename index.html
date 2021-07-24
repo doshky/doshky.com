@@ -3,7 +3,7 @@ layout: page
 --- 
 
 
-<div class= "intro"> 
+<div id= "intro-animation" class= "intro section-current"> 
 	<div class= "intro-wrapper"> 
 		<div class= "intro-head"> 
 			<div class= "intro-content intro-head-content">  
@@ -23,7 +23,7 @@ layout: page
 				</div>
 			</div>
 		</div> 
-	</div>
+	</div>  
 </div> 
 
 {% assign pages = site.data.pages | sort %} 
@@ -47,3 +47,5 @@ layout: page
 	{% assign pos = pos | plus: 1 %} 
 {% endfor %} 
 </section> 
+
+<a href= "#intro-animation" class= "button inner-link play-animation-button" data-target-section= "#intro-animation">Replay Animation</a> 

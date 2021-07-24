@@ -275,7 +275,7 @@
 	
 }  */ 
 
-.intro-head:after { 
+.section-current .intro-head:after { 
 	animation-name: pull-up; animation-duration: var( --head-background-pull-up-duration ); animation-delay: var( --head-background-pull-up-delay ); animation-timing-function: ease; 
 	
 } 
@@ -285,22 +285,22 @@
 	
 }  */
 
-.intro-body-icon { 
+.section-current .intro-body-icon { 
 	animation-name: icon-slide-down, slide-up; animation-duration: var( --hex-slide-down-duration ), var( --hex-slide-up-duration ); animation-delay: var( --hex-slide-down-delay ), var( --hex-slide-up-delay ); 
 	
 } 
 
-.intro-head-block { 
+.section-current .intro-head-block { 
 	animation-name: fade-in, slide-up; animation-duration: var( --block-fade-in-duration ), var( --block-slide-up-duration ); animation-delay: var( --block-in-delay ); 
 	
 }
 
-.after-message-holder { 
+.section-current .after-message-holder { 
 	animation-name: fade-in, slide-down; animation-duration: var( --after-message-holder-fade-in-duration ), var( --after-message-holder-slide-down-duration ); animation-delay: var( --after-message-holder-in-delay ); 
 	
 } 
 
-.intro-body-message { 
+.section-current .intro-body-message { 
 	animation-name: fade-in, slide-up; animation-duration: var( --icon-fade-in-duration ), var( --icon-slide-up-duration ); animation-delay: var( --icon-in-start-delay ); 
     animation-delay: calc( var( --icon-in-start-delay ) + 0.125s );
 } 
@@ -310,7 +310,7 @@
 
 }   */ 
 
-.intro { 
+.intro.section-current { 
     animation-name: fade-in; animation-duration: 0.75s, 0.75s, 0.0005s; animation-delay: 0.25s, 5s, 5.4s; 
 
 }
