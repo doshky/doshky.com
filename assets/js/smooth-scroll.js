@@ -1,55 +1,84 @@
-// Scroll handler is called on page load to transition to welcome section on animation end 
-smoothScrollHandler();  
+( function() { 
 
-// Scroll handler is called on button click 
-$( document ).on( 'click', '.inner-link', smoothScrollHandler ); 
+	const smoothScrollHandler = ( function() { 
+		let galleryScriptLoaded = false; 
+		let contactScriptLoaded = false; 
 
-function smoothScrollHandler( e ) { 
-	// Button target section selector
-	let targetSectionSelector;  
-	// Button target section 
-	let targetSection; 
-	// Default scroll delay, used when page section is the target  
-	let scrollDelay = 0; 
-	// Default scroll duration 
-	const scrollDuration = 500; 
- 
-	// Scroll handler is called not only on button click, 
-	// but on page load and after scrolling to intro animation section too 
-	if ( e ) { 
-		// Preventing default click response
-		e.preventDefault(); 
+		return function( e ) { 
+			// Button target section selector
+			let targetSectionSelector;  
+			// Button target section 
+			let targetSection; 
+			// Default scroll delay, used when page section is the target  
+			let scrollDelay = 0; 
+			// Default scroll duration 
+			const scrollDuration = 500; 
+		
+			// Scroll handler is called not only on button click, 
+			// but on page load and after scrolling to intro animation section too 
+			if ( e ) { 
+				// Preventing default click response
+				e.preventDefault(); 
 
-		// Getting the button target section
-		targetSectionSelector = $( this ).attr( 'data-target-section' );    
-	} 
+				// Getting the button target section
+				targetSectionSelector = $( this ).attr( 'data-target-section' );    
+			} 
 
-	// On call after scrolling to intro animation section 
-	if ( $( '#intro-animation' ).hasClass( 'section-current' ) ) { 
-		// Sets moving to welcome section
-		targetSectionSelector = '#welcome-section'; 
-		// Ensures that animation is over before moving to welcome section 
-		scrollDelay = 5000; 
-
-	} 
-
-	// Getting target section 
-	targetSection = $( targetSectionSelector ); 
-	// Scrolling distance to the button target section 
-	const scrollDistance = targetSection.offset().top; 
-
-	setTimeout( function() { 
-		$( 'html, body' ).animate( { scrollTop: scrollDistance }, scrollDuration, function() { 
-			// Updates previous and current section  
-			$( '.section-current' ).removeClass( 'section-current' ); 
-			targetSection.addClass( 'section-current' ); 
-
-			// Moving to intro animation section calls scroll handler to move to welcome page after waiting animation to end
+			// On call after scrolling to intro animation section 
 			if ( $( '#intro-animation' ).hasClass( 'section-current' ) ) { 
-				smoothScrollHandler(); 
-			}
+				// Sets moving to welcome section
+				targetSectionSelector = '#welcome-section'; 
+				// Ensures that animation is over before moving to welcome section 
+				scrollDelay = 5000; 
 
-		} ); 
-	}, scrollDelay ); 
+			} 
 
-} 
+			// Getting target section 
+			targetSection = $( targetSectionSelector ); 
+			// Scrolling distance to the button target section 
+			const scrollDistance = targetSection.offset().top; 
+
+			const timeout = setTimeout( function() { 
+				$( 'html' ).animate( { scrollTop: scrollDistance }, scrollDuration, function() { 
+					clearTimeout( timeout ); 
+					
+					// Updates previous and current section  
+					$( '.section-current' ).removeClass( 'section-current' ); 
+					targetSection.addClass( 'section-current' ); 
+
+					// Moving to intro animation section calls scroll handler to move to welcome page after waiting animation to end
+					if ( targetSection.is( '#intro-animation' ) ) { 
+						smoothScrollHandler(); 
+					} else if ( targetSection.is( '#gallery-section' ) && !galleryScriptLoaded ) { 
+						galleryScriptLoaded = true; 
+
+						$.getScript( '/assets/plugins/magnific-popup/dist/jquery.magnific-popup.min.js', function() {
+							$.getScript( '/assets/js/gallery.js', function() { 
+								console.log( 'Gallery script loaded.' ); 
+							} ); 
+						} );  
+
+					} else if ( targetSection.is( '#contact-section' ) && !contactScriptLoaded ) { 
+						contactScriptLoaded = true; 
+						
+						$.getScript( '/assets/js/form-submission-handler.js', function() {
+							$.getScript( '/assets/js/send-message.js', function() {
+								console.log( 'Contact form script loaded.' ); 
+							} ); 
+						} ); 
+
+					}
+
+				} ); 
+			}, scrollDelay ); 
+		}
+
+	}() );  
+
+	// Scroll handler is called on button click 
+	$( document ).on( 'click', '.inner-link', smoothScrollHandler ); 
+
+	// Scroll handler is called on page load to transition to welcome section on animation end 
+	smoothScrollHandler();  
+
+}() ); 
