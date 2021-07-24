@@ -129,4 +129,4 @@
       buttons[i].disabled = true;
     }
   }
-})();
+}() ); 

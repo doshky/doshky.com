@@ -1,6 +1,7 @@
 ( function() { 
 
 	const smoothScrollHandler = ( function() { 
+		const body = $( 'body' ); 
 		let galleryScriptLoaded = false; 
 		let contactScriptLoaded = false; 
 
@@ -52,20 +53,33 @@
 					} else if ( targetSection.is( '#gallery-section' ) && !galleryScriptLoaded ) { 
 						galleryScriptLoaded = true; 
 
-						$.getScript( '/assets/plugins/magnific-popup/dist/jquery.magnific-popup.min.js', function() {
-							$.getScript( '/assets/js/gallery.js', function() { 
-								console.log( 'Gallery script loaded.' ); 
-							} ); 
-						} );  
+						[ 
+							'/assets/plugins/magnific-popup/dist/jquery.magnific-popup.min.js', 
+							'/assets/js/gallery.js' 
+						]
+						.forEach( function( value ) { 
+							$( '<script />' )
+								.attr( 'src', value )
+								.appendTo( body ); 
+						} ); 
+							
+						
+						// .then( console.log( 'Gallery scripts loaded.' ) );  
 
 					} else if ( targetSection.is( '#contact-section' ) && !contactScriptLoaded ) { 
 						contactScriptLoaded = true; 
-						
-						$.getScript( '/assets/js/form-submission-handler.js', function() {
-							$.getScript( '/assets/js/send-message.js', function() {
-								console.log( 'Contact form script loaded.' ); 
-							} ); 
+
+						[ 
+							'/assets/js/send-message.js' 
+						]
+						.forEach( function( value ) { 
+							$( '<script />' )
+								.attr( 'src', value )
+								.appendTo( body ); 
 						} ); 
+						
+					
+						// .then( console.log( 'Contact form scripts loaded.' ) ); 
 
 					}
 
