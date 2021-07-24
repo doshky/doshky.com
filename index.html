@@ -41,11 +41,11 @@ layout: page
 			{% include header.html data = content.navEntry %} 
 			{% include section.html data = content %} 
 			{% include footer.html %}  
-		</section>
+		</section> 
+
+		<a href= "#intro-animation" class= "button inner-link play-animation-button" data-target-section= "#intro-animation">Play Intro</a> 
 	</article> 
 
 	{% assign pos = pos | plus: 1 %} 
 {% endfor %} 
 </section> 
-
-<a href= "#intro-animation" class= "button inner-link play-animation-button" data-target-section= "#intro-animation">Replay Animation</a> 

@@ -17,6 +17,7 @@ body {
 } 
 
 .section { 
+	position: relative; 
 	overflow-y: scroll; 
 
 } 
