@@ -43,7 +43,9 @@ layout: page
 			{% include footer.html %}  
 		</section> 
 
-		<a href= "#intro-animation" class= "button inner-link play-animation-button" data-target-section= "#intro-animation">Play Intro</a> 
+		{% if pos == 0 %} 
+			<a href= "#intro-animation" class= "button inner-link play-animation-button" data-target-section= "#intro-animation">Replay Intro</a> 
+		{% endif %} 
 	</article> 
 
 	{% assign pos = pos | plus: 1 %} 
