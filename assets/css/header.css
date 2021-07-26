@@ -44,7 +44,8 @@
 
 } */ 
 
-.index-link, .id { 
+.index-link, 
+.id { 
 	height: var( --id-height );  line-height: var( --id-height ); 
 
 }
@@ -53,13 +54,13 @@
 	/* align-self: flex-start;    */
 	display: block; 
 	/* height: var( --id-height );  line-height: var( --id-height );  */ 
-	position: absolute; left: -100%; margin-left: 4rem;  
+	position: absolute; left: -100%; margin-left: 4rem; top: 50%; transform: translateY( -50% ); 
 	z-index: 3;  
 
 }
 
 .id { 
-	/* width: 8rem;  */ 
+	width: 8rem;  
 	/* height: 4rem;    */ 
 	/* width: 100%;  */ 
 	/* padding-left: 4rem; padding-right: 4rem;  */
@@ -68,7 +69,9 @@
 	/* position: absolute; left: -100%; margin-left: 4rem;  
 	z-index: 3;    */
 	/* margin-right: 4rem;   */ 
-	/* text-align: center;  */
+	/* text-align: center;  */ 
+	background-image: url( "/assets/images/logo-doshky.png" ); background-size: contain; background-repeat: no-repeat; 
+	/* border: 1px solid;  */ 
 
 }
 
@@ -78,11 +81,12 @@
 	/* padding-left: 0.5rem; padding-right: 0.5rem;  */ 
 	padding: 0.2rem;   
 	/* background-color: var( --background-color );  */ 
-	border: 1px solid;
-	font-family: var( --heading-font-family ); 
-	font-size: 1.2em; 
-	text-transform: uppercase; 
+	/* border: 1px solid; */ 
+	font-family: var( --id-font-family ); 
+	font-size: 1em; 
+	/* text-transform: uppercase;  */ 
 	line-height: 1; 
+	text-indent: -10000px; 
 
 } 
 

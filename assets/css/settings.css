@@ -4,15 +4,16 @@
 	 * Layout 
 	 */
 	--header-margin-top: 5rem; 
-	--id-height: 2.5rem; 
+	--id-height: 5rem; 
 	--section-main-margin-y: 5rem; 
 	--id-margin-bottom-to-section-main-margin-y-ratio: 0.125; 
 	--id-margin-bottom: calc( var( --id-margin-bottom-to-section-main-margin-y-ratio ) * var( --section-main-margin-y ) ); 
 	--section-padding-y-to-main-margin-y-ratio: 1.8; 
+	--nav-button-height: 3rem; 
 	--nav-button-padding-x: 0.5rem; 
 
-	--heading-margin-bottom: 0.4em; 
-	--subheading-margin-bottom: 0.2em; 
+	--heading-margin-bottom: 0.7em; 
+	--subheading-margin-bottom: 0.4em; 
 	--text-padding-x: 2.5rem; 
 
 	--copyright-member-padding-x: 0.7rem; 
@@ -23,8 +24,10 @@
 	 * Font 
 	 */
 
-	--text-font-family: Arial; 
-	--heading-font-family: "Impact"; 
+	--id-font-family: "Permanent Marker"; 
+	--text-font-family: "Heebo"; 
+	--heading-font-family: "Fredericka the Great"; 
+	--main-nav-font-family: "Poppins"; 
 	--icon-font-family: "IonIcons"; 
 	--icon-base-font-size: 1.8rem; 
 	--icon-arrow-font-size: 1.5rem; 
@@ -32,16 +35,17 @@
 	--icon-close-code: ""; 
 
 	--base-font-size: 14px; 
-	--text-font-size: 1rem; 
-	--section-heading-font-size: 2rem; 
-	--section-subheading-font-size: 1rem; 
-	--nav-button-font-size: 1rem; 
+	--text-font-size: 1.2rem; 
+	--section-heading-font-size: 2.25rem; 
+	--section-subheading-font-size: var( --text-font-size ); 
+	--nav-button-font-size: var( --text-font-size ); 
+	--play-animation-button-font-size: var( --text-font-size ); 
 	--social-link-font-size: 1.4rem; 
 	/** 
 	 * Color 
 	 */
 
-	--text-color: rgba( 255, 255, 255, 0.8 ); 	
+	--text-color: rgba( 255, 255, 255, 1 ); 	
 	/* --text-color: rgba( 0, 0, 0, 0.75 );  */
 	/* --text-color: rgb( 217, 161, 89, 0.95 );   */
 	/* --text-color: rgb( 40, 0, 48, 0.85 );  */

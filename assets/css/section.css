@@ -86,6 +86,7 @@
 .section-subheading { 
 	margin-bottom: var( --subheading-margin-bottom ); 
 	font-size: var( --section-subheading-font-size ); 
+	font-weight: 300; 
 	text-transform: uppercase; 
 
 } 

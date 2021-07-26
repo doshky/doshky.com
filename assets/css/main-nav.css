@@ -1,5 +1,7 @@
 .main-nav { 
 	display: inline-block; 
+	/* font-family: var( --main-nav-font-family );  */ 
+	/* font-size: 1.5em;  */ 
 
 } 
 
@@ -42,8 +44,11 @@
 } 
 
 .nav-button { 
+	display: block; 
+	height: var( --nav-button-height ); line-height: var( --nav-button-height ); 
 	position: relative; 
 	font-size: var( --nav-button-font-size ); 
+	/* text-transform: uppercase;   */ 
 
 }
 
