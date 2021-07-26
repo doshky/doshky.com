@@ -134,9 +134,9 @@
 	}
 
 	.header .index-link { 
-		position: relative; left: 0; margin-left: 0; 
+		position: relative; left: 0; top: 0; margin-left: 0; 
 		margin-bottom: var( --id-margin-bottom ); 
-		transform: none; 
+		transform: translateY( 0 );  
 
 	} 
 
