@@ -254,13 +254,13 @@
 
 } 
 
-.intro-body-icon { 
+.section-current .intro-body-icon { 
 	animation-delay: var( --icon-in-delay ), var( --icon-in-delay ), var( --icon-slide-down-delay ); 
 
 }
 
-.intro-head-block, 
-.after-message-holder { 
+.section-current .intro-head-block, 
+.section-current .after-message-holder { 
 	animation-delay: var( --block-in-delay ), var( --block-in-delay ), var( --block-slide-down-delay ); 
 
 } 
