@@ -284,7 +284,7 @@
 
 @keyframes icon-slide-down { 
 
-	100% { 
+	0% { 
 		transform: translateY( var( --slide-down-start-value ) ); 
 	}
 
