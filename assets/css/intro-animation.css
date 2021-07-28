@@ -273,6 +273,10 @@
 
 @keyframes icon-slide-up { 
 
+	0% { 
+		transform: translateY( var( --slide-up-start-value ) ); 
+	}
+
 	100% { 
 		transform: translateY( var( --slide-up-end-value ) ); 
 	}
@@ -280,6 +284,10 @@
 }  
 
 @keyframes icon-slide-down { 
+
+	100% { 
+		transform: translateY( var( --slide-down-start-value ) ); 
+	}
 
 	100% { 
 		transform: translateY( var( --slide-down-end-value ) ); 
