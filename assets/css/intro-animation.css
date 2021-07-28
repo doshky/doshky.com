@@ -232,12 +232,10 @@
 } */
 
 
-.intro, .intro-wrapper, .intro-body, .intro-body-icon, .intro + *, .page-set, .page, 
-.intro:after, 
-.intro-head, .intro-head:after, .intro-head-content, .intro-head-block, 
-.after-message-holder, .after-message, .intro-body-message, 
-.intro-body-icon, 
-.logo-icon { 
+.section-current .intro-wrapper, 
+.section-current .after-message-holder, 
+.section-current .intro-body-icon, 
+.section-current .logo-icon { 
 	animation-fill-mode: forwards;	
 } 
 
