@@ -4,7 +4,8 @@
 	 * Layout 
 	 */
 	--header-margin-top: 5rem; 
-	--id-height: 5rem; 
+	--id-width: 12rem; 
+	--id-height: 3.5rem; 
 	--section-main-margin-y: 5rem; 
 	--id-margin-bottom-to-section-main-margin-y-ratio: 0.125; 
 	--id-margin-bottom: calc( var( --id-margin-bottom-to-section-main-margin-y-ratio ) * var( --section-main-margin-y ) ); 
@@ -27,7 +28,7 @@
 	--id-font-family: "Permanent Marker"; 
 	--text-font-family: "Heebo"; 
 	--heading-font-family: "Fredericka the Great"; 
-	--main-nav-font-family: "Poppins"; 
+	--main-nav-font-family: var( --text-font-family ); 
 	--icon-font-family: "IonIcons"; 
 	--icon-base-font-size: 1.8rem; 
 	--icon-arrow-font-size: 1.5rem; 
@@ -36,8 +37,8 @@
 
 	--base-font-size: 14px; 
 	--text-font-size: 1.2rem; 
-	--section-heading-font-size: 2.25rem; 
-	--section-subheading-font-size: var( --text-font-size ); 
+	--section-heading-font-size: 1.8rem; 
+	--section-subheading-font-size: 1rem; 
 	--nav-button-font-size: var( --text-font-size ); 
 	--play-animation-button-font-size: var( --text-font-size ); 
 	--social-link-font-size: 1.4rem; 
@@ -112,6 +113,6 @@
 	--field-height: 3.25rem; 
 	--field-width: 50%; 
 	--field-margin-bottom: 0.7rem; 
-	--field-font-size: 0.85rem; 
+	--field-font-size: calc( 0.85 * var( --text-font-size ) ); 
 	--field-padding-x: 0.85rem; 
 } 

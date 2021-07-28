@@ -1,7 +1,9 @@
 .main-nav { 
 	display: inline-block; 
-	/* font-family: var( --main-nav-font-family );  */ 
-	/* font-size: 1.5em;  */ 
+	font-family: var( --main-nav-font-family );  
+	font-size: 1em;  
+	/* font-weight: 400;   */ 
+	/* text-transform: uppercase;   */ 
 
 } 
 

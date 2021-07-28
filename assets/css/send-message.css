@@ -10,13 +10,19 @@
 .field-entry, 
 .field, 
 .submit-message-button { 
-	font-family: inherit; font-size: var( --field-font-size );
-	/* color: inherit;   */ 
+	font-family: inherit; 
+} 
+
+.field-entry, 
+.field, 
+.submit-message-button { 
+	font-size: var( --field-font-size ); font-weight: 300; 
 } 
 
 .submit-message-button { 
-	color: var( --text-color ); 
 	padding-right: var( --field-padding-x ); 
+	color: var( --text-color );  
+	font-size: var( --text-font-size );  
 
 } 
 

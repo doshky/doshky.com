@@ -60,7 +60,7 @@
 }
 
 .id { 
-	width: 8rem;  
+	width: var( --id-width );  
 	/* height: 4rem;    */ 
 	/* width: 100%;  */ 
 	/* padding-left: 4rem; padding-right: 4rem;  */
@@ -70,7 +70,7 @@
 	z-index: 3;    */
 	/* margin-right: 4rem;   */ 
 	/* text-align: center;  */ 
-	background-image: url( "/assets/images/logo-doshky.png" ); background-size: contain; background-repeat: no-repeat; 
+	background-image: url( "/assets/images/logo-02.png" ); background-size: contain; background-position: left center; background-repeat: no-repeat; 
 	/* border: 1px solid;  */ 
 
 }

@@ -30,7 +30,7 @@
 				// Sets moving to welcome section
 				targetSectionSelector = '#welcome-section'; 
 				// Ensures that animation is over before moving to welcome section 
-				scrollDelay = 5000; 
+				scrollDelay = 3500; 
 
 			} 
 
