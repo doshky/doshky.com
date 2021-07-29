@@ -21,7 +21,7 @@
 	/* Animation delay */
 	--icon-in-delay: 1.2s; 
 	--icon-slide-down-delay: var( --icon-in-delay ); 
-	--icon-slide-up-delay: calc( var( --icon-in-delay ) + var( --slide-down-duration ) ); 
+	--icon-slide-up-delay: calc( var( --icon-slide-down-delay ) + var( --slide-down-duration ) ); 
 	--icon-expand-delay: calc( var( --icon-slide-up-delay ) + var( --slide-up-duration ) ); 
 
 	--icon-expand-duration: 0.1s; 
@@ -30,7 +30,7 @@
 
 	--block-in-relative-delay: 0s; 
 	--block-in-delay: calc( var( --icon-expand-delay ) + var( --block-in-relative-delay) ); 
-	--block-slide-down-delay: calc( var( --block-in-delay ) + var( --slide-down-duration) ); 
+	--block-slide-down-delay: calc( var( --block-in-delay ) + var( --slide-up-duration) ); 
 
 	--logo-in-delay: calc( var( --icon-expand-delay ) ); 
 
@@ -212,6 +212,7 @@
 .intro-body-icon {  
 	--slide-down-start-value: -200%; 
 	--slide-down-end-value: 0; 
+	--slide-up-start-value: var( --slide-down-end-value ); 
 	--slide-up-end-value: -50%; 
 	--slide-down-duration: 0.2s;
 
@@ -299,7 +300,7 @@
 @keyframes icon-expand { 
 
 	100% { 
-		padding-top:  var( --icon-padding-y-end ); padding-bottom:  var( --icon-padding-y-end );  
+		padding-top: var( --icon-padding-y-end ); padding-bottom: var( --icon-padding-y-end );  
 	}
 	
 }
