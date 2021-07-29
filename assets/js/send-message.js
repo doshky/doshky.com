@@ -9,11 +9,11 @@
 			.removeClass( 'display' ); 
 	} ); 
 
-	document.querySelector( '.send-message' ).addEventListener( 'submit', function( e ) { 
-		e.preventDefault(); 
+	// document.querySelector( '.send-message' ).addEventListener( 'submit', function( e ) { 
+	// 	e.preventDefault(); 
 
-		warningMessage 
-			// On form submit displays warning message 
-			.addClass( 'display' ); 
-	}, false ); 
+	// 	warningMessage 
+	// 		// On form submit displays warning message 
+	// 		.addClass( 'display' ); 
+	// }, false ); 
 }() ); 
