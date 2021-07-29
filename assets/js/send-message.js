@@ -1,11 +1,13 @@
-$( '.send-message' ).on( 'click', 'button', function( e ) { 
-	const button = $( this ); 
+$( '.send-message' ).on( 'submit', function( e ) { 
 	const warningMessage = $( '.warning-message' ); 
-
-	if ( button.is( '.submit-message-button' ) ) { 
-		warningMessage.addClass( 'display' );  
-	} else if ( button.is( '.warning-message-button' ) ) { 
-		warningMessage.removeClass( 'display' ); 
-	}
-
+	warningMessage 
+		// On form submit displays warning message 
+		.addClass( 'display' ) 
+		// On close warning message button click 
+		.on( 'click', 'button', function() { 
+			// closes warning message and removes close button click handler
+			warningMessage 
+				.removeClass( 'display' ) 
+				.off(); 
+		} ); 
 } ); 
