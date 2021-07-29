@@ -96,6 +96,6 @@
 	$( document ).on( 'click', '.inner-link', smoothScrollHandler ); 
 
 	// Scroll handler is called on page load to transition to welcome section on animation end 
-	// smoothScrollHandler();  
+	smoothScrollHandler();  
 
 }() ); 
