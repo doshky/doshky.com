@@ -219,9 +219,6 @@
 } 
 
 .logo-icon { 
-	--slide-up-start-value: 50%; 
-	--slide-up-end-value: 0; 
-	--slide-up-duration: 0.15s; 
 	--fade-in-duration: 0.15s; 
 
 } 
@@ -299,6 +296,10 @@
 
 @keyframes icon-expand { 
 
+	0% { 
+		padding-top: var( --icon-padding-y-start ); padding-bottom: var( --icon-padding-y-start );  
+	}
+
 	100% { 
 		padding-top: var( --icon-padding-y-end ); padding-bottom: var( --icon-padding-y-end );  
 	}
@@ -307,6 +308,10 @@
 
 @keyframes intro-slide-up { 
 
+	0% { 
+		transform: translateY( var( --slide-up-start-value ) ); 
+	}
+
 	100% { 
 		transform: translateY( var( --slide-up-end-value ) ); 
 	}
@@ -314,6 +319,10 @@
 }  
 
 @keyframes intro-slide-down { 
+
+	0% { 
+		transform: translateY( var( --slide-down-start-value ) ); 
+	}
 
 	100% { 
 		transform: translateY( var( --slide-down-end-value ) ); 
