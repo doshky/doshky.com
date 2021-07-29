@@ -50,8 +50,7 @@
 					// Moving to intro animation section calls scroll handler to move to welcome page after waiting animation to end
 					if ( targetSection.is( '#intro-animation' ) ) { 
 						smoothScrollHandler(); 
-					} else if ( targetSection.is( '#gallery-section' ) && !galleryScriptLoaded ) { 
-						galleryScriptLoaded = true; 
+					} else if ( targetSection.is( '#gallery-section' ) && !galleryScriptLoaded ) {  
 
 						[ 
 							'/assets/plugins/magnific-popup/dist/jquery.magnific-popup.min.js', 
@@ -63,16 +62,17 @@
 								.attr( 'type', 'text/javascript' ) 
 								.appendTo( body ); 
 						} ); 
+
+						galleryScriptLoaded = true; 
 							
 						
 						// .then( console.log( 'Gallery scripts loaded.' ) );  
 
 					} else if ( targetSection.is( '#contact-section' ) && !contactScriptLoaded ) { 
-						contactScriptLoaded = true; 
 
 						[ 
-							'/assets/js/send-message.js', 
-							'/assets/js/form-submission-handler.js' 
+							'/assets/js/form-submission-handler.js', 
+							'/assets/js/send-message.js' 
 						]
 						.forEach( function( value ) { 
 							$( '<script />' ) 	
@@ -80,6 +80,8 @@
 								.attr( 'type', 'text/javascript' )  
 								.appendTo( body ); 
 						} ); 
+
+						contactScriptLoaded = true; 
 						
 					
 						// .then( console.log( 'Contact form scripts loaded.' ) ); 
