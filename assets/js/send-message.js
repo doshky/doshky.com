@@ -8,6 +8,8 @@
 	} ); 
 
 	$( '.send-message' ).on( 'submit', function( e ) { 
+		e.preventDefault(); 
+		
 		warningMessage 
 			// On form submit displays warning message 
 			.addClass( 'display' ); 
