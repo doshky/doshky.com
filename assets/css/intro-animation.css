@@ -7,10 +7,27 @@
 	--background-color:#C18C5D; 
 	--foreground-color:  #061826; 
 
+	/* Animation duration */
 	--fade-in-duration: 0.05s; 
 	--slide-up-duration: 0.25s; 
 	--slide-down-duration: 0.175s; 
 
+	/* Default */
+	--slide-up-start-value: 50px; 
+	--slide-up-end-value: -25px; 
+	--slide-down-end-value: 0; 
+
+	/* Icon */ 
+	--icon-slide-up-start-value: 100%; 
+	--icon-slide-up-end-value: -80%; 
+	--icon-slide-down-end-value: -50%; 
+
+	/* Logo */
+	--logo-slide-up-start-value: 50%; 
+	--logo-slide-up-end-value: 0; 
+	--logo-fade-in-duration: 0.15s; 
+
+	/* Animation delay */
 	--icon-in-delay: 1.2s; 
 	--icon-slide-up-delay: var( --icon-in-delay ); 
 	--icon-slide-down-delay: calc( var( --icon-in-delay ) + var( --slide-up-duration ) ); 
@@ -177,12 +194,12 @@
 	background-image: url( "/assets/images/logo-icon.png" ); background-position: center; background-size: contain; 
 } 
 
-.intro-content { 
+/* .intro { 
 	--slide-up-start-value: 50px; 
 	--slide-up-end-value: -25px; 
 	--slide-down-end-value: 0; 
 
-}
+} */
 
 /* .after-message-holder { 
 	--slide-up-start-value: 100%; 
@@ -196,21 +213,21 @@
 
 } */
 
-.intro-body-icon { 
+/* .intro-body-icon { 
 	--slide-up-start-value: 100%; 
 	--slide-up-end-value: -80%; 
 	--slide-down-end-value: -50%; 
 
-} 
+}  */
 
-.logo-icon { 
+/* .logo-icon { 
 	--slide-up-start-value: 50%; 
 	--slide-up-end-value: 0; 
 	--slide-down-end-value: 0; 
 	--slide-down-duration: 0.15s; 
 	--fade-in-duration: 0.15s; 
 
-} 
+}  */
 
 .intro-wrapper { 
 	opacity: 0; 
@@ -223,6 +240,11 @@
 .logo-icon { 
 	opacity: 0; 
 	transform: translateY( var( --slide-up-start-value ) ); 
+
+} 
+
+.intro-body-icon { 
+	transform: translateY( var( --icon-slide-up-start-value ) ); 
 
 } 
 
@@ -245,11 +267,26 @@
 
 }
 
-.section-current .intro-body-icon, 
+.intro-head-block, 
+.after-message-holder, 
+.intro-body-icon { 
+	animation-duration: var( --fade-in-duration ), var( --slide-up-duration ), var( --slide-down-duration ); 
+
+} 
+
 .section-current .intro-head-block, 
 .section-current .after-message-holder { 
+	animation-name: fade-in, block-slide-up, block-slide-down; 
+} 
+
+.section-current .intro-body-icon { 
 	animation-name: fade-in, icon-slide-up, icon-slide-down; 
-	animation-duration: var( --fade-in-duration ), var( --slide-up-duration ), var( --slide-down-duration ); 
+
+} 
+
+.section-current .intro-head-block, 
+.section-current .after-message-holder { 
+	animation-delay: var( --block-in-delay ), var( --block-in-delay ), var( --block-slide-down-delay ); 
 
 } 
 
@@ -258,19 +295,15 @@
 
 }
 
-.section-current .intro-head-block, 
-.section-current .after-message-holder { 
-	animation-delay: var( --block-in-delay ), var( --block-in-delay ), var( --block-slide-down-delay ); 
-
-} 
-
 .section-current .logo-icon { 
-	animation-name: fade-in, icon-slide-up; animation-duration: var( --fade-in-duration ), var( --slide-down-duration ); animation-delay: var( --logo-in-delay ); 
+	animation-name: fade-in, logo-slide-up; 
+	animation-duration: var( --fade-in-duration ), var( --slide-down-duration ); 
+	animation-delay: var( --logo-in-delay ); 
 
 } 
 
 
-@keyframes icon-slide-up { 
+@keyframes block-slide-up { 
 
 	0% { 
 		transform: translateY( var( --slide-up-start-value ) ); 
@@ -282,14 +315,50 @@
 	
 }  
 
-@keyframes icon-slide-down { 
+@keyframes block-slide-down { 
 
 	0% { 
-		transform: translateY( var( --slide-down-start-value ) ); 
+		transform: translateY( var( --slide-up-end-value ) ); 
 	}
 
 	100% { 
 		transform: translateY( var( --slide-down-end-value ) ); 
+	}
+	
+} 
+
+@keyframes logo-slide-up { 
+
+	0% { 
+		transform: translateY( var( --logo-slide-up-start-value ) ); 
+	}
+
+	100% { 
+		transform: translateY( var( --logo-slide-up-end-value ) ); 
+	}
+	
+}  
+
+@keyframes icon-slide-up { 
+
+	0% { 
+		transform: translateY( var( --icon-slide-up-start-value ) ); 
+	}
+
+	100% { 
+		transform: translateY( var( --icon-slide-up-end-value ) ); 
+	}
+	
+}  
+
+@keyframes icon-slide-down { 
+
+	0% { 
+		transform: translateY( var( --icon-slide-up-end-value ) ); 
+	}
+
+	100% { 
+		transform: translateY( var( --icon-slide-down-end-value ) ); 
 	}
 	
 }
