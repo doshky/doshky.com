@@ -36,10 +36,16 @@
     playIntro(); 
 
     $( document ).on( 'click', '.inner-link', function( e ) { 
+        e.preventDefault(); 
+        
         const element = $( this ); 
         const targetSectionSelector = element.attr( 'data-target-section' ); 
-        
+
         scrollToSection( targetSectionSelector ); 
+
+        if ( element.attr( 'data-target-section' ) === '#intro-animation' ) { 
+            playIntro(); 
+        }
 
     } ); 
 }() ); 
