@@ -35,15 +35,19 @@
 
     playIntro(); 
 
-    $( document ).on( 'click', '.inner-link', function( e ) { 
+    $( document ).on( 'click', function( e ) { 
+        const innerLink = $( e.target ); 
+        if ( !innerLink.hasClass( 'inner-link' ) ) { 
+            return; 
+        } 
+
         e.preventDefault(); 
-        
-        const element = $( this ); 
-        const targetSectionSelector = element.attr( 'data-target-section' ); 
+
+        const targetSectionSelector = innerLink.attr( 'data-target-section' ); 
 
         scrollToSection( targetSectionSelector ); 
 
-        if ( element.attr( 'data-target-section' ) === '#intro-animation' ) { 
+        if ( innerLink.attr( 'data-target-section' ) === '#intro-animation' ) { 
             playIntro(); 
         }
 

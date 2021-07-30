@@ -1,11 +1,10 @@
 {% assign id = site.data.id %} 
 
 
-<a class= "inner-link index-link" href= "#welcome-section" data-target-section= "#welcome-section">
-	<article class= "id">  
-		<h5 class= "name">{{ id.name }}</h5> 
-		{% if id.tagline and id.tagline != "" %}
-			<p class= "tagline">{{ id.tagline }}</p> 
-		{% endif %}
-	</article> 
-</a>
+<article class= "id">  
+	<a class= "inner-link index-link" href= "#welcome-section" data-target-section= "#welcome-section"></a>
+	<h5 class= "name">{{ id.name }}</h5> 
+	{% if id.tagline and id.tagline != "" %}
+		<p class= "tagline">{{ id.tagline }}</p> 
+	{% endif %} 
+</article> 
