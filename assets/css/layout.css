@@ -1,12 +1,18 @@
 .page, 
+.scroll-window, 
 .section { 
 	width: 100%; height: 100vh;  
 } 
 
-body { 
+html { 
 	overflow: hidden; 
 
-} 
+}
+
+/* body { 
+	overflow: hidden; 
+
+}  */
 
 /* .page { 
 	position: absolute; 
