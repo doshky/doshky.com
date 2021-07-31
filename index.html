@@ -25,7 +25,6 @@ layout: page
 </div> 
 
 {% assign pages = site.data.pages | sort %} 
-{% assign pos = 1 %} 
 
 <section class= "page-set"> 
 {% for page in pages %} 
@@ -33,8 +32,7 @@ layout: page
 
 	<article 
 		id= "{{ content.sectionID }}" 
-		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}" 
-		data-section-pos= "{{ pos }}" 
+		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"  
 	> 
 		<section class= "section-main"> 
 			{% include header.html data = content.navEntry %} 

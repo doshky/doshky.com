@@ -1,11 +1,21 @@
-.page, 
 .scroll-window, 
 .section { 
 	width: 100%; height: 100vh;  
 } 
 
-.scroll-window { 
+body { 
 	overflow: hidden; 
+
+} 
+
+.scroll-window { 
+	position: relative; 
+
+}
+
+.scroll-track { 
+	width: 100%; 
+	position: absolute; left: 0; top: 0; 
 
 }
 

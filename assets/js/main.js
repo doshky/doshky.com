@@ -67,10 +67,10 @@
     // Scrolls page to target section and marks it as current section 
     const scrollToSection = ( function( duration, callback ) { 
         return function( sectionPos ) { 
-            const scrollTop = -1 * ( parseInt( sectionPos ) * sectionHeight );  
+            const scrollDistance = -1 * ( parseInt( sectionPos ) * sectionHeight );  
 
             $( '.scroll-track' ).animate( { 
-                marginTop: scrollTop + 'px' 
+                top: scrollDistance + 'px' 
             }, duration ); 
         }
 
