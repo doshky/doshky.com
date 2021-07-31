@@ -1,10 +1,10 @@
-.section-main > *:not( .cover-image ), 
+/* .section-main > *:not( .cover-image ), 
 .play-animation-button  { 
     opacity: 0; 
     transform: translateY( 50px );  
     animation-duration: 0.4s; animation-delay: 0.5s; animation-fill-mode: forwards; 
 
-} 
+}  */ 
 
 .section-current .section-main > *:not( .cover-image ), 
 .section-current .play-animation-button  { 

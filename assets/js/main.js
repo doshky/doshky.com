@@ -35,12 +35,9 @@
 
     playIntro(); 
 
-    $( document ).on( 'click', function( e ) { 
+    $( document ).on( 'click', '.inner-link', function( e ) { 
         const innerLink = $( e.target ); 
-        if ( !innerLink.hasClass( 'inner-link' ) ) { 
-            return; 
-        } 
-
+      
         e.preventDefault(); 
 
         const targetSectionSelector = innerLink.attr( 'data-target-section' ); 

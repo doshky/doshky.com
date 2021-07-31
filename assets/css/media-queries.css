@@ -62,7 +62,7 @@
 
 @media ( max-width: 1080px ) and ( min-width: 581px ) { 
 
-	.header .index-link { 
+	.header .id { 
 		left: calc( -1 * 25 / 75 * 100%  ); 
 
 	} 
@@ -133,7 +133,7 @@
 
 	}
 
-	.header .index-link { 
+	.header .id { 
 		position: relative; left: 0; top: 0; margin-left: 0; 
 		margin-bottom: var( --id-margin-bottom ); 
 		transform: translateY( 0 );  
