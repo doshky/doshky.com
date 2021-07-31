@@ -13,7 +13,7 @@
         return function( selector ) { 
             const scrollTop = $( selector ).offset().top; 
 
-            $( 'html' ).animate( { 
+            $( 'html, body' ).animate( { 
                 scrollTop: scrollTop
             }, duration, function() { 
                 callback( selector ); 
