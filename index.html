@@ -3,7 +3,7 @@ layout: page
 --- 
 
 
-<div id= "intro-animation" class= "intro section-current"> 
+<div id= "intro-animation" class= "intro section-current" data-section-pos= "0"> 
 	<div class= "intro-wrapper"> 
 		<div class= "intro-head"> 
 			<div class= "intro-content intro-head-content">  
@@ -25,7 +25,7 @@ layout: page
 </div> 
 
 {% assign pages = site.data.pages | sort %} 
-{% assign pos = 0 %} 
+{% assign pos = 1 %} 
 
 <section class= "page-set"> 
 {% for page in pages %} 
@@ -34,6 +34,7 @@ layout: page
 	<article 
 		id= "{{ content.sectionID }}" 
 		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}" 
+		data-section-pos= "{{ pos }}" 
 	> 
 		<section class= "section-main"> 
 			{% include header.html data = content.navEntry %} 
