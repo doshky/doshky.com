@@ -3,18 +3,18 @@
 	width: 100%; height: 100vh;  
 } 
 
-body { 
+.scroll-window { 
 	overflow: hidden; 
 
 } 
 
-.scroll-window { 
-	position: relative; 
-
-}
-
 .scroll-track { 
 	position: relative; left: 0; top: 0; 
+
+} 
+
+body { 
+	background-color: red; 
 
 }
 
