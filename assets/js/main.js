@@ -56,13 +56,13 @@
     const sectionHeight = $( '#intro-animation' ).height(); 
 
     // Moves current section marking class name from prev to next section
-    // const moveCurrentClassName = ( function( currentClassName ) { 
-    //     return function( currentSectionSelector ) { 
-    //         $( '.' + currentClassName ).removeClass( currentClassName ); 
-    //         $( currentSectionSelector ).addClass( currentClassName ); 
-    //     }
+    const moveCurrentClassName = ( function( currentClassName ) { 
+        return function( currentSectionSelector ) { 
+            $( '.' + currentClassName ).removeClass( currentClassName ); 
+            $( currentSectionSelector ).addClass( currentClassName ); 
+        }
 
-    // }( 'section-current' ) );
+    }( 'section-current' ) ); 
 
     // Scrolls page to target section and marks it as current section 
     const scrollToSection = ( function( duration, callback ) { 
@@ -79,7 +79,7 @@
     // Starts intro animation and scrolls to welcome section on animation end 
     const playIntro = ( function( animationDuration ) { 
         return function() { 
-            // moveCurrentClassName( '#intro-animation' ); 
+            moveCurrentClassName( '#intro-animation' ); 
 
             const timeout = setTimeout( function() { 
                 scrollToSection( 1 ); 
