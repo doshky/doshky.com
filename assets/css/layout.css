@@ -1,20 +1,31 @@
-/* .scroll-window,  */
-.page-set, 
+.page, 
 .section { 
-	width: 100%; 
+	width: 100%; height: 100vh; 
 } 
 
-/* .scroll-window { 
+body, 
+.page { 
 	overflow: hidden; 
 
-} 
+}
 
 .scroll-track { 
+	width: 100%; 
+	position: absolute; left: 0; top: 0;  
+
+} 
+
+/* .section {
+	scroll-snap-align: start; 
+	scroll-snap-stop: always; 
+} */
+
+/* .scroll-track { 
 	position: relative; left: 0; top: 0; 
 
-} 
+}   */
 
-.scroll-track { 
+/* .scroll-track { 
 	background-color: burlywood; 
 
 } */
@@ -22,7 +33,7 @@
 /* body { 
 	overflow: hidden; 
 
-}  */ 
+}   */
 
 /* .page-set { 
 	position: absolute; 
@@ -31,7 +42,7 @@
 
 .section { 
 	position: relative; 
-	/* overflow-y: scroll;   */
+	overflow-y: scroll;  
 
 } 
 

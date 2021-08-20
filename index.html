@@ -32,7 +32,7 @@ layout: page
 
 	<article 
 		id= "{{ content.sectionID }}" 
-		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}" 
+		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"  
 	> 
 		<section class= "section-main"> 
 			{% include header.html data = content.navEntry %} 
