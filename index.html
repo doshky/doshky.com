@@ -3,7 +3,7 @@ layout: page
 --- 
 
 
-<div id= "intro-animation" class= "intro section-current" data-section-pos= "0"> 
+<!-- <div id= "intro-animation" class= "intro section-current" data-section-pos= "0"> 
 	<div class= "intro-wrapper"> 
 		<div class= "intro-head"> 
 			<div class= "intro-content intro-head-content">  
@@ -22,7 +22,7 @@ layout: page
 			</div>
 		</div> 
 	</div>  
-</div> 
+</div>  --> 
 
 {% assign pages = site.data.pages | sort %} 
 
@@ -34,11 +34,9 @@ layout: page
 		id= "{{ content.sectionID }}" 
 		class= "section{% if content.classNames %}{{ content.classNames | join: ' ' | prepend: ' ' }}{% endif %}"  
 	> 
-		<section class= "section-main"> 
-			{% include header.html data = content.navEntry %} 
-			{% include section.html data = content %} 
-			{% include footer.html %}  
-		</section> 
+		{% include header.html data = content.navEntry %} 
+		{% include section.html data = content %} 
+		{% include footer.html %}  
 
 		{% if pos == 0 %} 
 			<a href= "#intro-animation" class= "button inner-link play-animation-button" data-target-section= "#intro-animation">Replay Intro</a> 
