@@ -21,7 +21,7 @@
 	position: relative; 
 	border: 1px solid; border-radius: 50%; 
 	/* text-indent: -10000px;  */ 
-	font-family: "IonIcons"; font-size: var( --social-link-font-size ); 
+	font-family: "var( --icon-font-family )"; font-size: var( --social-link-font-size ); 
 
 } 
 

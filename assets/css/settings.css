@@ -40,7 +40,7 @@
 	--text-font-size: 1.2rem; 
 	--section-heading-font-size: 1.8rem; 
 	--section-subheading-font-size: 1rem; 
-	--nav-button-font-size: var( --text-font-size ); 
+	--nav-button-font-size: 1rem; 
 	--play-animation-button-font-size: var( --text-font-size ); 
 	--social-link-font-size: 1.4rem; 
 	/** 

@@ -1,14 +1,14 @@
 @font-face { 
-	font-family: "IonIcons"; 
+	font-family: "var( --icon-font-family )"; 
 	src: url( "/assets/fonts/ionicons.ttf" ); 
 
 } 
 
-@font-face { 
+/* @font-face { 
 	font-family: "Impact"; 
 	src: url( "/assets/fonts/impact.ttf" ); 
 
-} 
+}  */
 
 html, 
 body { 
