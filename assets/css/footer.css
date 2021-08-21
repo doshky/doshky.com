@@ -4,11 +4,6 @@
 
 } 
 
-/* .image-preview-list { 
-	margin-bottom: 1rem; 
-
-}  */
-
 .social-net-links { 
 	margin-bottom: 0; 
 
@@ -36,15 +31,6 @@
 	position: relative; 
 } 
 
-/* .copyright > *:not( :last-child ):after { 
-	display: block; 
-	width: 1px; height: 100%; 
-	position: absolute; right: 0; bottom: 0; 
-	background-color: var( --text-color ); 
-	content: ""; 
-	
-}  */
-
 .copyright > :first-child { 
 	padding-left: 0; 
 
@@ -52,7 +38,5 @@
 
 .name { 
 	font-family: var( --id-font-family );  
-	/* font-size: 0.9em;   */ 
-	/* text-transform: uppercase;    */ 
 
 }
