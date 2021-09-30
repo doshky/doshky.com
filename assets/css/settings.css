@@ -4,8 +4,8 @@
 	 * Layout 
 	 */
 	--header-margin-top: 5rem; 
-	--id-width: 12rem; 
-	--id-height: 3.5rem; 
+	--id-width: 10rem; 
+	--id-height: 4.5rem; 
 	--section-main-margin-y: 5rem; 
 	--id-margin-bottom-to-section-main-margin-y-ratio: 0.125; 
 	--id-margin-bottom: calc( var( --id-margin-bottom-to-section-main-margin-y-ratio ) * var( --section-main-margin-y ) ); 
@@ -47,7 +47,7 @@
 	 * Color 
 	 */
 
-	--text-color: rgba( 255, 255, 255, 1 ); 	
+	--text-color: rgb( 255, 51, 0 ); 	
 	/* --text-color: rgba( 0, 0, 0, 0.75 );  */
 	/* --text-color: rgb( 217, 161, 89, 0.95 );   */
 	/* --text-color: rgb( 40, 0, 48, 0.85 );  */
@@ -60,7 +60,7 @@
 	/* --background-color: rgba( 40, 0, 48, 0.85 );  */
 	/* --background-color: rgb( 16, 25, 43 );    */
 	/* --background-color: rgba( 255, 255, 255, 1 );   */ 
-	--background-color: rgba( 0, 0, 0, 0.4 ); 
+	--background-color: rgba( 0, 0, 0, 0.9 ); 
 	--scrollbar-thumb-color: var( --text-color ); 
 	--scrollbar-track-color: transparent; 
 } 
