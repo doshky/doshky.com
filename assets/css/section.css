@@ -80,10 +80,10 @@
 	height: 100%;  
 	position: absolute; 
 	z-index: 2; 
-	background-color: rgb( 255, 0, 0 );  
+	/*background-color: rgb(103, 67, 112);  */ 
 	content: ""; 
 	/* transform: skewX( -55deg ) translateX( 15% );  */ 
-	opacity: 0.5; 
+	/*opacity: 0.5; */ 
 
 } 
 

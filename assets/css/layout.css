@@ -8,6 +8,11 @@ body {
 
 } 
 
+html { 
+	background: url( /assets/images/pexels-karolina-grabowska-4041287.jpg ) no-repeat center center fixed; background-size: cover; 
+
+}
+
 .section { 
 	width: 100%; min-height: 100vh; 
 	overflow: hidden; 
