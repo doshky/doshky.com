@@ -84,8 +84,13 @@
 	
 	} 
 
+	.image-preview-entry { 
+		border: none; 
+	
+	} 
+
 	.image-preview { 
-		opacity: 0.2; 
+		opacity: 0.5; 
 	
 	} 
 
