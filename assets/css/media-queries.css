@@ -161,6 +161,11 @@
 	
 	} 
 
+	.image-preview-entry { 
+		background-color: var( --foreground-color ); 
+	
+	} 
+
 }
 
 @media ( max-width: 840px ) and ( min-width: 681px ) { 
