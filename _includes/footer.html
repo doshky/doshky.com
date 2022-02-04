@@ -1,4 +1,9 @@
 <footer class= "footer"> 
-	{% include social-net-links.html %} 
+	{% include owner.html %} 
+
+	{% include send-message.html 
+		fields = site.data.sendMessage.fields 
+	%} 
+	
 	{% include copyright.html %} 
 </footer>
