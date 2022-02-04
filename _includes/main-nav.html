@@ -4,11 +4,12 @@
 	<h6 class= "usability-heading">Main navigation</h6> 
 
 	<ul class= "entry-list nav-entry-list"> 
-	{% assign pages = site.data.pages | sort %} 
+	{% assign pageCount = site.data.pages | size %} 
 	{% assign pos = 1 %} 
 
-	{% for page in pages %} 
-		{% assign navEntry = page[ 1 ].navEntry %} 
+	{% for i in ( 1..pageCount ) %} 
+		{% assign page = site.data.pages | where: "order", i %} 
+		{% assign navEntry = page[ 0 ].navEntry %} 
 		{% if navEntry %} 
 			<li class= "nav-entry{% if currentSectionNavEntry.targetSectionSelector == navEntry.targetSectionSelector %} entry-current{% endif %}"> 
 				<a 
