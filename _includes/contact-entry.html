@@ -1,0 +1,11 @@
+<article class= "contact {{ include.className }}"> 
+	{% include key-value-pair.html 
+		key = include.key 
+		value = include.value 
+	%} 
+	{% if include.note %} 
+		{% include note.html 
+			note = include.note 
+		%} 
+	{% endif %}
+</article>
