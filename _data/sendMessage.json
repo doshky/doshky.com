@@ -1,0 +1,22 @@
+{
+	"fields": [ 
+		{ 
+			"name": "user-name", 
+			"type": "text", 
+			"label": "Your Name" 
+		}, 
+
+		{ 
+			"name": "user-email", 
+			"type": "email", 
+			"label": "Your Email"
+		}, 
+
+		{ 
+			"name": "user-message", 
+			"label": "Your Message", 
+			"isMessageBody": true 
+		}
+
+	] 
+}

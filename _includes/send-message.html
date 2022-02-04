@@ -1,12 +1,18 @@
-{% assign fields = include.data.fields %} 
+{% assign fields = include.fields %} 
 
 
 <form class= "gform send-message" method= "POST" action= "https://script.google.com/macros/s/AKfycbyP8VvAizXQT0Mf8ewE_l40iATNhsbI1zEp5TRiGQ/exec"> 
 	{% for field in fields %} 
-		{% include field.html data = field %}
+		{% include field.html 
+			data = field 
+		%} 
 	{% endfor %} 
 
-	<button class= "submit-message-button" name= "submit-message" type= "submit">Send</button> 
-
-	{% include warning-message.html data = site.data.sendMessageWarning %} 
+	<button 
+		class= "submit-message-button" 
+		name= "submit-message" 
+		type= "submit"
+	>
+		Send 
+	</button> 
 </form>  
