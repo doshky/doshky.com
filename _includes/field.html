@@ -1,24 +1,27 @@
 {% assign field = include.data %} 
 
 
-<label 
-	class= "field-entry" 
-	for= "{{ field.name }}"
-> 
-{% if field.isText %} 
-	<textarea 
-		class= "field" 
-		name= "{{ field.name }}" 
-		placeholder= "{{ field.placeholder }}" 
-		required= "required"
-	></textarea>
-{% else %} 
-	<input 
-		class= "field" 
-		name= "{{ field.name }}" 
-		type= "{{ field.type }}" 
-		placeholder= "{{ field.placeholder }}" 
-		required= "required" 
-	/> 
-{% endif %}
-</label>
+<article class= "field-entry"> 
+	<label 
+		class= "field-label" 
+		for= "{{ field.name }}"
+	>
+		{{ field.label }} 
+	</label> 
+
+	{% if field.isMessageBody %} 
+		<textarea 
+			class= "field textarea-field" 
+			name= "{{ field.name }}" 
+			required= "required"
+		>
+		</textarea>
+	{% else %} 
+		<input 
+			class= "field input-field" 
+			name= "{{ field.name }}" 
+			type= "{{ field.type }}" 
+			required= "required" 
+		/> 
+	{% endif %} 
+</article>
