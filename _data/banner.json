@@ -1,0 +1,17 @@
+{ 
+	"subheading": "Sed lorem felis", 
+		
+	"heading": "Maecenas sit amet iaculis nibh", 
+
+	"paragraphs": [ 
+		{ 
+			"text": "Proin sed nunc diam. Praesent ac risus id massa egestas volutpat. Sed ornare, ipsum quis bibendum fringilla, dui magna aliquam nulla, ut mattis purus massa a elit. Phasellus vel consequat lorem. Morbi ut cursus mi. Suspendisse potenti. Cras rhoncus nisi quis est finibus laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac risus ex. Phasellus accumsan ante interdum tempus pharetra. " 
+		} 
+	], 
+
+	"image": { 
+		"src": "#" 
+
+	}
+
+}

@@ -3,10 +3,18 @@ layout: page
 --- 
 
 
-{% include banner.html %} 
+{% include banner.html 
+	banner = site.data.banner 
+%} 
 
-{% include gallery.html %} 
+{% include work.html 
+	work = site.data.pages.work.head 
+%} 
 
-{% include about.html %} 
+{% include about.html 
+	about = site.data.pages.about.head 
+%} 
 
-{% include contact.html %} 
+{% include contact.html 
+	contact = site.data.pages.contact.head 
+%} 

@@ -1,0 +1,24 @@
+{% assign banner = include.banner %} 
+
+<section class= "banner"> 
+	<section class= "text-content banner-text-content">  
+		{% include subheading.html 
+			text = banner.subheading 
+			className = "banner-subheading" 
+		%} 
+
+		{% include heading.html 
+			level = 2 
+			text = banner.heading 
+			className = "banner-heading" 
+		%} 
+	
+		{% for paragraph in banner.paragraphs %} 
+			<p class= "paragraph banner-paragraph">{{ paragraph.text }}</p> 
+		{% endfor %}
+	</section> 
+
+	{% include cover-image.html 
+		src = section.image.src 
+	%} 
+</section>
