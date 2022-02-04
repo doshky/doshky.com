@@ -1,26 +1,28 @@
 { 
-	"order": 3, 
+	"order": 1, 
 
 	"navEntry": { 
-		"label": "Paintings", 
-		"targetSectionSelector": "#gallery-section", 
-		"classNames": [ "gallery-button" ] 
+		"label": "Work", 
+		"targetSectionSelector": "#work-section" 
 	}, 
 
-	"sectionID": "gallery-section", 
-
-	"classNames": [ "gallery" ], 
+	"sectionID": "work-section", 
 
 	"head": { 
-		"subheading": "I present you a few of my", 
+		"subheading": "Praesent neque felis", 
 		
-		"heading": "Paintings", 
+		"heading": "Phasellus eget eleifend", 
 
-		"text": [ 
+		"paragraphs": [ 
 			{ 
-				"text": "and hope you to accept my invitation to a journey full of colours that you can take home with you, to fulfill it with the beauty and light of my paintings." 
+				"text": "Vestibulum in tempor purus, a dignissim risus. Vivamus augue quam, ultrices in quam quis, placerat egestas sapien. Praesent neque arcu, pulvinar ut orci ut, malesuada rhoncus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur congue et lectus vel feugiat." 
 			} 
-		] 
+		], 
+
+		"image": { 
+			"src": "#" 
+
+		} 
 	}, 
 
 	"body": { 

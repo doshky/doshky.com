@@ -1,0 +1,28 @@
+{ 
+	"order": 2, 
+
+	"navEntry": { 
+		"label": "About", 
+		"targetSectionSelector": "#about-section"
+	}, 
+
+	"sectionID": "about-section", 
+
+	"head": { 
+		"subheading": "Integer non velit", 
+		
+		"heading": "Aenean mollis nisl", 
+
+		"paragraphs": [ 
+			{ 
+				"text": "Ut eu nisl congue, pellentesque nibh sit amet, dictum nulla. Mauris tortor odio, fringilla ut odio elementum, pellentesque tincidunt dui. Vivamus egestas efficitur mi, in ornare mi interdum non. Aenean dictum elementum scelerisque. Sed lacinia justo eget purus semper, a sodales nibh rutrum. Donec nec laoreet nulla, quis tincidunt dolor. Vestibulum non efficitur quam." 
+			} 
+		], 
+
+		"image": { 
+			"src": "#" 
+
+		}
+	}
+
+}

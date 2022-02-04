@@ -1,0 +1,28 @@
+{ 
+	"order": 3, 
+
+	"navEntry": { 
+		"label": "Contact", 
+		"targetSectionSelector": "#contact-section"
+	}, 
+
+	"sectionID": "contact-section", 
+
+	"head": { 
+		"subheading": "Duis laoreet", 
+		
+		"heading": "Integer viverra nulla eget", 
+
+		"paragraphs": [ 
+			{ 
+				"text": "Pellentesque fringilla, elit a placerat semper, nisl ante fringilla quam, id fermentum mauris turpis sit amet dui. Maecenas rutrum pharetra sem, quis convallis magna interdum ut. Praesent vitae imperdiet mauris, nec varius elit. Proin porta turpis sit amet ipsum molestie mattis. Pellentesque ultrices nunc faucibus est tempus, id lobortis turpis gravida." 
+			} 
+		], 
+
+		"image": { 
+			"src": "#" 
+
+		}
+	} 
+
+}
