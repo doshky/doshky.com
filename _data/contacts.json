@@ -1,0 +1,19 @@
+{ 
+	"heading": "Contacts", 
+
+	"entries": [ 
+		{
+			"key": "Phone", 
+			"value": "0888 12 34 56", 
+			"note": "" 
+		}, 
+
+		{
+			"key": "Email", 
+			"value": "doshky@gmail.com", 
+			"note": "" 
+		}
+
+	]
+
+}

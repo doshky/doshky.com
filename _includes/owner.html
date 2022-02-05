@@ -1,6 +1,8 @@
-<article>
-	{% include contacts.html %} 
-
-	{% include id.html %} 
-	<p class= "description">{{ include.description }}</p> 
+<article class= "owner"> 
+	{% include heading.html 
+		level = 4 
+		text = include.owner.name 
+		className = "owner-heading" 
+	%} 
+	<p class= "description">{{ include.owner.description }}</p> 
 </article>

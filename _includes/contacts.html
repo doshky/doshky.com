@@ -1,5 +1,12 @@
 <section class= "contacts"> 
-	{% for contact in include.contacts %} 
-		{% include contact.html %}
+	{% include heading.html 
+		level = 4 
+		text = include.contacts.heading 
+	%}
+	{% for contact in include.contacts.entries %} 
+		{% include contact-entry.html 
+			key = contact.key 
+			value = contact.value 
+		%} 
 	{% endfor %} 
 </section> 
