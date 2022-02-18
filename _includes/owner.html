@@ -1,8 +1,14 @@
 <article class= "owner"> 
+	{% include image.html 
+		className = "owner-photo" 
+		src = include.owner.photo.src 
+	%} 
+
 	{% include heading.html 
 		level = 4 
 		text = include.owner.name 
 		className = "owner-heading" 
 	%} 
+
 	<p class= "description">{{ include.owner.description }}</p> 
 </article>
