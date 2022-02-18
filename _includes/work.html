@@ -1,4 +1,15 @@
+{% capture body %} 
+
+	<ul>
+	{% for i in ( 0..9 ) %} 
+		<li>{{ i }}</li>
+	{% endfor %}
+	</ul>
+
+{% endcapture %}
+
 {% include section.html 
-	section = include.work 
+	head = include.work 
+	body = body 
 	className = "work" 
 %} 

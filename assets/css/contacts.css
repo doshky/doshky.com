@@ -1,0 +1,26 @@
+.footer .contact-entry-set { 
+	display: flex; flex-direction: row; 
+
+} 
+
+.footer .contact + .contact { 
+	margin-left: 2em; 
+
+} 
+
+.footer .contact:before { 
+	display: block; 
+	width: 2rem; height: 2rem; 
+	content: var( --contact-icon-code ); 
+
+} 
+
+.footer .phone:before { 
+	--contact-icon-code: "\f4b8"; 
+
+} 
+
+.footer .email:before { 
+	--contact-icon-code: "\f422"; 
+
+}

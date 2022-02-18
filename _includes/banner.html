@@ -1,24 +1,49 @@
 {% assign banner = include.banner %} 
 
-<section class= "banner"> 
-	<section class= "text-content banner-text-content">  
-		{% include subheading.html 
-			text = banner.subheading 
-			className = "banner-subheading" 
-		%} 
+<section class= "banner">  
+	<section class= "banner-entry"> 
+		<header class= "header"> 
+			{% include main-nav.html 
+				data = navEntry 
+			%} 
+			{% include id.html %} 
+		</header>
 
-		{% include heading.html 
-			level = 2 
-			text = banner.heading 
-			className = "banner-heading" 
+		<!--<section class= "controls banner-controls"> 
+			<ul class= "control-list"> 
+				{% assign images = "91NsefthxLS._AC_SL1500_.jpg, 614gafyz79L._AC_SL1001_.jpg, af72e650770b0199b478dcebe3027668.jpg" | split: ", " %}
+				{% for i in images %} 
+				<li class= "control"> 
+					<a class= "control-button" href= "#"></a>
+					<figure class= "slide-preview" style= "background-image: url( '/assets/images/section-backgrounds/{{ i }}' );"></figure> 
+				</li> 
+				{% endfor %} 
+			</ul> 
+		</section> --> 
+
+		<section class= "text-content banner-text-content">  
+			{% include subheading.html 
+				text = banner.subheading 
+				className = "banner-subheading" 
+			%} 
+
+			{% include heading.html 
+				level = 2 
+				text = banner.heading 
+				className = "banner-heading" 
+			%} 
+		
+			{% for paragraph in banner.paragraphs %} 
+				<p class= "paragraph banner-paragraph">{{ paragraph.text }}</p> 
+			{% endfor %} 
+
+			{% include details-button.html 
+				target = "#" 
+			%} 
+		</section> 
+
+		{% include cover-image.html 
+			src = banner.image.src 
 		%} 
-	
-		{% for paragraph in banner.paragraphs %} 
-			<p class= "paragraph banner-paragraph">{{ paragraph.text }}</p> 
-		{% endfor %}
 	</section> 
-
-	{% include cover-image.html 
-		src = section.image.src 
-	%} 
 </section>

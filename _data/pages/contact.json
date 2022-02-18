@@ -9,18 +9,18 @@
 	"sectionID": "contact-section", 
 
 	"head": { 
-		"subheading": "Duis laoreet", 
+		"subheading": "Contact", 
 		
 		"heading": "Integer viverra nulla eget", 
 
 		"paragraphs": [ 
 			{ 
-				"text": "Pellentesque fringilla, elit a placerat semper, nisl ante fringilla quam, id fermentum mauris turpis sit amet dui. Maecenas rutrum pharetra sem, quis convallis magna interdum ut. Praesent vitae imperdiet mauris, nec varius elit. Proin porta turpis sit amet ipsum molestie mattis. Pellentesque ultrices nunc faucibus est tempus, id lobortis turpis gravida." 
+				"text": "Pellentesque fringilla, elit a placerat semper, nisl ante fringilla quam, id fermentum mauris turpis sit amet dui. Maecenas rutrum pharetra sem, quis convallis magna interdum ut." 
 			} 
 		], 
 
 		"image": { 
-			"src": "#" 
+			"src": "depositphotos_9260374-stock-illustration-cool-fashion-blogger.jpg" 
 
 		}
 	} 

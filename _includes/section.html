@@ -1,24 +1,59 @@
-{% assign section = include.section %} 
+{% assign head = include.head %} 
+{% assign className = include.className | append: "-section" %} 
 
-<section class= "section {{ include.className }}-section"> 
-	<section class= "text-content section-text-content">  
+<section 
+	class= "section {{ className }}" 
+	id= "{{ className }}" 
+> 
+	<section class= "section-head"> 
+		<section class= "text-content section-text-content">  
+			{% include subheading.html 
+				text = head.subheading 
+				className = "section-subheading" 
+			%} 
+
+			{% include heading.html 
+				level = 3 
+				text = head.heading 
+				className = "section-heading" 
+			%} 
+		
+			{% for paragraph in head.paragraphs %} 
+				<p class= "paragraph">{{ paragraph.text }}</p> 
+			{% endfor %} 
+
+			{% include details-button.html  
+				target = className 
+			%} 
+		</section> 
+
+		{% include cover-image.html 
+			src = head.image.src 
+		%} 
+	</section> 
+
+	<section class= "section-body"> 
+		{% include close-button.html %} 
+
+		{% include featured-image.html 
+			src = head.image.src 
+		%} 
+
 		{% include subheading.html 
-			text = section.subheading 
+			text = head.subheading 
 			className = "section-subheading" 
 		%} 
 
 		{% include heading.html 
 			level = 3 
-			text = section.heading 
+			text = head.heading 
 			className = "section-heading" 
 		%} 
 	
-		{% for paragraph in section.paragraphs %} 
+		{% for paragraph in head.paragraphs %} 
 			<p class= "paragraph">{{ paragraph.text }}</p> 
-		{% endfor %}
-	</section> 
+		{% endfor %} 
 
-	{% include image.html 
-		src = section.image.src 
-	%} 
+		{{ include.body }} 
+	</section> 
 </section>

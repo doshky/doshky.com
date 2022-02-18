@@ -9,18 +9,18 @@
 	"sectionID": "about-section", 
 
 	"head": { 
-		"subheading": "Integer non velit", 
+		"subheading": "About Me", 
 		
 		"heading": "Aenean mollis nisl", 
 
 		"paragraphs": [ 
 			{ 
-				"text": "Ut eu nisl congue, pellentesque nibh sit amet, dictum nulla. Mauris tortor odio, fringilla ut odio elementum, pellentesque tincidunt dui. Vivamus egestas efficitur mi, in ornare mi interdum non. Aenean dictum elementum scelerisque. Sed lacinia justo eget purus semper, a sodales nibh rutrum. Donec nec laoreet nulla, quis tincidunt dolor. Vestibulum non efficitur quam." 
+				"text": "Ut eu nisl congue, pellentesque nibh sit amet, dictum nulla. Mauris tortor odio, fringilla ut odio elementum, pellentesque tincidunt dui. Vivamus egestas efficitur mi, in ornare mi interdum non." 
 			} 
 		], 
 
 		"image": { 
-			"src": "#" 
+			"src": "303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman.png" 
 
 		}
 	}

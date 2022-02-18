@@ -1,0 +1,13 @@
+{% assign switchID = include.id | append: "-switch" %} 
+
+<label 
+	class= "label switch-label {{ include.className }}-label" 
+	for= "{{ switchID }}" 
+>
+	{{ include.text }} 
+</label> 
+<input 
+	class= "switch {{ include.className }}" 
+	id= "{{ switchID }}" 
+	type= "checkbox" 
+/> 

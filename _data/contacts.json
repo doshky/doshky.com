@@ -3,13 +3,13 @@
 
 	"entries": [ 
 		{
-			"key": "Phone", 
+			"key": "phone", 
 			"value": "0888 12 34 56", 
 			"note": "" 
 		}, 
 
 		{
-			"key": "Email", 
+			"key": "email", 
 			"value": "doshky@gmail.com", 
 			"note": "" 
 		}

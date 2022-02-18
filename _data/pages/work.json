@@ -9,18 +9,18 @@
 	"sectionID": "work-section", 
 
 	"head": { 
-		"subheading": "Praesent neque felis", 
+		"subheading": "Work", 
 		
 		"heading": "Phasellus eget eleifend", 
 
 		"paragraphs": [ 
 			{ 
-				"text": "Vestibulum in tempor purus, a dignissim risus. Vivamus augue quam, ultrices in quam quis, placerat egestas sapien. Praesent neque arcu, pulvinar ut orci ut, malesuada rhoncus est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur congue et lectus vel feugiat." 
+				"text": "Vestibulum in tempor purus, a dignissim risus. Vivamus augue quam, ultrices in quam quis, placerat egestas sapien. Praesent neque arcu, pulvinar ut orci ut, malesuada rhoncus est." 
 			} 
 		], 
 
 		"image": { 
-			"src": "#" 
+			"src": "istockphoto-475654382-612x612.jpg" 
 
 		} 
 	}, 

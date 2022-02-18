@@ -1,0 +1,53 @@
+:root { 
+	--page-inner-width: 960px; 
+
+}
+
+.usability-heading { 
+	position: absolute; left: 0; top: -10000px; 
+
+}
+
+.banner-entry, 
+.section {  
+	/* Prevents text from pushing on screen edges on smaller screens */
+	padding-left: 1.25rem; padding-right: 1.25rem; 
+
+} 
+
+.banner { 
+	/* Gives banner greater size, as long as its layout and font parameters are set in 'em' */ 
+	/*font-size: 16px; */ 
+
+} 
+
+.section { 
+	/* Sets apart sections from one another */ 
+	margin-top: 4rem;  
+
+} 
+
+.banner + .section { 
+	margin-top: 10rem; 
+
+}
+
+.cover-image { 
+	position: absolute; 
+	z-index: 1; 
+	background-size: contain; background-repeat: no-repeat; background-position: center; 
+
+} 
+
+.cover-image > img, 
+.featured-image > img { 
+	display: none; 
+
+} 
+
+.featured-image { 
+	display: block; 
+	max-width: 100%; height: auto; 
+
+} 
+

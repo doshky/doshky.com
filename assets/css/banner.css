@@ -1,0 +1,134 @@
+.banner {  
+	--slide-preview-width: calc( var( --page-inner-width ) / 2 ); 
+	--slide-preview-height: 12rem; 
+	--banner-text-color: rgb(94, 52, 52); 
+	--banner-text-background-color: rgba(255, 255, 255, 0.7); 
+
+} 
+
+.banner { 
+	color: white; 
+	color: var( --banner-text-color ); 
+
+} 
+
+.banner-entry { 
+	padding-top: 12em; padding-bottom: 12em; 
+	position: relative; 
+
+}
+
+.banner-entry > :not( .cover-image ) { 
+	position: relative; z-index: 2; 
+
+} 
+
+.banner-entry > .header { 
+	/*margin-bottom: 2em; */ 
+	z-index: 3; 
+
+}
+
+.banner-controls { 
+	width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 	
+
+}
+
+.banner-controls .control-list {  
+	height: var( --slide-preview-height ); 
+	width: var( --slide-preview-width ); 
+	margin-bottom: 2em; 
+	position: relative; 
+
+} 
+
+.control { 
+	padding-left: var( --slide-preview-width ); 
+
+}
+
+.control + .control { 
+	margin-top: 0.2em; 
+
+} 
+
+.control-button:hover { 
+	background-color: white; 
+
+} 
+
+.control:first-child .slide-preview, 
+.control-button:hover + .slide-preview { 
+	opacity: 1; 
+
+} 
+
+.slide-preview { 
+	box-sizing: border-box; 
+	width: var( --slide-preview-width ); height: var( --slide-preview-height ); 
+	position: absolute; left: 0; top: 0; 
+	background-size: cover; background-position: center; 
+	border: 1px solid; 
+	opacity: 0; 
+
+}
+
+.control-button { 
+	display: block;  
+	margin-left: 0.4em; 
+	width: 1rem; height: 1rem; 
+	border: 1px solid; 
+
+} 
+
+/* Defines banner and section blocks as non full width */
+/*.text-content { 
+	max-width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 
+
+} */ 
+
+.banner-text-content > * { 
+	position: relative; z-index: 2; 
+	/*color: rgb(212, 212, 212); */ 
+	/*color: rgb(58, 83, 53); */ 
+	/*text-shadow: 0 0 1px rgba( 255, 255, 255, 1 );  */ 
+
+}
+
+.banner-text-content { 
+	box-sizing: border-box; 
+	max-width: var( --page-inner-width ); 
+	margin-left: auto; margin-right: auto; 
+	padding: 5em; padding-top: 7em; padding-bottom: 7em; 
+	/*padding-right: var( --slide-preview-width ); */ 
+	/*background-color: var( --banner-text-background-color ); */  
+	border-style: solid; border-width: 1px 0 0 0; 
+	/*text-align: right; */ 
+	text-align: center; 
+	/*box-shadow: 0 0 25px 5px rgba( 0, 0, 0, 0.3 ); */ 
+
+} 
+
+.banner-entry .heading { 
+	font-size: 3em; 
+
+} 
+
+.banner-entry .details-button { 
+	margin-top: 3em; 
+	background-color: var( --banner-text-color ); 
+	color: var( --light-gray-color ); 
+	/*border: 1px solid; */ 
+
+}
+
+.banner-entry > .cover-image { 
+	width: 100%; height: 100%; 
+	left: 0; top: 0; 
+	/*background-size: cover; */ 
+	background-position: center; 
+	opacity: 0.8; 
+
+} 
+
+

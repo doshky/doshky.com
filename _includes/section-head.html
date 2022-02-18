@@ -1,0 +1,26 @@
+{% assign head = include.head %} 
+
+<section class= "text-content section-text-content">  
+	{% include subheading.html 
+		text = head.subheading 
+		className = "section-subheading" 
+	%} 
+
+	{% include heading.html 
+		level = 3 
+		text = head.heading 
+		className = "section-heading" 
+	%} 
+
+	{% for paragraph in head.paragraphs %} 
+		<p class= "paragraph">{{ paragraph.text }}</p> 
+	{% endfor %} 
+
+	{% include details-button.html  
+		target = "#" 
+	%} 
+</section> 
+
+{% include cover-image.html 
+	src = head.image.src 
+%} 

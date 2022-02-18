@@ -1,0 +1,20 @@
+.copyright { 
+	display: flex; flex-direction: row; align-items: center; flex-wrap: wrap; 
+
+} 
+
+.copyright > :not( :last-child ) { 
+	margin-right: 0.4em; 
+
+}
+
+.copyright-name { 
+	width: 100%; 
+	padding-top: 0.4em; padding-bottom: 0.4em; 
+
+}
+
+.copyright .key { 
+	position: absolute; left: 0; top: -10000px; 
+
+}
