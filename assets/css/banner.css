@@ -1,16 +1,14 @@
 .banner {  
 	--slide-preview-width: calc( var( --page-inner-width ) / 2 ); 
 	--slide-preview-height: 12rem; 
-	--banner-text-color: rgb(94, 52, 52); 
-	--banner-text-background-color: rgba(255, 255, 255, 0.7); 
 
 } 
 
-.banner { 
+/*.banner { 
 	color: white; 
 	color: var( --banner-text-color ); 
 
-} 
+} */
 
 .banner-entry { 
 	padding-top: 12em; padding-bottom: 12em; 
@@ -116,7 +114,7 @@
 
 .banner-entry .details-button { 
 	margin-top: 3em; 
-	background-color: var( --banner-text-color ); 
+	background-color: var( --main-color ); 
 	color: var( --light-gray-color ); 
 	/*border: 1px solid; */ 
 

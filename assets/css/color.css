@@ -1,6 +1,6 @@
 :root { 
-	--main-color: #333; 
-	--highlight-color: rgb( 121, 70, 70 ); 
+	--main-color: rgb( 94, 52, 52 ); 
+	/*--highlight-color: rgb( 121, 70, 70 ); */ 
 	--text-color: var( --main-color ); 
 	--light-gray-color: rgba( 255, 255, 255, 0.8 ); 
 	--dark-gray-color: rgba( 0, 0, 0, 0.5 ); 
