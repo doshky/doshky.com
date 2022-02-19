@@ -13,7 +13,7 @@
 .banner-entry { 
 	padding-top: 12em; padding-bottom: 12em; 
 	position: relative; 
-
+	
 }
 
 .banner-entry > :not( .cover-image ) { 

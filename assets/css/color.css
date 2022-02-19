@@ -1,9 +1,18 @@
 :root { 
-	--main-color: rgb( 94, 52, 52 ); 
-	/*--highlight-color: rgb( 121, 70, 70 ); */ 
+	/* Sets main color and gives an option to specify opacity */
+	--main-color: rgba( 94, 52, 52, var( --main-color-opacity, 1 ) ); 
+
+	/* Sets the overlay color as the main color, with lower opacity */
+	--main-color-opacity: 0.2; 
+	--overlay-color: var( --main-color ); 
+
+	/* Sets text color as the main color, with full opacity */
+	--main-color-opacity: 1; 
 	--text-color: var( --main-color ); 
-	--light-gray-color: rgba( 255, 255, 255, 0.8 ); 
-	--dark-gray-color: rgba( 0, 0, 0, 0.5 ); 
+
+	/* Sets basic light and dark grayscale colors and gives an option to specify opacity */
+	--light-gray-color: rgba( 255, 255, 255, var( --light-gray-color-opacity, 0.8 ) ); 
+	--dark-gray-color: rgba( 0, 0, 0, var( --dark-gray-color-opacity, 0.5 ) ); 
 
 }
 
