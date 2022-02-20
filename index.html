@@ -11,14 +11,16 @@ layout: default
 	features = site.data.features 
 %} 
 
-{% include work.html 
-	work = site.data.pages.work.head 
-%} 
+<section class= "content-sections"> 
+	{% include work.html 
+		work = site.data.pages.work.head 
+	%} 
 
-{% include about.html 
-	about = site.data.pages.about.head 
-%} 
+	{% include about.html 
+		about = site.data.pages.about.head 
+	%} 
 
-{% include contact.html 
-	contact = site.data.pages.contact.head 
-%} 
+	{% include contact.html 
+		contact = site.data.pages.contact.head 
+	%} 
+</section>

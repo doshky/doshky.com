@@ -27,6 +27,16 @@
 
 } 
 
+.content-sections { 
+	margin-top: 10rem; 
+
+} 
+
+.content-section + .content-section { 
+	margin-top: 4rem; 
+
+} 
+
 .banner + .section { 
 	margin-top: 10rem; 
 
