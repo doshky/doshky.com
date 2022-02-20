@@ -1,5 +1,6 @@
 [
-	{
+	{ 
+		"iconCode": "&#xf387;", 
 		"heading": {
 			"text": "True" 
 		}, 
@@ -9,6 +10,7 @@
 	}, 
 
 	{
+		"iconCode": "&#xf386;", 
 		"heading": {
 			"text": "Colorful"
 		}, 
@@ -17,7 +19,8 @@
 		} 
 	}, 
 
-	{
+	{ 
+		"iconCode": "&#xf3b0;", 
 		"heading": {
 			"text": "Honest" 
 		}, 

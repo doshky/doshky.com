@@ -3,6 +3,7 @@
 	{% for feature in include.features %} 
 
 		<li class= "entry feature-entry"> 
+			<i class= "feature-entry-icon">{{ feature.iconCode }}</i> 
 			{% include heading.html 
 				level = 3
 				text = feature.heading.text 

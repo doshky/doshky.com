@@ -1,23 +1,26 @@
 .features { 
 	--feature-entry-list-width: var( --page-inner-width ); 
 	--feature-entry-list-column-count: 3; 
-	--feature-entry-list-column-gutter-x: 2em; 
-	--feature-entry-list-padding-y: 1.5em; 
+	--feature-entry-list-column-gutter-x: 1em; 
+	--feature-entry-list-padding-y: 0em; 
 
+	--feature-entry-padding-y: 0em; 
 	--feature-entry-width: calc( ( 100% - ( var( --feature-entry-list-column-count ) - 1 ) * var( --feature-entry-list-column-gutter-x ) ) / var( --feature-entry-list-column-count ) ); 
+
+	--feature-entry-heading-padding-y: 0.2em; 
 
 } 
 
 /*.features { 
 	border-style: solid; border-width: 1px 0; 
 
-}*/
+} */ 
 
 .feature-entry-list { 
 	display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; 
 	margin-left: auto; margin-right: auto; 
 	width: var( --feature-entry-list-width ); 
-	/*padding-top: var( --feature-entry-list-padding-y ); padding-bottom: var( --feature-entry-list-padding-y );  */
+	padding-top: var( --feature-entry-list-padding-y ); padding-bottom: var( --feature-entry-list-padding-y ); 
 
 } 
 
@@ -25,7 +28,9 @@
 	box-sizing: border-box; 
 	width: var( --feature-entry-width ); 
 	margin-left: var( --feature-entry-list-column-gutter-x ); 
-	padding-top: var( --feature-entry-list-padding-y ); padding-bottom: var( --feature-entry-list-padding-y ); 
+	padding-top: var( --feature-entry-padding-y ); padding-bottom: var( --feature-entry-padding-y ); 
+	/*border-style: solid; border-width: 1px; border-color: var( --main-color ); */ 
+	/*background-color: var( --main-color ); color: var( --light-gray-color ); */ 
 	text-align: center; 
 
 } 
@@ -40,8 +45,22 @@
 
 } 
 
-.feature-entry > .heading { 
-	font-size: 1.5em; 
+.feature-entry > * + * { 
+	margin-top: 1em; 
+
+}
+
+.feature-entry-icon { 
+	/*display: none; */ 
+	font-family: Ionicons; font-size: 2.5em; 
+
+}
+
+.feature-entry > .heading {  
+	padding-top: var( --feature-entry-heading-padding-y ); padding-bottom: var( --feature-entry-heading-padding-y ); 
+	/*background-color: var( --main-color ); color: var( --light-gray-color ); */
+	/*border-style: solid; border-width: 1px; border-color: var( --main-color );  */ 
+	font-size: 1.3em; 
 
 } 
 
