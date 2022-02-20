@@ -1,0 +1,18 @@
+<section class= "features"> 
+	<ul class= "entry-list feature-entry-list"> 
+	{% for feature in include.features %} 
+
+		<li class= "entry feature-entry"> 
+			{% include heading.html 
+				level = 3
+				text = feature.heading.text 
+			%} 
+
+			{% if feature.paragraph %} 
+				<p class= "paragraph">{{ feature.paragraph.text }}</p> 
+			{% endif %}
+		</li>
+
+	{% endfor %}
+	</ul> 
+</section>
