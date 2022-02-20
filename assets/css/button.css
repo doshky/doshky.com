@@ -45,5 +45,12 @@
 	padding-top: 1em; padding-bottom: 1em; 
 	padding-left: 2em; padding-right: 2em; 
 	border-radius: 100px; 
+	border: 1px solid; 
 
-}
+} 
+
+.details-button:hover { 
+	background-color: var( --main-color ); border-color: var( --main-color ); 
+	color: var( --light-gray-color ); 
+
+} 
