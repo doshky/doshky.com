@@ -1,8 +1,10 @@
 <article class= "owner"> 
-	{% include image.html 
-		className = "owner-photo" 
-		src = include.owner.photo.src 
-	%} 
+	<figure class= "owner-photo" style= "background-image: url( '/assets/images/{{ include.owner.photo.src }}' );"> 
+		{% include image.html 
+			className = "photo" 
+			src = include.owner.photo.src 
+		%} 
+	</figure> 
 
 	{% include heading.html 
 		level = 4 

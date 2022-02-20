@@ -1,0 +1,35 @@
+.owner { 
+	--owner-photo-width: 50%;  
+	--owner-photo-height: calc( var( --owner-photo-aspect-ratio ) * var( --owner-photo-width ) ); 
+	--owner-photo-aspect-ratio: 0.5; 
+	--owner-photo-border-radius: 8px; 
+
+	--owner-heading-vertical-shift: 1.5em; 
+
+} 
+
+.owner > * + * { 
+	margin-top: 1em; 
+
+}
+
+.owner-photo { 
+	height: 0; 
+	width: var( --owner-photo-width ); padding-top: var( --owner-photo-height ); 
+	/*border: 2px solid; */ 
+	border-radius: var( --owner-photo-border-radius ); 
+	background-size: cover; background-position: center;
+	background-repeat: no-repeat; 
+
+} 
+
+.owner-photo .photo { 
+	display: none; 
+
+}
+
+.owner-heading { 
+	margin-top: var( --owner-heading-vertical-shift ); 
+	font-size: 1.2em; 
+
+}
