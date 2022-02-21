@@ -1,8 +1,12 @@
-{% assign fields = include.fields %} 
+{% assign sendMessage = include.sendMessage %} 
 
+{% include heading.html 
+	level = 4 
+	text = include.sendMessage.heading.text 
+%} 
 
 <form class= "gform send-message" method= "POST" action= "https://script.google.com/macros/s/AKfycbyP8VvAizXQT0Mf8ewE_l40iATNhsbI1zEp5TRiGQ/exec"> 
-	{% for field in fields %} 
+	{% for field in sendMessage.fields %} 
 		{% include field.html 
 			data = field 
 		%} 
