@@ -1,15 +1,20 @@
 {% capture body %} 
 
-	<ul>
-	{% for i in ( 0..9 ) %} 
-		<li>{{ i }}</li>
+	<ul class= "entry-list work-section-entry-list"> 
+	{% for picture in include.work.body %} 
+		<li class= "entry work-section-entry" style= "background-image: url( '/assets/images/{{ picture.src }}' );"> 
+			{% include image.html 
+				src = picture.src 
+				className = "work-section-image" 
+			%}
+		</li>
 	{% endfor %}
-	</ul>
+	</ul> 
 
 {% endcapture %}
 
 {% include section.html 
-	head = include.work 
+	head = include.work.head 
 	body = body 
 	className = "work" 
 %} 

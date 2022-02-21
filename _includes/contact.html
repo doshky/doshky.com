@@ -1,17 +1,17 @@
 {% capture body %} 
 
 	{% include contacts.html 
-		contacts = site.data.contacts 
+		contacts = include.contact.body.contacts 
 	%} 
 
 	{% include send-message.html 
-		fields = site.data.sendMessage.fields 
+		sendMessage = include.contact.body.sendMessage 
 	%} 
 
 {% endcapture %} 
 
 {% include section.html 
-	head = include.contact 
+	head = include.contact.head 
 	body = body 
 	className = "contact" 
 %} 

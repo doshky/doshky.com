@@ -23,6 +23,51 @@
 			"src": "303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman.png" 
 
 		}
-	}
+	}, 
+
+	"body": [ 
+		{ 
+			"heading": "Education", 
+			"paragraphs": [ 
+				{ 
+					"text": "Ut eu nisl congue, pellentesque nibh sit amet, dictum nulla. Mauris tortor odio, fringilla ut odio elementum, pellentesque tincidunt dui. Vivamus egestas efficitur mi, in ornare mi interdum non." 
+				} 
+			], 
+	
+			"image": { 
+				"src": "303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman.png" 
+	
+			}
+		}, 
+
+		{
+			"heading": "Life", 
+			"paragraphs": [ 
+				{ 
+					"text": "Ut eu nisl congue, pellentesque nibh sit amet, dictum nulla. Mauris tortor odio, fringilla ut odio elementum, pellentesque tincidunt dui. Vivamus egestas efficitur mi, in ornare mi interdum non." 
+				} 
+			], 
+	
+			"image": { 
+				"src": "303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman.png" 
+	
+			}
+		}, 
+
+		{
+			"heading": "Interests", 
+			"paragraphs": [ 
+				{ 
+					"text": "Ut eu nisl congue, pellentesque nibh sit amet, dictum nulla. Mauris tortor odio, fringilla ut odio elementum, pellentesque tincidunt dui. Vivamus egestas efficitur mi, in ornare mi interdum non." 
+				} 
+			], 
+	
+			"image": { 
+				"src": "303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman.png" 
+	
+			}
+		}
+
+	]
 
 }

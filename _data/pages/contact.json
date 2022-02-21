@@ -23,6 +23,55 @@
 			"src": "Woman-Writing.jpeg" 
 
 		}
-	} 
+	}, 
+
+	"body": { 
+		"contacts": { 
+			"heading": "Contacts", 
+		
+			"entries": [ 
+				{
+					"key": "phone", 
+					"value": "0888 12 34 56", 
+					"note": "" 
+				}, 
+		
+				{
+					"key": "email", 
+					"value": "doshky@gmail.com", 
+					"note": "" 
+				}
+			]
+		
+		}, 
+
+		"sendMessage": { 
+			"heading": { 
+				"text": "Write Me"
+
+			}, 
+			
+			"fields": [ 
+				{ 
+					"name": "user-name", 
+					"type": "text", 
+					"label": "Your Name" 
+				}, 
+		
+				{ 
+					"name": "user-email", 
+					"type": "email", 
+					"label": "Your Email"
+				}, 
+		
+				{ 
+					"name": "user-message", 
+					"label": "Your Message", 
+					"isMessageBody": true 
+				}
+		
+			] 
+		}
+	}
 
 }

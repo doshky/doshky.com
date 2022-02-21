@@ -1,25 +1,23 @@
 {% capture body %} 
 
-	<article> 
+	{% for section in include.about.body %} 
+		{% include heading.html 
+			level = 4 
+			text = section.heading 
+		%} 
 
-		<p>Fusce pulvinar nisl dui, quis consequat ipsum interdum vitae. Sed justo lacus, tempor id condimentum eget, eleifend interdum ante. Aliquam consectetur tempus massa, vel euismod felis bibendum sit amet. Aenean sit amet ipsum vel eros faucibus auctor in ac lorem. Curabitur lacinia eget metus non pellentesque. Phasellus nec iaculis neque, ac pharetra mi. Morbi eleifend lectus a rhoncus suscipit. Suspendisse sed justo eros. Praesent facilisis tempor urna, sit amet euismod mauris aliquet sit amet. Vivamus maximus, nisl laoreet gravida volutpat, eros sem volutpat mi, et ultricies eros nunc posuere libero. Pellentesque libero neque, vulputate sit amet risus sit amet, commodo dignissim turpis. Maecenas rutrum dolor quis lobortis convallis. Etiam at commodo ipsum. Praesent et dolor eu ex pellentesque cursus non eget sem. Etiam rhoncus fringilla tortor, et venenatis sem dignissim vel. Pellentesque vitae fringilla est.
-		</p>
+		{% for paragraph in section.paragraphs %} 
+			{% include paragraph.html 
+				text = paragraph.text 
+			%} 
+		{% endfor %} 
 
-		<p>Nam non libero ex. Cras egestas tortor id tellus luctus, id laoreet elit consectetur. Aliquam sodales mi id felis mollis tincidunt. Ut sagittis a erat laoreet vestibulum. Morbi neque erat, rhoncus vitae mi vel, sollicitudin aliquam velit. Aliquam mollis, ante vitae egestas malesuada, erat tortor feugiat elit, at accumsan ligula eros a massa. Nunc nec eleifend erat. Mauris vulputate tincidunt luctus. Ut aliquam est ac enim faucibus ultricies.
-		</p>
-		
-		<p>Nullam vitae mattis dui. In vulputate maximus efficitur. Nulla nibh massa, ornare eu dapibus in, facilisis at est. Suspendisse molestie suscipit sapien sit amet lobortis. Sed porta nisi egestas, pharetra est a, lobortis quam. Sed mauris risus, fringilla sit amet tristique quis, auctor sed nisi. Suspendisse potenti. Nam nec sem ultrices, interdum felis tristique, congue ipsum. Mauris placerat vulputate enim sit amet tristique. Mauris vulputate interdum nulla ac volutpat. Proin pellentesque rutrum augue nec rutrum. Aenean eu velit egestas nisl cursus aliquet et id massa. Nunc auctor ante dui, et sollicitudin lectus malesuada in. Praesent luctus bibendum turpis, eget lobortis massa imperdiet id. Aliquam placerat ipsum non ornare fermentum. Nam accumsan rutrum lacus vel accumsan.
-		</p>
-		
-		<p>Aliquam sed mauris aliquam, suscipit velit ut, dictum turpis. Mauris volutpat sapien eget lacus fringilla lacinia. Duis fringilla leo non faucibus varius. Morbi faucibus neque eget nibh ultrices laoreet. Sed euismod felis et nisl auctor, eu gravida justo venenatis. Etiam fermentum nulla sit amet eros pellentesque dignissim. Suspendisse vulputate sem et accumsan placerat. Duis non arcu nulla. Donec libero ex, efficitur nec odio id, sagittis volutpat augue. Duis non porta tortor. Curabitur et elit efficitur, sollicitudin sapien id, suscipit leo.
-		</p> 
-
-	</article> 
+	{% endfor %}
 
 {% endcapture %}
 
 {% include section.html 
-	head = include.about 
+	head = include.about.head 
 	body = body 
 	className = "about" 
 %} 
