@@ -1,0 +1,40 @@
+{% for element in include.article %} 
+
+	{% assign data = element.data %} 
+
+	{% case element.type %} 
+
+		{% when "subheading" %} 
+			{% include subheading.html 
+				text = data.text 
+			%}
+
+		{% when "heading" %} 
+			{% include heading.html 
+				level = data.level 
+				text = data.text 
+			%}
+
+		{% when "paragraph" %} 
+			{% include paragraph.html 
+				text = data.text 
+			%}
+
+		{% when "image" %} 
+			{% include image.html 
+				src = data.src 
+			%}
+
+		{% when "list" %} 
+			{% include list.html 
+				list = data.elements 
+			%}
+
+		{% when "section" %} 
+			{% include article.html 
+				article = element.data 
+			%}
+
+	{% endcase %}
+
+{% endfor %}
