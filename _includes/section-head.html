@@ -1,6 +1,7 @@
 {% assign head = include.head %} 
+{% assign className = include.className %} 
 
-<section class= "text-content section-text-content">  
+<section class= "text-content section-text-content {{ className }}-text-content">  
 	{% include subheading.html 
 		text = head.subheading 
 		className = "section-subheading" 
@@ -16,8 +17,9 @@
 		<p class= "paragraph">{{ paragraph.text }}</p> 
 	{% endfor %} 
 
+	{% assign target = className %} 
 	{% include details-button.html  
-		target = "#" 
+		target = target 
 	%} 
 </section> 
 

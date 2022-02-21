@@ -1,0 +1,21 @@
+{% assign head = include.head %} 
+
+
+{% include featured-image.html 
+	src = head.image.src 
+%} 
+
+{% include subheading.html 
+	text = head.subheading 
+	className = "section-subheading" 
+%} 
+
+{% include heading.html 
+	level = 3 
+	text = head.heading 
+	className = "section-heading" 
+%} 
+
+{% for paragraph in head.paragraphs %} 
+	<p class= "paragraph">{{ paragraph.text }}</p> 
+{% endfor %} 

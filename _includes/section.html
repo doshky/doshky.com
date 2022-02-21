@@ -6,54 +6,21 @@
 	id= "{{ className }}" 
 > 
 	<section class= "section-head"> 
-		<section class= "text-content section-text-content">  
-			{% include subheading.html 
-				text = head.subheading 
-				className = "section-subheading" 
-			%} 
-
-			{% include heading.html 
-				level = 3 
-				text = head.heading 
-				className = "section-heading" 
-			%} 
-		
-			{% for paragraph in head.paragraphs %} 
-				<p class= "paragraph">{{ paragraph.text }}</p> 
-			{% endfor %} 
-
-			{% include details-button.html  
-				target = className 
-			%} 
-		</section> 
-
-		{% include cover-image.html 
-			src = head.image.src 
+		{% include section-head.html 
+			head = head 
+			className = className 
 		%} 
 	</section> 
 
 	<section class= "section-body"> 
-		{% include close-button.html %} 
+		<article class= "section-body-content"> 
+			{% include close-button.html %} 
 
-		{% include featured-image.html 
-			src = head.image.src 
-		%} 
+			{% include section-body.html 
+				head = head 
+			%} 
 
-		{% include subheading.html 
-			text = head.subheading 
-			className = "section-subheading" 
-		%} 
-
-		{% include heading.html 
-			level = 3 
-			text = head.heading 
-			className = "section-heading" 
-		%} 
-	
-		{% for paragraph in head.paragraphs %} 
-			<p class= "paragraph">{{ paragraph.text }}</p> 
-		{% endfor %} 
-
-		{{ include.body }} 
+			{{ include.body }} 
+		</article> 
 	</section> 
 </section>
