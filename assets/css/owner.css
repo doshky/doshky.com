@@ -8,6 +8,11 @@
 
 } 
 
+.owner { 
+	position: relative; 
+
+}
+
 .owner > * + * { 
 	margin-top: 1em; 
 
@@ -31,5 +36,14 @@
 .owner-heading { 
 	margin-top: var( --owner-heading-vertical-shift ); 
 	font-size: 1.2em; 
+
+} 
+
+.button-scroll-to-top { 
+	position: absolute; right: 100%; margin-right: 4rem; 
+	/*top: 0; */
+	bottom: 0; 
+	border: 1px solid; 
+	border-radius: 5px; 
 
 }
