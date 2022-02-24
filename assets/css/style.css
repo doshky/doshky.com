@@ -1,3 +1,5 @@
+@import url( "./settings.css" ); 
+
 @import url( "./layout.css" ); 
 @import url( "./typography.css" ); 
 @import url( "./color.css" ); 
@@ -11,8 +13,12 @@
 @import url( "./main-navigation.css" ); 
 
 @import url( "./features.css" ); 
+@import url( "./work.css" ); 
+@import url( "./contact.css" ); 
 @import url( "./owner.css" ); 
 @import url( "./footer.css" ); 
 @import url( "./contacts.css" ); 
 @import url( "./send-message.css" ); 
 @import url( "./copyright.css" ); 
+
+@import url( "./intro-animation.css" ); 
