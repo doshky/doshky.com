@@ -9,12 +9,12 @@ body {
 } 
 
 html { 
-	background: url( /assets/images/552708.png ) no-repeat center center fixed; background-size: contain; 
+	background: url( /assets/images/ChK8f2.jpg ) no-repeat center fixed; background-size: cover; 
 
 }
 
 .section { 
-	width: 100%; min-height: 100vh; 
+	width: 100%; min-height: 100vh;  
 	overflow: hidden; 
 	scroll-snap-align: start; 
 } 

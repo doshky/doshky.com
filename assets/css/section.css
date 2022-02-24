@@ -10,6 +10,7 @@
 	margin-left: 50%; 
 	/* margin-top: var( --section-member-margin-top );  */
 	padding-left: var( --text-padding-x ); padding-right: var( --text-padding-x ); 
+	position: relative; z-index: 2; 
 
 } 
 
@@ -58,6 +59,20 @@
 
 .text-entry:not( :last-of-type ) { 
 	margin-bottom: 0.5em; 
+} 
+
+.section:before { 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; right: 0; z-index: 1; 
+	content: ""; 
+	background-color: rgba(202, 239, 255, 0.2); 
+
+} 
+
+.section:before { 
+	background-color: rgba(255, 255, 255, 0.2); 
+
 } 
 
 .section .text-content { 

@@ -47,10 +47,10 @@
 	 * Color 
 	 */
 
-	--text-color: rgb( 255, 51, 0 ); 	
+	/*--text-color: rgb( 255, 51, 0 );  */ 
 	/* --text-color: rgba( 0, 0, 0, 0.75 );  */
-	/* --text-color: rgb( 217, 161, 89, 0.95 );   */
-	/* --text-color: rgb( 40, 0, 48, 0.85 );  */
+	--text-color: rgb(68, 95, 112);  
+	/*--text-color: rgb( 40, 0, 48, 0.85 ); */
 	--foreground-color: rgba( 255, 255, 255, 1 ); 
 	--overlay-color:  rgb( 196, 158, 115 );  
 	/* --overlay-color:  rgba( 217, 161, 89, 1 );  */
