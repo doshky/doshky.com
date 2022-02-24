@@ -1,18 +1,10 @@
 {% capture body %} 
 
 	{% for section in include.about.body %} 
-		{% include heading.html 
-			level = 4 
-			text = section.heading 
+		{% include article-section.html 
+			section = section 
 		%} 
-
-		{% for paragraph in section.paragraphs %} 
-			{% include paragraph.html 
-				text = paragraph.text 
-			%} 
-		{% endfor %} 
-
-	{% endfor %}
+	{% endfor %} 
 
 {% endcapture %}
 

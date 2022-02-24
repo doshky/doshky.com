@@ -1,0 +1,14 @@
+{% assign section = include.section %} 
+
+{% include heading.html 
+	level = 3 
+	text = section.heading 
+	className = "article-section-heading" 
+%} 
+
+{% for paragraph in section.paragraphs %} 
+	{% include paragraph.html 
+		text = paragraph.text 
+		className = "article-section-paragraph" 
+	%} 
+{% endfor %} 
