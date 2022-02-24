@@ -1,1 +1,5 @@
-<p class= "paragraph">{{ include.text }}</p> 
+<p 
+	class= "paragraph{% if include.className %} {{ include.className }}{% endif %}" 
+>
+	{{ include.text }} 
+</p> 

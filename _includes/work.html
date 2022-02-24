@@ -1,8 +1,8 @@
 {% capture body %} 
 
-	<ul class= "entry-list work-section-entry-list"> 
+	<ul class= "entry-list picture-entry-list work-section-entry-list"> 
 	{% for picture in include.work.body %} 
-		<li class= "entry work-section-entry" style= "background-image: url( '/assets/images/{{ picture.src }}' );"> 
+		<li class= "entry picture-entry work-section-entry" style= "background-image: url( '/assets/images/{{ picture.src }}' );"> 
 			{% include image.html 
 				src = picture.src 
 				className = "work-section-image" 

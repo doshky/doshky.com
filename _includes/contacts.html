@@ -1,15 +1,14 @@
-<section class= "contacts"> 
-	{% include heading.html 
-		level = 4 
-		text = include.contacts.heading 
+{% include heading.html 
+	level = 4 
+	text = include.contacts.heading 
+	className = "contact-section-heading" 
+%} 
+<section class= "contact-entry-set"> 
+{% for contact in include.contacts.entries %} 
+	{% include contact-entry.html 
+		key = contact.key 
+		value = contact.value 
+		className = contact.key 
 	%} 
-	<section class= "contact-entry-set"> 
-	{% for contact in include.contacts.entries %} 
-		{% include contact-entry.html 
-			key = contact.key 
-			value = contact.value 
-			className = contact.key 
-		%} 
-	{% endfor %} 
-	</section>
+{% endfor %} 
 </section> 
