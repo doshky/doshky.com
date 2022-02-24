@@ -9,11 +9,16 @@
 	<link rel="stylesheet" href="/assets/css/style.css" />   
 </head>
 <body> 
+	{% include banner.html 
+		banner = site.data.banner 
+	%} 
 
-	<main class= "page"> 
-		{{ content }} 
-	</main> 
-	
-	{% include footer.html %} 
+	<div class= "page-holder"> 
+		<main class= "page"> 
+			{{ content }} 
+		</main> 
+
+		{% include footer.html %} 
+	</div>
 </body>
 </html>
