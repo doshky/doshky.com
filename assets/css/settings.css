@@ -30,7 +30,7 @@
 	--text-font-family: "Heebo"; 
 	--heading-font-family: "Fredericka the Great"; 
 	--main-nav-font-family: var( --text-font-family ); 
-	--icon-font-family: "IonIcons"; 
+	--icon-font-family: IonIcons; 
 	--icon-base-font-size: 1.8rem; 
 	--icon-arrow-font-size: 1.5rem; 
 	--icon-open-code: ""; 
@@ -49,8 +49,9 @@
 
 	/*--text-color: rgb( 255, 51, 0 );  */ 
 	/* --text-color: rgba( 0, 0, 0, 0.75 );  */
-	--text-color: rgb(95, 131, 153);  
+	--text-color: rgb(124, 167, 194);  
 	/*--text-color: rgb( 40, 0, 48, 0.85 ); */
+	--section-overlay-color: rgba(40, 65, 78, 0.63); 
 	--foreground-color: rgba( 255, 255, 255, 1 ); 
 	--overlay-color:  rgb( 196, 158, 115 );  
 	/* --overlay-color:  rgba( 217, 161, 89, 1 );  */

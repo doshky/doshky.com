@@ -22,7 +22,7 @@
 .mfp-arrow::before, 
 .mfp-arrow::after { 
 	border: none !important; 
-	font-family: IonIcons; font-size: var( --icon-arrow-font-size ); 
+	font-family: "var( --icon-font-family )"; font-size: var( --icon-arrow-font-size ); 
 
 } 
 
