@@ -80,3 +80,8 @@
 	border-color: var( --main-color );  
 
 } 
+
+.button-close { 
+	margin-bottom: 5rem; 
+
+}
