@@ -2,12 +2,7 @@
 
 <section class= "banner">  
 	<section class= "banner-entry"> 
-		<header class= "header"> 
-			{% include main-nav.html 
-				data = navEntry 
-			%} 
-			{% include id.html %} 
-		</header>
+		{% include header.html %} 
 
 		<!--<section class= "controls banner-controls"> 
 			<ul class= "control-list"> 
@@ -38,7 +33,7 @@
 			{% endfor %} 
 
 			{% include details-button.html 
-				target = "#" 
+				target = "page-holder" 
 			%} 
 		</section> 
 

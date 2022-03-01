@@ -16,11 +16,17 @@
 		<article class= "section-body-content"> 
 			{% include close-button.html %} 
 
+			{% include header.html %} 
+
 			{% include section-body.html 
 				head = head 
 			%} 
 
 			{{ include.body }} 
+
+			{% include footer.html 
+				sectionID = className 
+			%} 
 		</article> 
 	</section> 
 </section>
