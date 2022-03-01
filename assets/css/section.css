@@ -61,14 +61,14 @@
 	margin-bottom: 0.5em; 
 } 
 
-/*.section:before { 
+.section:before { 
 	display: block; 
 	width: 100%; height: 100%; 
 	position: absolute; right: 0; z-index: 1; 
 	content: ""; 
 	background-color: var( --section-overlay-color ); 
 
-} */ 
+} 
 
 .section .text-content { 
 	max-width: 40rem; 
