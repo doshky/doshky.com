@@ -20,6 +20,11 @@ html {
 
 } 
 
+#page-holder:target { 
+	height: auto; 
+
+}
+
 .section { 
 	/* Sets apart sections from one another */ 
 	margin-top: 4rem;  
