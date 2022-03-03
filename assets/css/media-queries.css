@@ -140,7 +140,7 @@
 
 	.header .id { 
 		position: relative; left: 0; top: 0; margin-left: 0; 
-		margin-bottom: var( --id-margin-bottom ); 
+		margin-left: -1rem; margin-bottom: var( --id-margin-bottom ); 
 		transform: translateY( 0 );  
 
 	} 
