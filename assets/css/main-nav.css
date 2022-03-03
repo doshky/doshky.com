@@ -2,12 +2,14 @@
 	display: inline-block; 
 	font-family: var( --main-nav-font-family );  
 	font-size: var( --nav-button-font-size ); 
-	text-transform: uppercase;   
+	text-transform: uppercase; 
+	overflow: auto; 
 
 } 
 
 .nav-entry-list { 
-	display: flex; flex-direction: row; flex-wrap: wrap; 
+	display: flex; flex-direction: row; 
+	/*flex-wrap: wrap; */ 
 
 } 
 
