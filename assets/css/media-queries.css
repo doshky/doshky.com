@@ -205,4 +205,13 @@
 	
 	}*/ 
 
+	.copyright .notice { 
+		width: 100%;  
+		padding-left: 0; 
+		border-top: 1px solid; 
+		/*background-color: var( --text-color ); color: var( --foreground-color ); */ 
+		/*text-align: center; */ 
+	
+	} 
+
 }
