@@ -59,7 +59,7 @@
 
 .feature-entry-icon { 
 	/*display: none; */ 
-	font-family: Ionicons; font-size: 2.5em; 
+	font-family: "var( --icon-font-family )"; font-size: 2.5em; 
 
 }
 
