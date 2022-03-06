@@ -2,6 +2,10 @@
 {% assign className = include.className | append: "-section" %} 
 
 <section class= "section-head {{ className }}-head"> 
+	{% include cover-image.html 
+		src = head.image.src 
+	%} 
+	
 	<section class= "text-content section-head-text-content {{ className }}-head-text-content">  
 		{% include subheading.html 
 			text = head.subheading 
@@ -26,9 +30,5 @@
 			Read More 
 		</a> 
 	
-	</section> 
-
-	{% include cover-image.html 
-		src = head.image.src 
-	%} 
+	</section>  
 </section>
