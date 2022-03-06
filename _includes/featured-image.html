@@ -1,5 +1,19 @@
-{% include image.html 
+<!--{% include image.html 
 	className= "featured-image" 
 	src = include.src 
 	alt = include.alt 
-%} 
+%} --> 
+
+<figure 
+	class= "featured-image" 
+	style= "background-image: url( '/assets/images/{{ include.src }}' )" 
+> 
+	{% include image.html 
+		src = include.src 
+		alt = include.alt 
+	%}
+
+	{% if include.caption %}
+		<figcaption class= "caption">{{ include.caption }}</figcaption> 
+	{% endif %}
+</figure>
