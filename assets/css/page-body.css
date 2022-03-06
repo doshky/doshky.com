@@ -101,7 +101,7 @@
 } 
 
 
-@media screen and ( max-width: 680px ) { 
+/*@media screen and ( max-width: 680px ) { 
 
 	.page-body { 
 		transform: translateY( 100% ); 
@@ -118,4 +118,4 @@
 	
 	} 
 	
-}
+}*/ 
