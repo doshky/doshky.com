@@ -4,11 +4,11 @@
 
 } 
 
-/*.banner { 
-	color: white; 
-	color: var( --banner-text-color ); 
+.banner { 
+	display: flex; flex-direction: column; justify-content: center; 
+	min-height: 100vh; 
 
-} */
+}
 
 .banner-entry { 
 	padding-top: 12em; padding-bottom: 12em; 
@@ -27,7 +27,7 @@
 
 }
 
-.banner-controls { 
+/*.banner-controls { 
 	width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 	
 
 }
@@ -77,7 +77,7 @@
 	width: 1rem; height: 1rem; 
 	border: 1px solid; 
 
-} 
+} */ 
 
 /* Defines banner and section blocks as non full width */
 /*.text-content { 
@@ -97,7 +97,8 @@
 	box-sizing: border-box; 
 	max-width: var( --page-inner-width ); 
 	margin-left: auto; margin-right: auto; 
-	padding: 5em; padding-top: 7em; padding-bottom: 7em; 
+	padding-left: 2em; padding-right: 2em; 
+	padding-top: 7em; padding-bottom: 7em; 
 	/*padding-right: var( --slide-preview-width ); */ 
 	/*background-color: var( --light-gray-color );  */ 
 	border-style: solid; border-width: 1px 0 0 0; 
@@ -128,6 +129,20 @@
 	/*opacity: 0.8; */ 
 
 } 
+
+@media screen and ( max-width: 580px ) { 
+	.banner-entry { 
+		padding-top: 4em; padding-bottom: 4em; 
+		
+	} 
+
+	.banner-text-content { 
+		padding-left: 0em; padding-right: 0em; 
+		padding-top: 4em; padding-bottom: 4em; 
+	
+	} 
+	
+}
 
 
 

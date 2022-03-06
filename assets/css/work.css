@@ -17,9 +17,11 @@
 } 
 
 .work-section-entry { 
+	box-sizing: border-box; 
 	margin-left: var( --work-section-entry-list-column-gutter-x ); margin-top: var( --work-section-entry-list-column-gutter-y ); 
-	width: var( --work-section-entry-width ); height: 8rem; 
-	background-size: cover; background-position: center; 
+	width: var( --work-section-entry-width ); height: 8rem;  
+	position: relative; 
+	border: 1px solid var( --overlay-color ); 
 	overflow: hidden; 
 
 } 
@@ -32,9 +34,21 @@
 .work-section-entry:nth-child( 4n + 1 ) { 
 	margin-left: 0; 
 
-}
+} 
 
 .work-section-image { 
-	display: none; 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; 
+	background-size: cover; background-position: center; 
+	text-indent: -10000px; 
+	opacity: 0; 
+	
+
+} 
+
+.work-section-image:hover { 
+	opacity: 1; 
+	
 
 }

@@ -25,18 +25,18 @@ html {
 
 }
 
-.section { 
+.section-head { 
 	/* Sets apart sections from one another */ 
 	margin-top: 4rem;  
 
 } 
 
-.content-sections { 
+.section-head-holder { 
 	margin-top: 10rem; 
 
 } 
 
-.content-section + .content-section { 
+.section-head + .section-head { 
 	margin-top: 4rem; 
 
 } 
@@ -64,4 +64,25 @@ html {
 	max-width: 100%; height: auto; 
 
 } 
+
+
+@media screen and ( max-width: 780px ) { 
+
+	.banner + .section { 
+		margin-top: 1rem; 
+	
+	}
+
+	.section-head-holder { 
+		margin-top: 1rem; 
+	
+	} 
+
+	.section-head + .section-head { 
+		margin-top: 2rem; 
+	
+	} 
+	
+	
+}
 

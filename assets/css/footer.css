@@ -15,3 +15,25 @@
 	font-size: 1.2em; 
 
 } */ 
+
+
+@media screen and ( max-width: 780px ) { 
+
+	.owner { 
+		--owner-photo-width: 100%;  
+	
+	} 
+
+	.footer { 
+		margin-top: 2rem; 
+		margin-left: 0; 
+		padding-top: 0em; padding-bottom: 8em; 
+	
+	} 
+
+	.button-scroll-to-top { 
+		position: initial; 
+	
+	}
+	
+}
