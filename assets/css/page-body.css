@@ -98,4 +98,24 @@
 .section-holder .section-on { 
 	position: initial; 
 
+} 
+
+
+@media screen and ( max-width: 680px ) { 
+
+	.page-body { 
+		transform: translateY( 100% ); 
+	
+	} 
+	
+	.page-body.page-body-nav { 
+		transform: translateY( 100% ); 
+	
+	}
+	
+	.page-body.nav-on { 
+		transform: translateY( 0 ); 
+	
+	} 
+	
 }

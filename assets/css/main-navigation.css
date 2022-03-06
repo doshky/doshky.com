@@ -138,7 +138,17 @@
 	.main-nav .nav-link-text { 
 		transform: none; 
 	
+	} 
+
+	.main-nav .nav-entry { 
+		transform: translateY( 100% ); 
+	
 	}
+	
+	.page-body.nav-on .main-nav .nav-entry { 
+		transform: translateY( 0 ); 
+	
+	} 
 	
 	
 }
