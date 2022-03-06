@@ -7,32 +7,12 @@
 		"paragraph": {
 			"text": "Nullam convallis sit amet leo nec ullamcorper. Curabitur varius nisi augue, non egestas mi tempus ut. Praesent ut sem elit. Maecenas a nunc pharetra urna suscipit pharetra et eu sem." 
 		} 
-	}, 
-
-	{
-		"iconCode": "&#xf386;", 
-		"heading": {
-			"text": "Deep"
-		}, 
-		"paragraph": {
-			"text": "Nullam convallis sit amet leo nec ullamcorper. Curabitur varius nisi augue, non egestas mi tempus ut. Praesent ut sem elit. Maecenas a nunc pharetra urna suscipit pharetra et eu sem." 
-		} 
-	}, 
+	},
 
 	{ 
 		"iconCode": "&#xf3b0;", 
 		"heading": {
 			"text": "Honest" 
-		}, 
-		"paragraph": {
-			"text": "Nullam convallis sit amet leo nec ullamcorper. Curabitur varius nisi augue, non egestas mi tempus ut. Praesent ut sem elit. Maecenas a nunc pharetra urna suscipit pharetra et eu sem." 
-		} 
-	}, 
-
-	{ 
-		"iconCode": "&#xf3b0;", 
-		"heading": {
-			"text": "Powerful" 
 		}, 
 		"paragraph": {
 			"text": "Nullam convallis sit amet leo nec ullamcorper. Curabitur varius nisi augue, non egestas mi tempus ut. Praesent ut sem elit. Maecenas a nunc pharetra urna suscipit pharetra et eu sem." 
