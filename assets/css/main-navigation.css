@@ -63,6 +63,12 @@
 
 } 
 
+.main-nav .nav-link:active .nav-link-text, 
+.main-nav .nav-link:focus .nav-link-text { 
+	z-index: 1; 
+
+}
+
 /*.main-nav .nav { 
 	border-left: 1px solid; 
 	top: -10000px; 
@@ -84,6 +90,7 @@
 
 .main-nav .nav-link-text { 
 	display: block; 
+	position: relative; z-index: -1; 
 	transform: rotateZ( -90deg ); 
 
 }
