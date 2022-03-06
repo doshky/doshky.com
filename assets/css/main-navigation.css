@@ -9,7 +9,7 @@
 	width: 100%; height: 100%; 
 	/*position: fixed; left: 0; */
 	z-index: 3; 
-	background-color: var( --light-gray-color );  
+	background-color: var( --light-gray-color ); background-color: var( --main-color ); color: var( --light-gray-color ); 
 	/*color: #555; */ 
 	overflow: hidden; 
 
@@ -47,9 +47,11 @@
 } 
 
 .main-nav .nav-link:active, 
-.main-nav .nav-link:focus { 
+.main-nav .nav-link:focus, 
+.main-nav-button-close:hover { 
 	/* Inverts button colors */
 	background-color: var( --main-color ); color: var( --light-gray-color ); 
+	background-color: var( --light-gray-color ); color: var( --main-color );
 	/* Keeps button border color the same as its background to avoid border disappearing */
 	border-color: var( --main-color ); 
 

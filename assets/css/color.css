@@ -12,7 +12,7 @@
 	--text-color: var( --main-color ); 
 
 	/* Sets basic light and dark grayscale colors and gives an option to specify opacity */
-	--light-gray-color: rgba( 255, 255, 255, var( --light-gray-color-opacity, 0.8 ) ); 
+	--light-gray-color: rgba( 255, 255, 255, var( --light-gray-color-opacity, 0.9 ) ); 
 	--dark-gray-color: rgba( 0, 0, 0, var( --dark-gray-color-opacity, 0.5 ) ); 
 
 }
