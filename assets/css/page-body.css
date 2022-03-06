@@ -96,7 +96,7 @@
 }
 
 .section-holder .section-on { 
-	position: initial; 
+	position: relative; top: 0; 
 
 } 
 
