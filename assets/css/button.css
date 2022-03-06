@@ -35,7 +35,7 @@
 	/* Sets icon holder size */
 	width: var( --button-icon-side ); height: var( --button-icon-side ); 
 	/* Sets icon character font and size */
-	font-family: Ionicons; font-size: 1.2em; 
+	font-family: "var( --icon-font-family )"; font-size: 1.2em; 
 	/* Icon character is set through a variable */
 	content: var( --button-icon-code ); 
 
