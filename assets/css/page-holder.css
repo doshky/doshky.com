@@ -1,0 +1,9 @@
+.page-holder { 
+	height: 0; overflow: hidden; 
+
+} 
+
+.page-holder.page-holder-open { 
+	height: auto; 
+
+}

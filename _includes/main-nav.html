@@ -14,8 +14,8 @@
 				<li class= "nav-entry{% if currentSectionNavEntry.targetSectionSelector == navEntry.targetSectionSelector %} entry-current{% endif %}"> 
 					<a 
 						href= "{{ navEntry.targetSectionSelector }}" 
-						class= "nav-link inner-link{{ navEntry.classNames | join: ' ' | prepend: ' ' }}" 
-						data-target-section= "{{ navEntry.targetSectionSelector }}" 
+						class= "nav-link inner-link{{ navEntry.classNames | join: ' ' | prepend: ' ' }} control-button" 
+						data-control-set= "#page-body.remove:nav-on, #page-body.add:content-section-on, {{ navEntry.targetSectionSelector }}.add:section-on" 
 						data-section-pos= "{{ pos }}"
 					>
 						{{ navEntry.label }}
@@ -25,8 +25,12 @@
 		{% endfor %}
 		</ul> 
 
-		<a href= "#" class= "button button-close main-nav-button main-nav-button-close has-icon"><span class= "button-text">Close navigation</span></a> 
-	</section>
-
-	<a href= "#main-nav" class= "button button-open main-nav-button main-nav-button-open has-icon"><span class= "button-text">Open navigation</span></a> 
+		<a 
+			href= "#page-body" 
+			class= "button control-button button-close main-nav-button main-nav-button-close has-icon" 
+			data-control-set= "#page-body.remove:nav-on, #page-body.remove:page-body-nav" 
+		>
+			<span class= "button-text">Close navigation</span> 
+		</a> 
+	</section> 
 </nav>

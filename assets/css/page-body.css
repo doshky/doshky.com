@@ -1,0 +1,101 @@
+.page-body { 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; left: 0; top: 0; 
+	z-index: 3; 
+	background-color: var( --light-gray-color ); 
+	border-left: 1px solid; 
+	overflow: hidden; 
+
+}  
+
+.page-body > * { 
+	height: 100%; 
+	position: absolute; 
+
+} 
+
+.section-holder { 
+	width: 100%; 
+	overflow: auto; 
+
+} 
+
+.page-body .main-nav-button-open { 
+	display: none; 
+
+} 
+
+.page-body.page-body-nav { 
+	width: 200%; 
+
+}
+
+.page-body.page-body-nav > * { 
+	width: 50%; 
+
+} 
+
+.page-body.page-body-nav .section-holder { 
+	left: 50%; 
+
+}
+
+.page-body.page-body-nav .main-nav-button-open { 
+	display: inline-block; 
+
+} 
+
+.page-body { 
+	transform: translateX( 100% ); 
+	transition: transform 0.3s; 
+
+} 
+
+/*.page-body .section-holder { 
+	transform: translateX( 100px ); 
+	opacity: 0; 
+
+}*/
+
+.page-body.page-body-nav { 
+	transform: translateX( 50% ); 
+
+}
+
+.page-body.nav-on { 
+	transform: translateX( 0 ); 
+
+} 
+
+.page-body.content-section-on { 
+	transform: translateX( 0 ); 
+
+} 
+
+.page-body.page-body-nav.content-section-on { 
+	transform: translateX( -50% ); 
+
+} 
+
+/*.page-body.content-section-on .section-holder { 
+	transform: translateX( 0 ); 
+	opacity: 1; 
+	transition-property: transform, opacity; transition-delay: 0.2s; transition-duration: 0.2s; 
+
+}*/ 
+
+/*.page-body.content-section-on { 
+	transform: translateX( -100% ); 
+
+} */ 
+
+.section-holder .section { 
+	position: absolute; top: -10000px; 
+
+}
+
+.section-holder .section-on { 
+	position: initial; 
+
+}
