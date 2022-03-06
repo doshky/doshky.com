@@ -1,8 +1,3 @@
-.page-holder { 
-	height: 0; overflow: hidden; 
-
-}
-
 .banner-entry { 
 	--banner-entry-element-end-opacity: 1; 
 	--banner-entry-element-start-translate-y: 100px; 
