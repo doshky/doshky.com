@@ -7,16 +7,19 @@ layout: default
 	features = site.data.features 
 %} 
 
-<section class= "content-sections"> 
-	{% include work.html 
-		work = site.data.pages.work 
+<section class= "section-head-holder"> 
+	{% include section-head.html 
+		head = site.data.pages.work.head 
+		className = "work" 
 	%} 
 
-	{% include about.html 
-		about = site.data.pages.about 
+	{% include section-head.html 
+		head = site.data.pages.about.head 
+		className = "about" 
 	%} 
 
-	{% include contact.html 
-		contact = site.data.pages.contact 
+	{% include section-head.html 
+		head = site.data.pages.contact.head 
+		className = "contact" 
 	%} 
 </section>  

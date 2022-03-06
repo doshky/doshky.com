@@ -1,6 +1,6 @@
 {% capture body %} 
 
-	{% for section in include.about.body %} 
+	{% for section in include.section.body %} 
 		{% include article-section.html 
 			section = section 
 		%} 
@@ -9,7 +9,7 @@
 {% endcapture %}
 
 {% include section.html 
-	head = include.about.head 
+	head = include.section.head 
 	body = body 
 	className = "about" 
 %} 

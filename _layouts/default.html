@@ -13,12 +13,32 @@
 		banner = site.data.banner 
 	%} 
 
+	<div id= "page-body" class= "page-body"> 
+		{% include main-nav.html %} 
+
+		<div class= "section-holder"> 
+			{% include work.html 
+				section = site.data.pages.work 
+			%} 
+
+			{% include about.html 
+				section = site.data.pages.about 
+			%} 
+
+			{% include contact.html 
+				section = site.data.pages.contact 
+			%}
+		</div>
+	</div>
+
 	<div id= "page-holder" class= "page-holder"> 
 		<main class= "page"> 
 			{{ content }} 
 		</main> 
 
 		{% include footer.html %} 
-	</div>
+	</div> 
+
+	<script src= "/assets/js/main.js"></script> 
 </body>
 </html>

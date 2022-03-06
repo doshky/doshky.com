@@ -1,12 +1,15 @@
 {% capture body %} 
 
 	<ul class= "entry-list picture-entry-list work-section-entry-list"> 
-	{% for picture in include.work.body %} 
-		<li class= "entry picture-entry work-section-entry" style= "background-image: url( '/assets/images/{{ picture.src }}' );"> 
-			{% include image.html 
-				src = picture.src 
-				className = "work-section-image" 
-			%}
+	{% for picture in include.section.body %} 
+		<li class= "entry picture-entry work-section-entry"> 
+			<a 
+				class= "work-section-image" 
+				href= "#" 
+				style= "background-image: url( '/assets/images/{{ picture.src }}' );" 
+			>
+				Painting 
+			</a>
 		</li>
 	{% endfor %}
 	</ul> 
@@ -14,7 +17,7 @@
 {% endcapture %}
 
 {% include section.html 
-	head = include.work.head 
+	head = include.section.head 
 	body = body 
 	className = "work" 
 %} 

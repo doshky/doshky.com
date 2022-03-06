@@ -1,28 +1,34 @@
 {% assign head = include.head %} 
-{% assign className = include.className %} 
+{% assign className = include.className | append: "-section" %} 
 
-<section class= "text-content section-text-content {{ className }}-text-content">  
-	{% include subheading.html 
-		text = head.subheading 
-		className = "section-subheading" 
+<section class= "section-head {{ className }}-head"> 
+	<section class= "text-content section-head-text-content {{ className }}-head-text-content">  
+		{% include subheading.html 
+			text = head.subheading 
+			className = "section-subheading" 
+		%} 
+
+		{% include heading.html 
+			level = 3 
+			text = head.heading 
+			className = "section-heading" 
+		%} 
+
+		{% for paragraph in head.paragraphs %} 
+			<p class= "paragraph">{{ paragraph.text }}</p> 
+		{% endfor %} 
+
+		<a 
+			class= "button control-button details-button" 
+			href= "#{{ className }}" 
+			data-control-set= "#page-body.add:content-section-on, #{{ className }}.add:section-on" 
+		>
+			Read More 
+		</a> 
+	
+	</section> 
+
+	{% include cover-image.html 
+		src = head.image.src 
 	%} 
-
-	{% include heading.html 
-		level = 3 
-		text = head.heading 
-		className = "section-heading" 
-	%} 
-
-	{% for paragraph in head.paragraphs %} 
-		<p class= "paragraph">{{ paragraph.text }}</p> 
-	{% endfor %} 
-
-	{% assign target = className %} 
-	{% include details-button.html  
-		target = target 
-	%} 
-</section> 
-
-{% include cover-image.html 
-	src = head.image.src 
-%} 
+</section>

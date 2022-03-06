@@ -1,7 +1,11 @@
 <header class= "header"> 
-	{% include main-nav.html 
-		data = navEntry 
-	%} 
+	<a 
+		href= "#page-body" 
+		class= "button control-button main-nav-button main-nav-button-open has-icon" 
+		data-control-set= "#page-body.add:page-body-nav, #page-body.add:nav-on" 
+	>
+		<span class= "button-text">Open navigation</span> 
+	</a> 
 
 	{% include id.html %} 
 </header>

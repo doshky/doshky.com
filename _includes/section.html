@@ -1,26 +1,48 @@
 {% assign head = include.head %} 
 {% assign className = include.className | append: "-section" %} 
 
-<section 
-	class= "section content-section {{ className }}" 
-	id= "{{ className }}" 
-> 
-	<section class= "section-head"> 
-		{% include section-head.html 
-			head = head 
-			className = className 
-		%} 
-	</section> 
+
+<section class= "section {{ className }}" id= "{{ className }}"> 
+	<div class= "section-control-buttons"> 
+		<a 
+			href= "#page-body" 
+			class= "button control-button main-nav-button-open has-icon" 
+			data-control-set= "#page-body.remove:content-section-on, #page-body.add:nav-on, #{{ className }}.remove:section-on" 
+		>
+			<span class= "button-text">Open navigation</span> 
+		</a> 
+
+		<a 
+			href= "#page-body" 
+			class= "button control-button control-button-off button-close button-close-section has-icon" 
+			data-control-set= "#page-body.remove:content-section-on, #{{ className }}.remove:section-on, #page-body.remove:page-body-nav" 
+		>
+			<span class= "button-text">Close section</span> 
+		</a> 
+	</div>
+
+	{% include featured-image.html 
+		src = head.image.src 
+	%} 
+
+	{% include subheading.html 
+		text = head.subheading 
+		className = "section-subheading" 
+	%} 
+
+	{% include heading.html 
+		level = 3 
+		text = head.heading 
+		className = "section-heading" 
+	%} 
+
+	{% for paragraph in head.paragraphs %} 
+		<p class= "paragraph">{{ paragraph.text }}</p> 
+	{% endfor %} 
 
 	<section class= "section-body"> 
-		<article class= "section-body-content"> 
-			{% include close-button.html %} 
 
-			{% include section-body.html 
-				head = head 
-			%} 
+		{{ include.body }} 
 
-			{{ include.body }} 
-		</article> 
 	</section> 
 </section>
