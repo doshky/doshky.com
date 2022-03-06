@@ -9,7 +9,8 @@
 	width: 100%; height: 100%; 
 	/*position: fixed; left: 0; */
 	z-index: 3; 
-	background-color: var( --light-gray-color ); background-color: var( --main-color ); color: var( --light-gray-color ); 
+	background-color: var( --light-gray-color ); 
+	/*background-color: var( --main-color ); color: var( --light-gray-color ); */ 
 	/*color: #555; */ 
 	overflow: hidden; 
 
@@ -21,13 +22,14 @@
 } 
 
 .main-nav .nav-entry-list { 
-	display: flex; flex-direction: column; justify-content: center; 
-	width: 100%;  
+	display: flex; flex-direction: row; justify-content: center; 
+	width: 100%; height: 100%; 
 
 }
 
 .main-nav .nav-entry { 
-	height: 10rem; 
+	/*height: 10rem; */ 
+	width: 10rem; height: 100%; 
 	position: relative; 
 	/*background-color: #CCC; */ 
 
@@ -35,7 +37,8 @@
 
 .main-nav .nav-entry + .nav-entry { 
 	/*margin-top: 4px; */ 
-	border-top: 1px solid; 
+	/*border-top: 1px solid; */ 
+	border-left: 1px solid; 
 
 }
 
@@ -51,7 +54,7 @@
 .main-nav-button-close:hover { 
 	/* Inverts button colors */
 	background-color: var( --main-color ); color: var( --light-gray-color ); 
-	background-color: var( --light-gray-color ); color: var( --main-color );
+	/*background-color: var( --light-gray-color ); color: var( --main-color );*/ 
 	/* Keeps button border color the same as its background to avoid border disappearing */
 	border-color: var( --main-color ); 
 
@@ -71,19 +74,24 @@
 
 } */ 
 
-.main-nav .nav-entry-list { 
+/*.main-nav .nav-entry-list { 
+	transform: rotateZ( -90deg ); 
+
+} */
+
+.main-nav .nav-link-text { 
 	transform: rotateZ( -90deg ); 
 
 }
 
 .main-nav .nav-entry { 
-	transform: translateY( 100% ); 
+	transform: translateX( 100% ); 
 	opacity: 0; 
 
 }
 
 .page-body.nav-on .main-nav .nav-entry { 
-	transform: translateY( 0 ); 
+	transform: translateX( 0 ); 
 	opacity: 1; 
 	transition-property: transform, opacity; transition-duration: 0.2s; 
 
@@ -103,3 +111,34 @@
 	transition-delay: 0.6s; 
 
 } 
+
+
+@media screen and ( max-width: 680px ) { 
+
+	.main-nav .nav-entry-list { 
+		flex-direction: column; 
+		width: 100%; height: auto; 
+	
+	} 
+
+	.main-nav .nav-entry { 
+		/*height: 10rem; */ 
+		width: 100%; height: 10rem; 
+		position: relative; 
+		/*background-color: #CCC; */ 
+	
+	} 
+
+	.main-nav .nav-entry + .nav-entry { 
+		border-top: 1px solid; 
+		border-left: none; 
+	
+	}
+
+	.main-nav .nav-link-text { 
+		transform: none; 
+	
+	}
+	
+	
+}
