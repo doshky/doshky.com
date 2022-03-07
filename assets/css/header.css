@@ -71,8 +71,8 @@
 	/* margin-right: 4rem;   */ 
 	/* text-align: center;  */ 
 	position: absolute; 
-	right: 100%; margin-right: 5rem; 
-	/*left: -100%; margin-left: 10%; */
+	/*right: 100%; margin-right: 5rem; */ 
+	left: -100%; margin-left: 10%; 
 	top: 50%; transform: translateY( -50% ); 
 	/*background-image: url( "/assets/images/logo-red.png" ); background-size: contain; background-position: left center; background-repeat: no-repeat; */ 
 	/*border: 1px solid;  */ 
