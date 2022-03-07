@@ -27,8 +27,7 @@ button {
 	border: none;  
 } 
 
-.cover-image { 
-	width: 100%; height: 100%; 
+.cover-image {  
 	position: absolute; 
 
 } 

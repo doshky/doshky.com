@@ -161,6 +161,16 @@
 	
 	} 
 
+	.section { 
+		--section-cover-image-opacity-end: 0.4; 
+	
+	}
+
+	.section > .cover-image { 
+		left: 0; right: 0; 
+	
+	} 
+
 }
 
 @media ( max-width: 840px ) and ( min-width: 681px ) { 

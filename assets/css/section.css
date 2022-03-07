@@ -78,9 +78,8 @@
 
 .section > .cover-image { 
 	display: block; 
-	width: 30%; 
 	position: absolute; 
-	left: 20%; top: 0; 
+	left: 20%; right: 50%; top: 0; bottom: 0; 
 	z-index: 1; 
 	/*background-color: var( --background-color ); */ 
 	background-size: contain; background-position: center; background-repeat: no-repeat; 
@@ -111,6 +110,11 @@
 
 } */ 
 
+.section { 
+	--section-cover-image-opacity-end: 1; 
+
+}
+
 .section .cover-image { 
 	opacity: 0; 
 	transform: translateY( 100px ); 
@@ -120,7 +124,7 @@
 
 
 .section-current .cover-image { 
-	opacity: 1; 
+	opacity: var( --section-cover-image-opacity-end ); 
 	transform: translateY( 0 ); 
 
 } 
