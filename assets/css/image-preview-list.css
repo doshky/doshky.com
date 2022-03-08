@@ -29,7 +29,7 @@
 	margin-top: var( --column-gutter-y ); 
 	position: relative; 
 	background-position: center; background-size: cover; 
-	/*background-color: var( --foreground-color ); */ 
+	background-color: var( --foreground-color ); 
 	/* background-clip: content-box; */ 
 	border: 1px solid; 
 	opacity: 0.5;  
