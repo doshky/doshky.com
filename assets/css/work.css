@@ -1,5 +1,5 @@
 .work-section-entry-list { 
-	--work-section-entry-list-column-count: 4; 
+	--work-section-entry-list-column-count: 3; 
 	--work-section-entry-list-column-gutter-x: 0.5em; 
 	--work-section-entry-list-column-gutter-y: var( --work-section-entry-list-column-gutter-x ); 
 
@@ -7,6 +7,9 @@
 		( 100% - ( var( --work-section-entry-list-column-count ) - 1 ) * var( --work-section-entry-list-column-gutter-x ) ) / 
 		var( --work-section-entry-list-column-count ) 
 	); 
+
+	--work-section-entry-width-to-height-ratio: 2.5; 
+	--work-section-entry-height: calc( var( --work-section-entry-width ) / var( --work-section-entry-width-to-height-ratio ) ); 
 
 }
 
@@ -19,19 +22,19 @@
 .work-section-entry { 
 	box-sizing: border-box; 
 	margin-left: var( --work-section-entry-list-column-gutter-x ); margin-top: var( --work-section-entry-list-column-gutter-y ); 
-	width: var( --work-section-entry-width ); height: 8rem;  
+	width: var( --work-section-entry-width ); padding-top: var( --work-section-entry-height ); 
 	position: relative; 
-	border: 1px solid var( --overlay-color ); 
+	border-width: 1px; border-style: solid; border-color: var( --overlay-color ); 
 	overflow: hidden; 
 
 } 
 
-.work-section-entry:nth-child( -n + 4 ) { 
+.work-section-entry:nth-child( -n + 3 ) { 
 	margin-top: 0; 
 
 }
 
-.work-section-entry:nth-child( 4n + 1 ) { 
+.work-section-entry:nth-child( 3n + 1 ) { 
 	margin-left: 0; 
 
 } 
@@ -39,7 +42,7 @@
 .work-section-image { 
 	display: block; 
 	width: 100%; height: 100%; 
-	position: absolute; 
+	position: absolute; left: 0; top: 0; 
 	background-size: cover; background-position: center; 
 	text-indent: -10000px; 
 	opacity: 0; 
