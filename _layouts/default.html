@@ -8,28 +8,30 @@
 
 	<link rel="stylesheet" href="/assets/css/style.css" />   
 </head>
-<body> 
-	{% include banner.html 
-		banner = site.data.banner 
-	%} 
-
-	<div id= "page-body" class= "page-body"> 
-		{% include main-nav.html %} 
-
-		<div class= "section-holder"> 
-			{% include work.html 
-				section = site.data.pages.work 
+<body>  
+	<div class= "page-body-holder"> 
+		<div id= "page-body" class= "page-body"> 
+			{% include banner.html 
+				banner = site.data.banner 
 			%} 
 
-			{% include about.html 
-				section = site.data.pages.about 
-			%} 
+			{% include main-nav.html %} 
 
-			{% include contact.html 
-				section = site.data.pages.contact 
-			%}
-		</div>
-	</div>
+			<div class= "section-holder"> 
+				{% include work.html 
+					section = site.data.pages.work 
+				%} 
+
+				{% include about.html 
+					section = site.data.pages.about 
+				%} 
+
+				{% include contact.html 
+					section = site.data.pages.contact 
+				%}
+			</div>
+		</div> 
+	</div> 
 
 	<div id= "page-holder" class= "page-holder"> 
 		<main class= "page"> 
