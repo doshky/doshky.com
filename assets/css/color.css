@@ -1,14 +1,16 @@
 :root { 
 	/* Sets main color and gives an option to specify opacity */
-	--main-color: rgba( 94, 52, 52, var( --main-color-opacity, 1 ) ); 
-	--main-color: rgba( 49, 68, 71, var( --main-color-opacity, 1 ) ); 
+	/*--main-color: rgba( 94, 52, 52, var( --main-color-opacity, 1 ) ); */  
+	--main-color-rgb: 49, 68, 71; 
+	--main-color-opacity: 1; 
+	--main-color: rgba( var( --main-color-rgb ), var( --main-color-opacity ) ); 
 
 	/* Sets the overlay color as the main color, with lower opacity */
-	--main-color-opacity: 0.2; 
+	/*--main-color-opacity: 0.2; */
 	--overlay-color: var( --main-color ); 
 
 	/* Sets text color as the main color, with full opacity */
-	--main-color-opacity: 1; 
+	/*--main-color-opacity: 1; */ 
 	--text-color: var( --main-color ); 
 
 	/* Sets basic light and dark grayscale colors and gives an option to specify opacity */
