@@ -9,13 +9,13 @@
 	"sectionID": "contact-section", 
 
 	"head": { 
-		"subheading": "Contact", 
+		"subheading": "Have thoughts? Great, just", 
 		
-		"heading": "Integer viverra nulla eget", 
+		"heading": "Contact Me", 
 
 		"paragraphs": [ 
 			{ 
-				"text": "Pellentesque fringilla, elit a placerat semper, nisl ante fringilla quam, id fermentum mauris turpis sit amet dui. Maecenas rutrum pharetra sem, quis convallis magna interdum ut." 
+				"text": "and share anything that comes to mind, I'd appreciate your question, opinion or suggestion." 
 			} 
 		], 
 
