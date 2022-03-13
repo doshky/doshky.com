@@ -40,5 +40,12 @@
 	</div> 
 
 	<script src= "/assets/js/main.js"></script> 
+
+	<script src="https://www.google.com/recaptcha/api.js"></script> 
+	<script>
+		function onSubmit( token ) {
+			document.getElementById( "send-message" ).submit(); 
+		}
+	</script>
 </body>
 </html>
