@@ -53,4 +53,14 @@
 	color: white; 
 	border: none; 
 
+} 
+
+.grecaptcha-badge { 
+	right: auto !important; 
+
+} 
+
+.grecaptcha-badge .rc-anchor-invisible-text { 
+	background-color: var( --main-color ) !important; 
+
 }
