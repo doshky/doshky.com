@@ -18,9 +18,15 @@
 .header > * + * { 
 	margin-left: 0.5em; 
 
+} 
+
+.header .name { 
+	position: absolute; left: -10000px; top: -10000px; 
+
 }
 
 .logo { 
-	display: none; 
+	/*display: none;*/
+	width: 8rem; 
 
-}
+} 
