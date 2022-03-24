@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/doshky/doshky.com#readme",
   "dependencies": {
-    "magnific-popup": "^1.1.0",
-    "nanogallery2": "^3.0.4"
+    "magnific-popup": "^1.1.0"
   }
 }
