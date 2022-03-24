@@ -1,21 +1,37 @@
 .page-body { 
-	--page-body-member-width: calc( 100% / 3 ); 
+	--page-body-member-count: 2; 
+	--page-body-member-width: calc( 100% / var( --page-body-member-count ) ); 
 
-} 
+}
 
 .page-body-holder { 
 	width: 100%; height: 100vh; 
-	position: relative; 
+	/*position: relative; */ 
 	/*position: fixed; left: 0; top: 0; 
 	z-index: 3; */ 
 	overflow: hidden; 
 
+} 
+
+.page-holder-open .page-body { 
+	position: relative;  
+
+} 
+
+.page-body-nav .page-body { 
+	position: fixed; 
+
 }
+
+/*.page-holder-open .page-holder { 
+	margin-top: 100vh; 
+
+}*/ 
 
 .page-body { 
 	/*display: flex; flex-direction: row; align-items: stretch; */ 
-	width: 300%; height: 100%; 
-	position: relative; 
+	width: 200%; height: 100%; 
+	left: 0; top: 0; 
 	background-color: var( --light-gray-color ); 
 	/*border-left: 1px solid; */ 
 	overflow: hidden; 
@@ -42,10 +58,12 @@
 .main-nav { 
 	left: var( --page-body-member-width ); 
 
-}
+} 
 
 .section-holder { 
-	left: calc( 2 * var( --page-body-member-width ) ); 
+	width: 100%; height: 100%; 
+	position: fixed; left: 0; top: 0; z-index: 3; 
+	/*background-color: var( --light-gray-color ); */ 
 	overflow: auto; 
 
 }
@@ -55,37 +73,48 @@
 
 } */ 
 
-.page-body.page-body-nav .main-nav-button-open { 
+body.page-body-nav .main-nav-button-open { 
 	display: inline-block; 
 
 } 
 
 .page-body { 
-	transform: translateX( calc( 0 * var( --page-body-member-width ) ) ); 
+	transform: translateX( 0 ); 
 	transition: transform 0.4s; 
 
 } 
+
+.section-holder { 
+	transform: translateX( 100% ); 
+	transition: transform 0.4s; 
+
+}
 
 /*.page-body.banner-on { 
 	transform: translateX( calc( 0 * var( --page-body-member-width ) ) );
 
 }*/
 
-.page-body.nav-on { 
+body.nav-on .page-body { 
 	transform: translateX( calc( -1 * var( --page-body-member-width ) ) ); 
 
 } 
 
-.page-body.content-section-on { 
+body.content-section-on .page-body { 
 	transform: translateX( calc( -2 * var( --page-body-member-width ) ) ); 
+
+} 
+
+body.content-section-on .section-holder { 
+	transform: translateX( 0 ); 
 
 }
 
-.page-body.content-section-on .section-on { 
+/*.page-body.content-section-on .section-on { 
 	transform: translateX( 0 ); 
 	opacity: 1; 
 
-}
+}*/
 
 /*.page-body.content-section-on .section-holder { 
 	transform: translateX( 0 ); 
@@ -107,7 +136,7 @@
 
 }
 
-.section-holder .section-on { 
+.section-holder .section.section-on { 
 	position: initial; 
 
 } 

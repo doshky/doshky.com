@@ -5,16 +5,19 @@
 } 
 
 .banner { 
-	display: flex; flex-direction: column; justify-content: center; 
-	min-height: 100vh; 
+	/*display: flex; flex-direction: column; justify-content: center; */ 
+	/*height: 100vh; */ 
+	overflow: hidden; 
 
-}
+} 
 
 .banner-entry { 
-	padding-top: 12em; padding-bottom: 12em; 
+	display: flex; flex-direction: column; justify-content: center; 
+	min-height: 100vh; 
+	/*padding-top: 12em; padding-bottom: 12em; */ 
 	position: relative; 
 	
-}
+} 
 
 .banner-entry > :not( .cover-image ) { 
 	position: relative; z-index: 2; 

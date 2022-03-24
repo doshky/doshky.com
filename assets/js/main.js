@@ -7,7 +7,7 @@
             return; 
         } 
 
-        if ( !hasClass( 'button-open-page' ) && !hasClass( 'details-button' ) ) {
+        if ( !hasClass( 'button-open-page' ) ) {
             e.preventDefault(); 
         }
 

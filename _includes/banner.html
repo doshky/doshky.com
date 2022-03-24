@@ -1,8 +1,21 @@
 {% assign banner = include.banner %} 
 
-<section class= "banner" id= "banner" style= "--page-body-member-pos: 0">  
+<section 
+	class= "banner {{ include.className }}" 
+	id= "banner" 
+	style= "--page-body-member-pos: 0" 
+>  
+	<a 
+		href= "#page-body" 
+		class= "button control-button main-nav-button main-nav-button-open has-icon" 
+		data-control-set= "body.add:page-body-nav, body.add:nav-on" 
+	>
+		<span class= "button-text">Open navigation</span> 
+	</a> 
 	<section class= "banner-entry"> 
-		{% include header.html %} 
+		{% include header.html 
+			logoSrc = include.logoSrc 
+		%} 
 
 		<section class= "text-content banner-text-content">  
 			{% include subheading.html 
@@ -23,9 +36,9 @@
 			<a 
 				class= "button control-button button-open details-button button-open-page" 
 				href= "#page-holder" 
-				data-control-set= "body.add:page-holder-open" 
+				data-control-set= "body.add:content-section-on, #work-section.add:section-on" 
 			>
-				Read More 
+				Take A Look At My Work 
 			</a> 
 		</section> 
 

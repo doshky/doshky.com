@@ -93,6 +93,7 @@
 	display: block; 
 	position: relative; 
 	/*z-index: -1; */ 
+	/*font-weight: bold; */ 
 	transform: rotateZ( -90deg ); 
 
 }

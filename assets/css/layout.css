@@ -72,6 +72,17 @@ body {
 
 } 
 
+.main-nav-button-open { 
+	position: absolute; right: 0; top: 0; 
+	z-index: 2; 
+
+} 
+
+.section-control-buttons .main-nav-button-open { 
+	position: relative; 
+
+}
+
 
 @media screen and ( max-width: 780px ) { 
 

@@ -13,24 +13,31 @@
 		<div id= "page-body" class= "page-body"> 
 			{% include banner.html 
 				banner = site.data.banner 
+				logoSrc = "doshky-logo-v.5.png" 
+				className = "banner-intro" 
+			%} 
+
+			{% include banner.html 
+				banner = site.data.banner 
+				logoSrc = "doshky-logo-v.4.png" 
 			%} 
 
 			{% include main-nav.html %} 
-
-			<div class= "section-holder"> 
-				{% include work.html 
-					section = site.data.pages.work 
-				%} 
-
-				{% include about.html 
-					section = site.data.pages.about 
-				%} 
-
-				{% include contact.html 
-					section = site.data.pages.contact 
-				%}
-			</div>
 		</div> 
+	</div> 
+
+	<div class= "section-holder"> 
+		{% include work.html 
+			section = site.data.pages.work 
+		%} 
+
+		{% include about.html 
+			section = site.data.pages.about 
+		%} 
+
+		{% include contact.html 
+			section = site.data.pages.contact 
+		%}
 	</div> 
 
 	<div id= "page-holder" class= "page-holder"> 

@@ -6,8 +6,8 @@
 	<div class= "section-control-buttons"> 
 		<a 
 			href= "#page-body" 
-			class= "button control-button main-nav-button-open has-icon" 
-			data-control-set= "#page-body.remove:content-section-on, #page-body.add:nav-on, #{{ className }}.remove:section-on" 
+			class= "button control-button main-nav-button main-nav-button-open has-icon" 
+			data-control-set= "body.remove:content-section-on, #{{ className }}.remove:section-on, body.add:page-body-nav, body.add:nav-on" 
 		>
 			<span class= "button-text">Open navigation</span> 
 		</a> 
@@ -15,7 +15,7 @@
 		<a 
 			href= "#page-body" 
 			class= "button control-button control-button-off button-close button-close-section has-icon" 
-			data-control-set= "#page-body.remove:content-section-on, #{{ className }}.remove:section-on" 
+			data-control-set= "body.remove:content-section-on, #{{ className }}.remove:section-on" 
 		>
 			<span class= "button-text">Close section</span> 
 		</a> 
