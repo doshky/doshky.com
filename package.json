@@ -18,5 +18,8 @@
   "homepage": "https://github.com/doshky/doshky.com#readme",
   "dependencies": {
     "magnific-popup": "^1.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.49.9"
   }
 }
