@@ -1,0 +1,400 @@
+.banner { 
+	--banner-entry-element-end-opacity: 1; 
+	--banner-entry-element-start-translate-y: 100px; 
+	--header-element-end-translate-y: 40vh; 
+
+} 
+
+.banner .cover-image { 
+	--banner-entry-element-end-opacity: 0.1; 
+
+} 
+
+
+/***************************************************************************
+* Banner open animation 
+*/ 
+
+$banner-intro-open-transition-start: 0.7s; 
+$banner-intro-transition-duration: 0.5s; 
+$banner-intro-open-transition-end: 
+	$banner-intro-open-transition-start + $banner-intro-transition-duration; 
+
+
+/***************************************************************************
+* Header animation 
+*/ 
+
+$header-element-count: 2; 
+$header-element-transition-start-shift: 0.15s; 
+$header-element-transition-start: 
+	$banner-intro-open-transition-end + $header-element-transition-start-shift;  
+
+$header-element-transition-duration: 1s; 
+$header-element-transition-relative-delay: -0.9s; 
+$header-element-transition-end: 
+	$header-element-transition-start 
+		+ ( $header-element-count - 1 ) * ( $header-element-transition-duration + $header-element-transition-relative-delay ) 
+		+ $header-element-transition-duration; 
+
+$header-element-transition-duration-multiplier: 0.8; 
+$header-element-fade-in-duration: 0.2s; 
+$header-element-translate-y: 40vh; 
+
+
+/*************************************************************************** 
+* Text content animation 
+*/ 
+
+$text-content-element-count: 4; 
+$text-content-element-transition-start-shift: -0.4s; 
+$text-content-element-transition-start: 
+	$header-element-transition-end + $text-content-element-transition-start-shift;  
+$text-content-element-transition-duration: 0.15s; 
+$text-content-element-transition-relative-delay: -0.1s; 
+$text-content-element-transition-end: 
+	$text-content-element-transition-start 
+		+ ( $text-content-element-count - 1 ) * ( $text-content-element-transition-duration + $text-content-element-transition-relative-delay ) 
+		+ $text-content-element-transition-duration; 
+
+
+/***************************************************************************
+* Banner close animation 
+*/ 
+
+$banner-intro-close-transition-start-shift: 0.4s; 
+$banner-intro-close-transition-start: 
+	$text-content-element-transition-end + $banner-intro-close-transition-start-shift; 
+$banner-intro-close-transition-end: 
+	$banner-intro-close-transition-start + $banner-intro-transition-duration; 
+
+$main-banner-transition-start-shift: -0.2s;
+$main-banner-transition-duration: 0.0005s; 
+$main-banner-transition-start: 
+	$banner-intro-close-transition-start + $main-banner-transition-start-shift; 
+
+
+/***************************************************************************
+* Cover image animation 
+*/ 
+
+$banner-entry-cover-image-transition-start-shift: 0s; 
+$banner-entry-cover-image-transition-start: 
+	$banner-intro-close-transition-end + $banner-entry-cover-image-transition-start-shift; 
+$banner-entry-cover-image-transition-duration: 0.4s; 
+$banner-entry-cover-image-transition-end: 
+	$banner-entry-cover-image-transition-start + $banner-entry-cover-image-transition-duration;  
+
+
+//.banner-intro .header:after { 
+//	--header-element-fade-in-delay: 0.4s; 
+//	--header-element-translate-down-delay: 0.5s; 
+//	--header-element-bounce-delay: 1s; 
+//	--header-element-translate-up-delay: 1.1s; 
+
+//}
+
+//.banner-intro .logo { 
+//	--header-element-fade-in-delay: 0.6s; 
+//	--header-element-translate-down-delay: 0.7s; 
+//	--header-element-bounce-delay: 1s; 
+//	--header-element-translate-up-delay: 1.1s; 
+
+//} 
+
+/*.banner { 
+	color: white; 
+	background-color: var( --main-color ); 
+
+} */   
+
+//.banner { 
+//	text-decoration: #{ $header-element-transition-start }; 
+//	text-decoration: #{ $header-element-transition-end }; 
+//	text-decoration: #{ $text-content-element-transition-start }; 
+//	text-decoration: #{ $text-content-element-transition-end }; 
+
+//} 
+
+.page-body-holder, 
+.banner, 
+.main-nav .nav, 
+.section-holder { 
+	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
+
+} 
+
+.page-body-holder, 
+.main-banner { 
+	--section-main-color: var( --main-color ); 
+	--section-secondary-color: var( --secondary-color ); 
+
+} 
+
+.banner-intro { 
+	--section-main-color: var( --secondary-color ); 
+	--section-secondary-color: var( --main-color ); 
+
+} 
+
+.main-nav .nav { 
+	--section-main-color: var( --secondary-color ); 
+	--section-secondary-color: var( --main-color ); 
+
+} 
+
+.section-holder { 
+	--section-main-color: var( --main-color ); 
+	--section-secondary-color: var( --secondary-color ); 
+
+} 
+
+.button { 
+	background-color: transparent; color: var( --section-main-color ); 
+
+} 
+
+.button:hover { 
+	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+
+} 
+
+.banner-intro { 
+	transform: translateY( -100% ); 
+	
+}  
+
+.banner.main-banner { 
+	top: -10000px; 
+
+}
+
+.header { 
+	position: relative; 
+	overflow: visible; 
+
+} 
+
+.header-line { 
+	width: var( --page-inner-width ); 
+	position: absolute; bottom: 0;  
+	border-bottom: 1px solid; border-color: var( --section-main-color ); 
+
+} 
+
+.banner-intro .cover-image { 
+	display: none; 
+
+} 
+
+.banner-intro .header > * { 
+	opacity: 0; 
+
+} 
+
+.main-banner .cover-image, 
+.banner-intro .banner-text-content > * { 
+	transform: translateY( 100px ); 
+	opacity: 0; 
+
+} 
+
+/* Common animation parameters */  
+.banner-intro, 
+.banner-intro .banner-text-content > *, 
+.main-banner, 
+.main-banner .cover-image, 
+.banner-intro .header > * { 
+	animation-fill-mode: forwards; 
+
+} 
+
+.banner-intro .header > * { 
+	animation-name: element-fade-in, element-bounce; 
+
+} 
+
+.banner-intro .header > :nth-child( 1 ) { 
+	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration * $header-element-transition-duration-multiplier; 
+
+}
+
+.banner-intro .header > :nth-child( 2 ) { 
+	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration;
+
+}
+
+@for $element-pos from 0 to 2 { 
+	.banner-intro .header > :nth-child( #{ 2 - $element-pos } ) { 
+		animation-delay: $header-element-transition-start 
+			+ $element-pos * ( $header-element-transition-duration + $header-element-transition-relative-delay ); 
+
+	}
+
+}
+
+//.banner-intro .header:after, 
+//.banner-intro .logo { 
+//	animation-delay: 
+//		var( --header-element-fade-in-delay ), 
+//		var( --header-element-translate-down-delay ), 
+//		var( --header-element-bounce-delay ), 
+//		var( --header-element-translate-up-delay ); 
+
+//} 
+
+.main-banner .cover-image, 
+.banner-intro .banner-text-content > * { 
+	animation-name: element-fade-in, element-translate-reset; animation-duration: 0.2s, 0.2s; 
+
+} 
+
+@for $element-pos from 0 to 5 { 
+	.banner-intro .banner-text-content > :nth-child( #{ $element-pos + 1 } ) { 
+		animation-delay: $text-content-element-transition-start 
+			+ $element-pos * ( $text-content-element-transition-duration + $text-content-element-transition-relative-delay ); 
+		
+	}
+
+}
+
+//.banner-intro .banner-subheading { 
+//	animation-delay: 1.2s; 
+
+//} 
+
+//.banner-intro .banner-heading { 
+//	animation-delay: 1.25s; 
+
+//} 
+
+//.banner-intro .banner-paragraph { 
+//	animation-delay: 1.3s; 
+
+//} 
+
+//.banner-intro .details-button { 
+//	animation-delay: 1.35s; 
+
+//} 
+
+.main-banner .cover-image { 
+	animation-duration: $banner-entry-cover-image-transition-duration; animation-delay: $banner-entry-cover-image-transition-start; 
+
+} 
+
+.banner-intro { 
+	animation-name: element-translate-reset, element-fold; 
+	animation-duration: $banner-intro-transition-duration; 
+	animation-delay: $banner-intro-open-transition-start, $banner-intro-close-transition-start; 
+
+} 
+
+.main-banner { 
+	animation-name: element-on; 
+	animation-duration: 0.05s; 
+	animation-delay: $main-banner-transition-start; 
+
+} 
+
+
+@keyframes element-on { 
+
+	100% { 
+		top: 0; 
+
+	}
+
+}  
+
+@keyframes element-unfold { 
+
+	100% { 
+		height: 100vh; 
+
+	}
+
+}  
+
+@keyframes element-fold { 
+
+	100% { 
+		height: 0; 
+
+	}
+
+}  
+
+@keyframes element-bounce { 
+
+	0% { 
+		transform: translateY( 0 ); 
+
+	} 
+
+	50% { 
+		transform: translateY( $header-element-translate-y ); 
+
+	}
+
+	100% { 
+		transform: translateY( 0 ); 
+
+	}
+
+} 
+
+//@keyframes element-bounce { 
+
+//	0% { 
+//		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+//	} 
+
+//	50% { 
+//		transform: translateY( calc( var( --header-element-end-translate-y ) + 2.5rem ) ); 
+
+//	}
+
+//	100% { 
+//		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+//	}
+
+//} 
+
+@keyframes element-translate-down { 
+
+	100% { 
+		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+	}
+
+} 
+
+@keyframes element-translate-reset { 
+
+	100% { 
+		transform: translateY( 0 ); 
+
+	}
+
+} 
+
+@keyframes element-move-up { 
+
+	100% { 
+		top: 0; 
+
+	}
+
+} 
+
+@keyframes element-fade-in { 
+
+	100% { 
+		opacity: var( --banner-entry-element-end-opacity ); 
+
+	}
+
+} 

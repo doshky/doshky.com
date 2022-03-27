@@ -134,10 +134,10 @@
 } 
 
 @media screen and ( max-width: 580px ) { 
-	.banner-entry { 
+	/*.banner-entry { 
 		padding-top: 4em; padding-bottom: 4em; 
 		
-	} 
+	} */ 
 
 	.banner-text-content { 
 		padding-left: 0em; padding-right: 0em; 

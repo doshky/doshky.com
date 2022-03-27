@@ -1,0 +1,287 @@
+.banner { 
+	--banner-entry-element-end-opacity: 1; 
+	--banner-entry-element-start-translate-y: 100px; 
+	--header-element-end-translate-y: 30vh; 
+
+} 
+
+.banner .cover-image { 
+	--banner-entry-element-end-opacity: 0.1; 
+
+} 
+
+.banner { 
+	/***************************************************************************
+	 * Banner animation 
+	 */ 
+
+	--banner-intro-transition-start: 0.5; 
+	--banner-intro-transition-duration: 0.5; 
+	--banner-intro-transition-end: 
+		calc( var( --banner-intro-transition-start ) + var( --banner-intro-transition-duration ) ); 
+
+
+	/***************************************************************************
+	 * Header animation 
+	 */ 
+
+	--header-element-transition-start-shift: 0;
+	--header-element-transition-start: 
+		calc( var( --banner-intro-transition-end ) + var( --header-element-transition-start-shift ) );  
+	--header-element-transition-duration: 0.3;
+	--header-element-transition-relative-delay: 0.2; 
+
+	--header-element-transition-start-delay: 
+		calc( 1s * ( var( --header-element-transition-start ) 
+			+ var( --element-pos ) * ( var( --header-element-transition-duration ) + var( --header-element-transition-relative-delay ) ) ) ); 
+
+	--header-element-transition-end: var( --header-logo-transition-end ); 
+
+
+	/*************************************************************************** 
+	 * Text content animation 
+	 */ 
+
+	--text-content-element-transition-start-shift: 0; 
+	--text-content-element-transition-start: 
+		calc( var( --header-element-transition-end ) + var( --text-content-element-transition-start-shift ) );  
+	--text-content-element-transition-duration: 0.15; 
+	--text-content-element-transition-relative-delay: 0.1; 
+
+	--text-content-element-transition-start-delay: 
+		calc( 1s * ( var( --text-content-element-transition-start ) 
+			+ var( --element-pos ) * ( var( --text-content-element-transition-duration ) + var( --text-content-element-transition-relative-delay ) ) ) ); 
+
+}
+
+.banner-intro .header:after { 
+	--header-element-fade-in-delay: 0.4s; 
+	--header-element-translate-down-delay: 0.5s; 
+	--header-element-bounce-delay: 1s; 
+	--header-element-translate-up-delay: 1.1s; 
+
+}
+
+.banner-intro .logo { 
+	--header-element-fade-in-delay: 0.6s; 
+	--header-element-translate-down-delay: 0.7s; 
+	--header-element-bounce-delay: 1s; 
+	--header-element-translate-up-delay: 1.1s; 
+
+} 
+
+/*.banner { 
+	color: white; 
+	background-color: var( --main-color ); 
+
+} */   
+
+.banner, 
+.main-nav .nav, 
+.section-holder { 
+	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
+
+} 
+
+.main-banner { 
+	--section-main-color: var( --main-color ); 
+	--section-secondary-color: var( --secondary-color ); 
+
+} 
+
+.banner-intro { 
+	--section-main-color: var( --secondary-color ); 
+	--section-secondary-color: var( --main-color ); 
+
+} 
+
+.main-nav .nav { 
+	--section-main-color: var( --secondary-color ); 
+	--section-secondary-color: var( --main-color ); 
+
+} 
+
+.section-holder { 
+	--section-main-color: var( --main-color ); 
+	--section-secondary-color: var( --secondary-color ); 
+
+} 
+
+.button { 
+	background-color: transparent; color: var( --section-main-color ); 
+
+} 
+
+.button:hover { 
+	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+
+} 
+
+.header { 
+	position: relative; 
+	overflow: visible; 
+
+} 
+
+.header:after { 
+	display: block; 
+	width: var( --page-inner-width ); 
+	position: absolute; bottom: 0;  
+	border-bottom: 1px solid; 
+	content: "";  
+
+} 
+
+.banner-intro .cover-image { 
+	display: none; 
+
+} 
+
+.banner-intro .logo, 
+.banner-intro .header:after { 
+	opacity: 0; 
+
+} 
+
+.main-banner .cover-image, 
+.banner-intro .banner-text-content > * { 
+	transform: translateY( 100px ); 
+	opacity: 0; 
+
+} 
+
+/* Common animation parameters */  
+.banner-intro, 
+.banner-intro .banner-text-content > *, 
+.main-banner .cover-image, 
+.banner-intro .logo, 
+.banner-intro .header:after { 
+	animation-fill-mode: forwards; 
+
+} 
+
+.banner-intro .logo, 
+.banner-intro .header:after { 
+	animation-name: element-fade-in, element-translate-down, element-bounce, element-translate-up; animation-duration: 0.15s, 0.3s, 0.1s, 0.3s; 
+
+} 
+
+.banner-intro .header:after, 
+.banner-intro .logo { 
+	animation-delay: 
+		var( --header-element-fade-in-delay ), 
+		var( --header-element-translate-down-delay ), 
+		var( --header-element-bounce-delay ), 
+		var( --header-element-translate-up-delay ); 
+
+} 
+
+.main-banner .cover-image, 
+.banner-intro .banner-text-content > * { 
+	animation-name: element-fade-in, element-translate-up; animation-duration: 0.2s, 0.2s; 
+
+} 
+
+.banner-intro .banner-subheading { 
+	animation-delay: 1.2s; 
+
+} 
+
+.banner-intro .banner-heading { 
+	animation-delay: 1.25s; 
+
+} 
+
+.banner-intro .banner-paragraph { 
+	animation-delay: 1.3s; 
+
+} 
+
+.banner-intro .details-button { 
+	animation-delay: 1.35s; 
+
+} 
+
+.main-banner .cover-image { 
+	animation-duration: 0.4s; animation-delay: 2.2s; 
+
+} 
+
+.banner-intro { 
+	animation-name: element-unfold, element-fold; animation-duration: 0.4s; animation-delay: 0s, 1.8s; 
+
+} 
+
+
+@keyframes element-unfold { 
+
+	100% { 
+		height: 100vh; 
+
+	}
+
+}  
+
+@keyframes element-fold { 
+
+	100% { 
+		height: 0; 
+
+	}
+
+}  
+
+@keyframes element-bounce { 
+
+	0% { 
+		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+	} 
+
+	50% { 
+		transform: translateY( calc( var( --header-element-end-translate-y ) + 2.5rem ) ); 
+
+	}
+
+	100% { 
+		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+	}
+
+} 
+
+@keyframes element-translate-down { 
+
+	100% { 
+		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+	}
+
+} 
+
+@keyframes element-translate-up { 
+
+	100% { 
+		transform: translateY( 0 ); 
+
+	}
+
+} 
+
+@keyframes element-move-up { 
+
+	100% { 
+		top: 0; 
+
+	}
+
+} 
+
+@keyframes element-fade-in { 
+
+	100% { 
+		opacity: var( --banner-entry-element-end-opacity ); 
+
+	}
+
+} 
