@@ -309,6 +309,11 @@ $banner-entry-cover-image-transition-end:
 
 @keyframes element-unfold { 
 
+	0% { 
+		height: 0; 
+
+	}
+
 	100% { 
 		height: 100vh; 
 
@@ -317,6 +322,11 @@ $banner-entry-cover-image-transition-end:
 }  
 
 @keyframes element-fold { 
+
+	0% { 
+		height: 100vh; 
+
+	}
 
 	100% { 
 		height: 0; 
