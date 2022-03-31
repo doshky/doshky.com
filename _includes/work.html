@@ -2,11 +2,12 @@
 
 	<ul class= "entry-list picture-entry-list work-section-entry-list"> 
 	{% for picture in include.section.body %} 
+		{% assign thumbPath = picture.src | append: ".png" %} 
 		<li class= "entry picture-entry work-section-entry"> 
 			<a 
 				class= "work-section-image" 
 				href= "/assets/images/{{ picture.src }}" 
-				style= "background-image: url( '/assets/images/{{ picture.src }}' );" 
+				style= "background-image: url( '/assets/images/{{ thumbPath }}' );" 
 			>
 				Painting 
 			</a>
