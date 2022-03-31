@@ -192,6 +192,11 @@
 
 } 
 
+.about-section .section-body { 
+	height: 0; 
+
+}
+
 /*.section > .section-body { 
 	border-left: 1px solid; 
 	top: -10000px; 
