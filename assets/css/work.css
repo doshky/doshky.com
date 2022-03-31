@@ -24,8 +24,8 @@
 	margin-left: var( --work-section-entry-list-column-gutter-x ); margin-top: var( --work-section-entry-list-column-gutter-y ); 
 	width: var( --work-section-entry-width ); padding-top: var( --work-section-entry-height ); 
 	position: relative; 
-	background-color: var( --section-main-color ); 
-	border-width: 1px; border-style: solid; border-color: var( --section-main-color ); 
+	/*background-color: var( --section-main-color ); */ 
+	/*border-width: 1px; border-style: solid; border-color: var( --section-main-color ); */ 
 	overflow: hidden; 
 
 } 
@@ -51,7 +51,7 @@
 	position: absolute; left: 0; top: 0; 
 	background-size: cover; background-position: center; 
 	text-indent: -10000px; 
-	opacity: 0.1; 
+	opacity: 1; 
 	
 } 
 
