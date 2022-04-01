@@ -13,4 +13,42 @@
 
 	--icon-font-family: Ionicons; 
 
-}
+} 
+
+.button { 
+	/* Defines button icon size */ 
+	--button-icon-side: 3.2rem; 
+	/* Defines button icon font size */ 
+	--button-icon-font-size: 1.4em; 
+
+	--button-padding-y: 1.2em; 
+	--button-padding-x: 2.2em; 
+	--button-border-width: 1px; 
+	--button-border-radius: 100px; 
+	--button-font-family: var( --text-font-family ); 
+	--button-font-size: var( --text-font-size ); 
+	--button-line-height: 1.1;
+
+} 
+
+/* Sets all close buttons icon character */
+.button-close { 
+	--button-icon-code: "\f2d7"; 
+
+} 
+
+/* Sets main navigation open button character */
+.main-nav-button-open { 
+	--button-icon-code: "\f394"; 
+
+} 
+
+/* Sets scroll-to-top button character */
+.button-scroll-to-top { 
+	--button-icon-code: "\f10e"; 
+
+} 
+
+
+
+

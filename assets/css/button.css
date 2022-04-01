@@ -8,13 +8,7 @@
 .button-close { 
 	display: block; 
 
-} */
-
-/* Defines button icon size */
-.has-icon { 
-	--button-icon-side: 3.2rem; 
-
-} 
+} */ 
 
 /* Sets button width to avoid expanding to full width as a block element */
 /*.has-icon { 
@@ -35,40 +29,25 @@
 	/* Sets icon holder size */
 	width: var( --button-icon-side ); height: var( --button-icon-side ); 
 	/* Sets icon character font and size */
-	font-family: "var( --icon-font-family )"; font-size: 1.2em; 
+	font-family: "var( --icon-font-family )"; font-size: var( --button-icon-font-size ); 
 	/* Icon character is set through a variable */
 	content: var( --button-icon-code ); 
 
 } 
-
-/* Sets all close buttons icon character */
-.button-close { 
-	--button-icon-code: "\f2d7"; 
-
-} 
-
-/* Sets main navigation open button character */
-.main-nav-button-open { 
-	--button-icon-code: "\f394"; 
-
-} 
-
-.button-scroll-to-top { 
-	--button-icon-code: "\f10e"; 
-
-}
 
 /* Details button has text only, no icon */
 .details-button { 
 	/* Button width responds to button text */
 	display: inline-block; 
 	/* Centers button text vertically */
-	padding-top: 1em; padding-bottom: 1em; 
+	padding-top: var( --button-padding-y ); padding-bottom: var( --button-padding-y ); 
 	/* Gives button text distance from left and right button edges */
-	padding-left: 2em; padding-right: 2em; 
+	padding-left: var( --button-padding-x ); padding-right: var( --button-padding-x ); 
 	/* Shapes the button as an oval */
-	border-radius: 100px; 
-	border: 1px solid; 
+	border-radius: var( --button-border-radius ); 
+	border-width: var( --button-border-width ); border-style: solid; 
+
+	line-height: var( --button-line-height ); 
 
 } 
 
