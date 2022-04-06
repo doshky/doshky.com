@@ -218,8 +218,8 @@
 }
 
 .section > .featured-image { 
-	/*max-width: 40%; */  
-	height: var( --section-featured-image-height ); 
+	max-width: 100%;  
+	padding-top: var( --section-featured-image-height ); 
 
 } 
 

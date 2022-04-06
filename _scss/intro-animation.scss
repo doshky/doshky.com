@@ -15,10 +15,11 @@
 * Banner open animation 
 */ 
 
-$banner-intro-open-transition-start: 0.5s; 
-$banner-intro-transition-duration: 0.3s; 
+$banner-intro-open-transition-start: 0.3s; 
+$banner-intro-open-transition-duration: 0.0005s; 
+$banner-intro-close-transition-duration: 0.5s; 
 $banner-intro-open-transition-end: 
-	$banner-intro-open-transition-start + $banner-intro-transition-duration; 
+	$banner-intro-open-transition-start + $banner-intro-open-transition-duration; 
 
 
 /***************************************************************************
@@ -26,7 +27,7 @@ $banner-intro-open-transition-end:
 */ 
 
 $header-element-count: 2; 
-$header-element-transition-start-shift: 0s; 
+$header-element-transition-start-shift: 0.2s; 
 $header-element-transition-start: 
 	$banner-intro-open-transition-end + $header-element-transition-start-shift;  
 
@@ -62,11 +63,11 @@ $text-content-element-transition-end:
 * Banner close animation 
 */ 
 
-$banner-intro-close-transition-start-shift: 0.05s; 
+$banner-intro-close-transition-start-shift: 0.2s; 
 $banner-intro-close-transition-start: 
 	$text-content-element-transition-end + $banner-intro-close-transition-start-shift; 
 $banner-intro-close-transition-end: 
-	$banner-intro-close-transition-start + $banner-intro-transition-duration; 
+	$banner-intro-close-transition-start + $banner-intro-close-transition-duration; 
 
 $main-banner-transition-start-shift: -0.2s;
 $main-banner-transition-duration: 0.0005s; 
@@ -78,7 +79,7 @@ $main-banner-transition-start:
 * Cover image animation 
 */ 
 
-$banner-entry-cover-image-transition-start-shift: 0.1s; 
+$banner-entry-cover-image-transition-start-shift: 0s; 
 $banner-entry-cover-image-transition-start: 
 	$banner-intro-close-transition-end + $banner-entry-cover-image-transition-start-shift; 
 $banner-entry-cover-image-transition-duration: 0.4s; 
@@ -285,7 +286,7 @@ $banner-entry-cover-image-transition-end:
 
 .banner-intro { 
 	animation-name: element-unfold, element-fold; 
-	animation-duration: $banner-intro-transition-duration, $banner-intro-transition-duration + 0.1s; 
+	animation-duration: $banner-intro-open-transition-duration, $banner-intro-close-transition-duration; 
 	animation-delay: $banner-intro-open-transition-start, $banner-intro-close-transition-start; 
 
 } 

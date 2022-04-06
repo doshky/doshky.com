@@ -125,11 +125,11 @@
 }
 
 .banner-intro .header > :nth-child(2) {
-  animation-delay: 0.8s;
+  animation-delay: 0.5005s;
 }
 
 .banner-intro .header > :nth-child(1) {
-  animation-delay: 0.9s;
+  animation-delay: 0.6005s;
 }
 
 .main-banner .cover-image,
@@ -139,40 +139,40 @@
 }
 
 .banner-intro .banner-text-content > :nth-child(1) {
-  animation-delay: 1.6s;
+  animation-delay: 1.3005s;
 }
 
 .banner-intro .banner-text-content > :nth-child(2) {
-  animation-delay: 1.65s;
+  animation-delay: 1.3505s;
 }
 
 .banner-intro .banner-text-content > :nth-child(3) {
-  animation-delay: 1.7s;
+  animation-delay: 1.4005s;
 }
 
 .banner-intro .banner-text-content > :nth-child(4) {
-  animation-delay: 1.75s;
+  animation-delay: 1.4505s;
 }
 
 .banner-intro .banner-text-content > :nth-child(5) {
-  animation-delay: 1.8s;
+  animation-delay: 1.5005s;
 }
 
 .main-banner .cover-image {
   animation-duration: 0.4s;
-  animation-delay: 2.35s;
+  animation-delay: 2.3005s;
 }
 
 .banner-intro {
   animation-name: element-unfold, element-fold;
-  animation-duration: 0.3s, 0.4s;
-  animation-delay: 0.5s, 1.95s;
+  animation-duration: 0.0005s, 0.5s;
+  animation-delay: 0.3s, 1.8005s;
 }
 
 .main-banner {
   animation-name: element-on;
   animation-duration: 0.05s;
-  animation-delay: 1.75s;
+  animation-delay: 1.6005s;
 }
 
 @keyframes element-on {
