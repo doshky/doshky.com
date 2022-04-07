@@ -20,12 +20,13 @@ body {
 
 .subheading { 
 	/* Sets subheading size */
-	font-size: 1.4em; 
+	font-family: var( --subheading-font-family ); font-size: var( --subheading-font-size ); 
+	font-weight: 300; 
 
 } 
 
 .paragraph { 
-	line-height: 1.2; 
+	line-height: var( --text-line-height ); 
 
 }
 
