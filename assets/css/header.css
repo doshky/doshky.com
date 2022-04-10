@@ -27,6 +27,6 @@
 
 .logo { 
 	/*display: none;*/
-	width: 6rem; 
+	width: var( --logo-width ); 
 
 } 
