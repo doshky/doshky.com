@@ -192,10 +192,15 @@
 
 } 
 
-.about-section .section-body { 
-	height: 0; 
+.body-section-heading { 
+	font-size: var( --body-section-heading-font-size ); 
 
 }
+
+/*.about-section .section-body { 
+	height: 0; 
+
+}*/ 
 
 /*.section > .section-body { 
 	border-left: 1px solid; 
