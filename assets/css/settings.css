@@ -11,13 +11,16 @@
 	--text-font-size: 16px; 
 	--text-line-height: 1.5; 
  
-	--heading-font-family: "Gochi Hand"; 
-	--heading-font-size: 2.5em; 
-	--banner-entry-heading-font-size: 4.5em; 
+	--heading-font-family: "Rock Salt"; 
+	--heading-font-size: 2em;  
 	--subheading-font-family: var( --text-font-family ); 
 	--subheading-font-size: 1.2em; 
 
-	--main-nav-font-family: var( --heading-font-family ); 
+	--banner-entry-heading-font-family: "Gochi Hand"; 
+	--banner-entry-heading-font-size: 4.5em; 
+
+	--main-nav-font-family: "Rock Salt"; 
+	--main-nav-font-size: 1.2em; 
 
 	--icon-font-family: Ionicons; 
 

@@ -113,6 +113,7 @@
 } 
 
 .banner-entry .heading { 
+	font-family: var( --banner-entry-heading-font-family ); 
 	font-size: var( --banner-entry-heading-font-size ); font-weight: 300; 
 
 } 

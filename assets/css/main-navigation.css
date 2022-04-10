@@ -36,7 +36,7 @@
 	width: 25%; max-width: 10rem; height: 100%; 
 	position: relative; 
 	/*background-color: #CCC; */ 
-	font-family: var( --main-nav-font-family ); 
+	font-family: var( --main-nav-font-family ); font-size: var( --main-nav-font-size ); 
 
 } 
 
