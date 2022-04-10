@@ -119,7 +119,7 @@ $banner-entry-cover-image-transition-end:
 
 .page-body-holder, 
 .banner, 
-.main-nav .nav, 
+.main-nav, 
 .section-holder { 
 	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
 
@@ -138,7 +138,7 @@ $banner-entry-cover-image-transition-end:
 
 } 
 
-.main-nav .nav { 
+.main-nav { 
 	--section-main-color: var( --secondary-color ); 
 	--section-secondary-color: var( --main-color ); 
 
