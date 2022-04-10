@@ -17,6 +17,8 @@
 	min-height: 100%; 
 	padding-top: 4em; padding-bottom: 5em; 
 	position: relative; 
+	/* Prevents the browser from displaying a scrollbar because of translating cover image down to set up its animation */ 
+	overflow: hidden; 
 	
 } 
 
