@@ -115,6 +115,12 @@
 .banner-entry .heading { 
 	font-family: var( --banner-entry-heading-font-family ); 
 	font-size: var( --banner-entry-heading-font-size ); font-weight: 300; 
+	line-height: var( --banner-entry-heading-line-height ); 
+
+} 
+
+.banner-entry .subheading { 
+	margin-bottom: 0.8em; 
 
 } 
 

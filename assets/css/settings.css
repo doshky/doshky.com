@@ -2,7 +2,7 @@
 	--page-inner-width: 960px; 
 	--page-padding-x: 1.25rem; 
 
-	--logo-width: 6em; 
+	--logo-width: 6rem; 
 
 	--section-head-cover-image-height: 25em; 
 	--section-featured-image-height: 50%; 
@@ -17,12 +17,13 @@
 	--subheading-font-size: 1.2em; 
 
 	--banner-entry-heading-font-family: "Gochi Hand"; 
-	--banner-entry-heading-font-size: 4.5em; 
+	--banner-entry-heading-font-size: 5em; 
+	--banner-entry-heading-line-height: 0.8; 
 
-	--body-section-heading-font-size: 1.2em; 
+	--body-section-heading-font-size: 1.4em; 
 
-	--main-nav-font-family: "Rock Salt"; 
-	--main-nav-font-size: 1.2em; 
+	--main-nav-font-family: var( --heading-font-family ); 
+	--main-nav-font-size: 1em; 
 
 	--icon-font-family: Ionicons; 
 
