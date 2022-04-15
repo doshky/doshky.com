@@ -1,11 +1,11 @@
-html {
+/*html {
 	scroll-behavior: smooth; 
 } 
 
 body { 
 	overflow-y: scroll;  
 
-}
+}*/
 
 .usability-heading { 
 	position: absolute; left: 0; top: -10000px; 

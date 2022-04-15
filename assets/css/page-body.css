@@ -45,10 +45,10 @@
 
 } 
 
-.page-body > * + * {  
+/*.page-body > * + * {  
 	border-left: 1px solid; 
 
-} 
+} */
 
 .banner { 
 	left: 0; 
