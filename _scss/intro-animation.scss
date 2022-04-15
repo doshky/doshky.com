@@ -86,6 +86,9 @@ $banner-entry-cover-image-transition-duration: 0.4s;
 $banner-entry-cover-image-transition-end: 
 	$banner-entry-cover-image-transition-start + $banner-entry-cover-image-transition-duration;  
 
+$intro-animation-end-shift: 0.5s; 
+$intro-animation-end: $banner-entry-cover-image-transition-end + $intro-animation-end-shift; 
+
 
 //.banner-intro .header:after { 
 //	--header-element-fade-in-delay: 0.4s; 
@@ -160,8 +163,13 @@ $banner-entry-cover-image-transition-end:
 
 } 
 
+.banner { 
+	overflow: hidden; 
+
+}
+
 .banner.banner-intro { 
-	height: 0; overflow: hidden; 
+	height: 0; 
 	
 }  
 
@@ -292,12 +300,20 @@ $banner-entry-cover-image-transition-end:
 } 
 
 .main-banner { 
-	animation-name: element-on; 
-	animation-duration: 0.05s; 
-	animation-delay: $main-banner-transition-start; 
+	animation-name: element-on, overflow-on; 
+	animation-duration: $main-banner-transition-duration; 
+	animation-delay: $main-banner-transition-start, $intro-animation-end; 
 
 } 
 
+@keyframes overflow-on { 
+
+	100% { 
+		overflow-y: auto; 
+
+	}
+
+} 
 
 @keyframes element-on { 
 

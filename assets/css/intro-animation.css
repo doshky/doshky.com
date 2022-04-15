@@ -67,9 +67,12 @@
   color: var(--section-secondary-color);
 }
 
+.banner {
+  overflow: hidden;
+}
+
 .banner.banner-intro {
   height: 0;
-  overflow: hidden;
 }
 
 .banner.main-banner {
@@ -170,11 +173,16 @@
 }
 
 .main-banner {
-  animation-name: element-on;
-  animation-duration: 0.05s;
-  animation-delay: 1.6005s;
+  animation-name: element-on, overflow-on;
+  animation-duration: 0.0005s;
+  animation-delay: 1.6005s, 3.2005s;
 }
 
+@keyframes overflow-on {
+  100% {
+    overflow-y: auto;
+  }
+}
 @keyframes element-on {
   100% {
     top: 0;
