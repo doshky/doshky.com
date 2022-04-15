@@ -26,8 +26,8 @@
 	width: 100%; 
 	background-color: transparent; 	
 	border-style: dashed; border-width: 0 0 1px 0; 
-	border-color: inherit; 
-	/*border-bottom-color: var( --text-color ); */ 
+	/*border-color: inherit; */
+	border-color: var( --text-color ); 
 
 } 
 
