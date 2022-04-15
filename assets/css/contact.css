@@ -2,3 +2,8 @@
 	margin-top: 1.2em; 
 
 } 
+
+.contact-section-heading + * { 
+	margin-top: 1.4em; 
+
+}
