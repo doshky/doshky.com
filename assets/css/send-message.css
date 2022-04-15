@@ -55,5 +55,6 @@
 	background-color: var( --main-color ); 
 	color: var( --secondary-color );  
 	border: none; 
+	font-family: inherit; font-size: inherit; 
 
 }
