@@ -2,8 +2,8 @@
 	--owner-photo-width: 10rem;  
 	--owner-photo-aspect-ratio: 1; 
 	--owner-photo-height: calc( var( --owner-photo-aspect-ratio ) * var( --owner-photo-width ) ); 
-	--border-radius-to-width-ratio: 20; 
-	--owner-photo-border-radius: calc( var( --owner-photo-width ) / var( --border-radius-to-width-ratio ) ); 
+	/*--border-radius-to-width-ratio: 20; 
+	--owner-photo-border-radius: calc( var( --owner-photo-width ) / var( --border-radius-to-width-ratio ) ); */
 	--owner-photo-border-radius: 50%; 
 
 	--owner-heading-vertical-shift: 1.5em; 
@@ -11,7 +11,7 @@
 } 
 
 .owner { 
-	position: relative; 
+	position: relative;  
 
 }
 
@@ -43,6 +43,11 @@
 	font-size: 1.2em; 
 
 } 
+
+.owner .description { 
+	line-height: 1.4; 
+
+}
 
 /*.button-scroll-to-top { 
 	position: absolute; right: 100%; margin-right: 4rem; 

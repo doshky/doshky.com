@@ -36,12 +36,12 @@
 
 @media screen and ( max-width: 780px ) { 
 
-	.owner { 
-		--owner-photo-width: 100vw; 
+	/*.owner { 
+		--owner-photo-width: 40%; 
 		--owner-photo-aspect-ratio: 0.35; 
 		--border-radius-to-width-ratio: 50; 
 	
-	} 
+	}*/  
 
 	.footer { 
 		margin-top: 2rem; 
