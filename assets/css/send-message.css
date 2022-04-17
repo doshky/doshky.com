@@ -52,8 +52,8 @@
 	display: block; 
 	margin-top: 2em; 
 	width: 100%; height: 4em; 
-	background-color: var( --main-color ); 
-	color: var( --secondary-color );  
+	background-color: var( --section-main-color ); 
+	color: var( --section-secondary-color );  
 	border: none; 
 	font-family: inherit; font-size: inherit; 
 
