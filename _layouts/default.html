@@ -33,6 +33,8 @@
 	</div> 
 
 	<div class= "section-holder"> 
+		<div id= "section-top" class= "section-top"></div> 
+
 		{% include work.html 
 			section = site.data.pages.work 
 		%} 
@@ -43,16 +45,18 @@
 
 		{% include contact.html 
 			section = site.data.pages.contact 
-		%}
+		%}  
+
+		{% include footer.html %} 
 	</div> 
 
-	<div id= "page-holder" class= "page-holder"> 
+	<!--<div id= "page-holder" class= "page-holder"> 
 		<main class= "page"> 
 			{{ content }} 
 		</main> 
 
 		{% include footer.html %} 
-	</div> 
+	</div> -->
 
 	<script src= "/assets/js/main.js"></script> 
 

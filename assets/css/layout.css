@@ -1,8 +1,10 @@
-/*html {
+html, 
+body, 
+.section-holder {
 	scroll-behavior: smooth; 
 } 
 
-body { 
+/*body { 
 	overflow-y: scroll;  
 
 }*/

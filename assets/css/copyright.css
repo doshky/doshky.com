@@ -1,5 +1,8 @@
 .copyright { 
-	display: flex; flex-direction: row; align-items: center; flex-wrap: wrap;  
+	display: flex; flex-direction: row; align-items: center; justify-content: center; flex-wrap: wrap;  
+	width: 100%; 
+	padding-top: 2em; 
+	border-top: 1px solid; 
 
 } 
 
@@ -8,12 +11,12 @@
 
 }
 
-.copyright-name { 
+/*.copyright-name { 
 	width: 100%; 
 	padding-top: 0.4em; padding-bottom: 0.4em; 
 	border-top: 1px solid; 
 
-}
+}*/
 
 .copyright .key { 
 	position: absolute; left: 0; top: -10000px; 

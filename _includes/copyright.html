@@ -1,20 +1,20 @@
 <article class= "copyright"> 
-	{% include key-value-pair.html 
-		key = "name"
-		value = "Doshky" 
-		className = "copyright-name"
-	%} 
-
 	{% assign year = site.time | date: "%Y" | prepend: "-" | prepend: site.year_started %} 
 	{% include key-value-pair.html 
 		key = "year" 
 		value = year 
 		className = "copyright-year" 
 	%} 
+
+	{% include key-value-pair.html 
+		key = "name"
+		value = "&copy; Doshky." 
+		className = "copyright-name"
+	%} 
 	
 	{% include key-value-pair.html 
 		key = "notice"
-		value = "&copy; All Rights Reserved." 
+		value = "All Rights Reserved." 
 		className = "copyright-notice" 
 	%} 
 </article>

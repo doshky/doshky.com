@@ -1,7 +1,11 @@
 .footer { 
-	margin-top: 10rem; 
-	margin-left: 50%; 
-	padding-top: 7em; padding-bottom: 10em; 
+	display: flex; flex-direction: column;  align-items: center; 
+	max-width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 
+	/*margin-top: 10rem; */
+	/*margin-left: 50%;*/
+	/*padding-top: 7em; */ 
+	padding-bottom: 6em; 
+	text-align: center; 
 
 } 
 
@@ -16,11 +20,26 @@
 
 } */ 
 
+.section-top { 
+	width: 0; height: 0; overflow: hidden; 
+	position: absolute; 
+	text-indent: -10000px; 
+
+}
+
+.button-scroll-to-top { 
+	margin-top: 2em; 
+	border-radius: 5px; 
+
+}
+
 
 @media screen and ( max-width: 780px ) { 
 
 	.owner { 
-		--owner-photo-width: 100%;  
+		--owner-photo-width: 100vw; 
+		--owner-photo-aspect-ratio: 0.35; 
+		--border-radius-to-width-ratio: 50; 
 	
 	} 
 

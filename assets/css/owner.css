@@ -1,8 +1,10 @@
 .owner { 
-	--owner-photo-width: 50%;  
+	--owner-photo-width: 10rem;  
+	--owner-photo-aspect-ratio: 1; 
 	--owner-photo-height: calc( var( --owner-photo-aspect-ratio ) * var( --owner-photo-width ) ); 
-	--owner-photo-aspect-ratio: 0.5; 
-	--owner-photo-border-radius: 8px; 
+	--border-radius-to-width-ratio: 20; 
+	--owner-photo-border-radius: calc( var( --owner-photo-width ) / var( --border-radius-to-width-ratio ) ); 
+	--owner-photo-border-radius: 50%; 
 
 	--owner-heading-vertical-shift: 1.5em; 
 
@@ -19,12 +21,15 @@
 }
 
 .owner-photo { 
+	box-sizing: border-box; 
+	display: block; margin-left: auto; margin-right: auto; 
 	height: 0; 
-	width: var( --owner-photo-width ); padding-top: var( --owner-photo-height ); 
-	/*border: 2px solid; */ 
+	width: 100%; max-width: var( --owner-photo-width ); padding-top: var( --owner-photo-height ); 
+	border: 1px solid; 
 	border-radius: var( --owner-photo-border-radius ); 
 	background-size: cover; background-position: center;
 	background-repeat: no-repeat; 
+	/*box-shadow: 0 0 5px 5px rgba( var( --main-color-rgb ), 0.4 ); */
 
 } 
 
@@ -39,11 +44,10 @@
 
 } 
 
-.button-scroll-to-top { 
+/*.button-scroll-to-top { 
 	position: absolute; right: 100%; margin-right: 4rem; 
-	/*top: 0; */
 	bottom: 0; 
 	border: 1px solid; 
 	border-radius: 5px; 
 
-}
+}*/
