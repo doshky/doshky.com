@@ -164,15 +164,15 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 .page-body-holder, 
 .main-banner, 
 .section-holder { 
-	--section-main-color: var( --secondary-color ); 
-	--section-secondary-color: var( --main-color ); 
+	--section-main-color: var( --main-color ); 
+	--section-secondary-color: var( --secondary-color ); 
 
 } 
 
 .banner-intro, 
 .main-nav .nav { 
-	--section-main-color: var( --main-color ); 
-	--section-secondary-color: var( --secondary-color ); 
+	--section-main-color: var( --secondary-color ); 
+	--section-secondary-color: var( --main-color ); 
 
 } 
 

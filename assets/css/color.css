@@ -1,9 +1,11 @@
 :root { 
 	/* Sets main color and gives an option to specify opacity */
 	/*--main-color: rgba( 94, 52, 52, var( --main-color-opacity, 1 ) ); */  
-	--main-color-rgb: 49, 68, 71; 
+	/*--main-color-rgb: 49, 68, 71; */
+	--main-color-rgb: 146, 138, 104; 
 	--main-color-opacity: 1; 
-	--secondary-color-rgb: 146, 138, 104; 
+	/*--secondary-color-rgb: 146, 138, 104; */ 
+	--secondary-color-rgb: 49, 68, 71;
 	--secondary-color-opacity: 1; 
 	--main-color: rgba( var( --main-color-rgb ), var( --main-color-opacity ) ); 
 	--secondary-color: rgba( var( --secondary-color-rgb ), var( --secondary-color-opacity ) ); 
