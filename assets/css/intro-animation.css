@@ -5,7 +5,12 @@
 }
 
 .banner .cover-image {
+  --banner-entry-element-start-translate-y: 75px;
   --banner-entry-element-end-opacity: 0.1;
+}
+
+.main-banner .main-nav-button-open {
+  --banner-entry-element-start-translate-y: 25px;
 }
 
 /***************************************************************************
@@ -113,7 +118,7 @@
 .main-banner .cover-image,
 .banner-intro .banner-text-content > *,
 .main-banner .main-nav-button-open {
-  transform: translateY(100px);
+  transform: translateY(var(--banner-entry-element-start-translate-y));
   opacity: 0;
 }
 
@@ -180,8 +185,8 @@
 }
 
 .main-banner .main-nav-button-open {
-  animation-duration: 0.2s;
-  animation-delay: 2.9005s;
+  animation-duration: 0.3s;
+  animation-delay: 2.5505s;
 }
 
 .banner-intro {
@@ -193,7 +198,7 @@
 .main-banner {
   animation-name: element-on, overflow-on;
   animation-duration: 0.0005s;
-  animation-delay: 1.6005s, 3.6005s;
+  animation-delay: 1.6005s, 3.3505s;
 }
 
 @keyframes overflow-on {

@@ -6,9 +6,15 @@
 } 
 
 .banner .cover-image { 
+	--banner-entry-element-start-translate-y: 75px; 
 	--banner-entry-element-end-opacity: 0.1; 
 
 } 
+
+.main-banner .main-nav-button-open { 
+	--banner-entry-element-start-translate-y: 25px; 
+
+}
 
 
 /***************************************************************************
@@ -100,10 +106,10 @@ $banner-entry-cover-image-transition-end:
 * Main navigation open button animation 
 */ 
  
-$main-nav-button-transition-start-shift: 0.2s; 
+$main-nav-button-transition-start-shift: -0.15s; 
 $main-nav-button-transition-start: 
 	$banner-entry-cover-image-transition-end + $main-nav-button-transition-start-shift; 
-$main-nav-button-transition-duration: 0.2s; 
+$main-nav-button-transition-duration: 0.3s; 
 $main-nav-button-transition-end: 
 	$main-nav-button-transition-start + $main-nav-button-transition-duration; 
 
@@ -232,7 +238,7 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 .main-banner .cover-image, 
 .banner-intro .banner-text-content > *, 
 .main-banner .main-nav-button-open { 
-	transform: translateY( 100px ); 
+	transform: translateY( var( --banner-entry-element-start-translate-y ) ); 
 	opacity: 0; 
 
 } 
