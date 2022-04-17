@@ -12,10 +12,19 @@
 
 
 /***************************************************************************
+* Intro animation start 
+*/ 
+
+$intro-animation-start: 0.3s; 
+
+
+/***************************************************************************
 * Banner open animation 
 */ 
 
-$banner-intro-open-transition-start: 0.3s; 
+$banner-intro-open-transition-start-shift: 0s; 
+$banner-intro-open-transition-start: 
+	$intro-animation-start + $banner-intro-open-transition-start-shift; 
 $banner-intro-open-transition-duration: 0.0005s; 
 $banner-intro-close-transition-duration: 0.5s; 
 $banner-intro-open-transition-end: 
@@ -86,8 +95,26 @@ $banner-entry-cover-image-transition-duration: 0.4s;
 $banner-entry-cover-image-transition-end: 
 	$banner-entry-cover-image-transition-start + $banner-entry-cover-image-transition-duration;  
 
+
+/***************************************************************************
+* Main navigation open button animation 
+*/ 
+ 
+$main-nav-button-transition-start-shift: 0.2s; 
+$main-nav-button-transition-start: 
+	$banner-entry-cover-image-transition-end + $main-nav-button-transition-start-shift; 
+$main-nav-button-transition-duration: 0.2s; 
+$main-nav-button-transition-end: 
+	$main-nav-button-transition-start + $main-nav-button-transition-duration; 
+
+
+/***************************************************************************
+* Intro animation end 
+*/ 
+
 $intro-animation-end-shift: 0.5s; 
-$intro-animation-end: $banner-entry-cover-image-transition-end + $intro-animation-end-shift; 
+$intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shift; 
+ 
 
 
 //.banner-intro .header:after { 
@@ -191,7 +218,8 @@ $intro-animation-end: $banner-entry-cover-image-transition-end + $intro-animatio
 
 } 
 
-.banner-intro .cover-image { 
+.banner-intro .cover-image, 
+.banner-intro .main-nav-button-open { 
 	display: none; 
 
 } 
@@ -202,7 +230,8 @@ $intro-animation-end: $banner-entry-cover-image-transition-end + $intro-animatio
 } 
 
 .main-banner .cover-image, 
-.banner-intro .banner-text-content > * { 
+.banner-intro .banner-text-content > *, 
+.main-banner .main-nav-button-open { 
 	transform: translateY( 100px ); 
 	opacity: 0; 
 
@@ -213,7 +242,8 @@ $intro-animation-end: $banner-entry-cover-image-transition-end + $intro-animatio
 .banner-intro .banner-text-content > *, 
 .main-banner, 
 .main-banner .cover-image, 
-.banner-intro .header > * { 
+.banner-intro .header > *, 
+.main-banner .main-nav-button-open { 
 	animation-fill-mode: forwards; 
 
 } 
@@ -253,7 +283,8 @@ $intro-animation-end: $banner-entry-cover-image-transition-end + $intro-animatio
 //} 
 
 .main-banner .cover-image, 
-.banner-intro .banner-text-content > * { 
+.banner-intro .banner-text-content > *, 
+.main-banner .main-nav-button-open { 
 	animation-name: element-fade-in, element-translate-reset; animation-duration: 0.2s, 0.2s; 
 
 } 
@@ -291,6 +322,11 @@ $intro-animation-end: $banner-entry-cover-image-transition-end + $intro-animatio
 	animation-duration: $banner-entry-cover-image-transition-duration; animation-delay: $banner-entry-cover-image-transition-start; 
 
 } 
+
+.main-banner .main-nav-button-open { 
+	animation-duration: $main-nav-button-transition-duration; animation-delay: $main-nav-button-transition-start; 
+
+}
 
 .banner-intro { 
 	animation-name: element-unfold, element-fold; 

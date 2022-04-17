@@ -9,6 +9,9 @@
 }
 
 /***************************************************************************
+* Intro animation start 
+*/
+/***************************************************************************
 * Banner open animation 
 */
 /***************************************************************************
@@ -22,6 +25,12 @@
 */
 /***************************************************************************
 * Cover image animation 
+*/
+/***************************************************************************
+* Main navigation open button animation 
+*/
+/***************************************************************************
+* Intro animation end 
 */
 /*.banner { 
 	color: white; 
@@ -92,7 +101,8 @@
   border-color: var(--section-main-color);
 }
 
-.banner-intro .cover-image {
+.banner-intro .cover-image,
+.banner-intro .main-nav-button-open {
   display: none;
 }
 
@@ -101,7 +111,8 @@
 }
 
 .main-banner .cover-image,
-.banner-intro .banner-text-content > * {
+.banner-intro .banner-text-content > *,
+.main-banner .main-nav-button-open {
   transform: translateY(100px);
   opacity: 0;
 }
@@ -111,7 +122,8 @@
 .banner-intro .banner-text-content > *,
 .main-banner,
 .main-banner .cover-image,
-.banner-intro .header > * {
+.banner-intro .header > *,
+.main-banner .main-nav-button-open {
   animation-fill-mode: forwards;
 }
 
@@ -136,7 +148,8 @@
 }
 
 .main-banner .cover-image,
-.banner-intro .banner-text-content > * {
+.banner-intro .banner-text-content > *,
+.main-banner .main-nav-button-open {
   animation-name: element-fade-in, element-translate-reset;
   animation-duration: 0.2s, 0.2s;
 }
@@ -166,6 +179,11 @@
   animation-delay: 2.3005s;
 }
 
+.main-banner .main-nav-button-open {
+  animation-duration: 0.2s;
+  animation-delay: 2.9005s;
+}
+
 .banner-intro {
   animation-name: element-unfold, element-fold;
   animation-duration: 0.0005s, 0.5s;
@@ -175,7 +193,7 @@
 .main-banner {
   animation-name: element-on, overflow-on;
   animation-duration: 0.0005s;
-  animation-delay: 1.6005s, 3.2005s;
+  animation-delay: 1.6005s, 3.6005s;
 }
 
 @keyframes overflow-on {
