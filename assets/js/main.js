@@ -7,9 +7,9 @@
             return; 
         } 
 
-        if ( !hasClass( 'button-open-page' ) ) {
+        //if ( !hasClass( 'button-open-page' ) ) {
             e.preventDefault(); 
-        }
+        //} 
 
         for ( const e of getControlDataList( clickTarget.getAttribute( 'data-control-set' ) ) ) { 
             document.querySelector( e.selector ).classList[ e.op ]( e.className ); 
