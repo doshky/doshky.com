@@ -51,22 +51,14 @@
 }
 
 .page-body-holder,
-.main-banner {
-  --section-main-color: var( --main-color );
-  --section-secondary-color: var( --secondary-color );
-}
-
-.banner-intro {
-  --section-main-color: var( --secondary-color );
-  --section-secondary-color: var( --main-color );
-}
-
-.main-nav .nav {
-  --section-main-color: var( --secondary-color );
-  --section-secondary-color: var( --main-color );
-}
-
+.main-banner,
 .section-holder {
+  --section-main-color: var( --secondary-color );
+  --section-secondary-color: var( --main-color );
+}
+
+.banner-intro,
+.main-nav .nav {
   --section-main-color: var( --main-color );
   --section-secondary-color: var( --secondary-color );
 }
