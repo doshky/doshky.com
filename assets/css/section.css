@@ -19,11 +19,11 @@
 
 } 
 
-/*.section-control-buttons { 
+.section-control-buttons { 
 	position: absolute; top: 0; right: 0; 
 	z-index: 2; 
 
-} */ 
+} 
 
 .section-head { 
 	max-width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 
