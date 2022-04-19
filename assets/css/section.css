@@ -14,13 +14,13 @@
 
 .section { 
 	max-width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 
-	padding-bottom: 10em; 
+	padding-top: var( --section-padding-top ); padding-bottom:  var( --section-padding-bottom ); 
 	position: relative; 
 
 } 
 
 /*.section-control-buttons { 
-	position: absolute; top: 0; left: 0; 
+	position: absolute; top: 0; right: 0; 
 	z-index: 2; 
 
 } */ 
