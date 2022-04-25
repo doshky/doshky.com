@@ -1,20 +1,32 @@
 .contact-entry-set { 
-	display: flex; flex-direction: row; 
+	display: flex; flex-direction: row; justify-content: center; 
 
 } 
 
 .contact + .contact { 
-	margin-left: 2em; 
+	margin-left: 1.2em; 
 
 } 
 
+.contact { 
+	width: 25%; 
+
+
+}
+
 .contact:before { 
-	display: block; 
+	display: inline-block; 
 	width: 2rem; height: 2rem; 
 	content: var( --contact-icon-code ); 
 	font-size: 1.4em; 
 
 } 
+
+.contact .key { 
+	padding-top: 0.2em; padding-bottom: 0.2em; 
+	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+
+}
 
 .phone:before { 
 	--contact-icon-code: "\f4b8"; 
