@@ -27,10 +27,10 @@
 
 	"body": [ 
 		{ 
-			"heading": "Life", 
+			"heading": "", 
 			"paragraphs": [ 
 				{ 
-					"text": "Coming Soon" 
+					"text": "" 
 				} 
 			], 
 	
@@ -41,10 +41,10 @@
 		}, 
 
 		{ 
-			"heading": "Interests", 
+			"heading": "", 
 			"paragraphs": [ 
 				{ 
-					"text": "Coming Soon" 
+					"text": "" 
 				} 
 			], 
 	
@@ -55,10 +55,10 @@
 		}, 
 
 		{
-			"heading": "Hobbies", 
+			"heading": "", 
 			"paragraphs": [ 
 				{ 
-					"text": "Coming Soon" 
+					"text": "" 
 				}
 			], 
 	
