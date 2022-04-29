@@ -6,7 +6,7 @@
 html, 
 body { 
 	/* Sets body font and size */
-	font-family: var( --text-font-family ); font-size: var( --text-font-size ); 
+	font-family: var( --text-font-family ); font-size: var( --text-font-size ); font-weight: 300; 
 
 }
 
@@ -21,7 +21,6 @@ body {
 .subheading { 
 	/* Sets subheading size */
 	font-family: var( --subheading-font-family ); font-size: var( --subheading-font-size ); 
-	font-weight: 300; 
 
 } 
 

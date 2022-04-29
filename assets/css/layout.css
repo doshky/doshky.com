@@ -70,7 +70,7 @@ body,
 
 .featured-image { 
 	display: block; 
-	background-size: contain; background-repeat: no-repeat; background-position: left; 
+	background-size: contain; background-repeat: no-repeat; background-position: center; 
 
 } 
 
