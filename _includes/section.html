@@ -2,7 +2,7 @@
 {% assign className = include.className | append: "-section" %} 
 
 
-<section class= "section {{ className }}" id= "{{ className }}"> 
+<section class= "section {{ className }}{% if className == 'contact-section' %} section-on{% endif %}" id= "{{ className }}"> 
 	<div class= "section-control-buttons"> 
 		<a 
 			href= "#page-body" 

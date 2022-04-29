@@ -1,4 +1,5 @@
 .send-message { 
+	box-sizing: border-box; 
 	max-width: var( --send-message-width ); margin-left: auto; margin-right: auto; 
 	padding: 2em; 
 	position: relative; 
