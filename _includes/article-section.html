@@ -1,14 +1,18 @@
 {% assign section = include.section %} 
 
-{% include heading.html 
-	level = 3 
-	text = section.heading 
-	className = "body-section-heading article-section-heading" 
-%} 
+{% if section.heading != "" %}
+	{% include heading.html 
+		level = 3 
+		text = section.heading 
+		className = "body-section-heading article-section-heading" 
+	%} 
+{% endif %}
 
 {% for paragraph in section.paragraphs %} 
-	{% include paragraph.html 
-		text = paragraph.text 
-		className = "article-section-paragraph" 
-	%} 
+	{% if paragraph.text != "" %}
+		{% include paragraph.html 
+			text = paragraph.text 
+			className = "article-section-paragraph" 
+		%} 
+	{% endif %} 
 {% endfor %} 
