@@ -2,12 +2,12 @@
 {% assign className = include.className | append: "-section" %} 
 
 
-<section class= "section {{ className }}{% if className == 'contact-section' %} section-on{% endif %}" id= "{{ className }}"> 
+<section class= "section {{ className }}" id= "{{ className }}"> 
 	<div class= "section-control-buttons"> 
 		<a 
 			href= "#page-body" 
 			class= "button control-button main-nav-button main-nav-button-open has-icon" 
-			data-control-set= "body.remove:content-section-on, #{{ className }}.remove:section-on, body.add:page-body-nav, body.add:nav-on" 
+			data-control-set= "body.remove:content-section-on, body.add:page-body-nav, body.add:nav-on" 
 		>
 			<span class= "button-text">Open navigation</span> 
 		</a> 
@@ -15,7 +15,7 @@
 		<a 
 			href= "#page-body" 
 			class= "button control-button control-button-off button-close button-close-section has-icon" 
-			data-control-set= "body.remove:content-section-on, #{{ className }}.remove:section-on" 
+			data-control-set= "body.remove:content-section-on" 
 		>
 			<span class= "button-text">Close section</span> 
 		</a> 

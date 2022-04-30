@@ -14,7 +14,8 @@
 				<li class= "nav-entry{% if currentSectionNavEntry.targetSectionSelector == navEntry.targetSectionSelector %} entry-current{% endif %}"> 
 					<a 
 						href= "{{ navEntry.targetSectionSelector }}" 
-						class= "nav-link inner-link{{ navEntry.classNames | join: ' ' | prepend: ' ' }} control-button" 
+						data-target-section-id= "{{ page[ 0 ].sectionID }}" 
+						class= "nav-link inner-link{{ navEntry.classNames | join: ' ' | prepend: ' ' }} control-button open-section-button" 
 						data-control-set= "body.remove:nav-on, body.add:content-section-on, {{ navEntry.targetSectionSelector }}.add:section-on" 
 						data-section-pos= "{{ pos }}"
 					>
