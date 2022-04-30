@@ -1,28 +1,37 @@
 :root { 
-	/* Sets main color and gives an option to specify opacity */
-	/*--main-color: rgba( 94, 52, 52, var( --main-color-opacity, 1 ) ); */  
-	--main-color-rgb: 49, 68, 71; 
-	--main-color-opacity: 1; 
-	--secondary-color-rgb: 146, 138, 104; 
-	--secondary-color-opacity: 1; 
+	/* Sets main color and gives an option to specify opacity */ 
 	--main-color: rgba( var( --main-color-rgb ), var( --main-color-opacity ) ); 
-	--secondary-color: rgba( var( --secondary-color-rgb ), var( --secondary-color-opacity ) ); 
-
-	/* Sets the overlay color as the main color, with lower opacity */
-	/*--main-color-opacity: 0.2; */
-	--overlay-color: var( --main-color ); 
+	/* Sets secondary color and gives an option to specify opacity */
+	--secondary-color: rgba( var( --secondary-color-rgb ), var( --secondary-color-opacity ) );
+	/* Sets the overlay color as the main color, with lower opacity */ 
+	--overlay-color: rgba( var( --overlay-color-rgb ), var( --overlay-color-opacity ) ); 
 
 	/* Sets text color as the main color, with full opacity */
-	/*--main-color-opacity: 1; */ 
 	--text-color: var( --main-color ); 
-
-	/* Sets basic light and dark grayscale colors and gives an option to specify opacity */
-	--light-gray-color: rgba( 255, 255, 255, var( --light-gray-color-opacity, 0.9 ) ); 
-	--dark-gray-color: rgba( 0, 0, 0, var( --dark-gray-color-opacity, 0.5 ) ); 
 
 }
 
 body { 
 	color: var( --text-color ); 
 
-}
+} 
+
+.page-body-holder, 
+.banner, 
+.main-nav .nav, 
+.section-holder { 
+	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
+
+} 
+
+.button { 
+	background-color: transparent; color: var( --section-main-color ); 
+
+} 
+
+.button:hover { 
+	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+	border-color: var( --section-main-color ); 
+
+} 
+

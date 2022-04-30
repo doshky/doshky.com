@@ -10,7 +10,7 @@
 	/*position: fixed; left: 0; */ 
 	position: relative; 
 	z-index: 3; 
-	background-color: var( --light-gray-color ); 
+	/*background-color: var( --light-gray-color ); */ 
 	/*background-color: var( --main-color ); color: var( --light-gray-color ); */ 
 	/*color: #555; */ 
 	overflow: hidden; 

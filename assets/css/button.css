@@ -54,9 +54,9 @@
 /* Defines button 'hover' effect */ 
 .button:hover { 
 	/* Inverts button colors */
-	background-color: var( --main-color ); color: var( --light-gray-color ); 
+	/*background-color: var( --main-color ); color: var( --light-gray-color ); */ 
 	/* Keeps button border color the same as its background to avoid border disappearing */
-	border-color: var( --main-color );  
+	/*border-color: var( --main-color );  */ 
 
 } 
 

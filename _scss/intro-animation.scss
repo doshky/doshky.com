@@ -153,51 +153,6 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 
 //} 
 
-.page-body-holder, 
-.banner, 
-.main-nav .nav, 
-.section-holder { 
-	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
-
-} 
-
-.page-body-holder, 
-.main-banner, 
-.section-holder { 
-	--section-main-color: var( --main-color ); 
-	--section-secondary-color: var( --secondary-color ); 
-
-} 
-
-.banner-intro, 
-.main-nav .nav { 
-	--section-main-color: var( --secondary-color ); 
-	--section-secondary-color: var( --main-color ); 
-
-} 
-
-//.main-nav .nav { 
-//	--section-main-color: var( --secondary-color ); 
-//	--section-secondary-color: var( --main-color ); 
-
-//} 
-
-//.section-holder { 
-//	--section-main-color: var( --main-color ); 
-//	--section-secondary-color: var( --secondary-color ); 
-
-//} 
-
-.button { 
-	background-color: transparent; color: var( --section-main-color ); 
-
-} 
-
-.button:hover { 
-	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
-
-} 
-
 .banner { 
 	overflow: hidden; 
 
@@ -216,13 +171,6 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 .header { 
 	position: relative; 
 	overflow: visible; 
-
-} 
-
-.header-line { 
-	width: var( --page-inner-width ); 
-	position: absolute; bottom: 0;  
-	border-bottom: 1px solid; border-color: var( --section-main-color ); 
 
 } 
 
