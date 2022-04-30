@@ -234,9 +234,14 @@
 
 .section > .featured-image { 
 	max-width: 100%;  padding-top: var( --section-featured-image-height ); 
-	margin-top: 1.5rem; margin-bottom: 5rem; 
+	margin-top: 1.5rem; margin-bottom: 5%; 
 	position: relative;  
 	/*background-image: none !important; */ 
+
+} 
+
+.section > .featured-image + * { 
+	margin-top: 3.5rem; 
 
 } 
 
