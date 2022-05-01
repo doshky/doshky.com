@@ -1,6 +1,6 @@
 .banner { 
 	--banner-entry-element-end-opacity: 1; 
-	--banner-entry-element-start-translate-y: 50px; 
+	--banner-entry-element-start-translate-y: 100px; 
 	--header-element-end-translate-y: 40vh; 
 
 } 
@@ -21,7 +21,7 @@
 * Intro animation start 
 */ 
 
-$intro-animation-start: 0.5s; 
+$intro-animation-start: 0.3s; 
 
 
 /***************************************************************************
@@ -31,8 +31,8 @@ $intro-animation-start: 0.5s;
 $banner-intro-open-transition-start-shift: 0s; 
 $banner-intro-open-transition-start: 
 	$intro-animation-start + $banner-intro-open-transition-start-shift; 
-$banner-intro-open-transition-duration: 0.7s; 
-$banner-intro-close-transition-duration: 0.7s; 
+$banner-intro-open-transition-duration: 0.0005s; 
+$banner-intro-close-transition-duration: 0.5s; 
 $banner-intro-open-transition-end: 
 	$banner-intro-open-transition-start + $banner-intro-open-transition-duration; 
 
@@ -42,12 +42,12 @@ $banner-intro-open-transition-end:
 */ 
 
 $header-element-count: 2; 
-$header-element-transition-start-shift: 0s; 
+$header-element-transition-start-shift: 0.2s; 
 $header-element-transition-start: 
 	$banner-intro-open-transition-end + $header-element-transition-start-shift;  
 
-$header-element-transition-duration: 0.7s; 
-$header-element-transition-relative-delay: -0.65s; 
+$header-element-transition-duration: 1s; 
+$header-element-transition-relative-delay: -0.9s; 
 $header-element-transition-end: 
 	$header-element-transition-start 
 		+ ( $header-element-count - 1 ) * ( $header-element-transition-duration + $header-element-transition-relative-delay ) 
@@ -63,11 +63,11 @@ $header-element-translate-y: 40vh;
 */ 
 
 $text-content-element-count: 4; 
-$text-content-element-transition-start-shift: $header-element-transition-relative-delay; 
+$text-content-element-transition-start-shift: -0.3s; 
 $text-content-element-transition-start: 
 	$header-element-transition-end + $text-content-element-transition-start-shift;  
-$text-content-element-transition-duration: $header-element-transition-duration; 
-$text-content-element-transition-relative-delay: $header-element-transition-relative-delay; 
+$text-content-element-transition-duration: 0.15s; 
+$text-content-element-transition-relative-delay: -0.1s; 
 $text-content-element-transition-end: 
 	$text-content-element-transition-start 
 		+ ( $text-content-element-count - 1 ) * ( $text-content-element-transition-duration + $text-content-element-transition-relative-delay ) 
@@ -78,7 +78,7 @@ $text-content-element-transition-end:
 * Banner close animation 
 */ 
 
-$banner-intro-close-transition-start-shift: -0.3s; 
+$banner-intro-close-transition-start-shift: 0.2s; 
 $banner-intro-close-transition-start: 
 	$text-content-element-transition-end + $banner-intro-close-transition-start-shift; 
 $banner-intro-close-transition-end: 
@@ -94,7 +94,7 @@ $main-banner-transition-start:
 * Cover image animation 
 */ 
 
-$banner-entry-cover-image-transition-start-shift: -0.2s; 
+$banner-entry-cover-image-transition-start-shift: 0s; 
 $banner-entry-cover-image-transition-start: 
 	$banner-intro-close-transition-end + $banner-entry-cover-image-transition-start-shift; 
 $banner-entry-cover-image-transition-duration: 0.4s; 
@@ -159,7 +159,7 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 }
 
 .banner.banner-intro { 
-	transform: translateY( 100% ); 
+	height: 0; 
 	
 }  
 
@@ -180,12 +180,11 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 
 } 
 
-//.banner-intro .header > * { 
-//	opacity: 0; 
+.banner-intro .header > * { 
+	opacity: 0; 
 
-//} 
+} 
 
-.banner-intro .header > *, 
 .main-banner .cover-image, 
 .banner-intro .banner-text-content > *, 
 .main-banner .main-nav-button-open { 
@@ -205,31 +204,40 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 
 } 
 
-//.banner-intro .header > * { 
-//	animation-name: element-fade-in, element-bounce; 
+.banner-intro .header > * { 
+	animation-name: element-fade-in, element-bounce; 
 
-//} 
+} 
 
-//.banner-intro .header > :nth-child( 1 ) { 
-//	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration * $header-element-transition-duration-multiplier; 
+.banner-intro .header > :nth-child( 1 ) { 
+	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration * $header-element-transition-duration-multiplier; 
 
-//}
+}
 
-//.banner-intro .header > :nth-child( 2 ) { 
-//	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration;
+.banner-intro .header > :nth-child( 2 ) { 
+	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration;
 
-//}
+}
 
 @for $element-pos from 0 to 2 { 
-	.banner-intro .header > :nth-child( #{ $element-pos + 1 } ) { 
+	.banner-intro .header > :nth-child( #{ 2 - $element-pos } ) { 
 		animation-delay: $header-element-transition-start 
 			+ $element-pos * ( $header-element-transition-duration + $header-element-transition-relative-delay ); 
 
 	}
 
-} 
+}
 
-.banner-intro .header > *, 
+//.banner-intro .header:after, 
+//.banner-intro .logo { 
+//	animation-delay: 
+//		var( --header-element-fade-in-delay ), 
+//		var( --header-element-translate-down-delay ), 
+//		var( --header-element-bounce-delay ), 
+//		var( --header-element-translate-up-delay ); 
+
+//} 
+
 .main-banner .cover-image, 
 .banner-intro .banner-text-content > *, 
 .main-banner .main-nav-button-open { 
@@ -244,7 +252,27 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 		
 	}
 
-} 
+}
+
+//.banner-intro .banner-subheading { 
+//	animation-delay: 1.2s; 
+
+//} 
+
+//.banner-intro .banner-heading { 
+//	animation-delay: 1.25s; 
+
+//} 
+
+//.banner-intro .banner-paragraph { 
+//	animation-delay: 1.3s; 
+
+//} 
+
+//.banner-intro .details-button { 
+//	animation-delay: 1.35s; 
+
+//} 
 
 .main-banner .cover-image { 
 	animation-duration: $banner-entry-cover-image-transition-duration; animation-delay: $banner-entry-cover-image-transition-start; 
@@ -257,7 +285,7 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 }
 
 .banner-intro { 
-	animation-name: element-translate-reset, element-fold; 
+	animation-name: element-unfold, element-fold; 
 	animation-duration: $banner-intro-open-transition-duration, $banner-intro-close-transition-duration; 
 	animation-delay: $banner-intro-open-transition-start, $banner-intro-close-transition-start; 
 

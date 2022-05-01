@@ -1,6 +1,6 @@
 .banner {
   --banner-entry-element-end-opacity: 1;
-  --banner-entry-element-start-translate-y: 50px;
+  --banner-entry-element-start-translate-y: 100px;
   --header-element-end-translate-y: 40vh;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .banner.banner-intro {
-  transform: translateY(100%);
+  height: 0;
 }
 
 .banner.main-banner {
@@ -64,7 +64,10 @@
   display: none;
 }
 
-.banner-intro .header > *,
+.banner-intro .header > * {
+  opacity: 0;
+}
+
 .main-banner .cover-image,
 .banner-intro .banner-text-content > *,
 .main-banner .main-nav-button-open {
@@ -82,15 +85,26 @@
   animation-fill-mode: forwards;
 }
 
+.banner-intro .header > * {
+  animation-name: element-fade-in, element-bounce;
+}
+
 .banner-intro .header > :nth-child(1) {
-  animation-delay: 1.2s;
+  animation-duration: 0.2s, 0.8s;
 }
 
 .banner-intro .header > :nth-child(2) {
-  animation-delay: 1.25s;
+  animation-duration: 0.2s, 1s;
 }
 
-.banner-intro .header > *,
+.banner-intro .header > :nth-child(2) {
+  animation-delay: 0.5005s;
+}
+
+.banner-intro .header > :nth-child(1) {
+  animation-delay: 0.6005s;
+}
+
 .main-banner .cover-image,
 .banner-intro .banner-text-content > *,
 .main-banner .main-nav-button-open {
@@ -99,45 +113,45 @@
 }
 
 .banner-intro .banner-text-content > :nth-child(1) {
-  animation-delay: 1.3s;
+  animation-delay: 1.3005s;
 }
 
 .banner-intro .banner-text-content > :nth-child(2) {
-  animation-delay: 1.35s;
+  animation-delay: 1.3505s;
 }
 
 .banner-intro .banner-text-content > :nth-child(3) {
-  animation-delay: 1.4s;
+  animation-delay: 1.4005s;
 }
 
 .banner-intro .banner-text-content > :nth-child(4) {
-  animation-delay: 1.45s;
+  animation-delay: 1.4505s;
 }
 
 .banner-intro .banner-text-content > :nth-child(5) {
-  animation-delay: 1.5s;
+  animation-delay: 1.5005s;
 }
 
 .main-banner .cover-image {
   animation-duration: 0.4s;
-  animation-delay: 2.35s;
+  animation-delay: 2.3005s;
 }
 
 .main-banner .main-nav-button-open {
   animation-duration: 0.3s;
-  animation-delay: 2.6s;
+  animation-delay: 2.5505s;
 }
 
 .banner-intro {
-  animation-name: element-translate-reset, element-fold;
-  animation-duration: 0.7s, 0.7s;
-  animation-delay: 0.5s, 1.85s;
+  animation-name: element-unfold, element-fold;
+  animation-duration: 0.0005s, 0.5s;
+  animation-delay: 0.3s, 1.8005s;
 }
 
 .main-banner {
   animation-name: element-on, overflow-on;
   animation-duration: 0.0005s;
-  animation-delay: 1.65s, 3.4s;
+  animation-delay: 1.6005s, 3.3505s;
 }
 
 @keyframes overflow-on {
@@ -198,4 +212,4 @@
   }
 }
 
-/*# sourceMappingURL=intro-animation.css.map */
+/*# sourceMappingURL=intro-animation%20copy.css.map */

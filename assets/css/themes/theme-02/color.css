@@ -12,14 +12,14 @@
 
 } 
 
-.banner-intro, 
-.page-body-holder,  
+.banner-intro,   
 .section-holder { 
 	--section-main-color: var( --main-color ); 
 	--section-secondary-color: var( --secondary-color ); 
 
 } 
- 
+
+.page-body-holder, 
 .main-banner { 
 	--section-main-color: var( --secondary-color ); 
 	--section-secondary-color: var( --main-color ); 
