@@ -12,7 +12,8 @@
 
 } 
 
-.banner-intro,   
+.banner-intro, 
+.main-nav,    
 .section-holder { 
 	--section-main-color: var( --main-color ); 
 	--section-secondary-color: var( --secondary-color ); 
