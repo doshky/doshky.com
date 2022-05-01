@@ -42,7 +42,7 @@ $banner-intro-open-transition-end:
 */ 
 
 $header-element-count: 2; 
-$header-element-transition-start-shift: 0s; 
+$header-element-transition-start-shift: -0.2s; 
 $header-element-transition-start: 
 	$banner-intro-open-transition-end + $header-element-transition-start-shift;  
 
