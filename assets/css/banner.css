@@ -117,13 +117,18 @@
 
 .banner-entry .heading { 
 	font-family: var( --banner-entry-heading-font-family ); 
-	font-size: var( --banner-entry-heading-font-size ); font-weight: 300; 
+	font-size: var( --banner-entry-heading-font-size ); font-weight: 100; 
 	line-height: var( --banner-entry-heading-line-height ); 
+	/*text-transform: uppercase; */ 
 
 } 
 
 .banner-entry .subheading { 
 	margin-bottom: 0.8em; 
+	/*display: inline-block; 
+	padding: 0.2em; 
+	background-color: var( --secondary-color ); 
+	color: var( --main-color ); */ 
 
 } 
 
