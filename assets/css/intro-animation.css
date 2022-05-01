@@ -120,24 +120,24 @@
 
 .main-banner .cover-image {
   animation-duration: 0.4s;
-  animation-delay: 2.35s;
+  animation-delay: 2.25s;
 }
 
 .main-banner .main-nav-button-open {
   animation-duration: 0.3s;
-  animation-delay: 2.6s;
+  animation-delay: 2.5s;
 }
 
 .banner-intro {
   animation-name: element-translate-reset, element-fold;
   animation-duration: 0.7s, 0.7s;
-  animation-delay: 0.5s, 1.85s;
+  animation-delay: 0.5s, 1.75s;
 }
 
 .main-banner {
   animation-name: element-on, overflow-on;
   animation-duration: 0.0005s;
-  animation-delay: 1.65s, 3.4s;
+  animation-delay: 1.55s, 3.3s;
 }
 
 @keyframes overflow-on {
