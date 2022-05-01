@@ -117,7 +117,7 @@
 
 .banner-entry .heading { 
 	font-family: var( --banner-entry-heading-font-family ); 
-	font-size: var( --banner-entry-heading-font-size ); font-weight: 100; 
+	font-size: var( --banner-entry-heading-font-size ); font-weight: var( --banner-entry-heading-font-weight ); 
 	line-height: var( --banner-entry-heading-line-height ); 
 	/*text-transform: uppercase; */ 
 
@@ -150,11 +150,10 @@
 } 
 
 @media screen and ( max-width: 780px ) { 
+	/*:root { 
+		--banner-entry-heading-font-size: calc( 2em + 1vw ); 
 
-	.banner-entry .heading { 
-		font-size: 4em; 
-
-	}
+	} */ 
 
 	.banner-text-content { 
 		padding-left: 0em; padding-right: 0em; 
@@ -163,14 +162,14 @@
 	
 } 
 
-@media screen and ( max-width: 620px ) { 
+/*@media screen and ( max-width: 620px ) { 
 
 	.banner-entry .heading { 
 		font-size: 3.5em; 
 
 	} 
 	
-} 
+} */ 
 
 
 

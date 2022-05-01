@@ -23,7 +23,9 @@
 	--subheading-font-size: 1.2em; 
 
 	--banner-entry-heading-font-family: "Raleway"; 	
-	--banner-entry-heading-font-size: 3em; 
+	/* Giving a scaling range to the banner heading font size */
+	--banner-entry-heading-font-size: calc( 2.5em + 0.5vw ); 
+	--banner-entry-heading-font-weight: 100; 
 	--banner-entry-heading-line-height: 1; 
 
 	--body-section-heading-font-size: 1.4em; 
