@@ -1,0 +1,392 @@
+.banner { 
+	--banner-entry-element-end-opacity: 1; 
+	--banner-entry-element-start-translate-y: 50px; 
+	--header-element-end-translate-y: 40vh; 
+
+} 
+
+.banner .cover-image { 
+	--banner-entry-element-start-translate-y: 75px; 
+	--banner-entry-element-end-opacity: 0.1; 
+
+} 
+
+.main-banner .main-nav-button-open { 
+	--banner-entry-element-start-translate-y: 25px; 
+
+}
+
+
+/***************************************************************************
+* Intro animation start 
+*/ 
+
+$intro-animation-start: 0.5s; 
+
+
+/***************************************************************************
+* Banner open animation 
+*/ 
+
+$banner-intro-open-transition-start-shift: 0s; 
+$banner-intro-open-transition-start: 
+	$intro-animation-start + $banner-intro-open-transition-start-shift; 
+$banner-intro-open-transition-duration: 0.5s; 
+$banner-intro-close-transition-duration: 0.5s; 
+$banner-intro-open-transition-end: 
+	$banner-intro-open-transition-start + $banner-intro-open-transition-duration; 
+
+
+/***************************************************************************
+* Header animation 
+*/ 
+
+$header-element-count: 2; 
+$header-element-transition-start-shift: -0.1s; 
+$header-element-transition-start: 
+	$banner-intro-open-transition-end + $header-element-transition-start-shift;  
+
+$header-element-transition-duration: 1s; 
+$header-element-transition-relative-delay: -0.95s; 
+$header-element-transition-end: 
+	$header-element-transition-start 
+		+ ( $header-element-count - 1 ) * ( $header-element-transition-duration + $header-element-transition-relative-delay ) 
+		+ $header-element-transition-duration; 
+
+$header-element-transition-duration-multiplier: 0.8; 
+$header-element-fade-in-duration: 0.2s; 
+$header-element-translate-y: 40vh; 
+
+
+/*************************************************************************** 
+* Text content animation 
+*/ 
+
+$text-content-element-count: 4; 
+$text-content-element-transition-start-shift: $header-element-transition-relative-delay; 
+$text-content-element-transition-start: 
+	$header-element-transition-end + $text-content-element-transition-start-shift;  
+$text-content-element-transition-duration: $header-element-transition-duration; 
+$text-content-element-transition-relative-delay: $header-element-transition-relative-delay; 
+$text-content-element-transition-end: 
+	$text-content-element-transition-start 
+		+ ( $text-content-element-count - 1 ) * ( $text-content-element-transition-duration + $text-content-element-transition-relative-delay ) 
+		+ $text-content-element-transition-duration; 
+
+
+/***************************************************************************
+* Banner close animation 
+*/ 
+
+$banner-intro-close-transition-start-shift: -1s; 
+$banner-intro-close-transition-start: 
+	$text-content-element-transition-end + $banner-intro-close-transition-start-shift; 
+$banner-intro-close-transition-end: 
+	$banner-intro-close-transition-start + $banner-intro-close-transition-duration; 
+
+$main-banner-transition-start-shift: 0s; 
+$main-banner-transition-duration: 0.0005s; 
+$main-banner-transition-start: 
+	$banner-intro-close-transition-start + $main-banner-transition-start-shift; 
+
+
+/***************************************************************************
+* Cover image animation 
+*/ 
+
+$banner-entry-cover-image-transition-start-shift: -0.1s; 
+$banner-entry-cover-image-transition-start: 
+	$banner-intro-close-transition-end + $banner-entry-cover-image-transition-start-shift; 
+$banner-entry-cover-image-transition-duration: 0.4s; 
+$banner-entry-cover-image-transition-end: 
+	$banner-entry-cover-image-transition-start + $banner-entry-cover-image-transition-duration;  
+
+
+/***************************************************************************
+* Main navigation open button animation 
+*/ 
+ 
+$main-nav-button-transition-start-shift: -0.15s; 
+$main-nav-button-transition-start: 
+	$banner-entry-cover-image-transition-end + $main-nav-button-transition-start-shift; 
+$main-nav-button-transition-duration: 0.3s; 
+$main-nav-button-transition-end: 
+	$main-nav-button-transition-start + $main-nav-button-transition-duration; 
+
+
+/***************************************************************************
+* Intro animation end 
+*/ 
+
+$intro-animation-end-shift: 0.5s; 
+$intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shift; 
+ 
+
+
+//.banner-intro .header:after { 
+//	--header-element-fade-in-delay: 0.4s; 
+//	--header-element-translate-down-delay: 0.5s; 
+//	--header-element-bounce-delay: 1s; 
+//	--header-element-translate-up-delay: 1.1s; 
+
+//}
+
+//.banner-intro .logo { 
+//	--header-element-fade-in-delay: 0.6s; 
+//	--header-element-translate-down-delay: 0.7s; 
+//	--header-element-bounce-delay: 1s; 
+//	--header-element-translate-up-delay: 1.1s; 
+
+//} 
+
+/*.banner { 
+	color: white; 
+	background-color: var( --main-color ); 
+
+} */   
+
+//.banner { 
+//	text-decoration: #{ $header-element-transition-start }; 
+//	text-decoration: #{ $header-element-transition-end }; 
+//	text-decoration: #{ $text-content-element-transition-start }; 
+//	text-decoration: #{ $text-content-element-transition-end }; 
+
+//} 
+
+.banner { 
+	overflow: hidden; 
+
+}
+
+.banner.banner-intro { 
+	height: auto; 
+	top: 100vh; bottom: 0; 
+	
+}  
+
+.banner.main-banner { 
+	top: -10000px; 
+
+}
+
+.header { 
+	position: relative; 
+	overflow: visible; 
+
+} 
+
+.banner-intro .cover-image, 
+.banner-intro .main-nav-button-open { 
+	display: none; 
+
+} 
+
+//.banner-intro .header > * { 
+//	opacity: 0; 
+
+//} 
+
+.banner-intro .header > *, 
+.main-banner .cover-image, 
+.banner-intro .banner-text-content > *, 
+.main-banner .main-nav-button-open { 
+	transform: translateY( var( --banner-entry-element-start-translate-y ) ); 
+	opacity: 0; 
+
+} 
+
+/* Common animation parameters */  
+.banner-intro, 
+.banner-intro .banner-text-content > *, 
+.main-banner, 
+.main-banner .cover-image, 
+.banner-intro .header > *, 
+.main-banner .main-nav-button-open { 
+	animation-fill-mode: forwards; 
+
+} 
+
+//.banner-intro .header > * { 
+//	animation-name: element-fade-in, element-bounce; 
+
+//} 
+
+//.banner-intro .header > :nth-child( 1 ) { 
+//	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration * $header-element-transition-duration-multiplier; 
+
+//}
+
+//.banner-intro .header > :nth-child( 2 ) { 
+//	animation-duration: $header-element-fade-in-duration, $header-element-transition-duration;
+
+//}
+
+@for $element-pos from 0 to 2 { 
+	.banner-intro .header > :nth-child( #{ $element-pos + 1 } ) { 
+		animation-delay: $header-element-transition-start 
+			+ $element-pos * ( $header-element-transition-duration + $header-element-transition-relative-delay ); 
+
+	}
+
+} 
+
+.banner-intro .header > *, 
+.main-banner .cover-image, 
+.banner-intro .banner-text-content > *, 
+.main-banner .main-nav-button-open { 
+	animation-name: element-fade-in, element-translate-reset; animation-duration: 0.2s, 0.2s; 
+
+} 
+
+@for $element-pos from 0 to 5 { 
+	.banner-intro .banner-text-content > :nth-child( #{ $element-pos + 1 } ) { 
+		animation-delay: $text-content-element-transition-start 
+			+ $element-pos * ( $text-content-element-transition-duration + $text-content-element-transition-relative-delay ); 
+		
+	}
+
+} 
+
+.main-banner .cover-image { 
+	animation-duration: $banner-entry-cover-image-transition-duration; animation-delay: $banner-entry-cover-image-transition-start; 
+
+} 
+
+.main-banner .main-nav-button-open { 
+	animation-duration: $main-nav-button-transition-duration; animation-delay: $main-nav-button-transition-start; 
+
+}
+
+.banner-intro { 
+	animation-name: element-unfold, element-fold; animation-timing-function: linear; 
+	animation-duration: $banner-intro-open-transition-duration, $banner-intro-close-transition-duration; 
+	animation-delay: $banner-intro-open-transition-start, $banner-intro-close-transition-start; 
+
+} 
+
+.main-banner { 
+	animation-name: element-on, overflow-on; 
+	animation-duration: $main-banner-transition-duration; 
+	animation-delay: $main-banner-transition-start, $intro-animation-end; 
+
+} 
+
+@keyframes overflow-on { 
+
+	100% { 
+		overflow-y: auto; 
+
+	}
+
+} 
+
+@keyframes element-on { 
+
+	100% { 
+		top: 0; 
+
+	}
+
+}  
+
+@keyframes element-unfold { 
+
+	0% { 
+		top: 100vh; 
+
+	}
+
+	100% { 
+		top: 0; 
+
+	}
+
+}  
+
+@keyframes element-fold { 
+
+	0% { 
+		bottom: 0; 
+
+	}
+
+	100% { 
+		bottom: 100vh; 
+
+	}
+
+}  
+
+@keyframes element-bounce { 
+
+	0% { 
+		transform: translateY( 0 ); 
+
+	} 
+
+	50% { 
+		transform: translateY( $header-element-translate-y ); 
+
+	}
+
+	100% { 
+		transform: translateY( 0 ); 
+
+	}
+
+} 
+
+//@keyframes element-bounce { 
+
+//	0% { 
+//		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+//	} 
+
+//	50% { 
+//		transform: translateY( calc( var( --header-element-end-translate-y ) + 2.5rem ) ); 
+
+//	}
+
+//	100% { 
+//		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+//	}
+
+//} 
+
+@keyframes element-translate-down { 
+
+	100% { 
+		transform: translateY( var( --header-element-end-translate-y ) ); 
+
+	}
+
+} 
+
+@keyframes element-translate-reset { 
+
+	100% { 
+		transform: translateY( 0 ); 
+
+	}
+
+} 
+
+@keyframes element-move-up { 
+
+	100% { 
+		top: 0; 
+
+	}
+
+} 
+
+@keyframes element-fade-in { 
+
+	100% { 
+		opacity: var( --banner-entry-element-end-opacity ); 
+
+	}
+
+} 
