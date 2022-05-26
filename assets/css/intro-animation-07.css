@@ -1,6 +1,6 @@
 @keyframes slide-up {
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
 }
 @keyframes slide-down {
@@ -289,52 +289,52 @@
 }
 
 .logo-holder-entry-intro .logo {
-  animation: slide-up 0.2s 1.901s, fade-out 0.2s 1.901s;
+  animation: slide-up 0.8s 1.901s, fade-out 0.8s 1.901s;
   animation-fill-mode: forwards;
 }
 
 .logo-holder {
-  animation: off 0.0005s 2.101s;
+  animation: off 0.0005s 2.701s;
   animation-fill-mode: forwards;
 }
 
 .banner {
-  animation: on 0.0005s 1.8015s;
+  animation: on 0.0005s 2.0015s;
   animation-fill-mode: forwards;
 }
 
 .banner .index-link {
-  animation: slide 0.4s 1.902s, fade-in 0.2s 1.902s;
-  animation-fill-mode: forwards;
-}
-
-.banner .header-line {
   animation: slide 0.4s 2.002s, fade-in 0.2s 2.002s;
   animation-fill-mode: forwards;
 }
 
-.banner .subheading {
+.banner .header-line {
   animation: slide 0.4s 2.102s, fade-in 0.2s 2.102s;
   animation-fill-mode: forwards;
 }
 
-.banner .heading {
+.banner .subheading {
   animation: slide 0.4s 2.202s, fade-in 0.2s 2.202s;
   animation-fill-mode: forwards;
 }
 
-.banner .paragraph {
+.banner .heading {
   animation: slide 0.4s 2.302s, fade-in 0.2s 2.302s;
   animation-fill-mode: forwards;
 }
 
-.banner .button {
+.banner .paragraph {
   animation: slide 0.4s 2.402s, fade-in 0.2s 2.402s;
   animation-fill-mode: forwards;
 }
 
+.banner .button {
+  animation: slide 0.4s 2.502s, fade-in 0.2s 2.502s;
+  animation-fill-mode: forwards;
+}
+
 .banner .cover-image {
-  animation: slide 1.5s 1.802s, fade-in 0.2s 1.802s;
+  animation: slide 1.5s 1.902s, fade-in 0.2s 1.902s;
   animation-fill-mode: forwards;
 }
 

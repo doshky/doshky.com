@@ -125,13 +125,13 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide-up, 
-						duration: 0.2s 
+						duration: 0.8s 
 					), 
 
 					( 
 						startShift: 0s, 
 						name: fade-out, 
-						duration: 0.2s 
+						duration: 0.8s 
 					) 
 				] 
 			)
@@ -154,7 +154,7 @@ $sequence: (
 		( 
 			selector: ".banner", 
 			animationGroup: ( 
-				startShift: -0.3s, 
+				startShift: -0.7s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
@@ -168,7 +168,7 @@ $sequence: (
 		( 
 			selector: ".banner .index-link", 
 			animationGroup: ( 
-				startShift: 0.1s, 
+				startShift: 0s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
