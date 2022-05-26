@@ -70,7 +70,7 @@
 	& .header-line, 
 	& .text-content > *, 
 	& .cover-image { 
-		transform: translateY( 75px ); 
+		transform: translateY( 150px ); 
 		opacity: 0; 
 
 	} 
@@ -88,6 +88,6 @@
 		content: ""; 
 		opacity: 0.9; 
 	
-	}
+	} 
 
 } 

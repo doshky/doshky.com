@@ -125,13 +125,13 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide-up, 
-						duration: 0.8s 
+						duration: 1.2s 
 					), 
 
 					( 
 						startShift: 0s, 
 						name: fade-out, 
-						duration: 0.8s 
+						duration: 1.2s 
 					) 
 				] 
 			)
@@ -154,7 +154,7 @@ $sequence: (
 		( 
 			selector: ".banner", 
 			animationGroup: ( 
-				startShift: -0.7s, 
+				startShift: -1s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
@@ -173,7 +173,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.4s 
+						duration: 0.5s 
 					), 
 
 					( 
@@ -193,7 +193,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.4s 
+						duration: 0.5s
 					), 
 
 					( 
@@ -213,7 +213,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.4s 
+						duration: 0.5s
 					), 
 
 					( 
@@ -233,7 +233,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.4s 
+						duration: 0.5s
 					), 
 
 					( 
@@ -253,7 +253,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.4s 
+						duration: 0.5s
 					), 
 
 					( 
@@ -273,7 +273,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.4s 
+						duration: 0.5s
 					), 
 
 					( 
@@ -288,22 +288,23 @@ $sequence: (
 		( 
 			selector: ".banner .cover-image", 
 			animationGroup: ( 
-				startShift: -1s, 
+				startShift: -1.4s, 
 				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 1.5s 
-					), 
-
 					( 
 						startShift: 0s, 
 						name: fade-in, 
 						duration: 0.2s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 1.5s, 
+						timingFunction: linear 
 					) 
 				] 
 			)
-		) 
+		), 
 
 
 	] 

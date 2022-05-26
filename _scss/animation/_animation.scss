@@ -26,6 +26,10 @@
 	@each $a in $animations { 
 		// CSS animation value is set in the "<name> <duration> <delay>" format 
 		$animationValue: map.get( $a, "name" ) + " " + map.get( $a, "duration" ) + " " + map.get( $a, "delay" ); 
+		//
+		@if map.get( $a, "timingFunction" ) { 
+			$animationValue: $animationValue + " " + map.get( $a, "timingFunction" ); 
+		}
 		// Animation value is saved  
 		$animationValues: list.append( $animationValues, $animationValue ); 
 	} 
