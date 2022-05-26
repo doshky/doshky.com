@@ -150,6 +150,14 @@
     transform: scale(1.5);
   }
 }
+@keyframes scale-logo-sign-down {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @keyframes scale-logo-element-down {
   100% {
     transform: scale(1);
@@ -197,8 +205,8 @@
   overflow: hidden;
 }
 .logo-holder-entry .logo {
-  width: 15rem;
-  height: 15rem;
+  width: 15vw;
+  height: 15vw;
   position: relative;
 }
 .logo-holder-entry .logo-element {
@@ -261,7 +269,7 @@
 }
 
 .logo-holder-entry-intro .logo-sign {
-  animation: fade-in 0.2s 0.5s, scale-logo-element-up 0.2s 0.5s, scale-logo-element-down 0.2s 0.7s;
+  animation: fade-in 0.2s 0.5s, scale-logo-element-up 0.2s 0.5s, scale-logo-sign-down 0.2s 0.7s;
   animation-fill-mode: forwards;
 }
 

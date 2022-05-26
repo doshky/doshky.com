@@ -180,6 +180,16 @@
 	}
 } 
 
+@keyframes scale-logo-sign-down { 
+	0% { 
+		transform: scale( 1.5 ); 
+	} 
+
+	100% { 
+		transform: scale( 1 ); 
+	}
+} 
+
 @keyframes scale-logo-element-down { 
 	100% { 
 		transform: scale( 1 ); 
