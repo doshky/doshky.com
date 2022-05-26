@@ -13,7 +13,7 @@
 
 .header .name, 
 .section-holder .name, 
-.logo { 
+.id .logo { 
 	position: absolute; left: -10000px; top: -10000px; 
 
 } 

@@ -1,0 +1,93 @@
+.animation-holder { 
+    height: 100vh; 
+    position: relative; 
+    overflow: hidden; 
+
+} 
+
+.logo-holder { 
+	width: 100%; height: 100vh; 
+	position: absolute;  
+	z-index: 2; 
+	overflow: hidden; 
+
+} 
+
+.logo-holder-entry { 
+	width: 100%; height: 100vh; 
+	position: absolute; 
+	overflow: hidden; 
+
+	& .logo { 
+		width: 15rem; height: 15rem; 
+		position: relative; 
+	}
+
+	& .logo-element { 
+		display: block; 
+		max-width: 100%; 
+		position: absolute; left: 0; top: 0; 
+		
+	} 
+
+
+} 
+
+.logo-holder-entry-frame { 
+	display: flex; flex-direction: column; justify-content: center; align-items: center; 
+	min-height: 100vh; 
+	width: 100%; 
+	position: absolute; 
+
+} 
+
+.logo-holder-entry-intro { 
+	z-index: 2; 
+	& .logo-element { 
+		transform: scale( 0.75 ); 
+		opacity: 0;  
+	
+	} 
+	
+	& .logo-outline { 
+		transform: scale( 1.4 ); 
+	
+	} 
+
+
+} 
+
+.logo-holder-entry-main { 
+	left: -10000px; top: -10000px; 
+	z-index: 1; 
+	
+} 
+
+.banner { 
+	position: absolute; left: -10000px; top: -10000px; 	
+
+	& .index-link, 
+	& .header-line, 
+	& .text-content > *, 
+	& .cover-image { 
+		transform: translateY( 75px ); 
+		opacity: 0; 
+
+	} 
+
+	& .cover-image { 
+		transform: translateY( 25px ); 
+
+	} 
+
+	& .cover-image::before { 
+		display: block; 
+		width: 100%; height: 100%; 
+		position: absolute; left: 0; top: 0; 
+		background-color: var( --section-secondary-color ); 
+		content: ""; 
+		opacity: 0.9; 
+	
+	}
+
+} 

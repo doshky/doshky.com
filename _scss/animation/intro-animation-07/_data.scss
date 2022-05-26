@@ -1,0 +1,310 @@
+$sequence: (
+	start: 0.5s, 
+	stages: [ 
+		( 
+			selector: ".logo-holder-entry-intro .logo-sign", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: scale-logo-element-up, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder-entry-intro .logo-sign", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [
+					( 
+						startShift: 0s, 
+						name: scale-logo-element-down, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder-entry-intro .logo-outline", 
+			animationGroup: ( 
+				startShift: -0.2s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					), 
+
+					( 
+						startShift: 0.1s, 
+						name: scale-logo-element-down, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder-entry-main", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: on, 
+						duration: 0.0005s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder-entry-intro", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: fold-height, 
+						duration: 0.5s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder-entry-intro", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: stack-back, 
+						duration: 0.0005s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: unfold-height, 
+						duration: 0.0005s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder-entry-main", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: fold-height, 
+						duration: 0.4s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder-entry-intro .logo", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide-up, 
+						duration: 0.2s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-out, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".logo-holder", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: off, 
+						duration: 0.0005s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner", 
+			animationGroup: ( 
+				startShift: -0.2s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: on, 
+						duration: 0.0005s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .index-link", 
+			animationGroup: ( 
+				startShift: 0.1s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					)
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .header-line", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					)
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .subheading", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .heading", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .paragraph", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .button", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .cover-image", 
+			animationGroup: ( 
+				startShift: -1s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 1.5s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		) 
+
+
+	] 
+); 

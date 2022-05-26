@@ -18,7 +18,7 @@
 
 /* Places out of the screen text from icon button */
 .has-icon > .button-text { 
-	position: absolute; left: 0; top: -10000px; 
+	position: absolute; left: -10000px; top: -10000px; 
 
 } 
 
