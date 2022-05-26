@@ -12,7 +12,7 @@
 } 
 
 .main-banner .main-nav-button-open { 
-	--banner-entry-element-start-translate-y: 25px; 
+	--banner-entry-element-start-translate-y: 25px;  
 
 }
 
@@ -31,8 +31,8 @@ $intro-animation-start: 1s;
 $banner-intro-open-transition-start-shift: 0s; 
 $banner-intro-open-transition-start: 
 	$intro-animation-start + $banner-intro-open-transition-start-shift; 
-$banner-intro-open-transition-duration: 0.5s; 
-$banner-intro-close-transition-duration: 0.5s; 
+$banner-intro-open-transition-duration: 0.7s; 
+$banner-intro-close-transition-duration: 0.7s; 
 $banner-intro-open-transition-end: 
 	$banner-intro-open-transition-start + $banner-intro-open-transition-duration; 
 
@@ -42,11 +42,11 @@ $banner-intro-open-transition-end:
 */ 
 
 $header-element-count: 1; 
-$header-element-transition-start-shift: -0.2s; 
+$header-element-transition-start-shift: 0s; 
 $header-element-transition-start: 
 	$banner-intro-open-transition-end + $header-element-transition-start-shift;  
 
-$header-element-transition-duration: 0.2s; 
+$header-element-transition-duration: 0s; 
 $header-element-transition-relative-delay: 0s; 
 $header-element-transition-end: 
 	$header-element-transition-start 
@@ -63,7 +63,7 @@ $header-element-translate-y: 40vh;
 */ 
 
 $text-content-element-count: 4; 
-$text-content-element-transition-start-shift: 0.2s; 
+$text-content-element-transition-start-shift: 0s; 
 $text-content-element-transition-start: 
 	$header-element-transition-end + $text-content-element-transition-start-shift;  
 $text-content-element-transition-duration: 0.2s; 
@@ -159,10 +159,20 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 }
 
 .banner.banner-intro { 
-	height: auto; 
-	top: 100vh; bottom: 0; 
+	top: -10000px; 
+	background-color: transparent; 
 	
 }  
+
+.banner-intro:after { 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0; 
+	background-color: var( --section-secondary-color ); 
+	transform: translateY( 100% ); 
+	content: ""; 
+
+}
 
 .banner-intro .index-link { 
 	--logo-height: 10rem; 
@@ -197,10 +207,10 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 
 //} 
 
-.banner-intro .header > *, 
-.main-banner .cover-image, 
-.main-banner .banner-text-content > *, 
-.main-banner .main-nav-button-open { 
+//.banner-intro .header > *, 
+//.main-banner .banner-text-content > *, 
+//.main-banner .main-nav-button-open, 
+.main-banner .cover-image { 
 	transform: translateY( var( --banner-entry-element-start-translate-y ) ); 
 	opacity: 0; 
 
@@ -208,7 +218,8 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 
 /* Common animation parameters */  
 .banner-intro, 
-.banner-intro .header > *,
+.banner-intro:after, 
+//.banner-intro .header > *, 
 .main-banner .banner-text-content > *, 
 .main-banner, 
 .main-banner .cover-image,  
@@ -241,7 +252,8 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 
 } 
 
-.banner-intro .header > *, 
+//.banner-intro .header > *, 
+.banner-intro:after, 
 .main-banner .cover-image, 
 .main-banner .banner-text-content > *, 
 .main-banner .main-nav-button-open { 
@@ -282,11 +294,18 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 }
 
 .banner-intro { 
-	animation-name: element-unfold, element-fold; animation-timing-function: linear; 
-	animation-duration: $banner-intro-open-transition-duration, $banner-intro-close-transition-duration; 
+	animation-name: element-on, element-fold; 
+	animation-duration: 0.0005s, $banner-intro-close-transition-duration; 
 	animation-delay: $banner-intro-open-transition-start, $banner-intro-close-transition-start; 
 
 } 
+
+.banner-intro:after { 
+	animation-name: element-translate-reset; 
+	animation-duration: 0.4s; 
+	animation-delay: $banner-intro-open-transition-start; 
+
+}
 
 .main-banner { 
 	animation-name: element-on, overflow-on; 
@@ -329,36 +348,31 @@ $intro-animation-end: $main-nav-button-transition-end + $intro-animation-end-shi
 
 @keyframes element-fold { 
 
-	0% { 
-		bottom: 0; 
-
-	}
-
 	100% { 
-		bottom: 100vh; 
+		height: 0; 
 
 	}
 
 }  
 
-@keyframes element-bounce { 
+//@keyframes element-bounce { 
 
-	0% { 
-		transform: translateY( 0 ); 
+//	0% { 
+//		transform: translateY( 0 ); 
 
-	} 
+//	} 
 
-	50% { 
-		transform: translateY( $header-element-translate-y ); 
+//	50% { 
+//		transform: translateY( $header-element-translate-y ); 
 
-	}
+//	}
 
-	100% { 
-		transform: translateY( 0 ); 
+//	100% { 
+//		transform: translateY( 0 ); 
 
-	}
+//	}
 
-} 
+//} 
 
 //@keyframes element-bounce { 
 
