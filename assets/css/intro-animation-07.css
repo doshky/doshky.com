@@ -205,8 +205,8 @@
   overflow: hidden;
 }
 .logo-holder-entry .logo {
-  width: 15vw;
-  height: 15vw;
+  width: 20vh;
+  height: 20vh;
   position: relative;
 }
 .logo-holder-entry .logo-element {
