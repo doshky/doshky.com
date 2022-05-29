@@ -28,7 +28,7 @@ $sequence: (
 				animations: [
 					( 
 						startShift: 0s, 
-						name: scale-logo-sign-down, 
+						name: scale-logo-element-down, 
 						duration: 0.2s 
 					) 
 				] 
@@ -125,13 +125,13 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide-up, 
-						duration: 1.2s 
+						duration: 0.2s 
 					), 
 
 					( 
 						startShift: 0s, 
 						name: fade-out, 
-						duration: 1.2s 
+						duration: 0.2s 
 					) 
 				] 
 			)
@@ -154,7 +154,7 @@ $sequence: (
 		( 
 			selector: ".banner", 
 			animationGroup: ( 
-				startShift: -1s, 
+				startShift: -0.2s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
@@ -168,12 +168,12 @@ $sequence: (
 		( 
 			selector: ".banner .index-link", 
 			animationGroup: ( 
-				startShift: 0s, 
+				startShift: 0.1s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.5s 
+						duration: 0.4s 
 					), 
 
 					( 
@@ -193,7 +193,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.5s
+						duration: 0.4s 
 					), 
 
 					( 
@@ -213,7 +213,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.5s
+						duration: 0.4s 
 					), 
 
 					( 
@@ -233,7 +233,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.5s
+						duration: 0.4s 
 					), 
 
 					( 
@@ -253,7 +253,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.5s
+						duration: 0.4s 
 					), 
 
 					( 
@@ -273,7 +273,7 @@ $sequence: (
 					( 
 						startShift: 0s, 
 						name: slide, 
-						duration: 0.5s
+						duration: 0.4s 
 					), 
 
 					( 
@@ -288,23 +288,22 @@ $sequence: (
 		( 
 			selector: ".banner .cover-image", 
 			animationGroup: ( 
-				startShift: -1.4s, 
+				startShift: -1s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
+						name: slide, 
+						duration: 1.5s 
 					), 
 
 					( 
 						startShift: 0s, 
-						name: slide, 
-						duration: 1.5s, 
-						timingFunction: linear 
+						name: fade-in, 
+						duration: 0.2s 
 					) 
 				] 
 			)
-		), 
+		) 
 
 
 	] 
