@@ -39,9 +39,9 @@
 
 .button { 
 	/* Defines button icon size */ 
-	--button-icon-side: 3.2rem; 
+	--button-icon-side: 2.25em; 
 	/* Defines button icon font size */ 
-	--button-icon-font-size: 1.4em; 
+	--button-icon-font-size: 1.8em; 
 
 	--button-padding-y: 1.2em; 
 	--button-padding-x: 2.2em; 
