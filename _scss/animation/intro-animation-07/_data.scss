@@ -266,7 +266,7 @@ $sequence: (
 		), 
 
 		( 
-			selector: ".banner .button", 
+			selector: ".banner .details-button", 
 			animationGroup: ( 
 				startShift: -0.3s, 
 				animations: [ 
@@ -294,6 +294,26 @@ $sequence: (
 						startShift: 0s, 
 						name: slide, 
 						duration: 1.5s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .main-nav-button-open", 
+			animationGroup: ( 
+				startShift: -0.5s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
 					), 
 
 					( 
