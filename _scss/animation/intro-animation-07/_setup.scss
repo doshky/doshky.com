@@ -19,7 +19,7 @@
 	overflow: hidden; 
 
 	& .logo { 
-		width: 20vh; height: 20vh; 
+		width: 25vh; height: 25vh; 
 		position: relative; 
 	}
 
@@ -43,8 +43,8 @@
 
 .logo-holder-entry-intro { 
 	z-index: 2; 
-	& .logo-element { 
-		transform: scale( 0.75 ); 
+	& .logo-sign { 
+		transform: scale( 1.8 ); 
 		opacity: 0;  
 	
 	} 

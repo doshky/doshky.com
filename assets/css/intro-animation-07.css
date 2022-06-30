@@ -205,8 +205,8 @@
   overflow: hidden;
 }
 .logo-holder-entry .logo {
-  width: 20vh;
-  height: 20vh;
+  width: 25vh;
+  height: 25vh;
   position: relative;
 }
 .logo-holder-entry .logo-element {
@@ -230,8 +230,8 @@
 .logo-holder-entry-intro {
   z-index: 2;
 }
-.logo-holder-entry-intro .logo-element {
-  transform: scale(0.75);
+.logo-holder-entry-intro .logo-sign {
+  transform: scale(1.8);
   opacity: 0;
 }
 .logo-holder-entry-intro .logo-outline {
@@ -269,72 +269,67 @@
 }
 
 .logo-holder-entry-intro .logo-sign {
-  animation: fade-in 0.2s 0.5s, scale-logo-element-up 0.2s 0.5s, scale-logo-element-down 0.2s 0.7s;
-  animation-fill-mode: forwards;
-}
-
-.logo-holder-entry-intro .logo-outline {
-  animation: fade-in 0.2s 0.7s, scale-logo-element-down 0.2s 0.8s;
+  animation: fade-in 0.2s 0.5s, scale-logo-element-down 0.2s 0.5s;
   animation-fill-mode: forwards;
 }
 
 .logo-holder-entry-main {
-  animation: on 0.0005s 1s, fold-height 0.4s 1.501s;
+  animation: on 0.0005s 0.7s, fold-height 0.4s 1.601s;
   animation-fill-mode: forwards;
 }
 
 .logo-holder-entry-intro {
-  animation: fold-height 0.5s 1.0005s, stack-back 0.0005s 1.5005s, unfold-height 0.0005s 1.5005s;
+  animation: fold-height 0.5s 1.1005s, stack-back 0.0005s 1.6005s, unfold-height 0.0005s 1.6005s;
   animation-fill-mode: forwards;
 }
 
 .logo-holder-entry-intro .logo {
-  animation: slide-up 0.2s 1.901s, fade-out 0.2s 1.901s;
+  animation: slide-up 0.2s 2.001s, fade-out 0.2s 2.001s;
   animation-fill-mode: forwards;
 }
 
 .logo-holder {
-  animation: off 0.0005s 2.101s;
+  animation: off 0.0005s 2.201s;
   animation-fill-mode: forwards;
 }
 
 .banner {
-  animation: on 0.0005s 1.9015s;
+  animation: on 0.0005s 2.0015s;
   animation-fill-mode: forwards;
 }
 
 .banner .index-link {
-  animation: slide 0.4s 2.002s, fade-in 0.2s 2.002s;
-  animation-fill-mode: forwards;
-}
-
-.banner .header-line {
   animation: slide 0.4s 2.102s, fade-in 0.2s 2.102s;
   animation-fill-mode: forwards;
 }
 
-.banner .subheading {
+.banner .header-line {
   animation: slide 0.4s 2.202s, fade-in 0.2s 2.202s;
   animation-fill-mode: forwards;
 }
 
-.banner .heading {
+.banner .subheading {
   animation: slide 0.4s 2.302s, fade-in 0.2s 2.302s;
   animation-fill-mode: forwards;
 }
 
-.banner .paragraph {
+.banner .heading {
   animation: slide 0.4s 2.402s, fade-in 0.2s 2.402s;
   animation-fill-mode: forwards;
 }
 
-.banner .button {
+.banner .paragraph {
   animation: slide 0.4s 2.502s, fade-in 0.2s 2.502s;
   animation-fill-mode: forwards;
 }
 
+.banner .button {
+  animation: slide 0.4s 2.602s, fade-in 0.2s 2.602s;
+  animation-fill-mode: forwards;
+}
+
 .banner .cover-image {
-  animation: slide 1.5s 1.902s, fade-in 0.2s 1.902s;
+  animation: slide 1.5s 2.002s, fade-in 0.2s 2.002s;
   animation-fill-mode: forwards;
 }
 

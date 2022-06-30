@@ -1,6 +1,40 @@
 $sequence: (
 	start: 0.5s, 
 	stages: [ 
+		//( 
+		//	selector: ".logo-holder-entry-intro .logo", 
+		//	animationGroup: ( 
+		//		startShift: 0s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: scale-logo-element-up, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".logo-holder-entry-intro .logo-sign", 
+		//	animationGroup: ( 
+		//		startShift: 0s, 
+		//		animations: [
+		//			( 
+		//				startShift: 0s, 
+		//				name: scale-logo-element-down, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
 		( 
 			selector: ".logo-holder-entry-intro .logo-sign", 
 			animationGroup: ( 
@@ -14,40 +48,6 @@ $sequence: (
 
 					( 
 						startShift: 0s, 
-						name: scale-logo-element-up, 
-						duration: 0.2s 
-					) 
-				] 
-			)
-		), 
-
-		( 
-			selector: ".logo-holder-entry-intro .logo-sign", 
-			animationGroup: ( 
-				startShift: 0s, 
-				animations: [
-					( 
-						startShift: 0s, 
-						name: scale-logo-element-down, 
-						duration: 0.2s 
-					) 
-				] 
-			)
-		), 
-
-		( 
-			selector: ".logo-holder-entry-intro .logo-outline", 
-			animationGroup: ( 
-				startShift: -0.2s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					), 
-
-					( 
-						startShift: 0.1s, 
 						name: scale-logo-element-down, 
 						duration: 0.2s 
 					) 
@@ -72,7 +72,7 @@ $sequence: (
 		( 
 			selector: ".logo-holder-entry-intro", 
 			animationGroup: ( 
-				startShift: 0s, 
+				startShift: 0.4s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
