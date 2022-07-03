@@ -184,4 +184,100 @@
   color: var(--section-main-color);
 }
 
+.animation-holder {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-holder {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.logo-holder-entry {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+.logo-holder-entry .logo {
+  width: 25vh;
+  height: 25vh;
+  position: relative;
+}
+.logo-holder-entry .logo-element {
+  display: block;
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.logo-holder-entry-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}
+
+.logo-holder-entry-intro {
+  z-index: 2;
+}
+.logo-holder-entry-intro .logo-sign {
+  transform: scale(1.8);
+  opacity: 0;
+}
+.logo-holder-entry-intro .logo-outline {
+  transform: scale(1.4);
+}
+
+.logo-holder-entry-main {
+  left: -10000px;
+  top: -10000px;
+  z-index: 1;
+}
+
+.banner {
+  position: absolute;
+  left: -10000px;
+  top: -10000px;
+}
+
+.logo-holder-entry-intro .logo-sign {
+  animation: fade-in 0.2s 0.5s, scale-logo-element-down 0.2s 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.logo-holder-entry-main {
+  animation: on 0.0005s 0.7s, fold-height 0.4s 1.201s;
+  animation-fill-mode: forwards;
+}
+
+.logo-holder-entry-intro {
+  animation: fold-height 0.5s 0.7005s, stack-back 0.0005s 1.2005s, unfold-height 0.0005s 1.2005s;
+  animation-fill-mode: forwards;
+}
+
+.logo-holder-entry-intro .logo {
+  animation: slide-up 0.2s 1.601s, fade-out 0.2s 1.601s;
+  animation-fill-mode: forwards;
+}
+
+.logo-holder {
+  animation: off 0.0005s 1.801s;
+  animation-fill-mode: forwards;
+}
+
+.banner {
+  animation: on 0.0005s 1.6015s;
+  animation-fill-mode: forwards;
+}
+
 /*# sourceMappingURL=intro-animation-07.css.map */

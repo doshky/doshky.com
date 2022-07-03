@@ -1,6 +1,6 @@
 .animation-holder { 
     height: 100vh; 
-    position: relative; 
+    position: relative;  
     overflow: hidden; 
 
 } 
@@ -8,7 +8,7 @@
 .logo-holder { 
 	width: 100%; height: 100vh; 
 	position: absolute;  
-	z-index: 2; 
+	z-index: 3; 
 	overflow: hidden; 
 
 } 
@@ -66,34 +66,34 @@
 .banner { 
 	position: absolute; left: -10000px; top: -10000px; 	
 
-	& .main-nav-button-open, 
-	& .index-link, 
-	& .header-line, 
-	& .text-content > *, 
-	& .cover-image { 
-		transform: translateY( 150px ); 
-		opacity: 0; 
+	//& .main-nav-button-open, 
+	//& .index-link, 
+	//& .header-line, 
+	//& .text-content > *, 
+	//& .cover-image { 
+	//	transform: translateY( 150px ); 
+	//	opacity: 0; 
 
-	} 
+	//} 
 
-	& .main-nav-button-open { 
-		transform: translateY( 25% ); 
+	//& .main-nav-button-open { 
+	//	transform: translateY( 25% ); 
 
-	} 
+	//} 
 
-	& .cover-image { 
-		transform: translateY( 25px ); 
+	//& .cover-image { 
+	//	transform: translateY( 25px ); 
 
-	} 
+	//} 
 
-	& .cover-image::before { 
-		display: block; 
-		width: 100%; height: 100%; 
-		position: absolute; left: 0; top: 0; 
-		background-color: var( --section-secondary-color ); 
-		content: ""; 
-		opacity: 0.9; 
+	//& .cover-image::before { 
+	//	display: block; 
+	//	width: 100%; height: 100%; 
+	//	position: absolute; left: 0; top: 0; 
+	//	background-color: var( --section-secondary-color ); 
+	//	content: ""; 
+	//	opacity: 0.9; 
 	
-	} 
+	//} 
 
 } 

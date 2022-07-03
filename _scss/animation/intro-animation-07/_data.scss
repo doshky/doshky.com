@@ -163,167 +163,167 @@ $sequence: (
 					) 
 				] 
 			)
-		), 
-
-		( 
-			selector: ".banner .index-link", 
-			animationGroup: ( 
-				startShift: 0.1s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 0.4s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					)
-				] 
-			)
-		), 
-
-		( 
-			selector: ".banner .header-line", 
-			animationGroup: ( 
-				startShift: -0.3s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 0.4s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					)
-				] 
-			)
-		), 
-
-		( 
-			selector: ".banner .subheading", 
-			animationGroup: ( 
-				startShift: -0.3s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 0.4s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					) 
-				] 
-			)
-		), 
-
-		( 
-			selector: ".banner .heading", 
-			animationGroup: ( 
-				startShift: -0.3s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 0.4s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					) 
-				] 
-			)
-		), 
-
-		( 
-			selector: ".banner .paragraph", 
-			animationGroup: ( 
-				startShift: -0.3s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 0.4s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					) 
-				] 
-			)
-		), 
-
-		( 
-			selector: ".banner .details-button", 
-			animationGroup: ( 
-				startShift: -0.3s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 0.4s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					) 
-				] 
-			)
-		), 
-
-		( 
-			selector: ".banner .featured-image", 
-			animationGroup: ( 
-				startShift: -1s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 1.5s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					) 
-				] 
-			)
-		), 
-
-		( 
-			selector: ".banner .main-nav-button-open", 
-			animationGroup: ( 
-				startShift: -0.5s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: slide, 
-						duration: 0.4s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: fade-in, 
-						duration: 0.2s 
-					) 
-				] 
-			)
 		) 
+
+		//( 
+		//	selector: ".banner .index-link", 
+		//	animationGroup: ( 
+		//		startShift: 0.1s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 0.4s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			)
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".banner .header-line", 
+		//	animationGroup: ( 
+		//		startShift: -0.3s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 0.4s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			)
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".banner .subheading", 
+		//	animationGroup: ( 
+		//		startShift: -0.3s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 0.4s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".banner .heading", 
+		//	animationGroup: ( 
+		//		startShift: -0.3s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 0.4s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".banner .paragraph", 
+		//	animationGroup: ( 
+		//		startShift: -0.3s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 0.4s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".banner .details-button", 
+		//	animationGroup: ( 
+		//		startShift: -0.3s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 0.4s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".banner .featured-image", 
+		//	animationGroup: ( 
+		//		startShift: -1s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 1.5s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".banner .main-nav-button-open", 
+		//	animationGroup: ( 
+		//		startShift: -0.5s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: slide, 
+		//				duration: 0.4s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 0.2s 
+		//			) 
+		//		] 
+		//	)
+		//) 
 
 
 	] 
