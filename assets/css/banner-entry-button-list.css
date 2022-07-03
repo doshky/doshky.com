@@ -1,17 +1,28 @@
 .banner-entry-button-list { 
-	display: flex; flex-direction: row; justify-content: center; 
+	--column-count: 3; 
+	--column-gutter-x: 2.5em;  
+ 
+} 
+
+.banner-entry-button-list { 
+	box-sizing: border-box; 
 	margin-top: 4em; 
+	max-width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 
+	padding-left: 8em; padding-right: 8em; 
 
 } 
 
-.open-section-button + .open-section-button { 
-	margin-left: 2em; 
+/*.banner-entry-button-list > .button-entry { 
+	max-width: 15em; 
 
-} 
+}*/
 
 .open-section-button { 
 	display: block; 
-	width: 10rem; height: 8rem; 
+	margin-left: auto; margin-right: auto; 
+	width: 100%; max-width: 15em; 
+	/*width: 12rem; */ 
+	height: 12rem; 
 	position: relative; 
 	background-size: contain; background-position: center center; background-repeat: no-repeat; 
 	/*font-size: 0.85em; */ 
@@ -73,14 +84,16 @@
 } 
 
 
-@media screen and ( max-width: 720px ) { 
+@media screen and ( max-width: 920px ) { 
 	.banner-entry-button-list { 
-		flex-direction: column; align-items: center; 
+		--column-count: 1; 
+		--column-gutter-x: 0em; 
+		--column-gutter-y: 2em; 
 	
 	} 
 
-	.open-section-button + .open-section-button { 
-		margin-left: 0; margin-top: 2em; 
+	.button-entry + .button-entry { 
+		margin-top: 2em; 
 	
 	} 
 	

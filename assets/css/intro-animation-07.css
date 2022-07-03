@@ -249,7 +249,7 @@
   left: -10000px;
   top: -10000px;
 }
-.banner .main-nav-button-open, .banner .featured-image, .banner .text-content > *, .banner .banner-entry-button-list, .banner .banner .footer {
+.banner .main-nav-button-open, .banner .featured-image, .banner .text-content > *, .banner .banner-entry-button-list, .banner .footer {
   transform: translateY(150px);
   opacity: 0;
 }
@@ -315,7 +315,7 @@
   animation-fill-mode: forwards;
 }
 
-.banner .footer {
+.banner-entry .footer {
   animation: slide 1.5s 1.502s, fade-in 0.2s 1.502s;
   animation-fill-mode: forwards;
 }

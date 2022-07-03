@@ -46,34 +46,40 @@
 			{% endfor %} 
 		</section> 
 
-		<div class="button-list banner-entry-button-list"> 
-			<a 
-				class= "button control-button open-section-button open-work-section-button" 
-				href= "#work-section" 
-				data-target-section-id= "work-section" 
-				data-control-set= "body.add:content-section-on, #work-section.add:section-on" 
-			> 
-				<span class="button-text">Work</span> 
-			</a> 
+		<ul class="entry-list button-list banner-entry-button-list"> 
+			<li class="entry button-entry">
+				<a 
+					class= "button control-button open-section-button open-work-section-button" 
+					href= "#work-section" 
+					data-target-section-id= "work-section" 
+					data-control-set= "body.add:content-section-on, #work-section.add:section-on" 
+				> 
+					<span class="button-text">Work</span> 
+				</a>
+			</li> 
 
-			<a 
-				class= "button control-button open-section-button open-about-section-button" 
-				href= "#about-section" 
-				data-target-section-id= "about-section" 
-				data-control-set= "body.add:content-section-on, #about-section.add:section-on" 
-			>
-				<span class="button-text">About</span> 
-			</a> 
+			<li class="entry button-entry"> 
+				<a 
+					class= "button control-button open-section-button open-about-section-button" 
+					href= "#about-section" 
+					data-target-section-id= "about-section" 
+					data-control-set= "body.add:content-section-on, #about-section.add:section-on" 
+				>
+					<span class="button-text">About</span> 
+				</a>
+			</li> 
 
-			<a 
-				class= "button control-button open-section-button open-contact-section-button" 
-				href= "#contact-section" 
-				data-target-section-id= "contact-section" 
-				data-control-set= "body.add:content-section-on, #contact-section.add:section-on" 
-			>
-				<span class="button-text">Contact</span> 
-			</a> 
-		</div> 
+			<li class="entry button-entry"> 
+				<a 
+					class= "button control-button open-section-button open-contact-section-button" 
+					href= "#contact-section" 
+					data-target-section-id= "contact-section" 
+					data-control-set= "body.add:content-section-on, #contact-section.add:section-on" 
+				>
+					<span class="button-text">Contact</span> 
+				</a>
+			</li>
+		</ul> 
 
 		{% include footer.html targetID = "banner-entry-top" %} 
 
