@@ -38,7 +38,7 @@
 
 }
 
-.owner-heading { 
+.heading.owner-heading { 
 	margin-top: var( --owner-heading-vertical-shift ); 
 	font-size: 1.2em; 
 

@@ -1,0 +1,87 @@
+.banner-entry-button-list { 
+	display: flex; flex-direction: row; justify-content: center; 
+	margin-top: 4em; 
+
+} 
+
+.open-section-button + .open-section-button { 
+	margin-left: 2em; 
+
+} 
+
+.open-section-button { 
+	display: block; 
+	width: 10rem; height: 8rem; 
+	position: relative; 
+	background-size: contain; background-position: center center; background-repeat: no-repeat; 
+	/*font-size: 0.85em; */ 
+	text-align: center; 
+
+} 
+
+/*.open-section-button:hover > .button-text { 
+	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+
+}*/ 
+
+.open-section-button > .button-text { 
+	display: block; 
+	padding: 0.2em; 
+	border: 1px solid;
+	/*border-radius: 4px; */ 
+	position: absolute; 
+	left: 0; right: 0; bottom: 20%; 
+	background-color: var( --section-secondary-color ); 
+	overflow: hidden; 
+
+} 
+
+/*.open-section-button::after { 
+	display: block; 
+	width: 0; height: 100%; 
+	position: absolute; 
+	left: 0; top: 0; 
+	background-color: var( --section-main-color ); 
+	content: ""; 
+	transition: width 0.1s; 
+
+} 
+
+.open-section-button:hover::after { 
+	width: 100%; 
+
+} */ 
+
+.open-section-button:hover > .button-text { 
+	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+
+}
+
+.open-work-section-button { 
+	background-image: url( "../images/woman-writer-27083216-button.png" ); 
+
+} 
+
+.open-about-section-button { 
+	background-image: url( "../images/303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman-button.png" ); 
+	
+} 
+
+.open-contact-section-button { 
+	background-image: url( "../images/Woman-Writing-button.png" ); 
+	
+} 
+
+
+@media screen and ( max-width: 720px ) { 
+	.banner-entry-button-list { 
+		flex-direction: column; align-items: center; 
+	
+	} 
+
+	.open-section-button + .open-section-button { 
+		margin-left: 0; margin-top: 2em; 
+	
+	} 
+	
+}

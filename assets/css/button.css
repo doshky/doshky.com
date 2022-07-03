@@ -1,6 +1,7 @@
 /* Sets button display */
 .button { 
-	display: inline-block; 
+	display: flex; 
+	width: fit-content; 
 
 }
 
@@ -64,3 +65,18 @@
 	margin-bottom: 5rem; 
 
 }*/ 
+
+.has-icon { 
+	border-radius: 5px; 
+
+}
+
+.main-nav-button-open { 
+	border: 1px solid; 
+
+} 
+
+/*.banner-entry .main-nav-button-open { 
+	margin-top: 1.5em; 
+
+} */ 

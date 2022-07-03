@@ -55,7 +55,7 @@
 	</div> 
 
 	<div class= "section-holder"> 
-		<div id= "section-top" class= "section-top"></div> 
+		<div id= "section-top" class= "section-top"></div>  
 
 		{% include work.html 
 			section = site.data.pages.work 
@@ -69,7 +69,7 @@
 			section = site.data.pages.contact 
 		%}  
 
-		{% include footer.html %} 
+		{% include footer.html targetID = "section-top" %} 
 	</div> 
 
 	<!--<div id= "page-holder" class= "page-holder"> 

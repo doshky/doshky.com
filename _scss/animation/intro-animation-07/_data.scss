@@ -72,7 +72,7 @@ $sequence: (
 		( 
 			selector: ".logo-holder-entry-intro", 
 			animationGroup: ( 
-				startShift: 0.4s, 
+				startShift: 0s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
@@ -286,7 +286,7 @@ $sequence: (
 		), 
 
 		( 
-			selector: ".banner .cover-image", 
+			selector: ".banner .featured-image", 
 			animationGroup: ( 
 				startShift: -1s, 
 				animations: [ 

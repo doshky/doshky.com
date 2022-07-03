@@ -4,20 +4,32 @@
 	class= "banner {{ include.className }}" 
 	id= "banner" 
 	style= "--page-body-member-pos: 0" 
->  
-	<a 
+>   
+	<div id= "banner-entry-top" class= "section-top"></div> 
+	<!--<a 
 		href= "#page-body" 
 		class= "button control-button main-nav-button main-nav-button-open has-icon" 
 		data-control-set= "body.add:page-body-nav, body.add:nav-on" 
 	>
 		<span class= "button-text">Open navigation</span> 
-	</a> 
-	<section class= "banner-entry"> 
-		{% include header.html 
-			logoSrc = include.logoSrc 
-		%} 
+	</a> -->
 
+	<section class= "banner-entry">  
+		<!--<a 
+			href= "#page-body" 
+			class= "button control-button main-nav-button main-nav-button-open has-icon" 
+			data-control-set= "body.add:page-body-nav, body.add:nav-on" 
+		>
+			<span class= "button-text">Open navigation</span> 
+		</a>  --> 
+
+		{% include header.html %} 
+		
 		<section class= "text-content banner-text-content">  
+			{% include featured-image.html 
+				src = banner.image.src 
+			%} 
+
 			{% include subheading.html 
 				text = banner.subheading 
 				className = "banner-subheading" 
@@ -32,19 +44,41 @@
 			{% for paragraph in banner.paragraphs %} 
 				<p class= "paragraph banner-paragraph">{{ paragraph.text }}</p> 
 			{% endfor %} 
+		</section> 
 
+		<div class="button-list banner-entry-button-list"> 
 			<a 
-				class= "button control-button details-button open-section-button" 
+				class= "button control-button open-section-button open-work-section-button" 
 				href= "#work-section" 
 				data-target-section-id= "work-section" 
 				data-control-set= "body.add:content-section-on, #work-section.add:section-on" 
-			>
-				Take A Look At My Work 
+			> 
+				<span class="button-text">Work</span> 
 			</a> 
-		</section> 
 
-		{% include cover-image.html 
+			<a 
+				class= "button control-button open-section-button open-about-section-button" 
+				href= "#about-section" 
+				data-target-section-id= "about-section" 
+				data-control-set= "body.add:content-section-on, #about-section.add:section-on" 
+			>
+				<span class="button-text">About</span> 
+			</a> 
+
+			<a 
+				class= "button control-button open-section-button open-contact-section-button" 
+				href= "#contact-section" 
+				data-target-section-id= "contact-section" 
+				data-control-set= "body.add:content-section-on, #contact-section.add:section-on" 
+			>
+				<span class="button-text">Contact</span> 
+			</a> 
+		</div> 
+
+		{% include footer.html targetID = "banner-entry-top" %} 
+
+		<!--{% include cover-image.html 
 			src = banner.image.src 
-		%} 
+		%} -->
 	</section> 
 </section>

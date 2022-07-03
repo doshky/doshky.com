@@ -1,7 +1,15 @@
 <header class= "header"> 
-	{% include id.html 
-		logoSrc = include.logoSrc 
-	%} 
+	<!--<div class= "header-line"></div> --> 
+	
+	<a 
+		href= "#page-body" 
+		class= "button control-button main-nav-button main-nav-button-open has-icon" 
+		data-control-set= "body.add:page-body-nav, body.add:nav-on" 
+	>
+		<span class= "button-text">Open navigation</span> 
+	</a> 
 
-	<div class= "header-line"></div> 
+	<!--{% include id.html 
+		logoSrc = "logo-main-color.png" 
+	%} --> 
 </header>

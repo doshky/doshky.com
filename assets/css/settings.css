@@ -2,8 +2,11 @@
 	--page-inner-width: 960px; 
 	--page-padding-x: 1.25rem; 
 
-	--logo-width: 10rem; 
-	--logo-height: 8rem; 
+	--logo-width: 8rem; 
+	--logo-height: 5rem; 
+
+	/* Defines button icon size */ 
+	--button-icon-side: 2em; 
 
 	--section-head-cover-image-height: 25em; 
 	--section-featured-image-height: 55vh; 
@@ -38,10 +41,8 @@
 } 
 
 .button { 
-	/* Defines button icon size */ 
-	--button-icon-side: 2.25em; 
 	/* Defines button icon font size */ 
-	--button-icon-font-size: 1.8em; 
+	--button-icon-font-size: 1.4em; 
 
 	--button-padding-y: 1.2em; 
 	--button-padding-x: 2.2em; 

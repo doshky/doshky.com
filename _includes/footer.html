@@ -4,9 +4,14 @@
 		sectionID = include.sectionID 
 	%} 
 
+	{% include id.html 
+		logoSrc = "logo-main-color.png" 
+		targetID = include.targetID 
+	%} 
+
 	{% include copyright.html %} 
 
 	{% include scroll-to-top-button.html 
-		sectionID = include.sectionID 
+		targetID = include.targetID 
 	%} 
 </footer>

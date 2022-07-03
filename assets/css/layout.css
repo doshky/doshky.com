@@ -1,5 +1,6 @@
 html, 
 body, 
+.banner, 
 .section-holder {
 	scroll-behavior: smooth; 
 } 
@@ -14,10 +15,10 @@ body,
 
 }
 
+/*.banner-entry, */ 
 .banner-entry, 
-.section, 
-.section-head-holder, 
-.footer {  
+.section-holder {  
+	box-sizing: border-box; 
 	/* Prevents text from pushing on screen edges on smaller screens */
 	padding-left: var( --page-padding-x ); padding-right: var( --page-padding-x ); 
 
@@ -74,16 +75,16 @@ body,
 
 } 
 
-.main-nav-button-open { 
+/*.main-nav-button-open { 
 	position: absolute; right: 0; top: 0; 
 	z-index: 2; 
 
-} 
+} */ 
 
-.section-control-buttons .main-nav-button-open { 
+/*.section-control-buttons .main-nav-button-open { 
 	position: relative; 
 
-}
+}*/
 
 
 @media screen and ( max-width: 780px ) { 

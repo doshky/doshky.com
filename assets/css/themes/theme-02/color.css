@@ -12,15 +12,15 @@
 
 } 
 
-.banner-intro, 
-.main-nav,    
+.banner-intro,     
 .section-holder { 
 	--section-main-color: var( --main-color ); 
 	--section-secondary-color: var( --secondary-color ); 
 
 } 
 
-.page-body-holder, 
+.main-nav, 
+/*.page-body-holder, */ 
 .main-banner { 
 	--section-main-color: var( --secondary-color ); 
 	--section-secondary-color: var( --main-color ); 
@@ -33,7 +33,7 @@
 } 
 
 .main-banner .index-link { 
-	background-image: url( "/assets/images/logo-main-color.png" );  
+	background-image: url( "/assets/images/logo-main-color.png" ); 
 
 } 
 
@@ -44,7 +44,7 @@
 
 .section > .featured-image, 
 .work-section-entry, 
-.footer .owner-photo { 
+.section-holder .owner-photo { 
 	background-color: var( --section-main-color ); 
 
 } 

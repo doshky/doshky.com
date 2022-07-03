@@ -6,11 +6,13 @@
 		%} 
 	</figure> 
 
-	{% include heading.html 
-		level = 4 
-		text = include.owner.name 
-		className = "owner-heading" 
-	%} 
+	{%- comment -%}
+		<!--{% include heading.html 
+			level = 4 
+			text = include.owner.name 
+			className = "owner-heading" 
+		%} --> 
+	{%- endcomment -%}
 
 	<p class= "description">{{ include.owner.description }}</p> 
 </article>

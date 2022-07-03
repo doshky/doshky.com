@@ -29,7 +29,7 @@ body {
 
 } 
 
-.button:hover { 
+.button.has-icon:hover { 
 	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
 	border-color: var( --section-main-color ); 
 
