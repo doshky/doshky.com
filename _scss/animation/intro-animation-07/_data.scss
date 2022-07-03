@@ -268,7 +268,7 @@ $sequence: (
 		( 
 			selector: ".banner-entry .footer", 
 			animationGroup: ( 
-				startShift: -1s, 
+				startShift: -0.3s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
@@ -288,7 +288,7 @@ $sequence: (
 		( 
 			selector: ".banner .main-nav-button-open", 
 			animationGroup: ( 
-				startShift: -0.5s, 
+				startShift: -1.2s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
