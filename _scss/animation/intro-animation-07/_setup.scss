@@ -66,25 +66,25 @@
 .banner { 
 	position: absolute; left: -10000px; top: -10000px; 	
 
-	//& .main-nav-button-open, 
-	//& .index-link, 
-	//& .header-line, 
-	//& .text-content > *, 
-	//& .cover-image { 
-	//	transform: translateY( 150px ); 
-	//	opacity: 0; 
+	& .main-nav-button-open, 
+	& .featured-image, 
+	& .text-content > *, 
+	& .banner-entry-button-list, 
+	& .banner .footer { 
+		transform: translateY( 150px ); 
+		opacity: 0; 
 
-	//} 
+	} 
 
-	//& .main-nav-button-open { 
-	//	transform: translateY( 25% ); 
+	& .main-nav-button-open { 
+		transform: translateY( 25% ); 
 
-	//} 
+	} 
 
-	//& .cover-image { 
-	//	transform: translateY( 25px ); 
+	& .cover-image { 
+		transform: translateY( 25px ); 
 
-	//} 
+	} 
 
 	//& .cover-image::before { 
 	//	display: block; 

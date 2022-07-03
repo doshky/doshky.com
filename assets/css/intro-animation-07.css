@@ -249,6 +249,16 @@
   left: -10000px;
   top: -10000px;
 }
+.banner .main-nav-button-open, .banner .featured-image, .banner .text-content > *, .banner .banner-entry-button-list, .banner .banner .footer {
+  transform: translateY(150px);
+  opacity: 0;
+}
+.banner .main-nav-button-open {
+  transform: translateY(25%);
+}
+.banner .cover-image {
+  transform: translateY(25px);
+}
 
 .logo-holder-entry-intro .logo-sign {
   animation: fade-in 0.2s 0.5s, scale-logo-element-down 0.2s 0.5s;
@@ -277,6 +287,41 @@
 
 .banner {
   animation: on 0.0005s 1.6015s;
+  animation-fill-mode: forwards;
+}
+
+.banner .featured-image {
+  animation: slide 0.4s 1.702s, fade-in 0.2s 1.702s;
+  animation-fill-mode: forwards;
+}
+
+.banner .subheading {
+  animation: slide 0.4s 1.802s, fade-in 0.2s 1.802s;
+  animation-fill-mode: forwards;
+}
+
+.banner .heading {
+  animation: slide 0.4s 1.902s, fade-in 0.2s 1.902s;
+  animation-fill-mode: forwards;
+}
+
+.banner .paragraph {
+  animation: slide 0.4s 2.002s, fade-in 0.2s 2.002s;
+  animation-fill-mode: forwards;
+}
+
+.banner-entry-button-list {
+  animation: slide 0.4s 2.102s, fade-in 0.2s 2.102s;
+  animation-fill-mode: forwards;
+}
+
+.banner .footer {
+  animation: slide 1.5s 1.502s, fade-in 0.2s 1.502s;
+  animation-fill-mode: forwards;
+}
+
+.banner .main-nav-button-open {
+  animation: slide 0.4s 2.502s, fade-in 0.2s 2.502s;
   animation-fill-mode: forwards;
 }
 
