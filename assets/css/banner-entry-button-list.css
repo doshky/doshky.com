@@ -92,6 +92,11 @@
 	
 	} 
 
+	.banner-entry-button-list { 
+		padding-left: 0; padding-right: 0; 
+
+	}
+
 	.button-entry + .button-entry { 
 		margin-top: 2em; 
 	
