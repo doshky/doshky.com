@@ -42,8 +42,8 @@
 
 .footer .id { 
 	width: 100%; max-width: none; 
-	margin-top: 2em; 
-	border: 1px solid; border-width: 1px 0; 
+	margin-top: 2.5em; 
+	border-style: solid; border-bottom-width: 1px; 
 	/*border-radius: 10px; */ 
 
 }
