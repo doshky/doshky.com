@@ -303,6 +303,20 @@ $sequence: (
 					) 
 				] 
 			)
+		), 
+
+		( 
+			selector: ".banner", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: overflow-on, 
+						duration: 0.0005s 
+					)
+				] 
+			)
 		) 
 
 

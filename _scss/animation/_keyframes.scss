@@ -40,6 +40,12 @@
 	}
 } 
 
+@keyframes overflow-on { 
+	100% { 
+		overflow: auto; 
+	}
+} 
+
 @keyframes slide { 
 	100% { 
 		transform: translateY( 0 ); 

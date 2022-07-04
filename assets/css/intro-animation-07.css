@@ -35,6 +35,11 @@
     top: -10000px;
   }
 }
+@keyframes overflow-on {
+  100% {
+    overflow: auto;
+  }
+}
 @keyframes slide {
   100% {
     transform: translateY(0);
@@ -248,6 +253,7 @@
   position: absolute;
   left: -10000px;
   top: -10000px;
+  overflow: hidden;
 }
 .banner .main-nav-button-open, .banner .featured-image, .banner .text-content > *, .banner .banner-entry-button-list, .banner .footer {
   transform: translateY(150px);
@@ -286,7 +292,7 @@
 }
 
 .banner {
-  animation: on 0.0005s 1.6015s;
+  animation: on 0.0005s 1.6015s, overflow-on 0.0005s 2.902s;
   animation-fill-mode: forwards;
 }
 
