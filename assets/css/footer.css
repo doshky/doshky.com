@@ -46,6 +46,17 @@
 	border-style: solid; border-bottom-width: 1px; 
 	/*border-radius: 10px; */ 
 
+} 
+
+.footer .index-link { 
+	margin-bottom: 1em; 
+	/*border: 1px solid; border-radius: 4px; */ 
+
+} 
+
+.footer .index-link { 
+	width: 7rem; height: 6rem; 
+
 }
 
 .button-scroll-to-top { 
