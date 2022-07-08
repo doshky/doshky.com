@@ -182,12 +182,12 @@
 .grecaptcha-badge { 
 	margin-top: 1.5em; 
 	position: initial !important; 
-	box-shadow: none; 
+	box-shadow: none !important; 
 
 } 
 
 .rc-anchor-light, 
 .rc-anchor-invisible-text { 
-	background-color: transparent !important; color: var( --section-main-color ); 
+	background-color: transparent !important; color: var( --section-main-color ) !important; 
 
 }
