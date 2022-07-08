@@ -6,7 +6,7 @@
 	className = "body-section-heading contact-section-heading" 
 %} 
 
-<form class= "gform send-message" method= "POST" action= "https://script.google.com/macros/s/AKfycbyP8VvAizXQT0Mf8ewE_l40iATNhsbI1zEp5TRiGQ/exec"> 
+<form id="send-message-form" class= "gform send-message" method= "POST" action= "https://script.google.com/macros/s/AKfycbyP8VvAizXQT0Mf8ewE_l40iATNhsbI1zEp5TRiGQ/exec"> 
 	<div class="thankyou_message"> 
 		<!-- You can customize the thankyou message by editing the code below -->
 		<p><em>Thanks</em> for contacting me! I will get back to you soon!</p> 
@@ -19,9 +19,13 @@
 	{% endfor %} 
 
 	<button 
-		class= "submit-message-button" 
+		class= "submit-message-button g-recaptcha" 
 		name= "submit-message" 
-		type= "submit"
+		type= "submit" 
+
+        data-sitekey= "6LfBa9keAAAAAJiNwduYYCOLtu0XKY8SMohFgMXy" 
+        data-callback= "onSubmit" 
+        data-action= "submit" 
 	>
 		Send 
 	</button>  
