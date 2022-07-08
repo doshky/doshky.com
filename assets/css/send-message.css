@@ -188,6 +188,6 @@
 
 .rc-anchor-light, 
 .rc-anchor-invisible-text { 
-	background-color: transparent !important; color: var( --section-main-color ) !important; 
+	background: transparent !important; color: var( --section-main-color ) !important; 
 
 }
