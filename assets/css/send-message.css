@@ -183,4 +183,9 @@
 	margin-top: 1.5em; 
 	position: initial !important; 
 
+} 
+
+.rc-anchor-light { 
+	background-color: transparent !important; 
+
 }
