@@ -90,7 +90,7 @@
 
 .thankyou_message { 
 	width: 100%; height: 100%;  
-	position: absolute; 
+	position: absolute; z-index: 2; 
 	top: 0; 
 	background-color: var( --section-main-color ); background-image: url( "/assets/images/thank-you-message-background.png" ); background-size: cover; 
 	/*border: 1px solid; */ 
@@ -179,15 +179,26 @@
 
 } 
 
-.grecaptcha-badge { 
+.submit-message-button:disabled { 
+	opacity: 0.5; 
+
+} 
+
+.g-recaptcha { 
+	--background-color: red; 
+
+}
+
+/*.grecaptcha-badge { 
 	margin-top: 1.5em; 
 	position: initial !important; 
 	box-shadow: none !important; 
 
-} 
+} */
 
-.rc-anchor-light, 
-.rc-anchor-invisible-text { 
-	background: transparent !important; color: var( --section-main-color ) !important; 
+.g-recaptcha .rc-anchor-light { 
+	--background-color: red; 
+	
+	background: var( --background-color ) !important; color: var( --section-main-color ) !important; 
 
 }
