@@ -18,16 +18,18 @@
 		%} 
 	{% endfor %} 
 
-	<button 
-		class= "submit-message-button g-recaptcha" 
-		name= "submit-message" 
-		type= "submit" 
+	<div class="recaptcha-wrapper">
+		<button 
+			class= "submit-message-button g-recaptcha" 
+			name= "submit-message" 
+			type= "submit" 
 
-        data-sitekey= "6LfBa9keAAAAAJiNwduYYCOLtu0XKY8SMohFgMXy" 
-        data-callback= "onSubmit" 
-        data-action= "submit" 
-	>
-		Send 
-	</button>  
+			data-sitekey= "6LfBa9keAAAAAJiNwduYYCOLtu0XKY8SMohFgMXy" 
+			data-callback= "onSubmit" 
+			data-action= "submit" 
+		>
+			Send 
+		</button> 
+	</div>
 
 </form>  

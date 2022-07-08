@@ -171,3 +171,16 @@
 	}
 	
 } 
+
+
+.recaptcha-wrapper { 
+	display: flex; flex-direction: column-reverse; align-items: center; 
+	overflow: hidden; 
+
+} 
+
+.grecaptcha-badge { 
+	margin-top: 1.5em; 
+	position: initial !important; 
+
+}
