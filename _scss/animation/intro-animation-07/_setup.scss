@@ -64,7 +64,8 @@
 } 
 
 .banner { 
-	position: absolute; left: -10000px; top: -10000px; 	
+	position: absolute; 
+	left: -10000px; top: -10000px; 	
 	overflow: hidden; 
 
 	& .main-nav-button-open, 

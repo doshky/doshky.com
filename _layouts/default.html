@@ -15,34 +15,36 @@
 </head>
 <body> 
 	<div class= "page-body-holder"> 
-		<div id= "page-body" class= "page-body"> 
-			<div class= "animation-holder">
-				<div class= "logo-holder"> 
-					<div class= "logo-holder-entry logo-holder-entry-intro"> 
-						<div class= "logo-holder-entry-frame">
-							<figure class= "logo">
-								<img 
-									src= "./assets/images/logo-sign-main-color-v.6.png" 
-									class= "image logo-element logo-sign" 
-								/> 
-		
-							</figure>
-						</div>
-					</div> 
-		
-					<div class= "logo-holder-entry logo-holder-entry-main"> 
-						<div class= "logo-holder-entry-frame"> 
-							<figure class= "logo">
-								<img 
-									src= "./assets/images/logo-sign-secondary-color-v.6.png" 
-									class= "image logo-element logo-sign" 
-								/> 
-		
-							</figure> 
-						</div>
+		<div class= "animation-holder">
+			<div class= "logo-holder"> 
+				<div class= "logo-holder-entry logo-holder-entry-intro"> 
+					<div class= "logo-holder-entry-frame">
+						<figure class= "logo">
+							<img 
+								src= "./assets/images/logo-sign-main-color-v.6.png" 
+								class= "image logo-element logo-sign" 
+							/> 
+	
+						</figure>
 					</div>
 				</div> 
+	
+				<div class= "logo-holder-entry logo-holder-entry-main"> 
+					<div class= "logo-holder-entry-frame"> 
+						<figure class= "logo">
+							<img 
+								src= "./assets/images/logo-sign-secondary-color-v.6.png" 
+								class= "image logo-element logo-sign" 
+							/> 
+	
+						</figure> 
+					</div>
+				</div>
 			</div> 
+		</div> 
+
+		<div id= "page-body" class= "page-body"> 
+			
 
 			{% include banner.html 
 				banner = site.data.banner 
@@ -51,26 +53,26 @@
 			%} 
 
 			{% include main-nav.html %} 
+
+			<div class= "section-holder"> 
+				<div id= "section-top" class= "section-top"></div>  
+		
+				{% include work.html 
+					section = site.data.pages.work 
+				%} 
+		
+				{% include about.html 
+					section = site.data.pages.about 
+				%} 
+		
+				{% include contact.html 
+					section = site.data.pages.contact 
+				%}  
+		
+				{% include footer.html targetID = "section-top" %} 
+			</div> 
 		</div> 
-	</div> 
-
-	<div class= "section-holder"> 
-		<div id= "section-top" class= "section-top"></div>  
-
-		{% include work.html 
-			section = site.data.pages.work 
-		%} 
-
-		{% include about.html 
-			section = site.data.pages.about 
-		%} 
-
-		{% include contact.html 
-			section = site.data.pages.contact 
-		%}  
-
-		{% include footer.html targetID = "section-top" %} 
-	</div> 
+	</div>  
 
 	<!--<div id= "page-holder" class= "page-holder"> 
 		<main class= "page"> 
