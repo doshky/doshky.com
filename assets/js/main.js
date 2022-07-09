@@ -1,9 +1,10 @@
 ( function() { 
     const deselectPrevSection = clearCurrentClassName( 'section-on' ); 
+    let reCaptchaRendered = false; 
 
     window.addEventListener( 'click', function( e ) { 
         const clickTarget = e.target; 
-        const hasClass = hasClassElement( clickTarget );  
+        const hasClass = hasClassElement( clickTarget ); 
 
         if ( !hasClass( 'control-button' ) ) { 
             return; 
@@ -16,7 +17,11 @@
         if ( hasClass( 'open-section-button' ) ) { 
             deselectPrevSection( document.getElementById( clickTarget.getAttribute( 'data-target-section-id' ) ) ); 
 
-            if ( clickTarget.getAttribute( 'data-target-section-id' ) === 'contact-section' ) { 
+            // Renders reCaptcha when the user heads to contact section and reCaptcha is not rendered 
+            if ( clickTarget.getAttribute( 'data-target-section-id' ) === 'contact-section' && !reCaptchaRendered ) { 
+                // Registers reCaptcha rendering to prevent attempts to render it again 
+                reCaptchaRendered = true; 
+
                 reCaptchaRender(); 
             }
             
