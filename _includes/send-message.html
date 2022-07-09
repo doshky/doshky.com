@@ -20,6 +20,13 @@
 
 	<div class="recaptcha-wrapper"> 
 		<script> 
+			function reVerifyUser( response ) { 
+				document
+					.getElementById( 'send-message-form' )
+					.querySelector( '.submit-message-button' ).disabled = true; 
+	
+			} 
+
 			function verifyUser( response ) { 
 				document
 					.getElementById( 'send-message-form' )
@@ -32,7 +39,8 @@
 
 				grecaptcha.render( selector, { 
 					'sitekey': '6LeON9UgAAAAACssNPKALPznIVMv3Hzc0mKJOsEI', 
-					'callback': 'verifyUser' 
+					'callback': 'verifyUser', 
+					'expired-callback': 'reVerifyUser' 
 				} );
 
 			} 
