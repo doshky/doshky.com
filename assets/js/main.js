@@ -15,6 +15,10 @@
 
         if ( hasClass( 'open-section-button' ) ) { 
             deselectPrevSection( document.getElementById( clickTarget.getAttribute( 'data-target-section-id' ) ) ); 
+
+            if ( clickTarget.getAttribute( 'data-target-section-id' ) === 'contact-section' ) { 
+                reCaptchaRender(); 
+            }
             
         } 
 

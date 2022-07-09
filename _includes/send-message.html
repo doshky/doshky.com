@@ -25,15 +25,21 @@
 					.getElementById( 'send-message-form' )
 					.querySelector( '.submit-message-button' ).disabled = false; 
 	
-			}
+			} 
+
+			function reCaptchaRender() { 
+				const selector = 'recaptcha-widget'; 
+
+				grecaptcha.render( selector, { 
+					'sitekey': '6LeON9UgAAAAACssNPKALPznIVMv3Hzc0mKJOsEI', 
+					'callback': 'verifyUser' 
+				} );
+
+			} 
 	
 		</script> 
 
-		<div 
-			class="g-recaptcha" 
-			data-sitekey="6LeON9UgAAAAACssNPKALPznIVMv3Hzc0mKJOsEI" 
-			data-callback="verifyUser" 
-		></div>  
+		<div id="recaptcha-widget" class="recaptcha-widget"></div> 
 
 		<button 
 			class= "submit-message-button" 

@@ -184,21 +184,8 @@
 
 } 
 
-.g-recaptcha { 
-	--background-color: red; 
-
-}
-
-/*.grecaptcha-badge { 
+.recaptcha-widget { 
 	margin-top: 1.5em; 
-	position: initial !important; 
-	box-shadow: none !important; 
-
-} */
-
-.g-recaptcha .rc-anchor-light { 
-	--background-color: red; 
 	
-	background: var( --background-color ) !important; color: var( --section-main-color ) !important; 
+} 
 
-}
