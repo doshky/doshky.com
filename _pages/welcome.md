@@ -1,7 +1,7 @@
 ---
 title: Welcome
 subheading: Welcome To My Place And
-heading: Nice To Meet You
+heading: "Nice To Have You Here! "
 text:
   - Welcome to my world! My name is Diana Pavlova /Doshky/. Doshky is my
     artistic nickname given to me by a very dear family I met in UK. I spent
