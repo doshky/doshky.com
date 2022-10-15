@@ -45,7 +45,11 @@
 
 		<div id= "page-body" class= "page-body"> 
 
+			{% assign about = site.pages[ 0 ] %} 
+			{% assign contact = site.pages[ 1 ] %}
 			{% assign welcome = site.pages[ 2 ] %} 
+			{% assign work = site.pages[ 3 ] %} 
+			
 			{% include banner.html 
 				banner = welcome 
 				logoSrc = "logo-main-color.png" 
@@ -56,18 +60,15 @@
 
 			<div class= "section-holder"> 
 				<div id= "section-top" class= "section-top"></div>  
-		
-				{% assign work = site.pages[ 3 ] %} 
+		 
 				{% include work.html 
 					section = work 
 				%} 
-		
-				{% assign about = site.pages[ 0 ] %}
+	
 				{% include about.html 
 					section = about 
 				%} 
 		
-				{% assign contact = site.pages[ 1 ] %}
 				{% include contact.html 
 					section = contact 
 				%} 

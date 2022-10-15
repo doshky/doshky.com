@@ -20,7 +20,7 @@
 	position: relative; 
 	border-top: 25px solid; 
 	/* Prevents the browser from displaying a scrollbar because of translating cover image down to set up its animation */ 
-	overflow: hidden; 
+	/*overflow: hidden; */ 
 	
 } 
 
