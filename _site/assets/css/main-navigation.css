@@ -38,9 +38,11 @@
 	box-sizing: border-box; 
 	/*height: 10rem; */ 
 	/*width: 25%; max-width: 10rem; height: 100%; */ 
-	max-width: 15rem; 
+	/*max-width: 20rem; */ 
+	width: 20%; height: 25%; 
+	/*padding-top: 20%; height: 0; */ 
 	/*width: 50%; */ 
-	height: calc( ( 100% - 2 * 2em ) / 3 ); 
+	/*height: calc( ( 100% - 2 * 2em ) / 3 ); */ 
 	position: relative; 
 	/*background-color: var( --section-main-color ); */ 
 	/*background-image: url( "/assets/images/303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman-button.png" ); background-size: contain; background-repeat: no-repeat; background-position: center; */
@@ -68,10 +70,15 @@
 
 } 
 
-@media screen and ( max-width: 1280px ) { 
+@media screen and ( max-width: 1180px ) { 
 	.main-nav .nav-entry-list { 
-		/*flex-direction: column; flex-wrap: nowrap; */
-		padding-top: 5em; padding-bottom: 5em; 
+		flex-direction: column; flex-wrap: nowrap; 
+		padding-top: 2.5em; padding-bottom: 2.5em; 
+	
+	} 
+
+	.main-nav .nav-entry { 
+		width: 80%; max-width: 20rem; 
 	
 	} 
 
