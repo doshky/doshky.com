@@ -14,5 +14,5 @@ fields:
     type: textarea
     title: Message
 button:
-  text: Send Message
+  text: "Send "
 ---
