@@ -1,8 +1,6 @@
-local_backend: true 
-
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master) 
+  branch: modern-design-banner-image-buttons # Branch to update (optional; defaults to master) 
 
 media_folder: "/assets/images/paintings" 
 
