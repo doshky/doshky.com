@@ -1,6 +1,6 @@
 ---
 title: Welcome
-subheading: Welcome To My Place And
+subheading: "Welcome To My Place, It’s "
 heading: "Nice To Have You Here! "
 text:
   - Welcome to my world! My name is Diana Pavlova /Doshky/. Doshky is my
