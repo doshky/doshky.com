@@ -256,7 +256,6 @@
   position: absolute;
   left: -10000px;
   top: -10000px;
-  overflow: hidden;
 }
 .banner .main-nav-button-open, .banner .featured-image, .banner .text-content > *, .banner .banner-entry-button-list, .banner .footer {
   transform: translateY(150px);
