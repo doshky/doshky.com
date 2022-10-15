@@ -1,0 +1,9 @@
+.page { 
+	counter-reset: section-counter; 
+
+} 
+
+.section .text-content::before { 
+	counter-increment: section-counter; 
+
+} 

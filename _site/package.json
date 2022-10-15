@@ -1,0 +1,25 @@
+{
+  "name": "doshky.com",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doshky/doshky.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doshky/doshky.com/issues"
+  },
+  "homepage": "https://github.com/doshky/doshky.com#readme",
+  "dependencies": {
+    "magnific-popup": "^1.1.0"
+  },
+  "devDependencies": {
+    "sass": "^1.49.9"
+  }
+}

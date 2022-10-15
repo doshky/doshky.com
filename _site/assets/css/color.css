@@ -1,0 +1,37 @@
+:root { 
+	/* Sets main color and gives an option to specify opacity */ 
+	--main-color: rgba( var( --main-color-rgb ), var( --main-color-opacity ) ); 
+	/* Sets secondary color and gives an option to specify opacity */
+	--secondary-color: rgba( var( --secondary-color-rgb ), var( --secondary-color-opacity ) );
+	/* Sets the overlay color as the main color, with lower opacity */ 
+	--overlay-color: rgba( var( --overlay-color-rgb ), var( --overlay-color-opacity ) ); 
+
+	/* Sets text color as the main color, with full opacity */
+	--text-color: var( --main-color ); 
+
+}
+
+body { 
+	color: var( --text-color ); 
+
+} 
+
+.page-body-holder, 
+.banner, 
+.main-nav .nav, 
+.section-holder { 
+	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
+
+} 
+
+.button { 
+	background-color: transparent; color: var( --section-main-color ); 
+
+} 
+
+.button.has-icon:hover { 
+	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+	border-color: var( --section-main-color ); 
+
+} 
+

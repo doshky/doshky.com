@@ -1,0 +1,58 @@
+.owner { 
+	--owner-photo-width: 10rem;  
+	--owner-photo-aspect-ratio: 1; 
+	--owner-photo-height: calc( var( --owner-photo-aspect-ratio ) * var( --owner-photo-width ) ); 
+	/*--border-radius-to-width-ratio: 20; 
+	--owner-photo-border-radius: calc( var( --owner-photo-width ) / var( --border-radius-to-width-ratio ) ); */
+	--owner-photo-border-radius: 50%; 
+
+	--owner-heading-vertical-shift: 1.5em; 
+
+} 
+
+.owner { 
+	position: relative;  
+
+}
+
+.owner > * + * { 
+	margin-top: 1em; 
+
+}
+
+.owner-photo { 
+	box-sizing: border-box; 
+	display: block; margin-left: auto; margin-right: auto; 
+	height: 0; 
+	width: 100%; max-width: var( --owner-photo-width ); padding-top: var( --owner-photo-height ); 
+	border: 1px solid; 
+	border-radius: var( --owner-photo-border-radius ); 
+	background-size: cover; background-position: center;
+	background-repeat: no-repeat; 
+	/*box-shadow: 0 0 5px 5px rgba( var( --main-color-rgb ), 0.4 ); */
+
+} 
+
+.owner-photo .photo { 
+	display: none; 
+
+}
+
+.heading.owner-heading { 
+	margin-top: var( --owner-heading-vertical-shift ); 
+	font-size: 1.2em; 
+
+} 
+
+.owner .description { 
+	line-height: 1.4; 
+
+}
+
+/*.button-scroll-to-top { 
+	position: absolute; right: 100%; margin-right: 4rem; 
+	bottom: 0; 
+	border: 1px solid; 
+	border-radius: 5px; 
+
+}*/

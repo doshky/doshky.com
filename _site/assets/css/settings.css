@@ -1,0 +1,77 @@
+:root { 
+	--page-inner-width: 960px; 
+	--page-padding-x: 1.25rem; 
+
+	--logo-width: 10rem; 
+	--logo-height: 6rem; 
+
+	/* Defines button icon size */ 
+	--button-icon-side: 2em; 
+
+	--section-head-cover-image-height: 25em; 
+	--section-featured-image-height: 55vh; 
+
+	--section-padding-top: 5em; 
+	--section-padding-bottom: 5em; 
+
+	--send-message-width: 30rem; 
+
+	--text-font-family: "Raleway"; 
+	--text-font-size: 16px; 
+	--text-line-height: 1.5; 
+ 
+	--heading-font-family: "Rock Salt"; 
+	--heading-font-size: 2em;  
+	--subheading-font-family: var( --text-font-family ); 
+	--subheading-font-size: 1.2em; 
+
+	--banner-entry-heading-font-family: "Raleway"; 	
+	/* Giving a scaling range to the banner heading font size */
+	--banner-entry-heading-font-size: calc( 2.5em + 0.5vw ); 
+	--banner-entry-heading-font-weight: 100; 
+	--banner-entry-heading-line-height: 1; 
+
+	--body-section-heading-font-size: 1.4em; 
+
+	--main-nav-font-family: var( --heading-font-family ); 
+	--main-nav-font-size: 1em; 
+
+	--icon-font-family: Ionicons; 
+
+} 
+
+.button { 
+	/* Defines button icon font size */ 
+	--button-icon-font-size: 1.4em; 
+
+	--button-padding-y: 1.2em; 
+	--button-padding-x: 2.2em; 
+	--button-border-width: 1px; 
+	--button-border-radius: 100px; 
+	--button-font-family: var( --text-font-family ); 
+	--button-font-size: var( --text-font-size ); 
+	--button-line-height: 1.1;
+
+} 
+
+/* Sets all close buttons icon character */
+.button-close { 
+	--button-icon-code: "\f2d7"; 
+
+} 
+
+/* Sets main navigation open button character */
+.main-nav-button-open { 
+	--button-icon-code: "\f394"; 
+
+} 
+
+/* Sets scroll-to-top button character */
+.button-scroll-to-top { 
+	--button-icon-code: "\f10e"; 
+
+} 
+
+
+
+
