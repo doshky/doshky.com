@@ -36,6 +36,9 @@
   }
 }
 @keyframes overflow-on {
+  0% {
+    overflow: hidden;
+  }
   100% {
     overflow: auto;
   }
