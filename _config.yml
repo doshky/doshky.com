@@ -35,6 +35,13 @@ github_username:  jekyll
 
 year_started: 2020 
 
+collections: 
+  - paintings 
+  - pages 
+  - id 
+  - contacts 
+  - send_message 
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

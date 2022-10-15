@@ -27,7 +27,7 @@
 		
 		<section class= "text-content banner-text-content">  
 			{% include featured-image.html 
-				src = banner.image.src 
+				src = banner.image 
 			%} 
 
 			{% include subheading.html 
@@ -41,8 +41,8 @@
 				className = "banner-heading" 
 			%} 
 		
-			{% for paragraph in banner.paragraphs %} 
-				<p class= "paragraph banner-paragraph">{{ paragraph.text }}</p> 
+			{% for paragraph in banner.text %} 
+				<p class= "paragraph banner-paragraph">{{ paragraph }}</p> 
 			{% endfor %} 
 		</section> 
 

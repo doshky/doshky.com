@@ -9,7 +9,7 @@
 		{{ field.label }} 
 	</label> 
 
-	{% if field.isMessageBody %} 
+	{% if field.type == "textarea" %} 
 		<textarea 
 			class= "field textarea-field" 
 			name= "{{ field.name }}" 

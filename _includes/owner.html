@@ -1,8 +1,8 @@
 <article class= "owner"> 
-	<figure class= "owner-photo" style= "background-image: url( '/assets/images/{{ include.owner.photo.src }}' );"> 
+	<figure class= "owner-photo" style= "background-image: url( '{{ include.owner.photo }}' );"> 
 		{% include image.html 
 			className = "photo" 
-			src = include.owner.photo.src 
+			src = include.owner.photo 
 		%} 
 	</figure> 
 

@@ -15,7 +15,7 @@
 		{ 
 			"name": "user-message", 
 			"label": "Your Message", 
-			"isMessageBody": true 
+			"type": "textarea" 
 		}
 
 	] 

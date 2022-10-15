@@ -1,5 +1,5 @@
 {% assign head = include.head %} 
-{% assign className = include.className | append: "-section" %} 
+{% assign className = include.className %} 
 
 
 <section class= "section {{ className }}" id= "{{ className }}"> 
@@ -26,7 +26,7 @@
 	%}--> 
 
 	{% include featured-image.html 
-		src = head.image.src 
+		src = head.image 
 	%} 
 
 	{% include subheading.html 
@@ -40,8 +40,8 @@
 		className = "section-heading" 
 	%} 
 
-	{% for paragraph in head.paragraphs %} 
-		<p class= "paragraph">{{ paragraph.text }}</p> 
+	{% for paragraph in head.text %} 
+		<p class= "paragraph">{{ paragraph }}</p> 
 	{% endfor %} 
 
 	<section class= "section-body"> 

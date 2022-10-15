@@ -1,7 +1,19 @@
 {% capture body %} 
 
 	<ul class= "entry-list picture-entry-list work-section-entry-list"> 
-	{% for picture in include.section.body %} 
+	{% for painting in site.paintings %} 
+		<li class= "entry picture-entry work-section-entry"> 
+			<a 
+				class= "work-section-image" 
+				href= "{{ painting.image }}" 
+				style= "background-image: url( '{{ painting.thumbnail }}' );" 
+			>
+				Painting 
+			</a>
+		</li>
+	{% endfor %} 
+	
+	<!--{% for picture in include.section.body %} 
 		{% assign thumbPath = picture.src | append: ".png" %} 
 		<li class= "entry picture-entry work-section-entry"> 
 			<a 
@@ -12,13 +24,13 @@
 				Painting 
 			</a>
 		</li>
-	{% endfor %}
+	{% endfor %}--> 
 	</ul> 
 
-{% endcapture %}
+{% endcapture %} 
 
 {% include section.html 
-	head = include.section.head 
+	head = include.section 
 	body = body 
-	className = "work" 
+	className = "work-section" 
 %} 

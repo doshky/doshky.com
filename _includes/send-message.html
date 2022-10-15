@@ -1,9 +1,9 @@
-{% assign sendMessage = include.sendMessage %} 
+{% assign sendMessage = include.sendMessage[ 0 ] %} 
 
 {% include heading.html 
 	level = 4 
-	text = include.sendMessage.heading.text 
-	className = "body-section-heading contact-section-heading" 
+	text = "Drop Me A Line" 
+	className = "heading body-section-heading contact-section-heading" 
 %} 
 
 <form id="send-message-form" class= "gform send-message" method= "POST" action= "https://script.google.com/macros/s/AKfycbyP8VvAizXQT0Mf8ewE_l40iATNhsbI1zEp5TRiGQ/exec"> 
@@ -24,23 +24,32 @@
 				document
 					.getElementById( 'send-message-form' )
 					.querySelector( '.submit-message-button' ).disabled = true; 
-	
 			} 
 
 			function verifyUser( response ) { 
+				verified = true; 
+
 				document
 					.getElementById( 'send-message-form' )
 					.querySelector( '.submit-message-button' ).disabled = false; 
-	
 			} 
 
 			function reCaptchaRender() { 
 				const selector = 'recaptcha-widget'; 
+				let verified = false; 
 
 				grecaptcha.render( selector, { 
 					'sitekey': '6LeON9UgAAAAACssNPKALPznIVMv3Hzc0mKJOsEI', 
 					'callback': 'verifyUser', 
 					'expired-callback': 'reVerifyUser' 
+				} ); 
+
+				document.getElementById( 'send-message-form' ).addEventListener( 'submit', function( e ) { 
+					if ( !verified ) { 
+						e.preventDefault(); 
+						alert( 'Check the box.' ); 
+					}
+
 				} ); 
 
 			} 
@@ -55,7 +64,7 @@
 			type= "submit" 
 			disabled= true 
 		>
-			Send 
+			{{ sendMessage.button.text }} 
 		</button> 
 	</div>
 

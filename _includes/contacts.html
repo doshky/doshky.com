@@ -1,14 +1,19 @@
 {% include heading.html 
 	level = 4 
-	text = include.contacts.heading 
+	text = "" 
 	className = "body-section-heading contact-section-heading" 
 %} 
+
+{% for group in include.contacts %} 
 <section class= "contact-entry-set"> 
-{% for contact in include.contacts.entries %} 
-	{% include contact-entry.html 
-		key = contact.key 
-		value = contact.value 
-		className = contact.key 
-	%} 
-{% endfor %} 
+	<h5 class= "heading contact-section-group-heading">{{ group.title }}</h5> 
+
+	{% for contact in group.entries %} 
+		{% include contact-entry.html 
+			key = contact.title 
+			value = contact.value 
+			className = contact.key 
+		%} 
+	{% endfor %} 
 </section> 
+{% endfor %}
