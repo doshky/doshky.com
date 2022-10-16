@@ -40,8 +40,13 @@
 }
 
 .heading.owner-heading { 
+	display: inline-block; 
 	margin-top: var( --owner-heading-vertical-shift ); 
+	/*padding: 0.25em; */ 
+	/*background-color: var( --secondary-color ); color: var( --main-color ); */ 
+	/*border: 1px solid; */ 
 	font-size: 1.2em; 
+	font-family: var( --text-font-family ); 
 
 } 
 

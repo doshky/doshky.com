@@ -8,13 +8,13 @@
 		<a class= "admin-panel-link" href= "https://doshky.netlify.app/admin/"><span class= "label admin-panel-link-label">Admin Panel</span></a> 
 	</figure> 
 
-	{%- comment -%}
-		<!--{% include heading.html 
-			level = 4 
-			text = include.owner.name 
-			className = "owner-heading" 
-		%} --> 
-	{%- endcomment -%}
+	
+	{% include heading.html 
+		level = 4 
+		text = include.owner.name 
+		className = "owner-heading" 
+	%} 
+	
 
 	<p class= "description">{{ include.owner.description }}</p> 
 </article>

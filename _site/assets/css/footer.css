@@ -49,6 +49,7 @@
 } 
 
 .footer .index-link { 
+	display: none; 
 	margin-bottom: 1em; 
 	/*border: 1px solid; border-radius: 4px; */ 
 
