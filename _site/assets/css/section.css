@@ -245,6 +245,8 @@
 	margin-top: 1.5rem; margin-bottom: 5%; 
 	position: relative;  
 	/*background-image: none !important; */ 
+	/*box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.125); */ 
+	/*border: 1px solid rgba(49, 68, 71, 0.4); */ 
 
 } 
 

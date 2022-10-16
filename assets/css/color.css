@@ -1,8 +1,8 @@
 :root { 
 	/* Sets main color and gives an option to specify opacity */ 
-	--main-color: rgba( var( --main-color-rgb ), var( --main-color-opacity ) ); 
+	--main-color: rgb(190, 121, 255); 
 	/* Sets secondary color and gives an option to specify opacity */
-	--secondary-color: rgba( var( --secondary-color-rgb ), var( --secondary-color-opacity ) );
+	--secondary-color: rgb(214, 195, 233); 
 	/* Sets the overlay color as the main color, with lower opacity */ 
 	--overlay-color: rgba( var( --overlay-color-rgb ), var( --overlay-color-opacity ) ); 
 

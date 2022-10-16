@@ -16,6 +16,8 @@
 .work-section-entry-list { 
 	display: flex; flex-direction: row; flex-wrap: wrap; 
 	margin-top: 2em; 
+	border: 1px solid transparent; border-radius: 10px; 
+	overflow: hidden; 
 
 } 
 
