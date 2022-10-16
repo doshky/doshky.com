@@ -294,7 +294,7 @@
 }
 
 .banner {
-  animation: on 0.0005s 1.6015s, overflow-on 0.0005s 2.902s;
+  animation: on 0.0005s 1.6015s, overflow-on 0.0005s 1.802s;
   animation-fill-mode: forwards;
 }
 
@@ -324,12 +324,12 @@
 }
 
 .banner-entry .footer {
-  animation: slide 1.5s 2.202s, fade-in 0.2s 2.202s;
+  animation: slide 0.4s 2.202s, fade-in 0.2s 2.202s;
   animation-fill-mode: forwards;
 }
 
 .banner .main-nav-button-open {
-  animation: slide 0.4s 2.502s, fade-in 0.2s 2.502s;
+  animation: slide 0.4s 1.402s, fade-in 0.2s 1.402s;
   animation-fill-mode: forwards;
 }
 
