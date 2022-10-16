@@ -25,6 +25,7 @@
 	display: block; margin-left: auto; margin-right: auto; 
 	height: 0; 
 	width: 100%; max-width: var( --owner-photo-width ); padding-top: var( --owner-photo-height ); 
+	position: relative; 
 	border: 1px solid; 
 	border-radius: var( --owner-photo-border-radius ); 
 	background-size: cover; background-position: center;
@@ -55,4 +56,16 @@
 	border: 1px solid; 
 	border-radius: 5px; 
 
-}*/
+}*/ 
+
+.admin-panel-link { 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0; 
+
+} 
+
+.admin-panel-link-label { 
+	position: absolute; left: -10000px; 
+
+}
