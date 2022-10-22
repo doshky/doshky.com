@@ -1,6 +1,7 @@
 :root { 
 	/* Sets main color and gives an option to specify opacity */ 
-	--main-color: rgb(190, 121, 255); 
+	/*--main-color: rgb(190, 121, 255); */
+	--main-color: linear-gradient(to right bottom, rgb(77, 84, 209), rgb(165, 28, 123) 50%, rgb(238, 74, 55) 100%) center center; 
 	/* Sets secondary color and gives an option to specify opacity */
 	--secondary-color: rgb(214, 195, 233); 
 	/* Sets the overlay color as the main color, with lower opacity */ 
@@ -9,6 +10,8 @@
 	/* Sets text color as the main color, with full opacity */
 	--text-color: var( --main-color ); 
 
+	--button-color: rgb(190, 121, 255);
+
 }
 
 body { 
@@ -16,21 +19,22 @@ body {
 
 } 
 
-.page-body-holder, 
-.banner, 
+.page-body-holder 
+/*.banner, 
 .main-nav .nav, 
-.section-holder { 
-	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
+.section-holder */ 
+{ 
+	background: var( --section-secondary-color ); color: var( --section-main-color ); 
 
 } 
 
 .button { 
-	background-color: transparent; color: var( --section-main-color ); 
+	background: transparent; color: var( --section-main-color ); 
 
 } 
 
 .button.has-icon:hover { 
-	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+	background: var( --section-main-color ); color: var( --button-color ); 
 	border-color: var( --section-main-color ); 
 
 } 

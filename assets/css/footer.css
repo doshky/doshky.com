@@ -43,10 +43,19 @@
 .footer .id { 
 	width: 100%; max-width: none; 
 	margin-top: 2.5em; 
-	border-style: solid; border-bottom-width: 1px; 
+	/*border-style: solid; border-bottom-width: 1px; */ 
 	/*border-radius: 10px; */ 
 
 } 
+
+.footer .id::after { 
+	display: block; 
+	width: 100%; height: 1px; 
+	background-color: var( --section-main-color );
+	content: ""; 
+	opacity: 0.5; 
+
+}
 
 .footer .index-link { 
 	display: none; 

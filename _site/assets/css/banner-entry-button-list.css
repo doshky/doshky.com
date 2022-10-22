@@ -42,7 +42,7 @@
 	/*border-radius: 4px; */ 
 	position: absolute; 
 	left: 0; right: 0; bottom: 20%; 
-	background-color: var( --section-secondary-color ); 
+	/*background-color: var( --section-secondary-color ); */ 
 	overflow: hidden; 
 
 } 
@@ -64,7 +64,8 @@
 } */ 
 
 .open-section-button:hover > .button-text { 
-	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
+	background-color: var( --section-main-color ); color: var( --button-color ); 
+	border-color: var( --section-main-color ); 
 
 }
 

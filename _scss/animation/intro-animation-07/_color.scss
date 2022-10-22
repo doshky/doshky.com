@@ -1,23 +1,26 @@
-.animation-holder, 
-.animation-holder .owner-photo, 
-.logo-holder-entry-intro, 
-.logo-holder .cover-image { 
-	--section-main-color: var( --secondary-color ); 
-	--section-secondary-color: var( --main-color ); 
+//.animation-holder, 
+//// .animation-holder .owner-photo, 
+//// .logo-holder-entry-intro, 
+//// .logo-holder .cover-image 
+//{ 
+//	--section-main-color: var( --secondary-color ); 
+//	--section-secondary-color: var( --main-color ); 
 
-} 
+//} 
 
-.logo-holder-entry-main {  
+.logo-holder-entry-intro {  
 	--section-main-color: var( --main-color ); 
 	--section-secondary-color: var( --secondary-color ); 
 
 } 
 
 
-.animation-holder, 
-.logo-holder-entry, 
-.animation-holder .owner-photo, 
-.logo-holder .cover-image { 
+// .animation-holder, 
+.logo-holder-entry-intro 
+//.logo-holder-entry-main, 
+//.animation-holder .owner-photo, 
+//.logo-holder .cover-image 
+{ 
 	background-color: var( --section-secondary-color ); color: var( --section-main-color ); 
 
 } 

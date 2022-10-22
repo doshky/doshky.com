@@ -36,7 +36,7 @@ $sequence: (
 		//), 
 
 		( 
-			selector: ".logo-holder-entry-intro .logo-sign", 
+			selector: ".logo-holder-entry-main .logo-sign", 
 			animationGroup: ( 
 				startShift: 0s, 
 				animations: [ 
@@ -55,48 +55,62 @@ $sequence: (
 			)
 		), 
 
-		( 
-			selector: ".logo-holder-entry-main", 
-			animationGroup: ( 
-				startShift: 0s, 
-				animations: [ 
-					( 
-						startShift: 0s, 
-						name: on, 
-						duration: 0.0005s 
-					) 
-				] 
-			)
-		), 
+		//( 
+		//	selector: ".logo-holder-entry-main", 
+		//	animationGroup: ( 
+		//		startShift: 0s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: on, 
+		//				duration: 0.0005s 
+		//			) 
+		//		] 
+		//	)
+		//), 
 
 		( 
 			selector: ".logo-holder-entry-intro", 
 			animationGroup: ( 
-				startShift: 0s, 
+				startShift: 0.2s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
-						name: fold-height, 
+						name: unfold, 
 						duration: 0.5s 
 					) 
 				] 
 			)
 		), 
 
+		//( 
+		//	selector: ".logo-holder-entry-intro", 
+		//	animationGroup: ( 
+		//		startShift: 0s, 
+		//		animations: [ 
+		//			( 
+		//				startShift: 0s, 
+		//				name: stack-back, 
+		//				duration: 0.0005s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: unfold-height, 
+		//				duration: 0.0005s 
+		//			) 
+		//		] 
+		//	)
+		//), 
+
 		( 
-			selector: ".logo-holder-entry-intro", 
+			selector: ".logo-holder-entry-intro .logo-holder-entry-frame", 
 			animationGroup: ( 
 				startShift: 0s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
-						name: stack-back, 
-						duration: 0.0005s 
-					), 
-
-					( 
-						startShift: 0s, 
-						name: unfold-height, 
+						name: position-top, 
 						duration: 0.0005s 
 					) 
 				] 
@@ -104,13 +118,13 @@ $sequence: (
 		), 
 
 		( 
-			selector: ".logo-holder-entry-main", 
+			selector: ".logo-holder-entry-intro", 
 			animationGroup: ( 
 				startShift: 0s, 
 				animations: [ 
 					( 
 						startShift: 0s, 
-						name: fold-height, 
+						name: fold, 
 						duration: 0.4s 
 					) 
 				] 
@@ -118,7 +132,7 @@ $sequence: (
 		), 
 
 		( 
-			selector: ".logo-holder-entry-intro .logo", 
+			selector: ".logo-holder-entry-main .logo", 
 			animationGroup: ( 
 				startShift: 0s, 
 				animations: [ 

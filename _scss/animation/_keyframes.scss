@@ -70,7 +70,7 @@
 	100% { 
 		transform: translateY( 0 ) scale( 1 ); 
 	}
-}
+} 
 
 @keyframes fold { 
 	100% { 
@@ -98,7 +98,7 @@
 
 @keyframes position-top { 
 	100% { 
-		top: 0; 
+		top: 0; bottom: auto; 
 	}
 } 
 
