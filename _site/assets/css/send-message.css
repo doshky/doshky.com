@@ -95,6 +95,7 @@
 	background: var( --section-secondary-color ); background-size: cover; 
 	/*border: 1px solid; */ 
 	border-radius: var( --message-border-radius ); 
+	overflow: hidden; 
 
 } 
 
