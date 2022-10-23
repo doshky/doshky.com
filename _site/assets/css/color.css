@@ -10,7 +10,9 @@
 	/* Sets text color as the main color, with full opacity */
 	--text-color: var( --main-color ); 
 
-	--button-color: rgb(190, 121, 255);
+	--button-color: rgb(101, 65, 134); 
+
+	--light-gray-color: rgb( 201, 201, 201 ); 
 
 }
 
