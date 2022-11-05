@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "var( --icon-font-family )";
-	src: url( "/assets/fonts/ionicons.ttf" ); 
+	src: url( "../fonts/ionicons.ttf" ); 
 }
 
 html, 
