@@ -100,17 +100,17 @@
 } 
 
 .main-nav .nav-entry:nth-child( 1 ) > .nav-link { 
-	background-image: url( "/assets/images/woman-writer-27083216-button.png" ); 
+	background-image: url( "../images/woman-writer-27083216-button.png" ); 
 	
 } 
 
 .main-nav .nav-entry:nth-child( 2 ) > .nav-link { 
-	background-image: url( "/assets/images/303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman-button.png" ); 
+	background-image: url( "../images/303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman-button.png" ); 
 	
 } 
 
 .main-nav .nav-entry:nth-child( 3 ) > .nav-link { 
-	background-image: url( "/assets/images/Woman-Writing-button.png" ); 
+	background-image: url( "../images/Woman-Writing-button.png" ); 
 	
 } 
 

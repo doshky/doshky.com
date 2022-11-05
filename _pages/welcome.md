@@ -7,5 +7,5 @@ text:
     artistic nickname given to me by a very dear family I met in UK. I spent
     almost nine years in Great Britain and there I discovered my love of
     painting.
-image: /assets/images/paintings/doshky-background.png
+image: ./assets/images/paintings/doshky-background.png 
 ---

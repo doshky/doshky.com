@@ -7,5 +7,5 @@ text:
     strange and colourful world. This is my way to express myself and in every
     painting I create I put a little piece of my heart and my colourful
     thoughts.
-image: /assets/images/paintings/303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman-color.png
+image: ./assets/images/paintings/303-3035876_transparent-sexy-woman-silhouette-png-transparent-elegant-woman-color.png
 ---
