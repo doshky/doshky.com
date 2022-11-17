@@ -1,0 +1,75 @@
+.section-head { 
+	--section-head-width: 30em; 
+
+} 
+
+.section-head { 
+	max-width: var( --section-head-width ); margin-left: auto; margin-right: auto; 
+	/*padding-top: 8em; padding-bottom: 8em; */ 
+	position: relative; 
+	/*background-color: red; */ 
+	text-align: center; 
+
+} 
+
+.section-head .featured-image { 
+	box-sizing: border-box; 
+	height: 20em; 
+	margin-bottom: 1.5em; 
+	/*border: 1px solid;
+	border-radius: 20px; */ 
+	/*background-color: rgba(255, 255, 255, 0.123); */ 
+	
+} 
+
+.section-head .heading { 
+	width: 100%; 
+	padding: 0.2em; 
+	/*border: 1px solid; */ 
+	/*background-color: rgba(14, 24, 46, 0.808); color: rgb(190, 121, 255); 
+	position: absolute; bottom: 20%; */ 
+	font-family: var( --section-head-heading-font-family ); 
+	font-size: var( --section-head-heading-font-size ); 
+	font-weight: 100; 
+
+} 
+
+.section-head .section-head-details-button { 
+	display: flex; flex-direction: row; justify-content: center; align-items: center; 
+	width: auto; 
+	padding: 0; 
+	position: absolute; z-index: 2; 
+	left: 0; right: 0; top: 0; bottom: 0; 
+	border: 0; 
+	transform: none; 
+	opacity: 1; 
+	/*opacity: 0; 
+	transition: opacity 0.2s; */ 
+
+} 
+
+.section-head-details-button-text { 
+	display: block; 
+	padding: 1em 1.4em; 
+	border: 1px solid; 
+	transform: translateY( 100% ); 
+	opacity: 0; 
+	transition: transform 0.2s, opacity 0.2s; 
+
+} 
+
+.section-head-details-button ~ * { 
+	transition: opacity 0.2s; 
+
+}
+
+.section-head-details-button:hover ~ * { 
+	opacity: 0.2 !important; 
+
+}
+
+.section-head-details-button:hover .section-head-details-button-text { 
+	transform: translateY( 0 ); 
+	opacity: 1; 
+
+}

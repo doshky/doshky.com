@@ -36,7 +36,7 @@
 
 } 
 
-.main-banner .cover-image { 
+.main-banner .banner-entry > .cover-image { 
 	background-image: url( "/assets/images/doshky-background-main-color.png" ) !important; 
 
 }

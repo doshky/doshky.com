@@ -160,7 +160,7 @@
 
 } 
 
-.banner-entry .details-button { 
+.banner-text-content .details-button { 
 	margin-top: 3em; 
 	/*background-color: var( --main-color ); 
 	color: var( --light-gray-color ); */ 
@@ -168,7 +168,7 @@
 
 }
 
-.banner-entry .featured-image { 
+.banner-text-content .featured-image { 
 	margin-left: auto; margin-right: auto; 
 	width: 12rem; 
 	height: 12rem; 
@@ -176,7 +176,7 @@
 
 } 
 
-.banner-entry .featured-image::after { 
+.banner-text-content .featured-image::after { 
 	display: block; 
 	width: 75%; height: 75%; 
 	position: absolute;

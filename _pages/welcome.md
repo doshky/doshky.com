@@ -1,4 +1,5 @@
----
+--- 
+inner: false 
 title: Welcome
 subheading: "Welcome To My Place, It’s "
 heading: "Nice To Have You Here! "

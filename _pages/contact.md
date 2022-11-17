@@ -1,9 +1,14 @@
----
+--- 
+inner: true 
+order: 3 
 title: "Contact "
 subheading: Have thoughts? Great, just
 heading: Contact Me
 text:
-  - and share anything that comes to mind, I'd appreciate your question, opinion
-    or suggestion.
-image: ./assets/images/paintings/woman-writing-color.png
+  - "and share anything that comes to mind, I'd appreciate your question, opinion
+    or suggestion."
+image: ./assets/images/paintings/woman-writing-color.png 
+head: 
+  text: "and share anything that comes to mind, I'd appreciate your question, opinion
+    or suggestion." 
 ---

@@ -9,6 +9,7 @@
 	margin-top: 4em; 
 	max-width: var( --page-inner-width ); margin-left: auto; margin-right: auto; 
 	padding-left: 8em; padding-right: 8em; 
+	position: relative !important; 
 
 } 
 
@@ -18,58 +19,11 @@
 }*/
 
 .open-section-button { 
-	display: block; 
-	margin-left: auto; margin-right: auto; 
-	width: 100%; max-width: 15em; 
-	/*width: 12rem; */ 
-	height: 12rem; 
-	position: relative; 
 	background-size: contain; background-position: center center; background-repeat: no-repeat; 
-	/*font-size: 0.85em; */ 
-	text-align: center; 
 
 } 
 
-/*.open-section-button:hover > .button-text { 
-	background-color: var( --section-main-color ); color: var( --section-secondary-color ); 
-
-}*/ 
-
-.open-section-button > .button-text { 
-	display: block; 
-	padding: 0.2em; 
-	border: 1px solid;
-	/*border-radius: 4px; */ 
-	position: absolute; 
-	left: 0; right: 0; bottom: 20%; 
-	/*background-color: var( --section-secondary-color ); */ 
-	overflow: hidden; 
-
-} 
-
-/*.open-section-button::after { 
-	display: block; 
-	width: 0; height: 100%; 
-	position: absolute; 
-	left: 0; top: 0; 
-	background-color: var( --section-main-color ); 
-	content: ""; 
-	transition: width 0.1s; 
-
-} 
-
-.open-section-button:hover::after { 
-	width: 100%; 
-
-} */ 
-
-.open-section-button:hover > .button-text { 
-	background-color: var( --section-main-color ); color: var( --button-color ); 
-	border-color: var( --section-main-color ); 
-
-}
-
-.open-work-section-button { 
+/*.open-work-section-button { 
 	background-image: url( "../images/woman-writer-27083216-button.png" ); 
 
 } 
@@ -82,14 +36,14 @@
 .open-contact-section-button { 
 	background-image: url( "../images/Woman-Writing-button.png" ); 
 	
-} 
+} */ 
 
 
-@media screen and ( max-width: 920px ) { 
+@media screen and ( min-width: 0px ) { 
 	.banner-entry-button-list { 
 		--column-count: 1; 
 		--column-gutter-x: 0em; 
-		--column-gutter-y: 2em; 
+		--column-gutter-y: 20em; 
 	
 	} 
 
@@ -99,7 +53,7 @@
 	}
 
 	.button-entry + .button-entry { 
-		margin-top: 2em; 
+		margin-top: 3.5em; 
 	
 	} 
 	

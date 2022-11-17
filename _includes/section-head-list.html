@@ -1,0 +1,12 @@
+<section class= "section-head-list">  
+
+{% assign inner_pages_ordered = site.pages | where: 'inner', true | sort: 'order' %} 
+{% for page in inner_pages_ordered %} 
+
+	{% include section-head.html 
+		section = page 
+	%} 
+	
+{% endfor %} 
+
+</section> 

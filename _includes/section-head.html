@@ -1,34 +1,38 @@
-{% assign head = include.head %} 
-{% assign className = include.className | append: "-section" %} 
+{% assign section = include.section %} 
+{% assign id = section.title | strip | downcase %} 
+{% assign className = id | append: "-section" %} 
 
 <section class= "section-head {{ className }}-head"> 
-	{% include cover-image.html 
-		src = head.image.src 
+	<a 
+		class= "button control-button open-section-button details-button section-head-details-button" 
+		href= "#page-body" 
+		data-target-section-id= "{{ className }}" 
+		data-control-set= "body.remove:page-body-nav, body.add:content-section-on, #{{ className }}.add:section-on" 
+	>
+		<span class= "button-text details-button-text section-head-details-button-text">Go To Section</span> 
+	</a> 
+
+	{% include featured-image.html 
+		src = section.image  
 	%} 
 	
 	<section class= "text-content section-head-text-content {{ className }}-head-text-content">  
-		{% include subheading.html 
-			text = head.subheading 
+		<!--{% include subheading.html 
+			text = section.subheading 
 			className = "section-subheading" 
-		%} 
+		%} --> 
 
 		{% include heading.html 
 			level = 3 
-			text = head.heading 
+			text = section.heading 
 			className = "section-heading" 
 		%} 
 
-		{% for paragraph in head.paragraphs %} 
-			<p class= "paragraph">{{ paragraph.text }}</p> 
-		{% endfor %} 
+		<!--{% for paragraph in section.text %} 
+			<p class= "paragraph">{{ paragraph }}</p> 
+		{% endfor %} --> 
 
-		<a 
-			class= "button control-button details-button" 
-			href= "#page-body" 
-			data-control-set= "body.remove:page-body-nav, body.add:content-section-on, #{{ className }}.add:section-on" 
-		>
-			Read More 
-		</a> 
+		<p class= "paragraph">{{ section.head.text }}</p> 
 	
 	</section>  
 </section>

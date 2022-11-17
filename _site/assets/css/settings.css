@@ -31,6 +31,9 @@
 	--banner-entry-heading-font-weight: 100; 
 	--banner-entry-heading-line-height: 1; 
 
+	--section-head-heading-font-family: var( --banner-entry-heading-font-family ); 
+	--section-head-heading-font-size: 1.4em; 
+
 	--body-section-heading-font-size: 1.4em; 
 
 	--main-nav-font-family: var( --heading-font-family ); 
