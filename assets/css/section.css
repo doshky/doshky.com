@@ -133,33 +133,6 @@
 
 }*/ 
 
-
-@media screen and ( max-width: 780px ) { 
-
-	/*.section-head { 
-		padding-top: var( --section-head-cover-image-height ); 
-	
-	} */ 
-
-	.section-head { 
-		padding-top: 2.5em; padding-bottom: 2.5em; 
-	
-	} 
-
-	.section-head:nth-of-type( n ) .text-content { 
-		margin-left: 0; margin-right: 0; 
-		text-align: left; 
-	
-	} 
-
-	.section-head:nth-of-type( n ) .cover-image { 
-		width: 100%; height: var( --section-head-cover-image-height ); 
-		position: relative; 
-	
-	} 
-	
-} 
-
 @media screen and ( max-width: 640px ) { 
 
 	.section > .featured-image { 
