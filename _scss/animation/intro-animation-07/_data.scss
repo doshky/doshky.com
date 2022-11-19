@@ -260,7 +260,27 @@ $sequence: (
 		), 
 
 		( 
-			selector: ".banner-entry-button-list", 
+			selector: ".banner-text-content-line", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slide, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".section-head-list", 
 			animationGroup: ( 
 				startShift: -0.3s, 
 				animations: [ 
