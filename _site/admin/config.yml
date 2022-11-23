@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: modern-design-banner-image-buttons # Branch to update (optional; defaults to master) 
+  branch: branch modern-design-content-sections # Branch to update (optional; defaults to master) 
 
 media_folder: "/assets/images/paintings" 
 
@@ -127,8 +127,12 @@ collections:
         name: "title" 
         widget: "string" 
 
-      - label: "Link" 
-        name: "link" 
+      - label: "Name" 
+        name: "name" 
+        widget: "string" 
+
+      - label: "Address" 
+        name: "address" 
         widget: "string" 
         required: false 
 

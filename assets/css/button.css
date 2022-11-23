@@ -24,15 +24,15 @@
 } 
 
 /* Button icon placeholder */
-.has-icon:before { 
+.has-icon::before { 
 	/* Centers icon character inside the icon placeholder */
 	display: flex; flex-direction: row; justify-content: center; align-items: center; 
 	/* Sets icon holder size */
 	width: var( --button-icon-side ); height: var( --button-icon-side ); 
 	/* Sets icon character font and size */
-	font-family: "var( --icon-font-family )"; font-size: var( --button-icon-font-size ); 
+	font-family: "var( --icon-font-family )"; font-size: var( --icon-font-size ); 
 	/* Icon character is set through a variable */
-	content: var( --button-icon-code ); 
+	content: var( --icon-code ); 
 
 } 
 

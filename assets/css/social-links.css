@@ -1,0 +1,62 @@
+.social-links-entry-list { 
+	
+
+} 
+
+.social-links-entry-list { 
+	justify-content: center; 
+	margin-top: 1.5em; 
+
+}
+
+
+.social-links-entry { 
+	width: auto; 
+
+} 
+
+.social-links-entry + .social-links-entry { 
+	margin-left: 0.5em; 
+
+}
+
+.social-link { 
+	display: block; 
+	position: relative; 
+
+} 
+
+.social-link::after { 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0; 
+	border-width: 1px; border-style: solid; border-radius: inherit; 
+	content: ""; 
+	opacity: 0.5; 
+	
+} 
+
+.social-link:hover::after { 
+	border-color: transparent; 
+
+}
+
+.social-link::before { 
+	
+
+} 
+
+.social-link-facebook { 
+	--icon-code: "\f231"; 
+
+} 
+
+.social-link-instagram { 
+	--icon-code: "\f350"; 
+
+} 
+
+.social-link-text { 
+	display: none; 
+
+}

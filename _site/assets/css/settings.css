@@ -40,12 +40,13 @@
 	--main-nav-font-size: 1em; 
 
 	--icon-font-family: Ionicons; 
+	--icon-font-size: 1.4em; 
 
 } 
 
 .button { 
 	/* Defines button icon font size */ 
-	--button-icon-font-size: 1.4em; 
+	--icon-font-size: 1.4em; 
 
 	--button-padding-y: 1.2em; 
 	--button-padding-x: 2.2em; 
@@ -59,19 +60,19 @@
 
 /* Sets all close buttons icon character */
 .button-close { 
-	--button-icon-code: "\f2d7"; 
+	--icon-code: "\f2d7"; 
 
 } 
 
 /* Sets main navigation open button character */
 .main-nav-button-open { 
-	--button-icon-code: "\f394"; 
+	--icon-code: "\f394"; 
 
 } 
 
 /* Sets scroll-to-top button character */
 .button-scroll-to-top { 
-	--button-icon-code: "\f10e"; 
+	--icon-code: "\f10e"; 
 
 } 
 
