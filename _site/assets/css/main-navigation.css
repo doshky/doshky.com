@@ -1,4 +1,13 @@
 .main-nav { 
+	--main-nav-button-text-height: 2.5em; 
+	--main-nav-button-y: 1.5em; 
+	--main-nav-button-margin-top: var( --main-nav-button-y ); 
+	/*--main-nav-button-image-height: calc( 100% - var( --main-nav-button-text-height ) ); */ 
+	--main-nav-button-image-height: 100%; 
+
+}
+
+.main-nav { 
 	/*width: 0; height: 0; */
 	/*overflow: hidden; */
 
@@ -29,6 +38,7 @@
 	/*flex-direction: column; */ 
 	justify-content: center; align-items: center; 
 	width: 100%; height: 100%; 
+	/*height: 100%; min-height: 100vh; */ 
 	/*padding-left: 10rem; padding-right: 10rem; */ 
 	/*padding-top: 5em; padding-bottom: 5em; */ 
 
@@ -39,7 +49,7 @@
 	/*height: 10rem; */ 
 	/*width: 25%; max-width: 10rem; height: 100%; */ 
 	/*max-width: 20rem; */ 
-	width: 20%; height: 25%; 
+	width: 20%; height: 50%; 
 	/*padding-top: 20%; height: 0; */ 
 	/*width: 50%; */ 
 	/*height: calc( ( 100% - 2 * 2em ) / 3 ); */ 
@@ -53,8 +63,8 @@
 
 .main-nav .nav-entry::after { 
 	box-sizing: border-box; 
-	width: 100%; height: 100%; 
-	position: absolute; left: 0; top: 0; 
+	width: 100%; 
+	position: absolute; left: 0; top: 0; bottom: var(--main-nav-button-text-height); 
 	z-index: -1; 
 	border: 1px solid; border-radius: 12px; 
 	content: ""; 
@@ -73,17 +83,18 @@
 @media screen and ( max-width: 1180px ) { 
 	.main-nav .nav-entry-list { 
 		flex-direction: column; flex-wrap: nowrap; 
-		padding-top: 2.5em; padding-bottom: 2.5em; 
+		padding-top: 5vh; padding-bottom: 5vh; 
 	
 	} 
 
 	.main-nav .nav-entry { 
 		width: 80%; max-width: 20rem; 
+		height: 25%; 
 	
 	} 
 
 	.main-nav .nav-entry + .nav-entry { 
-		margin-left: 0; margin-top: 1em; 
+		margin-left: 0; margin-top: var( --main-nav-button-margin-top ); 
 	
 	}
 
@@ -91,13 +102,25 @@
 
 .main-nav .nav-link { 
 	box-sizing: border-box; 
-	display: flex; flex-direction: row; justify-content: center; align-items: flex-end; 
-	max-width: none; width: 100%; height: 100%; 
-	border-bottom: 2em solid transparent; 
+	max-width: none; width: 100%; height: var(--main-nav-button-image-height); 
+	border-bottom: var( --main-nav-button-text-height ) solid transparent; 
 	background-position: center center; 
 	position: absolute; top: 0; 
 
 } 
+
+/*.main-nav .nav-link > * { 
+	display: block; 
+	margin-left: auto; margin-right: auto; 
+	text-align: center; 
+
+}*/ 
+
+.main-nav .nav-link-image { 
+	width: 100%; height: var( --main-nav-button-image-height ); 
+	object-fit: contain; 
+
+}
 
 .main-nav .nav-entry:nth-child( 1 ) > .nav-link { 
 	background-image: url( "../images/woman-writer-27083216-button.png" ); 
@@ -141,11 +164,15 @@
 
 .main-nav .nav-link-text { 
 	display: block; 
-	height: 2em; 
-	position: absolute; top: 100%; 
+	width: 100%; 
+	height: var( --main-nav-button-text-height ); line-height: var( --main-nav-button-text-height ); 
+	position: absolute; 
+	/*bottom: 0; */
+	top: 100%; 
 	/*z-index: -1; */ 
 	/*font-weight: bold; */ 
 	/*transform: rotateZ( -90deg ); */ 
+	text-align: center; 
 
 }
 
