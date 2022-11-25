@@ -260,7 +260,7 @@ $sequence: (
 		), 
 
 		( 
-			selector: ".banner-text-content-line", 
+			selector: ".banner-text-content > .custom-line", 
 			animationGroup: ( 
 				startShift: -0.3s, 
 				animations: [ 

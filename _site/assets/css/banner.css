@@ -143,13 +143,8 @@
 
 } 
 
-.banner-text-content-line { 
-	display: block; 
-	width: 2.5em; 
-	margin-left: auto; margin-right: auto; 
+.banner-text-content-custom-line { 
 	margin-top: max( 10%, 3em ); 
-	/*background-color: currentColor; */ 
-	border-top: 6px dotted; 
 
 } 
 

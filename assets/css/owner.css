@@ -53,6 +53,11 @@
 .owner .description { 
 	line-height: 1.4; 
 
+} 
+
+.owner-custom-line { 
+	margin-top: 3.5em; 
+
 }
 
 /*.button-scroll-to-top { 

@@ -248,7 +248,7 @@
   left: -10000px;
   top: -10000px;
 }
-.banner .main-nav-button-open, .banner .featured-image, .banner .text-content > *, .banner .section-head-list, .banner .footer {
+.banner .main-nav-button-open, .banner .featured-image, .banner .text-content > *, .banner-text-content-custom-line, .banner .section-head-list, .banner .footer {
   transform: translateY(150px);
   opacity: 0;
 }
@@ -309,7 +309,7 @@
   animation-fill-mode: forwards;
 }
 
-.banner-text-content-line {
+.banner-text-content > .custom-line {
   animation: slide 0.4s 2.3015s, fade-in 0.2s 2.3015s;
   animation-fill-mode: forwards;
 }
