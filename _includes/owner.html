@@ -1,13 +1,5 @@
 <article class= "owner"> 
-	<figure class= "owner-photo" style= "background-image: url( '{{ include.owner.photo }}' );"> 
-		{% include image.html 
-			className = "photo" 
-			src = include.owner.photo 
-		%} 
-
-		<a class= "admin-panel-link" href= "https://doshky.netlify.app/admin/"><span class= "label admin-panel-link-label">Admin Panel</span></a> 
-	</figure> 
-
+	 
 	
 	{% include heading.html 
 		level = 4 
@@ -17,6 +9,15 @@
 	
 
 	<p class= "description">{{ include.owner.description }}</p> 
+
+	<figure class= "owner-photo" style= "background-image: url( '{{ include.owner.photo }}' );"> 
+		{% include image.html 
+			className = "photo" 
+			src = include.owner.photo 
+		%} 
+
+		<a class= "admin-panel-link" href= "https://doshky.netlify.app/admin/"><span class= "label admin-panel-link-label">Admin Panel</span></a> 
+	</figure> 
 
 	<ul class= "entry-list social-links-entry-list"> 
 	{% for link in site.social_links %} 
@@ -32,5 +33,5 @@
 	{% endfor %}
 	</ul> 
 
-	<div class= "custom-line owner-custom-line"></div> 
+	
 </article>

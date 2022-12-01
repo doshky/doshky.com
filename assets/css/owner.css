@@ -11,7 +11,8 @@
 } 
 
 .owner { 
-	position: relative;  
+	margin-top: 2em; 
+	position: relative; 
 
 }
 
@@ -55,10 +56,10 @@
 
 } 
 
-.owner-custom-line { 
+/*.owner-custom-line { 
 	margin-top: 3.5em; 
 
-}
+}*/
 
 /*.button-scroll-to-top { 
 	position: absolute; right: 100%; margin-right: 4rem; 
