@@ -144,7 +144,7 @@
 } 
 
 .banner-text-content-custom-line { 
-	margin-top: max( 10%, 3em ); 
+	margin-top: clamp( 4em, 10%, 6em ); 
 
 } 
 
