@@ -53,13 +53,13 @@
 } 
 
 /* Defines button 'hover' effect */ 
-.button:hover { 
+/*.button:hover { */
 	/* Inverts button colors */
 	/*background-color: var( --main-color ); color: var( --light-gray-color ); */ 
 	/* Keeps button border color the same as its background to avoid border disappearing */
 	/*border-color: var( --main-color );  */ 
 
-} 
+/*} */ 
 
 /*.button-close { 
 	margin-bottom: 5rem; 
@@ -71,12 +71,23 @@
 
 }
 
-.main-nav-button-open { 
+/*.main-nav-button-open { 
 	border: 1px solid; 
 
-} 
+} */
 
 /*.banner-entry .main-nav-button-open { 
 	margin-top: 1.5em; 
 
 } */ 
+
+/* Sets button border */
+.button:is( .main-nav-button-open, .social-link )::after { 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0; 
+	border-width: 1px; border-style: solid; border-radius: inherit; 
+	content: ""; 
+	opacity: 0.5; 
+	
+} 
