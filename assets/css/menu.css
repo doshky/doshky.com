@@ -1,0 +1,110 @@
+.menu { 
+	--owner-photo-width: 10em; 
+	
+} 
+
+/*.menu .owner-photo { 
+	--owner-photo-aspect-ratio: 1; 
+	--owner-photo-border-radius: 12px; 
+
+}*/ 
+
+.menu { 
+	overflow: auto; 
+	
+} 
+
+.main-nav-button-close { 
+	/*display: none; */ 
+	align-self: flex-start; 
+	margin-left: 1.5em; margin-top: 1.5em; 
+	margin-bottom: -3.5em; 
+	/*position: absolute; left: 0; top: 0; */ 
+	/*top: 50%; margin-top: calc( -1 * var( --button-icon-side ) / 2 );  */ 
+	/*background-color: var( --main-color ); color: var( --light-gray-color ); */ 
+
+} 
+
+.menu-body { 
+	box-sizing: border-box; 
+	display: flex; flex-direction: column; align-items: center; 
+	min-height: 100%; 
+	padding-top: 5em; 
+	padding-bottom: 5em;  
+
+} 
+
+.menu-body > * + * { 
+	margin-top: 2.5em; 
+
+}
+
+.menu .id { 
+	text-align: center; 
+
+} 
+
+.button-panel { 
+	display: flex; justify-content: space-between; 
+
+} 
+
+.button-panel > * + * { 
+	margin-left: 3.5em; 
+	/*padding-left: 2.5em; 
+	position: relative;*/ 
+
+} 
+
+/*.button-panel > * + *::after { 
+	display: block; 
+	width: 0px; height: 50%; 
+	border-left: 1px dotted; 
+	position: absolute; left: 0; top: 0; 
+	content: ""; 
+	opacity: 0.5; 
+
+} */ 
+
+.menu-section-title { 
+	text-align: center; 
+	
+} 
+
+.menu .admin-panel-link::before { 
+	content: "\f29e"; 
+
+} 
+
+.menu-section > * + * { 
+	margin-top: 1em; 
+
+} 
+
+.admin-panel-link { 
+	/*flex-direction: column; align-items: center; */ 
+	/*display: block; */ 
+	/*width: 100%; height: 100%; */ 
+	/*position: absolute; left: 0; top: 0; */ 
+	margin-left: auto; margin-right: auto; 
+	position: relative; 
+
+} 
+
+.admin-panel-link-label { 
+	display: block; 
+	position: absolute; left: -10000px; 
+
+} 
+
+/*.admin-menu-title { 
+	margin-top: 0.5em; 
+
+}*/ 
+
+.menu-section-custom-line { 
+	width: 20em; 
+	border-style: solid; border-top-width: 1px; 
+	opacity: 0.5; 
+
+}

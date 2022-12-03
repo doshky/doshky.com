@@ -3,7 +3,14 @@
 	--page-body-member-width: calc( 100% / var( --page-body-member-count ) ); 
 	--page-body-width: calc( var( --page-body-member-count ) * 100% ); 
 
-}
+} 
+
+/*.body { 
+	box-sizing: border-box; 
+	height: 100%; 
+	border: 1.5em solid; 
+
+}*/ 
 
 .page-body-holder { 
 	width: 100%; height: 100vh; 
@@ -12,7 +19,20 @@
 	z-index: 3; */ 
 	overflow: hidden; 
 
+	/*box-sizing: border-box; 
+	border: 2em solid transparent; */ 
+
 } 
+
+/*.page-body-holder::after { 
+	--x: 0em; 
+	display: block; 
+	border: 1px solid; 
+	position: absolute; z-index: -1; 
+	left: var( --x ); right: var( --x ); top: var( --x ); bottom: var( --x ); 
+	content: ""; 
+
+}*/
 
 .page-holder-open .page-body { 
 	position: relative;  
@@ -60,7 +80,22 @@
 	width: var( --page-body-member-width ); height: 100%; 
 	position: absolute; top: 0; 
 
+	/*box-sizing: border-box; 
+	border: 1.5em solid; */ 
+
+
 } 
+
+/*.page-body > *::after { 
+	box-sizing: border-box; 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; top: 0; 
+	border: 1px solid green; 
+	content: ""; 
+
+
+} */ 
 
 /*.page-body > * + * {  
 	border-left: 1px solid; 
@@ -72,7 +107,7 @@
 
 }
 
-.main-nav { 
+.menu { 
 	left: var( --page-body-member-width ); 
 
 } 

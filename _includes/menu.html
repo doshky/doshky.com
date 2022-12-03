@@ -1,0 +1,43 @@
+{% assign currentSectionNavEntry = include.data %} 
+
+<section class= "menu"> 
+	<a 
+		href= "#page-body" 
+		class= "button control-button button-close main-nav-button main-nav-button-close has-icon" 
+		data-control-set= "body.remove:nav-on, body.remove:page-body-nav" 
+	> 
+		<span class= "button-text">Close navigation</span> 
+	</a> 
+	
+	<div class= "menu-body">    
+		{% include owner-photo.html %} 
+		
+		{% include id.html %}  
+
+		<div class= "custom-line owner-custom-line"></div>
+
+		{% include main-nav.html %}  
+
+		<div class= "custom-line owner-custom-line"></div> 
+
+		<!-- <div class= "button-panel"> --> 
+
+			<section class= "menu-section social-links">  
+				{% include social-links.html %} 
+
+				<p class= "menu-section-title social-links-title">Reach Me</p> 
+			</section>  
+
+			<section class= "menu-section admin-menu"> 
+				<div class= "custom-line menu-section-custom-line"></div> 
+				
+				<a class= "button admin-panel-link has-icon" href= "https://doshky.netlify.app/admin/"> 
+					<span class= "label admin-panel-link-label">Log In</span> 
+				</a> 
+
+				<p class= "menu-section-title admin-menu-title">Log In</p> 
+			</section> 
+
+		<!-- </div>   --> 
+	</div>
+</section>
