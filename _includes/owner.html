@@ -1,6 +1,5 @@
 <article class= "owner"> 
 	 
-	
 	{% include heading.html 
 		level = 4 
 		text = include.owner.name 
@@ -10,28 +9,8 @@
 
 	<p class= "description">{{ include.owner.description }}</p> 
 
-	<figure class= "owner-photo" style= "background-image: url( '{{ include.owner.photo }}' );"> 
-		{% include image.html 
-			className = "photo" 
-			src = include.owner.photo 
-		%} 
+	{% include owner-photo.html %} 
 
-		<a class= "admin-panel-link" href= "https://doshky.netlify.app/admin/"><span class= "label admin-panel-link-label">Admin Panel</span></a> 
-	</figure> 
+	{% include social-links.html %} 
 
-	<ul class= "entry-list social-links-entry-list"> 
-	{% for link in site.social_links %} 
-
-		{% if link.address == "" %}{% continue %}{% endif %} 
-
-		<li class= "entry social-links-entry"> 
-			<a class= "link social-link social-link-{{ link.name }} button has-icon" href= "{{ link.address }}"> 
-				<span class= "social-link-text">{{ link.title }}</span> 
-			</a> 
-		</li> 
-		
-	{% endfor %}
-	</ul> 
-
-	
-</article>
+</article> 

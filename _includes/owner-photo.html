@@ -1,0 +1,15 @@
+{% assign src = site.id[ 0 ].photo %}  
+
+<figure class= "owner-photo" style= "background-image: url( '{{ src }}' );"> 
+	{% include image.html 
+		className = "photo" 
+		src =  src 
+	%} 
+
+	{% if include.caption %} 
+		{% assign name = site.id[ 0 ].name %}
+		<figcaption class= "caption owner-photo-caption">{{ name }}</figcaption> 
+	{% endif %} 
+
+	<!--<a class= "admin-panel-link" href= "https://doshky.netlify.app/admin/"><span class= "label admin-panel-link-label">Admin Panel</span></a> --> 
+</figure> 

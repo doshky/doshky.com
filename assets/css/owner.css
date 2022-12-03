@@ -1,12 +1,15 @@
 .owner { 
-	--owner-photo-width: 10rem;  
+	--owner-photo-width: 10rem; 
+	--owner-heading-vertical-shift: 1.5em; 
+
+}
+
+.owner-photo {  
 	--owner-photo-aspect-ratio: 1; 
 	--owner-photo-height: calc( var( --owner-photo-aspect-ratio ) * var( --owner-photo-width ) ); 
 	/*--border-radius-to-width-ratio: 20; 
 	--owner-photo-border-radius: calc( var( --owner-photo-width ) / var( --border-radius-to-width-ratio ) ); */
-	--owner-photo-border-radius: 50%; 
-
-	--owner-heading-vertical-shift: 1.5em; 
+	--owner-photo-border-radius: 50%;  
 
 } 
 
@@ -38,6 +41,11 @@
 .owner-photo .photo { 
 	display: none; 
 
+} 
+
+.owner-photo-caption { 
+	display: block; 
+
 }
 
 .heading.owner-heading { 
@@ -56,6 +64,11 @@
 
 } 
 
+.owner .social-links-entry-list { 
+	margin-top: 2.5em; 
+
+} 
+
 /*.owner-custom-line { 
 	margin-top: 3.5em; 
 
@@ -69,14 +82,3 @@
 
 }*/ 
 
-.admin-panel-link { 
-	display: block; 
-	width: 100%; height: 100%; 
-	position: absolute; left: 0; top: 0; 
-
-} 
-
-.admin-panel-link-label { 
-	position: absolute; left: -10000px; 
-
-}
