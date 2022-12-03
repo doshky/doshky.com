@@ -1,14 +1,7 @@
 .social-links-entry-list { 
-	
+	justify-content: center; 
 
 } 
-
-.social-links-entry-list { 
-	justify-content: center; 
-	margin-top: 2.5em; 
-
-}
-
 
 .social-links-entry { 
 	width: auto; 
@@ -26,25 +19,10 @@
 
 } 
 
-.social-link::after { 
-	display: block; 
-	width: 100%; height: 100%; 
-	position: absolute; left: 0; top: 0; 
-	border-width: 1px; border-style: solid; border-radius: inherit; 
-	content: ""; 
-	opacity: 0.5; 
-	
-} 
-
 .social-link:hover::after { 
 	border-color: transparent; 
 
 }
-
-.social-link::before { 
-	
-
-} 
 
 .social-link-facebook { 
 	--icon-code: "\f231"; 

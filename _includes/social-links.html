@@ -1,0 +1,13 @@
+<ul class= "entry-list social-links-entry-list"> 
+{% for link in site.social_links %} 
+
+	{% if link.address == "" %}{% continue %}{% endif %} 
+
+	<li class= "entry social-links-entry"> 
+		<a class= "link social-link social-link-{{ link.name }} button has-icon" href= "{{ link.address }}"> 
+			<span class= "social-link-text">{{ link.title }}</span> 
+		</a> 
+	</li> 
+	
+{% endfor %}
+</ul> 
