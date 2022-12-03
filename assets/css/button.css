@@ -2,6 +2,7 @@
 .button { 
 	display: flex; 
 	width: fit-content; 
+	position: relative; 
 
 }
 
