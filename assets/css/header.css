@@ -49,17 +49,17 @@
 
 } 
 
-.id .name, 
+/*.id .name, 
 .id .logo { 
 	position: absolute; left: -10000px; top: -10000px; 
 
-} 
+} */
 
 .index-link { 
 	display: block; 
-	width: var( --logo-width ); height: var( --logo-height ); 
+	/*width: var( --logo-width ); height: var( --logo-height ); */ 
 	/*position: absolute; left: 100%; bottom: 70%; */ 
-	background-size: contain; background-position: center; background-repeat: no-repeat; 
+	background-size: contain; background-position: center; background-repeat: no-repeat; background-image: none; 
 	/*border: 1px solid; */ 
 
 } 

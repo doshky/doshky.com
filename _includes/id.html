@@ -1,13 +1,16 @@
-{% assign id = site.data.id %} 
+{% assign id = site.id  | first %} 
 
 
 <article class= "id">  
 	<a 
 		class= "inner-link index-link" 
-		href= "#{{ include.targetID }}" 
+		href= "/" 
 	> 
-		<img class= "logo" src= "/assets/images/{{ include.logoSrc }}" /> 
-		<strong class= "name">{{ id.name }}</strong>  
+		{% if id.logo %} 
+			<img class= "logo" src= "/assets/images/{{ id.logo }}" />
+		{% endif %} 
+
+		<strong class= "name id-name">{{ id.name }}</strong>  
 	</a> 
 
 	{% if id.tagline and id.tagline != "" %}
