@@ -18,6 +18,7 @@
 
 body { 
 	color: var( --text-color ); 
+	background: var( --main-color ); 
 
 } 
 
@@ -26,7 +27,8 @@ body {
 .main-nav .nav, 
 .section-holder */ 
 { 
-	background: var( --section-secondary-color ); color: var( --section-main-color ); 
+	/*background: var( --section-secondary-color ); */ 
+	color: var( --section-main-color ); 
 
 } 
 
