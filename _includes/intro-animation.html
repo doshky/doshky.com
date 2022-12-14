@@ -1,0 +1,25 @@
+{% assign main_text = 'doshky' %} 
+{% assign add_text = 'diana pavlova' %} 
+
+
+<div class= "animation-holder"> 
+	<div class="animation-body">  
+
+		{% include featured-image.html 
+			src = site.data.banner.image.src 
+		%} 
+
+		<div class= "text-holder"> 
+			{% include split-to-chars.html 
+				text = main_text 
+				className = "main-text" 
+			%} 
+
+			{% include split-to-chars.html 
+				text = add_text 
+				className = "add-text" 
+			%} 
+		</div> 
+		
+	</div> 
+</div> 

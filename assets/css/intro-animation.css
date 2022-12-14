@@ -8,6 +8,11 @@
     transform: translateY(50px);
   }
 }
+@keyframes slide-up {
+  100% {
+    transform: translateY(-50px);
+  }
+}
 @keyframes fade-in {
   100% {
     opacity: 1;
@@ -20,7 +25,27 @@
 }
 @keyframes scale-up {
   100% {
-    transform: scale(150%);
+    transform: scale(1.5);
+  }
+}
+@keyframes scale-down {
+  100% {
+    transform: scale(1.5);
+  }
+}
+@keyframes scale-out {
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes rotate-clockwise {
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes rotate-counterclockwise {
+  100% {
+    transform: rotate(-45deg);
   }
 }
 @keyframes on {
@@ -43,9 +68,24 @@
     overflow: auto;
   }
 }
-@keyframes slide {
+@keyframes slideX {
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideY {
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes scaleX {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes scaleY {
+  100% {
+    transform: scaleY(1);
   }
 }
 @keyframes slide-scale {
@@ -168,6 +208,32 @@
 @keyframes scale-logo-element-down {
   100% {
     transform: scale(1);
+  }
+}
+@keyframes scale-up-down {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-up {
+  100% {
+    transform: scale(3);
+  }
+}
+@keyframes scale-down {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes border-on {
+  100% {
+    border-color: inherit;
   }
 }
 .logo-holder-entry-intro {
