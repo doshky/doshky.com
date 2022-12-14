@@ -1,0 +1,482 @@
+$sequence: (
+	start: 0.5s, 
+	stages: [ 
+	
+		( 
+			selector: ".letter", 
+			animationGroup: ( 
+				startShift: 0.2s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 2.5s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: slideX, 
+						duration: 2.5s 
+					)
+
+				] 
+			)
+		), 
+
+		( 
+			selector: ".animation-holder .featured-image", 
+			animationGroup: ( 
+				startShift: -2s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 2s 
+					) 
+
+				] 
+			)
+		), 
+
+		//( 
+		//	selector: ".main-text", 
+		//	animationGroup: ( 
+		//		startShift: 0s, 
+		//		animations: [ 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: scale-up, 
+		//				duration: 0.2s 
+		//			) 
+
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".main-text", 
+		//	animationGroup: ( 
+		//		startShift: 0s, 
+		//		animations: [ 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: scale-down, 
+		//				duration: 0.2s 
+		//			) 
+
+		//		] 
+		//	)
+		//), 
+
+		( 
+			selector: ".main-text::after", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.2s 
+					) 
+
+				] 
+			)
+		), 
+
+		
+
+		( 
+			selector: ".text-holder", 
+			animationGroup: ( 
+				startShift: 0.1s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.2s 
+					) 
+
+				] 
+			)
+		), 
+
+		( 
+			selector: ".add-text", 
+			animationGroup: ( 
+				startShift: -0.1s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.2s 
+					)
+
+				] 
+			)
+		), 
+
+		( 
+			selector: ".main-text", 
+			animationGroup: ( 
+				startShift: 2s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: slide-up, 
+						duration: 0.5s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-out, 
+						duration: 0.5s 
+					) 
+
+				] 
+			)
+		), 
+
+		( 
+			selector: ".add-text", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: slide-up, 
+						duration: 0.5s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-out, 
+						duration: 0.5s 
+					) 
+
+				] 
+			)
+		), 
+
+		( 
+			selector: ".animation-holder .featured-image", 
+			animationGroup: ( 
+				startShift: -0.7s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: fade-out, 
+						duration: 1s 
+					) 
+
+				] 
+			)
+		), 
+
+
+		//( 
+		//	selector: ".animation-holder::after", 
+		//	animationGroup: ( 
+		//		startShift: 1s, 
+		//		animations: [ 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: slideY, 
+		//				duration: 0.2s 
+		//			)
+
+		//		] 
+		//	)
+		//), 
+
+
+		//( 
+		//	selector: ".animation-body::after", 
+		//	animationGroup: ( 
+		//		startShift: 0.5s, 
+		//		animations: [ 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-in, 
+		//				duration: 1s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: scale-down, 
+		//				duration: 1s 
+		//			) 
+
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".animation-body::after", 
+		//	animationGroup: ( 
+		//		startShift: -0.1s, 
+		//		animations: [ 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-out, 
+		//				duration: 0.5s 
+		//			), 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: scale-up, 
+		//				duration: 0.5s 
+		//			)
+
+		//		] 
+		//	)
+		//), 
+
+		//( 
+		//	selector: ".animation-body", 
+		//	animationGroup: ( 
+		//		startShift: -0.4s, 
+		//		animations: [ 
+
+		//			( 
+		//				startShift: 0s, 
+		//				name: fade-out, 
+		//				duration: 0.5s 
+		//			) 
+
+		//		] 
+		//	)
+		//),  
+
+		( 
+			selector: ".animation-holder", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+
+					( 
+						startShift: 0s, 
+						name: off, 
+						duration: 0.0005s 
+					)
+
+				] 
+			)
+		),  
+
+
+
+		( 
+			selector: ".banner", 
+			animationGroup: ( 
+				startShift: -0.4s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: on, 
+						duration: 0.0005s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .featured-image", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					)
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .subheading", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .heading", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .paragraph", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner-text-content > .custom-line", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".section-head-list", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner-entry .footer", 
+			animationGroup: ( 
+				startShift: -0.3s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner .main-nav-button-open", 
+			animationGroup: ( 
+				startShift: -1.2s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: slideY, 
+						duration: 0.4s 
+					), 
+
+					( 
+						startShift: 0s, 
+						name: fade-in, 
+						duration: 0.2s 
+					) 
+				] 
+			)
+		), 
+
+		( 
+			selector: ".banner", 
+			animationGroup: ( 
+				startShift: 0s, 
+				animations: [ 
+					( 
+						startShift: 0s, 
+						name: overflow-on, 
+						duration: 0.0005s 
+					)
+				] 
+			)
+		) 
+
+	] 
+); 

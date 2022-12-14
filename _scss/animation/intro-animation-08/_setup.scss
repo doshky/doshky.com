@@ -1,0 +1,236 @@
+@use "sass:math"; 
+@use "sass:string"; 
+
+.animation-holder { 
+    height: 100vh; 
+	position: relative; 
+	border-bottom: 2px solid; 
+    overflow: hidden; 
+
+} 
+
+//.animation-holder::after { 
+//	display: block; 
+//	width: 100%; height: 0; 
+//	position: absolute; top: 100%; 
+//	border-bottom: 2px solid; 
+//    content: ""; 
+
+//} 
+
+.animation-body { 
+	display: flex; flex-direction: column; justify-content: center; align-items: center; 
+	height: 100vh; 
+    position: relative;   
+
+}
+
+.animation-body::after { 
+	display: block; 
+	width: 30%; padding-top: 30%; 
+	position: absolute; 
+	//background-color: currentColor; 
+	border: 12px solid; border-style: dotted; 
+	border-radius: 10000px; 
+	content: ""; 
+	transform: scale( 1.5 ); 
+	opacity: 0; 
+
+}
+
+.animation-body > * + * { 
+	margin-top: 1.5em; 
+
+} 
+
+.animation-holder .featured-image { 
+	--image-height: 20em; 
+
+}
+
+.animation-holder .featured-image { 
+	display: block; 
+	width: 100%;  
+	position: absolute; top: calc( ( 100% - var( --image-height ) ) / 2 ); 
+	//margin-top: calc( -1 * var( --height ) ); 
+	background-image: none !important; 
+
+	.image { 
+		display: block; margin-inline: auto; 
+		height: var( --image-height ); 
+
+	}
+
+}
+
+.animation-holder .owner-photo { 
+	--owner-photo-width: 10rem; 
+
+}
+
+.logo, 
+.text { 
+	margin: {
+		left: auto; right: auto; 
+	} 
+
+}
+
+.logo-holder { 
+
+	& .logo { 
+		display: none; 
+		width: 25vh; height: auto; 
+		position: relative; 
+	}
+
+	& .logo-element { 
+		display: block; 
+		
+	} 
+
+} 
+
+.text-holder { 
+	position: relative; 
+
+} 
+
+.text { 
+	width: fit-content; 
+	padding: 0.5em 1em; 
+	position: relative; 
+	font-size: 2.75em;  
+	text-transform: uppercase;
+
+} 
+
+.add-text { 
+	font-size: 1em; 
+
+	> .letter + .letter { 
+		margin-left: 0.75em; 
+
+	}
+
+} 
+
+.add-text-body::after { 
+	display: block; 
+	margin-left: -1ch; 
+	content: ""; 
+
+}
+
+.main-text::after { 
+	box-sizing: border-box; 
+	display: block; 
+	width: 100%; height: 100%; 
+	position: absolute; left: 0; top: 0; 
+	border: 2px solid; 
+	//border-color: transparent; 
+	content: ""; 
+	//transform: scaleX( 2 ); 
+	transform: translateY( -100% ); 
+	opacity: 0; 
+
+}
+
+.letter { 
+	display: inline-block; 
+	opacity: 0; 
+
+}
+
+$text: 'doshky'; 
+$letter-count: string.length( $text ); 
+$start-shift: 40; 
+$shift: calc( $start-shift / math.floor( calc( $letter-count / 2 ) ) ); 
+$unit: "vw"; 
+
+@for $pos from 0 to math.floor( calc( $letter-count / 2 ) ) { 
+	$current-shift: $start-shift - $pos * $shift; 
+	@if $pos == ( calc( $letter-count / 2 ) - 1 ) { 
+		$current-shift: calc( $current-shift / 2 ); 
+		
+	}
+
+	.letter:nth-child( #{ $pos + 1 } ) { 
+		transform: translateX( #{ -$current-shift }#{ $unit } ); 
+
+	} 
+
+	.letter:nth-child( #{ $letter-count - $pos } ) { 
+		transform: translateX( #{ $current-shift }#{ $unit } ); 
+
+	} 
+	
+} 
+
+
+.animation-holder .text-holder { 
+	transform: translateY( 50px ); 
+
+} 
+
+.animation-holder .featured-image { 
+	opacity: 0; 
+
+}  
+
+//.animation-holder .featured-image, 
+.animation-owner-photo-list, 
+.animation-holder .add-text { 
+	transform: translateY( 50px ); 
+	opacity: 0; 
+
+}  
+
+.add-text-body { 
+	display: block; 
+
+} 
+
+//.animation-owner-photo-list { 
+//	display: flex; justify-content: center; 
+//	transform: translateY( -50px ); 
+
+//	.owner-photo { 
+//		margin: 0;  
+
+//	}
+
+//	.owner-photo + .owner-photo { 
+//		margin-left: 2em; 
+
+//	}
+
+//}  
+
+
+.banner { 
+	position: absolute; 
+	left: -10000px; top: -10000px; 	
+
+	& .main-nav-button-open, 
+	& .featured-image, 
+	& .text-content > *, 
+	&-text-content-custom-line, 
+	& .section-head-list, 
+	& .footer { 
+		transform: translateY( 150px ); 
+		opacity: 0; 
+
+	} 
+
+	& .main-nav-button-open { 
+		transform: translateY( 25% ); 
+
+	} 
+
+	& .cover-image { 
+		transform: translateY( 25px ); 
+
+	} 
+
+} 

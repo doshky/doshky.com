@@ -249,64 +249,157 @@
 .animation-holder {
   height: 100vh;
   position: relative;
+  border-bottom: 2px solid;
   overflow: hidden;
 }
 
-.logo-holder {
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  z-index: 3;
-  overflow: hidden;
-}
-
-.logo-holder-entry {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  overflow: hidden;
-}
-.logo-holder-entry .logo {
-  width: 25vh;
-  height: 25vh;
-  position: relative;
-}
-.logo-holder-entry .logo-element {
-  display: block;
-  max-width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.logo-holder-entry-frame {
+.animation-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+.animation-body::after {
+  display: block;
+  width: 30%;
+  padding-top: 30%;
+  position: absolute;
+  border: 12px solid;
+  border-style: dotted;
+  border-radius: 10000px;
+  content: "";
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.animation-body > * + * {
+  margin-top: 1.5em;
+}
+
+.animation-holder .featured-image {
+  --image-height: 20em;
+}
+
+.animation-holder .featured-image {
+  display: block;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  top: calc((100% - var(--image-height)) / 2);
+  background-image: none !important;
+}
+.animation-holder .featured-image .image {
+  display: block;
+  margin-inline: auto;
+  height: var(--image-height);
 }
 
-.logo-holder-entry-intro {
-  top: 100%;
-  overflow: hidden;
-  z-index: 2;
-}
-.logo-holder-entry-intro .logo-holder-entry-frame {
-  bottom: 0;
+.animation-holder .owner-photo {
+  --owner-photo-width: 10rem;
 }
 
-.logo-holder-entry-main {
-  z-index: 1;
+.logo,
+.text {
+  margin-left: auto;
+  margin-right: auto;
 }
-.logo-holder-entry-main .logo-sign {
-  transform: scale(1.8);
+
+.logo-holder .logo {
+  display: none;
+  width: 25vh;
+  height: auto;
+  position: relative;
+}
+.logo-holder .logo-element {
+  display: block;
+}
+
+.text-holder {
+  position: relative;
+}
+
+.text {
+  width: fit-content;
+  padding: 0.5em 1em;
+  position: relative;
+  font-size: 2.75em;
+  text-transform: uppercase;
+}
+
+.add-text {
+  font-size: 1em;
+}
+.add-text > .letter + .letter {
+  margin-left: 0.75em;
+}
+
+.add-text-body::after {
+  display: block;
+  margin-left: -1ch;
+  content: "";
+}
+
+.main-text::after {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 2px solid;
+  content: "";
+  transform: translateY(-100%);
   opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+}
+
+.letter:nth-child(1) {
+  transform: translateX(-40vw);
+}
+
+.letter:nth-child(6) {
+  transform: translateX(40vw);
+}
+
+.letter:nth-child(2) {
+  transform: translateX(-26.6666666667vw);
+}
+
+.letter:nth-child(5) {
+  transform: translateX(26.6666666667vw);
+}
+
+.letter:nth-child(3) {
+  transform: translateX(-6.6666666667vw);
+}
+
+.letter:nth-child(4) {
+  transform: translateX(6.6666666667vw);
+}
+
+.animation-holder .text-holder {
+  transform: translateY(50px);
+}
+
+.animation-holder .featured-image {
+  opacity: 0;
+}
+
+.animation-owner-photo-list,
+.animation-holder .add-text {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.add-text-body {
+  display: block;
 }
 
 .banner {
@@ -325,73 +418,83 @@
   transform: translateY(25px);
 }
 
-.logo-holder-entry-main .logo-sign {
-  animation: fade-in 0.2s 0.5s, scale-logo-element-down 0.2s 0.5s;
+.letter {
+  animation: fade-in 2.5s 0.7s, slideX 2.5s 0.7s;
   animation-fill-mode: forwards;
 }
 
-.logo-holder-entry-intro {
-  animation: unfold 0.5s 0.9s, fold 0.4s 1.4005s;
+.animation-holder .featured-image {
+  animation: fade-in 2s 1.2s, fade-out 1s 5.8s;
   animation-fill-mode: forwards;
 }
 
-.logo-holder-entry-intro .logo-holder-entry-frame {
-  animation: position-top 0.0005s 1.4s;
+.main-text::after {
+  animation: fade-in 0.2s 3.2s, slideY 0.2s 3.2s;
   animation-fill-mode: forwards;
 }
 
-.logo-holder-entry-main .logo {
-  animation: slide-up 0.2s 1.8005s, fade-out 0.2s 1.8005s;
+.text-holder {
+  animation: slideY 0.2s 3.5s;
   animation-fill-mode: forwards;
 }
 
-.logo-holder {
-  animation: off 0.0005s 2.0005s;
+.add-text {
+  animation: fade-in 0.2s 3.6s, slideY 0.2s 3.6s, slide-up 0.5s 6s, fade-out 0.5s 6s;
+  animation-fill-mode: forwards;
+}
+
+.main-text {
+  animation: slide-up 0.5s 5.8s, fade-out 0.5s 5.8s;
+  animation-fill-mode: forwards;
+}
+
+.animation-holder {
+  animation: off 0.0005s 6.8s;
   animation-fill-mode: forwards;
 }
 
 .banner {
-  animation: on 0.0005s 1.801s, overflow-on 0.0005s 2.1015s;
+  animation: on 0.0005s 6.4005s, overflow-on 0.0005s 6.601s;
   animation-fill-mode: forwards;
 }
 
 .banner .featured-image {
-  animation: slide 0.4s 1.9015s, fade-in 0.2s 1.9015s;
+  animation: slideY 0.4s 6.401s, fade-in 0.2s 6.401s;
   animation-fill-mode: forwards;
 }
 
 .banner .subheading {
-  animation: slide 0.4s 2.0015s, fade-in 0.2s 2.0015s;
+  animation: slideY 0.4s 6.501s, fade-in 0.2s 6.501s;
   animation-fill-mode: forwards;
 }
 
 .banner .heading {
-  animation: slide 0.4s 2.1015s, fade-in 0.2s 2.1015s;
+  animation: slideY 0.4s 6.601s, fade-in 0.2s 6.601s;
   animation-fill-mode: forwards;
 }
 
 .banner .paragraph {
-  animation: slide 0.4s 2.2015s, fade-in 0.2s 2.2015s;
+  animation: slideY 0.4s 6.701s, fade-in 0.2s 6.701s;
   animation-fill-mode: forwards;
 }
 
 .banner-text-content > .custom-line {
-  animation: slide 0.4s 2.3015s, fade-in 0.2s 2.3015s;
+  animation: slideY 0.4s 6.801s, fade-in 0.2s 6.801s;
   animation-fill-mode: forwards;
 }
 
 .section-head-list {
-  animation: slide 0.4s 2.4015s, fade-in 0.2s 2.4015s;
+  animation: slideY 0.4s 6.901s, fade-in 0.2s 6.901s;
   animation-fill-mode: forwards;
 }
 
 .banner-entry .footer {
-  animation: slide 0.4s 2.5015s, fade-in 0.2s 2.5015s;
+  animation: slideY 0.4s 7.001s, fade-in 0.2s 7.001s;
   animation-fill-mode: forwards;
 }
 
 .banner .main-nav-button-open {
-  animation: slide 0.4s 1.7015s, fade-in 0.2s 1.7015s;
+  animation: slideY 0.4s 6.201s, fade-in 0.2s 6.201s;
   animation-fill-mode: forwards;
 }
 

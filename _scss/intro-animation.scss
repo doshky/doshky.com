@@ -1,8 +1,7 @@
 @use "./animation/keyframes"; 
 @use "./animation/animation" as animation; 
-@use "./animation/intro-animation-07/color"; 
-@use "./animation/intro-animation-07/data" as data; 
-@use "./animation/intro-animation-07/setup"; 	
+@use "./animation/intro-animation-08/color"; 
+@use "./animation/intro-animation-08/data" as data; 
+@use "./animation/intro-animation-08/setup"; 	
 
 @include animation.animate( data.$sequence ); 
-
