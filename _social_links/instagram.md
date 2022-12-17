@@ -1,6 +1,6 @@
 ---
 title: "Instagram "
 name: instagram
-address: ""
+address: https://instagram.com
 image: /assets/images/paintings/social-instagram-outline.svg
 ---
