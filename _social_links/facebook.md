@@ -1,6 +1,6 @@
 ---
-title: "Facebook" 
-image: /assets/images/logo-facebook.svg 
-address: "https://www.facebook.com/" 
-name: "facebook" 
+title: Facebook
+name: facebook
+address: https://www.facebook.com/
+image: /assets/images/paintings/social-facebook-outline.svg
 ---
