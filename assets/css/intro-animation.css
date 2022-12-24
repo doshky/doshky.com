@@ -292,7 +292,6 @@
 }
 .animation-holder .featured-image .image {
   display: block;
-  margin-inline: auto;
   height: var(--image-height);
 }
 
@@ -301,6 +300,7 @@
 }
 
 .logo,
+.animation-holder .featured-image > .image,
 .text {
   margin-left: auto;
   margin-right: auto;
@@ -318,21 +318,21 @@
 
 .text-holder {
   position: relative;
+  font-size: clamp(1.75em, 5vw, 3.75em);
 }
 
 .text {
-  width: fit-content;
+  width: max-content;
   padding: 0.5em 1em;
   position: relative;
-  font-size: 2.75em;
   text-transform: uppercase;
 }
 
 .add-text {
-  font-size: 1em;
+  font-size: 35%;
 }
 .add-text > .letter + .letter {
-  margin-left: 0.75em;
+  margin-left: 0.85em;
 }
 
 .add-text-body::after {

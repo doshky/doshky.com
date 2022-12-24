@@ -56,7 +56,7 @@
 	background-image: none !important; 
 
 	.image { 
-		display: block; margin-inline: auto; 
+		display: block; 
 		height: var( --image-height ); 
 
 	}
@@ -69,6 +69,7 @@
 }
 
 .logo, 
+.animation-holder .featured-image > .image, 
 .text { 
 	margin: {
 		left: auto; right: auto; 
@@ -93,23 +94,24 @@
 
 .text-holder { 
 	position: relative; 
+	font-size: clamp( 1.75em, 5vw, 3.75em ); 
 
 } 
 
 .text { 
-	width: fit-content; 
+	width: max-content; 
 	padding: 0.5em 1em; 
 	position: relative; 
-	font-size: 2.75em;  
+	//font-size: 2.75em; font-size: clamp( 1.5em, 5vw, 2.75em ); 
 	text-transform: uppercase;
 
 } 
 
 .add-text { 
-	font-size: 1em; 
+	font-size: 35%; 
 
 	> .letter + .letter { 
-		margin-left: 0.75em; 
+		margin-left: 0.85em; 
 
 	}
 
