@@ -1,6 +1,6 @@
 ---
-title: "Instagram " 
-image: /assets/images/logo-instagram.svg 
-address: "https://instagram.com/" 
-name: "instagram" 
+title: "Instagram "
+name: instagram
+address: https://instagram.com
+image: /assets/images/paintings/social-instagram-outline.svg
 ---
