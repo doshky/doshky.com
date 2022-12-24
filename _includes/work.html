@@ -2,11 +2,17 @@
 
 	<ul class= "entry-list picture-entry-list work-section-entry-list"> 
 	{% for painting in site.paintings %} 
+		{% if painting.thumbnail != '' %} 
+			{% assign background_image = painting.thumbnail %}
+		{% else %}
+			{% assign background_image = painting.image %}
+		{% endif %} 
+
 		<li class= "entry picture-entry work-section-entry"> 
 			<a 
 				class= "work-section-image" 
 				href= "{{ painting.image }}" 
-				style= "background-image: url( '{{ painting.thumbnail }}' );" 
+				style= "background-image: url( '{{ background_image }}' );" 
 			>
 				Painting 
 			</a>
